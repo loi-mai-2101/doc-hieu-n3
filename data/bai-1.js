@@ -140,6 +140,8 @@ window.BAI = {
     /* ───────────── 問題14 ───────────── */
     {
       id: '14',
+      // Dành cho review (không hiển thị trên web): trang PDF của bài và của đáp án sách
+      review: { pages: [56], answerPage: 186, bookAnswer: 3, doubts: [] },
       kind: 'メール（プライベート）',
       kindVi: 'Email cá nhân',
       style: 'mail',
@@ -200,6 +202,8 @@ window.BAI = {
     /* ───────────── 問題15 ───────────── */
     {
       id: '15',
+      // Dành cho review (không hiển thị trên web): trang PDF của bài và của đáp án sách
+      review: { pages: [58], answerPage: 186, bookAnswer: 1, doubts: [] },
       kind: '手紙',
       kindVi: 'Thư tay',
       style: 'letter',
@@ -272,6 +276,8 @@ window.BAI = {
     /* ───────────── 問題16 ───────────── */
     {
       id: '16',
+      // Dành cho review (không hiển thị trên web): trang PDF của bài và của đáp án sách
+      review: { pages: [60], answerPage: 186, bookAnswer: 3, doubts: [] },
       kind: 'メモ',
       kindVi: 'Memo, ghi chú',
       style: 'memo',
@@ -324,6 +330,8 @@ window.BAI = {
     /* ───────────── 問題24 ───────────── */
     {
       id: '24',
+      // Dành cho review (không hiển thị trên web): trang PDF của bài và của đáp án sách
+      review: { pages: [82, 83], answerPage: 189, bookAnswer: 4, doubts: [] },
       kind: 'お知らせ',
       kindVi: 'Thông báo',
       style: 'notice',

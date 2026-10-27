@@ -71,8 +71,18 @@
             continue;
           }
         }
+        if (c === '°' && src[i + 1] === '(') { // mục được khoanh tròn (vd. trên túi thuốc)
+          i += 2;
+          out += '<span class="circ">' + seq(true) + '</span>';
+          continue;
+        }
+        if (c === '‹' || c === '›') { // gạch chân phần được trích trong câu hỏi
+          out += c === '‹' ? '<u class="ul">' : '</u>';
+          i++;
+          continue;
+        }
         if (c === '※' && /\d/.test(src[i + 1] || '')) {
-          out += '<sup class="nref">注' + src[i + 1] + '</sup>';
+          out += '<sup class="nref">注' + (src[i + 1] === '0' ? '' : src[i + 1]) + '</sup>';
           i += 2;
           continue;
         }
@@ -84,14 +94,43 @@
     return seq(false);
   }
 
+  // Bài có một câu hỏi dùng question/options/answer/evidence; bài nhiều câu dùng mảng questions.
+  function questionsOf(p) {
+    if (p.questions) return p.questions;
+    return [{ label: '問い', question: p.question, options: p.options, answer: p.answer, evidence: p.evidence,
+      bookAnswer: (p.review || {}).bookAnswer }];
+  }
+
   function sentence(s, found) {
     return '<span class="s" data-s="' + esc(s[0]) + '">' + parse(s[1], found) +
       (s[2] ? '<span class="vi">' + esc(s[2]) + '</span>' : '') + '</span>';
   }
 
+  // Mọi "câu" của một khối, kể cả hàng bảng và mục biểu đồ (dùng cho kiểm tra và review).
+  function blockSentences(b) {
+    if (b.t === 'table') return [['head', b.head.join('　'), '']].concat(b.rows.map(function (r) { return [r[0], r[1].join('　'), r[2]]; }));
+    if (b.t === 'chart') return [b.title].concat(b.items.map(function (it, k) { return ['c' + k, it[0], it[2] || '']; }));
+    return b.s;
+  }
+
   /* ---------- Hiển thị một 問題 ---------- */
   function renderBlock(b, found) {
     var cls = 'blk blk-' + b.t + (b.cls ? ' ' + b.cls : '');
+    if (b.t === 'table') {
+      var n = b.head.length;
+      return '<div class="' + cls + '"><table><thead><tr>' + b.head.map(function (hd) { return '<th>' + parse(hd, found) + '</th>'; }).join('') + '</tr></thead><tbody>' +
+        b.rows.map(function (r) {
+          return '<tr class="s trow" data-s="' + esc(r[0]) + '">' + r[1].map(function (c) { return '<td>' + parse(c, found) + '</td>'; }).join('') + '</tr>' +
+            (r[2] ? '<tr class="vi-tr"><td colspan="' + n + '"><span class="vi">' + esc(r[2]) + '</span></td></tr>' : '');
+        }).join('') + '</tbody></table></div>';
+    }
+    if (b.t === 'chart') {
+      return '<figure class="' + cls + '"><figcaption>' + sentence(b.title, found) + '</figcaption>' +
+        b.items.map(function (it) {
+          return '<div class="bar"><span class="bar-label">' + parse(it[0], found) + '</span><span class="bar-track"><span class="bar-fill" style="width:' + (it[1] / b.max * 100) + '%"></span></span><span class="bar-val">' + it[1] + '%</span>' +
+            (it[2] ? '<span class="bar-vi">' + esc(it[2]) + '</span>' : '') + '</div>';
+        }).join('') + (b.source ? '<div class="chart-src">' + parse(b.source, found) + '</div>' : '') + '</figure>';
+    }
     if (b.t === 'p') {
       return '<p class="' + cls + '">' + b.s.map(function (s) { return sentence(s, found); }).join('') + '</p>';
     }
@@ -125,20 +164,22 @@
       h += '<div class="notes">' + p.notes.map(function (n) { return '<div>' + parse(n, found) + '</div>'; }).join('') + '</div>';
     }
 
-    // Câu hỏi
-    h += '<div class="quiz" data-answer="' + p.answer + '">';
-    h += '<div class="q-label">問い</div><p class="q-text">' + sentence(p.question, found) + '</p>';
-    h += '<ol class="opts">' + p.options.map(function (o, idx) {
-      return '<li><button type="button" class="opt" data-i="' + (idx + 1) + '"><span class="num">' + (idx + 1) + '</span><span class="opt-jp">' + parse(o[0], found) + '</span></button></li>';
-    }).join('') + '</ol>';
-    h += '<div class="result" hidden>';
-    h += '<p class="verdict"></p>';
-    h += '<ol class="exps">' + p.options.map(function (o, idx) {
-      var ok = idx + 1 === p.answer;
-      return '<li class="' + (ok ? 'ok' : 'ng') + '"><div class="exp-head"><span class="mark">' + (ok ? '✓' : '✗') + '</span> ' + (idx + 1) + '. ' + esc(o[1]) + '</div><div class="exp-body">' + esc(o[2]) + '</div></li>';
-    }).join('') + '</ol>';
-    h += '<div class="result-actions"><button type="button" class="btn" data-action="show-evidence">Xem căn cứ trong bài</button><button type="button" class="btn ghost" data-action="retry">Làm lại</button></div>';
-    h += '</div></div>';
+    // Câu hỏi (một hoặc nhiều câu: 問い / 問1, 問2…)
+    questionsOf(p).forEach(function (q, qi) {
+      h += '<div class="quiz" data-qi="' + qi + '" data-answer="' + q.answer + '">';
+      h += '<div class="q-label">' + esc(q.label) + '</div><p class="q-text">' + sentence(q.question, found) + '</p>';
+      h += '<ol class="opts">' + q.options.map(function (o, idx) {
+        return '<li><button type="button" class="opt" data-i="' + (idx + 1) + '"><span class="num">' + (idx + 1) + '</span><span class="opt-jp">' + parse(o[0], found) + '</span></button></li>';
+      }).join('') + '</ol>';
+      h += '<div class="result" hidden>';
+      h += '<p class="verdict"></p>';
+      h += '<ol class="exps">' + q.options.map(function (o, idx) {
+        var ok = idx + 1 === q.answer;
+        return '<li class="' + (ok ? 'ok' : 'ng') + '"><div class="exp-head"><span class="mark">' + (ok ? '✓' : '✗') + '</span> ' + (idx + 1) + '. ' + esc(o[1]) + '</div><div class="exp-body">' + esc(o[2]) + '</div></li>';
+      }).join('') + '</ol>';
+      h += '<div class="result-actions"><button type="button" class="btn" data-action="show-evidence">Xem căn cứ trong bài</button><button type="button" class="btn ghost" data-action="retry">Làm lại</button></div>';
+      h += '</div></div>';
+    });
 
     // Phân tích
     h += '<div class="analysis">';
@@ -419,13 +460,13 @@
         if (act.dataset.action === 'show-evidence') {
           section.querySelectorAll('.s.ev').forEach(function (s) { s.classList.remove('ev'); });
           var first = null;
-          p.evidence.forEach(function (id) {
+          questionsOf(p)[+act.closest('.quiz').dataset.qi].evidence.forEach(function (id) {
             var s = section.querySelector('.passage .s[data-s="' + id + '"]');
             if (s) { s.classList.add('ev'); first = first || s; }
           });
           if (first) first.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else if (act.dataset.action === 'retry') {
-          var q = section.querySelector('.quiz');
+          var q = act.closest('.quiz');
           delete q.dataset.done;
           q.querySelectorAll('.opt').forEach(function (o) { o.classList.remove('correct', 'wrong', 'picked'); });
           q.querySelector('.result').hidden = true;
@@ -452,7 +493,7 @@
     });
   }
 
-  window.N3 = { parse: parse };
+  window.N3 = { parse: parse, questionsOf: questionsOf, blockSentences: blockSentences, renderProblem: renderProblem };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initLesson);
   else initLesson();
 })();

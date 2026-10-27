@@ -107,6 +107,7 @@ rt { font-size: .5em; color: var(--ink-2); font-weight: 400; }
 .blk-list { padding-left: 1.2em; margin: 0 0 .7em; }
 .blk-list li { margin-bottom: .1em; }
 .gap { margin-top: 1.2em !important; }
+.blk-list.plain { list-style: none; padding-left: 1em; }
 .indent { padding-left: 1em; }
 .passage-memo .blk-title { text-decoration: underline; text-underline-offset: 6px; text-align: left; }
 .passage-mail .blk-meta { font-family: var(--ui); }
@@ -135,6 +136,27 @@ rt { font-size: .5em; color: var(--ink-2); font-weight: 400; }
 .rtg.flash { background: var(--ref-bg); box-shadow: 0 0 0 3px var(--ref-bg); border-radius: 4px; animation: pulse 1.2s ease 2; }
 @keyframes pulse { 50% { box-shadow: 0 0 0 6px var(--ref-bg); } }
 .nref { font-size: .55em; color: var(--ink-2); }
+.circ { border: 1.5px solid var(--accent); border-radius: 999px; padding: 0 .25em; }
+.blk-table { overflow-x: auto; }
+.blk-table table { border-collapse: collapse; width: 100%; font-size: .88em; line-height: 1.9; }
+.blk-table th, .blk-table td { border: 1px solid var(--line); padding: 2px 6px; vertical-align: top; text-align: left; }
+.blk-table th { background: var(--surface-2); font-weight: 600; white-space: nowrap; }
+.blk-table .trow { cursor: pointer; }
+.vi-tr { display: none; }
+.trow.open + .vi-tr, .vi-all .vi-tr { display: table-row; }
+.vi-tr td { border-top: 0; padding: 0 6px 4px; }
+.vi-tr .vi { display: block; margin: 0; }
+.blk-chart { margin: 0; }
+.blk-chart figcaption { font-weight: 700; text-align: center; margin-bottom: 6px; }
+.bar { display: grid; grid-template-columns: minmax(7em, 40%) 1fr 3.4em; gap: 2px 8px; align-items: center; font-size: .9em; margin-bottom: 4px; line-height: 1.8; }
+.bar-track { background: var(--surface-2); border-radius: 4px; height: 12px; overflow: hidden; }
+.bar-fill { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
+.bar-val { text-align: right; font-variant-numeric: tabular-nums; font-family: var(--ui); }
+.bar-vi { grid-column: 1 / -1; display: none; font-family: var(--ui); font-size: .85em; color: var(--ink-2); line-height: 1.4; }
+.vi-all .bar-vi { display: block; }
+.chart-src { font-size: .75em; color: var(--ink-2); text-align: right; margin-top: 6px; }
+u.ul { text-decoration: underline solid var(--ink); text-decoration-thickness: 1.5px; text-underline-offset: 6px; }
+.quiz + .quiz { margin-top: 14px; }
 
 .notes { font-size: .82em; color: var(--ink-2); margin: 10px 0 0; line-height: 2; }
 
