@@ -109,6 +109,7 @@
   // Mọi "câu" của một khối, kể cả hàng bảng và mục biểu đồ (dùng cho kiểm tra và review).
   function blockSentences(b) {
     if (b.t === 'table') return [['head', b.head.join('　'), '']].concat(b.rows.map(function (r) { return [r[0], r[1].join('　'), r[2]]; }));
+    if (b.t === 'img') return b.cap ? [b.cap] : [];
     if (b.t === 'chart') return [b.title].concat(b.items.map(function (it, k) { return ['c' + k, it[0], it[2] || '']; }));
     return b.s;
   }
@@ -123,6 +124,10 @@
           return '<tr class="s trow" data-s="' + esc(r[0]) + '">' + r[1].map(function (c) { return '<td>' + parse(c, found) + '</td>'; }).join('') + '</tr>' +
             (r[2] ? '<tr class="vi-tr"><td colspan="' + n + '"><span class="vi">' + esc(r[2]) + '</span></td></tr>' : '');
         }).join('') + '</tbody></table></div>';
+    }
+    if (b.t === 'img') { // hình cắt từ sách (hình minh họa, sơ đồ…)
+      return '<figure class="' + cls + '"><img src="' + esc(b.src) + '" alt="' + esc(b.alt) + '" loading="lazy"' +
+        (b.w ? ' style="width:' + b.w + 'px"' : '') + '>' + (b.cap ? '<figcaption>' + sentence(b.cap, found) + '</figcaption>' : '') + '</figure>';
     }
     if (b.t === 'chart') {
       return '<figure class="' + cls + '"><figcaption>' + sentence(b.title, found) + '</figcaption>' +

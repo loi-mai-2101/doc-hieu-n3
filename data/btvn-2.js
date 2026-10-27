@@ -311,7 +311,7 @@ window.BAI = {
       id: '56',
       review: {
         pages: [147, 148], answerPage: 210,
-        doubts: ['問題56, quán ④李安: sách in giờ mở cửa là 「時間：11:00～22:00　17:00～23:00」, cuối ô còn thêm dòng 「個室あり。18:00～24:00」. Có vẻ sách in lỗi hoặc thừa dòng. Mình chép đúng như sách; chỗ này không ảnh hưởng đáp án vì quán ④ nghỉ thứ Ba và không phải món Nhật. Thầy/cô muốn giữ nguyên hay bỏ dòng thừa?']
+        doubts: []
       },
       kind: '情報検索・パンフレット',
       kindVi: 'Tìm thông tin – tờ giới thiệu nhà hàng',
@@ -345,10 +345,9 @@ window.BAI = {
         { t: 'lines', s: [
           ['r4a', 'カニ{料理|りょうり}が{有名|ゆうめい}な@chuuka([中華|ちゅうか]){料理|りょうり}{店|てん}。@tabehoudai({食|た}べ[放題|ほうだい])メニューもあり。', 'Nhà hàng Trung Hoa nổi tiếng với món cua. Có cả thực đơn ăn thỏa thích.'],
           ['r4b', '［{昼|ひる}］1,000～1,800{円|えん}　［{夜|よる}］2,500～12,000{円|えん}', 'Trưa: 1.000–1.800 yên · Tối: 2.500–12.000 yên'],
-          ['r4c', '{時間|じかん}：11:00～22:00　17:00～23:00', 'Giờ mở cửa: 11:00–22:00, 17:00–23:00 (như sách in)'],
+          ['r4c', '{時間|じかん}：11:00～22:00　17:00～23:00', 'Giờ mở cửa: 11:00–22:00, 17:00–23:00'],
           ['r4d', '{休|やす}み：{火|か}', 'Nghỉ: thứ Ba'],
-          ['r4e', '[個室|こしつ]あり。', 'Có phòng riêng.'],
-          ['r4f', '18:00～24:00', '18:00–24:00 (như sách in)']
+          ['r4e', '[個室|こしつ]あり。', 'Có phòng riêng.']
         ] }
       ],
       notes: [],

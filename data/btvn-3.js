@@ -108,7 +108,6 @@ window.BAI = {
     muryou: { w: '無料', r: 'むりょう', hv: 'VÔ LIỆU', vi: 'miễn phí' },
     keiyaku: { w: '契約', r: 'けいやく', hv: 'KHẾ ƯỚC', vi: 'hợp đồng, ký hợp đồng' },
     soudanka: { w: '相談可', r: 'そうだんか', hv: 'TƯƠNG ĐÀM KHẢ', vi: 'có thể thương lượng' },
-    madorizu: { w: '間取り図', r: 'まどりず', hv: 'GIAN THỦ ĐỒ', vi: 'sơ đồ phòng' },
     hoshoukin: { w: '保証金', r: 'ほしょうきん', hv: 'BẢO CHỨNG KIM', vi: 'tiền bảo đảm' },
     ooyasan: { w: '大家さん', r: 'おおやさん', hv: 'ĐẠI GIA', vi: 'chủ nhà' },
     azukeru: { w: '預ける', r: 'あずける', hv: 'DỰ', vi: 'gửi (tiền, đồ) cho ai giữ' },
@@ -125,7 +124,7 @@ window.BAI = {
       id: '45',
       review: {
         pages: [125, 126], answerPage: 202,
-        doubts: ['Chú thích 注3, 注4 của 問題45 có ghi 「イラスト参照」 (xem hình minh họa ghế tàu), và 問題54 có sơ đồ phòng. Trên web mình chưa chèn hình, chỉ giữ chữ (với 問題54 mình mô tả lại sơ đồ bằng chữ). Thầy/cô có muốn chèn ảnh cắt từ sách vào không?']
+        doubts: []
       },
       kind: '内容理解（長文）・説明文',
       kindVi: 'Đoạn văn dài – văn giải thích',
@@ -167,7 +166,8 @@ window.BAI = {
         { t: 'p', s: [
           ['s22', 'このようにさまざまな{人々|ひとびと}のおかげで‹②[鉄道|てつどう]は[正確|せいかく]な{時間|じかん}に{走|はし}れる›のである。', 'Chính nhờ những con người như vậy mà đường sắt có thể chạy đúng giờ.']
         ] },
-        { t: 'right', s: [['src', '（[朝日|あさひ]{新聞|しんぶん}[夕刊|ゆうかん]2011年9月5日より）', 'Theo báo Asahi Shimbun, số buổi chiều ngày 5/9/2011']] }
+        { t: 'right', s: [['src', '（[朝日|あさひ]{新聞|しんぶん}[夕刊|ゆうかん]2011年9月5日より）', 'Theo báo Asahi Shimbun, số buổi chiều ngày 5/9/2011']] },
+        { t: 'img', src: 'img/mondai45-seat.jpg', w: 320, alt: 'Hình minh họa ghế tàu: ひじかけ là tay vịn, 背もたれ là lưng ghế' }
       ],
       notes: [
         '（注1）[欠|か]かせない：[必要|ひつよう]である。なくてはならない。',
@@ -347,10 +347,7 @@ window.BAI = {
           ['p8', '@tesuuryou([手数料|てすうりょう])@muryou([無料|むりょう])！　@keiyaku([契約|けいやく]){時|じ}には[家賃|やちん]1か{月|げつ}{分|ぶん}と[敷金|しききん]・[礼金|れいきん][各|かく]1か{月|げつ}{分|ぶん}だけでOK！', 'Miễn phí môi giới! Khi ký hợp đồng chỉ cần 1 tháng tiền thuê cùng tiền cọc và tiền lễ, mỗi khoản 1 tháng!'],
           ['p9', 'ペットは@soudanka([相談|そうだん][可|か])！', 'Thú cưng: có thể thương lượng!']
         ] },
-        { t: 'sub', s: [['h2', '（@madorizu([間取|まど]り{図|ず})）', 'Sơ đồ phòng (trong sách là hình vẽ; ở đây mô tả lại bằng chữ)']] },
-        { t: 'lines', s: [
-          ['f1', '[玄関|げんかん]・[浴室|よくしつ]・トイレ・[収納|しゅうのう]・[洗濯|せんたく]・[洋室|ようしつ]19.84m²・ベランダ', 'Sơ đồ gồm: lối vào, phòng tắm, nhà vệ sinh, tủ đồ, chỗ đặt máy giặt, phòng kiểu Tây 19,84 m², ban công. Mũi tên chỉ hướng Bắc hướng lên trên, ban công nằm ở phía dưới, tức phía Nam.']
-        ] }
+        { t: 'img', src: 'img/mondai54-floorplan.jpg', w: 220, alt: 'Sơ đồ phòng: 玄関 (lối vào), 浴室 (phòng tắm), トイレ, 収納 (tủ đồ), 洗濯 (chỗ đặt máy giặt), 洋室 19.84m², ベランダ (ban công). Mũi tên N chỉ hướng Bắc lên trên, ban công ở phía Nam.' }
       ],
       notes: [
         '（注1）[敷金|しききん]：アパートを[契約|けいやく]するときに、@hoshoukin([保証金|ほしょうきん])として@ooyasan({大家|おおや}さん)に@azukeru([預|あず]ける)お{金|かね}',
@@ -382,7 +379,7 @@ window.BAI = {
           ],
           answer: 2,
           bookAnswer: 2,
-          evidence: ['p5', 'f1']
+          evidence: ['p5']
         }
       ],
       summary: 'Tin cho thuê căn hộ 1 phòng 19,84 m² cách ga Nakayamada 3 phút đi bộ, xây được 10 năm, tiền thuê 30.000 yên, cọc 1 tháng, tiền lễ 1 tháng. Hướng Nam, tầng 2 của tòa 5 tầng, miễn phí môi giới, thú cưng có thể thương lượng. Sơ đồ có phòng tắm, nhà vệ sinh, tủ đồ, ban công phía Nam.',
