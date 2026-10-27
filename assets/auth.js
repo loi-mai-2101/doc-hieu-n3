@@ -29,6 +29,13 @@
     root.classList.add('role-' + role);
   }
 
+  // Nút "Đăng xuất" (có ở mọi trang): xóa phiên rồi tải lại trang để hiện màn hình đăng nhập
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest || !e.target.closest('[data-action="logout"]')) return;
+    try { sessionStorage.removeItem(KEY); } catch (err) {}
+    location.reload();
+  });
+
   // Đăng nhập một lần cho mỗi phiên trình duyệt (đóng tab/trình duyệt là phải đăng nhập lại).
   var role = savedRole();
   if (allowed(role)) { setRole(role); return; }

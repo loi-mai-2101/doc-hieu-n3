@@ -294,7 +294,8 @@ html.locked body > :not(.login-screen) { display: none !important; }
 
 /* ---------- Nút Hoàn thành ---------- */
 .top .wrap { justify-content: flex-start; }
-.top .finish { margin-left: auto; flex: none; }
+.top-actions { margin-left: auto; flex: none; display: flex; gap: 6px; align-items: center; }
+.index-bar { display: flex; justify-content: flex-end; padding-top: 12px; }
 .finish-card { text-align: center; }
 .finish-big { font-size: 44px; line-height: 1; }
 .finish-card h2 { margin: 8px 0 4px; font-size: 20px; }
@@ -309,3 +310,4 @@ html.locked body > :not(.login-screen) { display: none !important; }
 .blk-img figcaption { font-size: .85em; color: var(--ink-2); margin-top: 4px; }
 .role-student .admin-only { display: none !important; }
 .login-card .btn.ghost { color: var(--accent); }
+.top .wrap { flex-wrap: wrap; }
