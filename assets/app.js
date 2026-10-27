@@ -422,7 +422,7 @@
       } else {
         openSheet('<div class="finish-card"><div class="finish-big">🎉</div><h2>Hoàn thành ' + esc(BAI.title) + '!</h2>' +
           '<p class="finish-score">Bạn trả lời đúng <strong>' + right + ' / ' + total + '</strong> câu.</p><ul class="finish-list">' + rows.join('') + '</ul>' +
-          '<div class="finish-actions"><a class="btn ghost" href="index.html">Về mục lục</a><button type="button" class="btn" data-action="close-sheet">Đóng</button></div></div>');
+          '<div class="finish-actions"><a class="btn ghost admin-only" href="index.html">Về mục lục</a><button type="button" class="btn" data-action="close-sheet">Đóng</button></div></div>');
       }
     });
 
