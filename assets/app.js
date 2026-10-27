@@ -391,6 +391,36 @@
     });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !sheet.hidden) closeSheet(); });
 
+    // Nút "Hoàn thành": chỉ báo hoàn thành khi mọi câu hỏi của mọi 問題 đều đã được trả lời
+    var finishBtn = document.querySelector('[data-action="finish"]');
+    if (finishBtn) finishBtn.addEventListener('click', function () {
+      var missing = [], rows = [], right = 0, total = 0;
+      BAI.problems.forEach(function (p) {
+        var quizzes = Array.prototype.slice.call(document.querySelectorAll('#p' + p.id + ' .quiz'));
+        var undone = quizzes.filter(function (q) { return !q.dataset.done; });
+        var ok = quizzes.filter(function (q) { return q.dataset.ok === '1'; }).length;
+        right += ok;
+        total += quizzes.length;
+        var link = '<a href="#p' + p.id + '" data-action="close-sheet">問題' + esc(p.id) + '</a>';
+        if (undone.length) {
+          var detail = quizzes.length > 1 && undone.length < quizzes.length
+            ? 'còn ' + undone.map(function (q) { return questionsOf(p)[+q.dataset.qi].label; }).join(', ')
+            : 'chưa làm';
+          missing.push('<li>' + link + '<span>' + esc(detail) + '</span></li>');
+        }
+        rows.push('<li>' + link + '<span>Đúng ' + ok + ' / ' + quizzes.length + '</span></li>');
+      });
+      if (missing.length) {
+        openSheet('<div class="finish-card finish-warn"><div class="finish-big">⚠️</div><h2>Bạn chưa làm xong</h2>' +
+          '<p class="finish-score">Còn ' + missing.length + ' bài chưa làm:</p><ul class="finish-list">' + missing.join('') + '</ul>' +
+          '<div class="finish-actions"><button type="button" class="btn" data-action="close-sheet">Làm tiếp</button></div></div>');
+      } else {
+        openSheet('<div class="finish-card"><div class="finish-big">🎉</div><h2>Hoàn thành ' + esc(BAI.title) + '!</h2>' +
+          '<p class="finish-score">Bạn trả lời đúng <strong>' + right + ' / ' + total + '</strong> câu.</p><ul class="finish-list">' + rows.join('') + '</ul>' +
+          '<div class="finish-actions"><a class="btn ghost" href="index.html">Về mục lục</a><button type="button" class="btn" data-action="close-sheet">Đóng</button></div></div>');
+      }
+    });
+
     // Thanh công cụ
     document.querySelector('.toolbar').addEventListener('click', function (e) {
       var b = e.target.closest('button');
@@ -441,6 +471,7 @@
         if (quiz.dataset.done) return;
         quiz.dataset.done = '1';
         var ans = +quiz.dataset.answer, pick = +opt.dataset.i;
+        quiz.dataset.ok = pick === ans ? '1' : '0';
         quiz.querySelectorAll('.opt').forEach(function (o) {
           if (+o.dataset.i === ans) o.classList.add('correct');
         });
@@ -468,6 +499,7 @@
         } else if (act.dataset.action === 'retry') {
           var q = act.closest('.quiz');
           delete q.dataset.done;
+          delete q.dataset.ok;
           q.querySelectorAll('.opt').forEach(function (o) { o.classList.remove('correct', 'wrong', 'picked'); });
           q.querySelector('.result').hidden = true;
           section.querySelectorAll('.s.ev').forEach(function (s) { s.classList.remove('ev'); });
