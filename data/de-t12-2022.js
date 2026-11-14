@@ -104,7 +104,7 @@ window.BAI = {
         options: [
           ['[営業|えいぎょう]{課|か}でコピーをする。[中島|なかじま]さんに{言|い}う{必要|ひつよう}はない。', 'Photo ở phòng kinh doanh, không cần báo Nakajima.', 'Sai. Máy phòng kinh doanh đang hỏng.'],
           ['{会計|かいけい}{課|か}でコピーをする。[中島|なかじま]さんに{言|い}う{必要|ひつよう}はない。', 'Photo ở phòng kế toán, không cần báo Nakajima.', 'Đúng. Cần trong hôm nay → dùng máy phòng kế toán (s4); chỉ 5 tờ (< 50) → không cần báo (s5).'],
-          ['[中島|なかじま]さんに{言|い}ってから、[営業|えいぎょう]{課|か}でコピーをする。', 'Báo Nakajima rồi photo ở phòng kinh doanh.', 'Sai. Máy hỏng.'],
+          ['[中島|なかじま]さんに{言|い}ってから、[営業|えいぎょう]{課|か}でコピーをする。', 'Báo Nakajima rồi photo ở phòng kinh doanh.', 'Sai. Máy phòng kinh doanh đang hỏng (故障していて使えません); và chỉ 5 tờ (dưới 50) thì không cần báo Nakajima.'],
           ['[中島|なかじま]さんに{言|い}ってから、{会計|かいけい}{課|か}でコピーをする。', 'Báo Nakajima rồi photo ở phòng kế toán.', 'Sai. Chỉ cần báo khi photo từ 50 tờ.']
         ],
         answer: 2, evidence: ['s1', 's4', 's5']
@@ -146,7 +146,7 @@ window.BAI = {
         options: [
           ['{上手|じょうず}な[投|な]げ{方|かた}についての「{私|わたし}」の{説明|せつめい}が{下手|へた}だったから。', 'Vì "tôi" giải thích kém.', 'Sai. Vấn đề không phải giải thích giỏi hay dở.'],
           ['@kurikaesu({繰|く}り{返|かえ})し{同|おな}じ[投|な]げ{方|かた}で[投|な]げる{練習|れんしゅう}をさせていなかったから。', 'Vì không cho tập lặp lại cùng một cách ném.', 'Sai. Tác giả đã cho ném nhiều lần.'],
-          ['{実際|じっさい}に「{私|わたし}」が{上手|じょうず}に[投|な]げているところを{見|み}せていなかったから。', 'Vì không cho con xem mình ném giỏi.', 'Sai. Bài không nói vậy.'],
+          ['{実際|じっさい}に「{私|わたし}」が{上手|じょうず}に[投|な]げているところを{見|み}せていなかったから。', 'Vì không cho con xem mình ném giỏi.', 'Sai. Chương trình TV không nói đến việc làm mẫu; điểm mới là cho trẻ ném nhiều loại bóng để cơ thể tự nhớ cách dùng lực.'],
           ['ちょうどいい{力|ちから}の{入|い}れ{方|かた}を{体|からだ}で{覚|おぼ}える{練習|れんしゅう}をさせていなかったから。', 'Vì không cho con tập để cơ thể nhớ cách dùng lực vừa phải.', 'Đúng. 「娘に必要なのは、これかもしれない」 (s4–s5).']
         ],
         answer: 4, evidence: ['s4', 's5']
@@ -168,20 +168,20 @@ window.BAI = {
       kindVi: 'Đoạn văn ngắn – email cửa hàng',
       style: 'mail',
       before: null,
-      lead: ['l', 'これは、ある{店|みせ}が{客|きゃく}の[寺坂|てらさか]さんに{書|か}いたメールである。', 'Đây là email một cửa hàng viết cho khách là chị Terasaka.'],
+      lead: ['l', 'これは、ある{店|みせ}が{客|きゃく}の[寺坂|てらさか]さんに{書|か}いたメールである。', 'Đây là email một cửa hàng viết cho khách là quý khách Terasaka.'],
       blocks: [
-        { t: 'lines', s: [['s0', '[寺坂|てらさか]ゆき[様|さま]', 'Kính gửi chị Terasaka Yuki']] },
+        { t: 'lines', s: [['s0', '[寺坂|てらさか]ゆき[様|さま]', 'Kính gửi quý khách Terasaka Yuki']] },
         { t: 'p', s: [
-          ['s1', 'いつもご{利用|りよう}いただき、ありがとうございます。', 'Cảm ơn chị luôn sử dụng dịch vụ.'],
-          ['s2', '2{月|がつ}4{日|か}にいただいたご{注文|ちゅうもん}についてのご{連絡|れんらく}です。', 'Đây là liên lạc về đơn hàng chị đặt ngày 4/2.'],
-          ['s3', '[寺坂|てらさか][様|さま]がホームページからご{注文|ちゅうもん}になった@kawa([革製|かわせい])[財布|さいふ]（{茶色|ちゃいろ}）ですが、@chokuzen([直前|ちょくぜん])の{電話|でんわ}{注文|ちゅうもん}で@shinagire({品切|しなぎ}れ)になっておりました。', 'Chiếc ví da (màu nâu) chị đặt trên trang web đã hết hàng do có đơn đặt qua điện thoại ngay trước đó.'],
+          ['s1', 'いつもご{利用|りよう}いただき、ありがとうございます。', 'Cảm ơn quý khách luôn sử dụng dịch vụ.'],
+          ['s2', '2{月|がつ}4{日|か}にいただいたご{注文|ちゅうもん}についてのご{連絡|れんらく}です。', 'Đây là liên lạc về đơn hàng quý khách đặt ngày 4/2.'],
+          ['s3', '[寺坂|てらさか][様|さま]がホームページからご{注文|ちゅうもん}になった@kawa([革製|かわせい])[財布|さいふ]（{茶色|ちゃいろ}）ですが、@chokuzen([直前|ちょくぜん])の{電話|でんわ}{注文|ちゅうもん}で@shinagire({品切|しなぎ}れ)になっておりました。', 'Chiếc ví da (màu nâu) quý khách đặt trên trang web đã hết hàng do có đơn đặt qua điện thoại ngay trước đó.'],
           ['s4', '{大変|たいへん}@moushiwake([申|もう]し[訳|わけ]ございません)。', 'Chúng tôi thành thật xin lỗi.'],
-          ['s5', 'お[届|とど]けできるのは3{月|がつ}@joujun([上旬|じょうじゅん])になってしまいますが、いかがいたしましょうか。', 'Sớm nhất phải đầu tháng 3 mới giao được, chị muốn thế nào ạ?'],
-          ['s6', 'キャンセルもお{受|う}けいたしますので、ご@kibou([希望|きぼう])をお{聞|き}かせください。', 'Chúng tôi cũng nhận hủy đơn, xin chị cho biết mong muốn.']
+          ['s5', 'お[届|とど]けできるのは3{月|がつ}@joujun([上旬|じょうじゅん])になってしまいますが、いかがいたしましょうか。', 'Sớm nhất phải đầu tháng 3 mới giao được, quý khách muốn thế nào ạ?'],
+          ['s6', 'キャンセルもお{受|う}けいたしますので、ご@kibou([希望|きぼう])をお{聞|き}かせください。', 'Chúng tôi cũng nhận hủy đơn, xin quý khách cho biết mong muốn.']
         ] },
         { t: 'p', s: [
           ['s7', 'なお、{同|おな}じ[商品|しょうひん]の{違|ちが}う{色|いろ}でしたら、すぐにお{送|おく}りできます。', 'Ngoài ra, nếu là cùng mẫu khác màu thì có thể gửi ngay.'],
-          ['s8', 'あわせてご@kentou([検討|けんとう])ください。', 'Mong chị cân nhắc thêm.']
+          ['s8', 'あわせてご@kentou([検討|けんとう])ください。', 'Mong quý khách cân nhắc thêm.']
         ] },
         { t: 'right', s: [['sg', '[財布|さいふ]@senmonten({専門店|せんもんてん})タキグチ　[広田|ひろた]', 'Cửa hàng chuyên ví Takiguchi – Hirota']] }
       ],
@@ -191,13 +191,13 @@ window.BAI = {
         question: ['q1', 'このメールで{言|い}いたいこととして、{合|あ}っているのはどれか。', 'Điều email muốn nói là gì?'],
         options: [
           ['[商品|しょうひん]が[品切|しなぎ]れになったから、3{月|がつ}[上旬|じょうじゅん]に{送|おく}る。', 'Hết hàng nên sẽ gửi đầu tháng 3.', 'Sai. Cửa hàng hỏi ý khách, chưa quyết định gửi.'],
-          ['[商品|しょうひん]が[品切|しなぎ]れになったから、3{月|がつ}[上旬|じょうじゅん]にもう{一度|いちど}{注文|ちゅうもん}してほしい。', 'Hết hàng nên mong khách đặt lại đầu tháng 3.', 'Sai. Không yêu cầu đặt lại.'],
+          ['[商品|しょうひん]が[品切|しなぎ]れになったから、3{月|がつ}[上旬|じょうじゅん]にもう{一度|いちど}{注文|ちゅうもん}してほしい。', 'Hết hàng nên mong khách đặt lại đầu tháng 3.', 'Sai. Cửa hàng không yêu cầu đặt lại; đơn vẫn còn, chỉ hỏi khách muốn chờ hay hủy.'],
           ['[商品|しょうひん]が[品切|しなぎ]れで、[届|とど]けるまでに{時間|じかん}がかかるから、どうしたいか{知|し}らせてほしい。', 'Hết hàng, cần thời gian mới giao được, mong khách cho biết muốn thế nào.', 'Đúng. 「いかがいたしましょうか」「ご希望をお聞かせください」 (s5–s6).'],
-          ['{注文|ちゅうもん}と{違|ちが}う{色|いろ}の[商品|しょうひん]を{送|おく}ってしまったから、{正|ただ}しい{色|いろ}のものをすぐに{送|おく}る。', 'Gửi nhầm màu nên sẽ gửi đúng màu ngay.', 'Sai. Chưa gửi gì cả.']
+          ['{注文|ちゅうもん}と{違|ちが}う{色|いろ}の[商品|しょうひん]を{送|おく}ってしまったから、{正|ただ}しい{色|いろ}のものをすぐに{送|おく}る。', 'Gửi nhầm màu nên sẽ gửi đúng màu ngay.', 'Sai. Cửa hàng chưa gửi gì; "khác màu" chỉ là phương án gợi ý thêm (なお…).']
         ],
         answer: 3, evidence: ['s5', 's6']
       }],
-      summary: 'Cửa hàng báo chiếc ví da nâu chị Terasaka đặt ngày 4/2 đã hết hàng, đầu tháng 3 mới giao được; hỏi chị muốn chờ hay hủy. Nếu khác màu thì gửi ngay được.',
+      summary: 'Cửa hàng báo chiếc ví da nâu quý khách Terasaka đặt ngày 4/2 đã hết hàng, đầu tháng 3 mới giao được; hỏi quý khách muốn chờ hay hủy. Nếu khác màu thì gửi ngay được.',
       structure: [['Mở đầu', 'Chào + chủ đề (đơn hàng 4/2)'], ['Thân', 'Hết hàng → xin lỗi → hỏi ý khách (chờ / hủy)'], ['なお', 'Phương án khác màu']],
       grammar: [
         ['ご〜になる', 'Tôn kính ngữ', 'ご注文になった'],
@@ -230,7 +230,7 @@ window.BAI = {
         options: [
           ['{古|ふる}い{靴|くつ}を[割引券|わりびきけん]と[交換|こうかん]して、{新|あたら}しい{靴|くつ}を{買|か}うときに{使|つか}いたいと{思|おも}ったから。', 'Muốn đổi lấy phiếu giảm giá để dùng khi mua giày mới.', 'Đúng. 「新しい靴が安く買えるなら…持っていこう」 (s5).'],
           ['{古|ふる}い{靴|くつ}を{売|う}ってお{金|かね}をもらい、そのお{金|かね}で{新|あたら}しい{靴|くつ}を{買|か}いたいと{思|おも}ったから。', 'Bán giày lấy tiền mua giày mới.', 'Sai. Đổi lấy phiếu giảm giá, không phải tiền.'],
-          ['{古|ふる}い{靴|くつ}をきれいに{直|なお}してもらって、もう{一度|いちど}[履|は]きたいと{思|おも}ったから。', 'Muốn sửa lại giày cũ để đi tiếp.', 'Sai. Bài không nói vậy.'],
+          ['{古|ふる}い{靴|くつ}をきれいに{直|なお}してもらって、もう{一度|いちど}[履|は]きたいと{思|おも}ったから。', 'Muốn sửa lại giày cũ để đi tiếp.', 'Sai. Tiệm thu giày cũ để đốt lấy nhiệt, không sửa giày.'],
           ['{古|ふる}い{靴|くつ}を{利用|りよう}してもらって、[環境|かんきょう]をよくしたいと{思|おも}ったから。', 'Muốn giày cũ được tận dụng để cải thiện môi trường.', 'Sai. Tác giả nghĩ một mình mình thì không ảnh hưởng lớn – đó không phải lý do chính.']
         ],
         answer: 1, evidence: ['s3', 's5']
@@ -248,6 +248,7 @@ window.BAI = {
 
     {
       id: '5-1',
+      srcNotes: ['Câu 27, lựa chọn 2 đề in 「「私」高校生のころの自分の声」 – thiếu が. Bài đã sửa.'],
       kind: '中文・随筆',
       kindVi: 'Đoạn văn trung bình – tùy bút về radio',
       style: 'essay',
@@ -281,9 +282,9 @@ window.BAI = {
           question: ['q1', '‹①[懐|なつ]かしい{声|こえ}›とあるが、{何|なに}か。', '"Giọng nói thân quen" là gì?'],
           options: [
             ['「{私|わたし}」が{高校生|こうこうせい}のころの{父|ちち}の{声|こえ}。', 'Giọng bố hồi "tôi" học cấp ba.', 'Sai. Radio của bố, nhưng giọng là của phát thanh viên.'],
-            ['「{私|わたし}」{高校生|こうこうせい}のころの{自分|じぶん}の{声|こえ}。', 'Giọng của chính mình hồi cấp ba.', 'Sai.'],
+            ['「{私|わたし}」が{高校生|こうこうせい}のころの{自分|じぶん}の{声|こえ}。', 'Giọng của chính mình hồi cấp ba.', 'Sai. Tiếng phát ra từ radio là giọng phát thanh viên, không phải của tác giả.'],
             ['「{私|わたし}」が{高校生|こうこうせい}のころ{大好|だいす}きだった{歌手|かしゅ}の{声|こえ}。', 'Giọng ca sĩ yêu thích hồi cấp ba.', 'Sai. Chương trình âm nhạc, nhưng người nói là phát thanh viên.'],
-            ['「{私|わたし}」が{高校生|こうこうせい}のころ{聞|き}いていたアナウンサーの{声|こえ}。', 'Giọng phát thanh viên "tôi" hay nghe hồi cấp ba.', 'Đúng. (s3).']
+            ['「{私|わたし}」が{高校生|こうこうせい}のころ{聞|き}いていたアナウンサーの{声|こえ}。', 'Giọng phát thanh viên "tôi" hay nghe hồi cấp ba.', 'Đúng. 「高校生のころ、大好きだったラジオの音楽番組のアナウンサーだった」 – giọng thân quen chính là của phát thanh viên.']
           ],
           answer: 4, evidence: ['s3']
         },
@@ -292,8 +293,8 @@ window.BAI = {
           question: ['q2', '‹②また、ラジオを{聞|き}こうと{思|おも}った›のはどうしてか。', '"Sẽ lại nghe radio" – vì sao?'],
           options: [
             ['ラジオは、テレビより{小|ちい}さくて[身近|みぢか]に{置|お}くことができるから', 'Radio nhỏ hơn tivi, để gần được.', 'Sai. "身近" ở đây là gần gũi trong đời sống, không phải kích cỡ.'],
-            ['ラジオは、インターネットより{多|おお}くのことを{教|おし}えてくれるから', 'Radio cho biết nhiều hơn internet.', 'Sai. Bài không so sánh vậy.'],
-            ['ラジオは、{新|あたら}しいことだけでなく{古|ふる}いことも{伝|つた}えてくれるから', 'Radio truyền cả chuyện mới lẫn cũ.', 'Sai.'],
+            ['ラジオは、インターネットより{多|おお}くのことを{教|おし}えてくれるから', 'Radio cho biết nhiều hơn internet.', 'Sai. Bài không so sánh lượng thông tin radio với internet; internet được nhắc chỉ để giải thích vì sao người nghe radio giảm.'],
+            ['ラジオは、{新|あたら}しいことだけでなく{古|ふる}いことも{伝|つた}えてくれるから', 'Radio truyền cả chuyện mới lẫn cũ.', 'Sai. Bài không so sánh tin mới – tin cũ; ưu điểm được nêu là nghe được trong lúc làm việc khác.'],
             ['ラジオは、{何|なに}かをしながらでも、いろいろなことを{知|し}ることができるから', 'Với radio, vừa làm việc khác vẫn biết được nhiều thứ.', 'Đúng. 「ほかのことをしながらでも、さまざまな情報が手に入る」 (s11).']
           ],
           answer: 4, evidence: ['s11', 's12']
@@ -302,10 +303,10 @@ window.BAI = {
           label: '29',
           question: ['q3', 'この{文章|ぶんしょう}の@teema(テーマ)は{何|なに}か。', 'Chủ đề của đoạn văn là gì?'],
           options: [
-            ['ラジオ[番組|ばんぐみ]の{楽|たの}しさ。', 'Niềm vui của chương trình radio.', 'Sai. Chỉ là mở đầu.'],
+            ['ラジオ[番組|ばんぐみ]の{楽|たの}しさ。', 'Niềm vui của chương trình radio.', 'Sai. Chương trình radio yêu thích chỉ là chuyện mở đầu; phần sau (しかし…) mới nói ý chính là cái hay của radio.'],
             ['ラジオの{良|よ}さ。', 'Cái hay của radio.', 'Đúng. Bài nhấn mạnh 「ラジオにしかない良さ、便利さ」.'],
-            ['ラジオの{歴史|れきし}の{長|なが}さ。', 'Lịch sử lâu đời của radio.', 'Sai.'],
-            ['ラジオの{使|つか}い{方|かた}の[工夫|くふう]。', 'Mẹo dùng radio.', 'Sai.']
+            ['ラジオの{歴史|れきし}の{長|なが}さ。', 'Lịch sử lâu đời của radio.', 'Sai. Bài không nói về lịch sử radio, chỉ có kỷ niệm của tác giả và ưu điểm của radio.'],
+            ['ラジオの{使|つか}い{方|かた}の[工夫|くふう]。', 'Mẹo dùng radio.', 'Sai. Bài không hướng dẫn cách dùng radio.']
           ],
           answer: 2, evidence: ['s7', 's11']
         }
@@ -355,9 +356,9 @@ window.BAI = {
           question: ['q1', '{町|まち}が‹①{説明会|せつめいかい}›を{開|ひら}いた{目的|もくてき}は{何|なに}か。', 'Mục đích thị trấn tổ chức buổi giới thiệu là gì?'],
           options: [
             ['{町|まち}に{引|ひ}っ{越|こ}して{来|き}てくれる{人|ひと}を[募集|ぼしゅう]すること。', 'Tuyển người chuyển đến thị trấn.', 'Đúng. 「町民を募集するために説明会を開いています」 (s3).'],
-            ['{町|まち}に{引|ひ}っ{越|こ}して{来|く}る{人|ひと}を{助|たす}けてくれる{町民|ちょうみん}を[募集|ぼしゅう]すること。', 'Tuyển cư dân giúp người mới đến.', 'Sai.'],
-            ['{町|まち}の{農業|のうぎょう}について、アドバイスをしてくれる{専門家|せんもんか}を[募集|ぼしゅう]すること。', 'Tuyển chuyên gia nông nghiệp.', 'Sai.'],
-            ['{町|まち}の{人口|じんこう}を{増|ふ}やすにはどうしたらいいか、{考|かんが}えてくれる{人|ひと}を[募集|ぼしゅう]すること。', 'Tuyển người nghĩ cách tăng dân số.', 'Sai.']
+            ['{町|まち}に{引|ひ}っ{越|こ}して{来|く}る{人|ひと}を{助|たす}けてくれる{町民|ちょうみん}を[募集|ぼしゅう]すること。', 'Tuyển cư dân giúp người mới đến.', 'Sai. Người được tuyển chính là người chuyển đến sống (町民を募集), không phải người giúp đỡ.'],
+            ['{町|まち}の{農業|のうぎょう}について、アドバイスをしてくれる{専門家|せんもんか}を[募集|ぼしゅう]すること。', 'Tuyển chuyên gia nông nghiệp.', 'Sai. Bài không nhắc đến chuyên gia nông nghiệp.'],
+            ['{町|まち}の{人口|じんこう}を{増|ふ}やすにはどうしたらいいか、{考|かんが}えてくれる{人|ひと}を[募集|ぼしゅう]すること。', 'Tuyển người nghĩ cách tăng dân số.', 'Sai. Thị trấn tuyển người đến sống để tăng dân số, không tuyển người nghĩ cách.']
           ],
           answer: 1, evidence: ['s3']
         },
@@ -367,7 +368,7 @@ window.BAI = {
           options: [
             ['@kitai({期待|きたい})していた{生活|せいかつ}ができていないが、{我慢|がまん}して{生活|せいかつ}している{点|てん}。', 'Không được như kỳ vọng nhưng vẫn cố chịu.', 'Sai. Có người đã quay về thành phố.'],
             ['{期待|きたい}していた{生活|せいかつ}ができるようになり、{楽|たの}しく{生活|せいかつ}ができている{点|てん}。', 'Sống được như kỳ vọng, vui vẻ.', 'Sai. Đây là trường hợp thành công.'],
-            ['{期待|きたい}していた{生活|せいかつ}と{実際|じっさい}の{生活|せいかつ}が{同|おな}じではなかったが、{満足|まんぞく}している{点|てん}。', 'Khác kỳ vọng nhưng hài lòng.', 'Sai.'],
+            ['{期待|きたい}していた{生活|せいかつ}と{実際|じっさい}の{生活|せいかつ}が{同|おな}じではなかったが、{満足|まんぞく}している{点|てん}。', 'Khác kỳ vọng nhưng hài lòng.', 'Sai. Các ví dụ đều là không hài lòng (嫌になった、都会に戻ってしまった、めんどうくさい).'],
             ['{期待|きたい}していた{生活|せいかつ}と{実際|じっさい}の{生活|せいかつ}が{違|ちが}い、@fuman([不満|ふまん])を{感|かん}じた{点|てん}。', 'Thực tế khác kỳ vọng nên thấy bất mãn.', 'Đúng. Mơ ước cuộc sống quê → chán; muốn làm nông → quá vất vả; việc khu phố → phiền (s7–s9).']
           ],
           answer: 4, evidence: ['s7', 's8', 's9']
@@ -378,7 +379,7 @@ window.BAI = {
           options: [
             ['@shippairei([失敗|しっぱい]{例|れい})が{多|おお}すぎるから、[実行|じっこう]するのはあきらめたほうがよさそうだ。', 'Nhiều thất bại quá nên bỏ thì hơn.', 'Sai. "夢はあきらめたくない".'],
             ['[失敗|しっぱい]{例|れい}を{知|し}ったので、[実行|じっこう]するかしないかを{検討|けんとう}したい。', 'Biết thất bại rồi nên muốn cân nhắc có làm hay không.', 'Sai. Đã quyết định thực hiện.'],
-            ['[失敗|しっぱい]{例|れい}のことも{考|かんが}えて、しっかり{計画|けいかく}を{立|た}てて[実行|じっこう]したい。', 'Tính cả các trường hợp thất bại, lập kế hoạch kỹ rồi thực hiện.', 'Đúng. (s11–s12).'],
+            ['[失敗|しっぱい]{例|れい}のことも{考|かんが}えて、しっかり{計画|けいかく}を{立|た}てて[実行|じっこう]したい。', 'Tính cả các trường hợp thất bại, lập kế hoạch kỹ rồi thực hiện.', 'Đúng. 「よく調べて、計画を立てて、実行できるように頑張りたい」 – vẫn giữ ước mơ nhưng chuẩn bị kỹ hơn sau khi biết các trường hợp thất bại.'],
             ['[失敗|しっぱい]{例|れい}より{成功|せいこう}{例|れい}がたくさんあるから、[失敗|しっぱい]{例|れい}は{気|き}にせずにすぐ[実行|じっこう]したい。', 'Thành công nhiều hơn nên không cần bận tâm, làm ngay.', 'Sai. Tác giả nhận ra mình từng chỉ nhìn thành công là "甘い".']
           ],
           answer: 3, evidence: ['s11', 's12']

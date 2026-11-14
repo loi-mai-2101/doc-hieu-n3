@@ -145,6 +145,25 @@
     return '<div class="' + cls + '">' + b.s.map(function (s) { return '<div class="ln">' + sentence(s, found) + '</div>'; }).join('') + '</div>';
   }
 
+  // Đổi mã câu trong lời giải thích, ví dụ "(s3)" hay "(s5–s6)", thành trích dẫn đầu câu tiếng Nhật
+  // để học viên biết căn cứ nằm ở đâu (bấm "Xem căn cứ trong bài" để thấy câu được tô sáng).
+  function plainJa(t) {
+    return t.replace(/[@»«]\w+\(/g, '(').replace(/[{\[]([^|{}\[\]]+)\|[^{}\[\]]+[}\]]/g, '$1').replace(/[()‹›]/g, '').replace(/※\d/g, '');
+  }
+  function citeRefs(text, p) {
+    var map = {};
+    p.blocks.forEach(function (b) { blockSentences(b).forEach(function (s) { map[s[0]] = s[1]; }); });
+    var quoted = text.indexOf('「') !== -1; // lời giải thích đã trích nguyên văn thì chỉ bỏ mã câu
+    return text.replace(/\s*\(((?:[a-z]+\d+)(?:\s*[–,\-]\s*[a-z]+\d+)*)\)/g, function (all, ids) {
+      if (quoted) return '';
+      var first = ids.split(/\s*[–,\-]\s*/)[0];
+      if (!map[first]) return all;
+      var jp = plainJa(map[first]);
+      if (jp.length > 18) jp = jp.slice(0, 16) + '…';
+      return ' (căn cứ: 「' + jp + '」)';
+    });
+  }
+
   function renderProblem(p) {
     var found = [];
     var h = '';
@@ -169,6 +188,11 @@
       h += '<div class="notes">' + p.notes.map(function (n) { return '<div>' + parse(n, found) + '</div>'; }).join('') + '</div>';
     }
 
+    // Ghi chú về lỗi in trong đề gốc (đã sửa lại trong bài)
+    if (p.srcNotes && p.srcNotes.length) {
+      h += '<div class="src-notes"><div class="src-tag">Ghi chú về đề gốc</div><ul>' + p.srcNotes.map(function (n) { return '<li>' + esc(n) + '</li>'; }).join('') + '</ul></div>';
+    }
+
     // Câu hỏi (một hoặc nhiều câu: 問い / 問1, 問2…)
     questionsOf(p).forEach(function (q, qi) {
       h += '<div class="quiz" data-qi="' + qi + '" data-answer="' + q.answer + '">';
@@ -180,7 +204,7 @@
       h += '<p class="verdict"></p>';
       h += '<ol class="exps">' + q.options.map(function (o, idx) {
         var ok = idx + 1 === q.answer;
-        return '<li class="' + (ok ? 'ok' : 'ng') + '"><div class="exp-head"><span class="mark">' + (ok ? '✓' : '✗') + '</span> ' + (idx + 1) + '. ' + esc(o[1]) + '</div><div class="exp-body">' + esc(o[2]) + '</div></li>';
+        return '<li class="' + (ok ? 'ok' : 'ng') + '"><div class="exp-head"><span class="mark">' + (ok ? '✓' : '✗') + '</span> ' + (idx + 1) + '. ' + esc(o[1]) + '</div><div class="exp-body">' + esc(citeRefs(o[2], p)) + '</div></li>';
       }).join('') + '</ol>';
       h += '<div class="result-actions"><button type="button" class="btn" data-action="show-evidence">Xem căn cứ trong bài</button><button type="button" class="btn ghost" data-action="retry">Làm lại</button></div>';
       h += '</div></div>';

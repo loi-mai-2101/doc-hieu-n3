@@ -94,6 +94,7 @@ window.BAI = {
     /* ───────────── 問題4 (1) ───────────── */
     {
       id: '4-1',
+      srcNotes: ['Câu 3 trong đề in 「台風が東京を通るこが確実になった」 – thiếu と. Bài đã sửa thành 「通ることが」.'],
       kind: '短文・メール（ビジネス）',
       kindVi: 'Đoạn văn ngắn – email công việc',
       style: 'mail',
@@ -150,6 +151,7 @@ window.BAI = {
     /* ───────────── 問題4 (2) ───────────── */
     {
       id: '4-2',
+      srcNotes: ['Câu 24, lựa chọn 4 trong đề (「子供のころからずっとなりたいと思い続けていた先生になれたから。」) bị in nhầm từ câu 24 của đề T7/2023, không liên quan đến bài này. Bài giữ nguyên như đề để học viên làm giống đề thật; khi gặp lựa chọn lạc đề như vậy cứ loại.'],
       kind: '短文・随筆',
       kindVi: 'Đoạn văn ngắn – tùy bút',
       style: 'essay',
@@ -179,7 +181,7 @@ window.BAI = {
             ['{高校生|こうこうせい}なのに、[孫|まご]が{有名|ゆうめい}なEスポーツの{大会|たいかい}に{出|で}ると{言|い}っているから。', 'Vì cháu mới học cấp ba mà nói sẽ dự giải E-sports nổi tiếng.', 'Sai. Bài không nói giải nổi tiếng hay tuổi tác là vấn đề.'],
             ['コンピューターゲームにも{大会|たいかい}があると{聞|き}いたから。', 'Vì nghe nói game máy tính cũng có giải đấu.', 'Sai. Điều khó hiểu là "tại sao lại là THỂ THAO", không phải việc có giải đấu.'],
             ['{体|からだ}を{動|うご}かさないのに、コンピューターゲームをスポーツと{言|い}っているから。', 'Vì không vận động cơ thể mà lại gọi game máy tính là thể thao.', 'Đúng. 「なぜ、それがスポーツの大会なのだろうか」 + 「体を動かすことをスポーツだと思っていた」 (s3, s6).'],
-            ['{子供|こども}のころからずっとなりたいと{思|おも}い{続|つづ}けていた{先生|せんせい}になれたから。', '(Lựa chọn không liên quan – có vẻ in nhầm từ đề khác.)', 'Sai. Không liên quan đến bài.']
+            ['{子供|こども}のころからずっとなりたいと{思|おも}い{続|つづ}けていた{先生|せんせい}になれたから。', 'Trở thành giáo viên – điều luôn mong muốn từ nhỏ. (Lựa chọn bị in nhầm từ đề khác.)', 'Sai. Lựa chọn này không liên quan gì đến bài (bị in nhầm từ câu 24 đề T7/2023). Loại ngay.']
           ],
           answer: 3,
           evidence: ['s3', 's6']
@@ -283,7 +285,7 @@ window.BAI = {
           label: '26',
           question: ['q1', 'この{文章|ぶんしょう}を{書|か}いた{人|ひと}が{言|い}いたいことは{何|なに}か。', 'Người viết muốn nói điều gì?'],
           options: [
-            ['コーヒーを{飲|の}むと{眠|ねむ}れなくなるから、{昼寝|ひるね}の{前|まえ}には{飲|の}まないほうがいい。', 'Cà phê làm khó ngủ nên không nên uống trước khi ngủ trưa.', 'Sai. Ngược với ý bài.'],
+            ['コーヒーを{飲|の}むと{眠|ねむ}れなくなるから、{昼寝|ひるね}の{前|まえ}には{飲|の}まないほうがいい。', 'Cà phê làm khó ngủ nên không nên uống trước khi ngủ trưa.', 'Sai. Đây là quan niệm thông thường được nêu ra để phản bác (しかし…); bài khuyên NÊN uống trước khi ngủ trưa.'],
             ['[集中力|しゅうちゅうりょく]が{高|たか}くなるから、{昼寝|ひるね}のあとで30{分|ぷん}{以内|いない}にコーヒーを{飲|の}むといい。', 'Nên uống cà phê trong 30 phút sau khi ngủ trưa.', 'Sai. Uống TRƯỚC khi ngủ trưa.'],
             ['{昼寝|ひるね}で{寝|ね}すぎないためには、{昼寝|ひるね}をする30{分|ぷん}{前|まえ}にコーヒーを{飲|の}むといい。', 'Nên uống cà phê 30 phút trước khi ngủ trưa.', 'Sai. Uống 30 phút trước thì vừa nằm xuống đã tỉnh. Phải uống NGAY TRƯỚC khi ngủ để 30 phút sau tỉnh dậy.'],
             ['{昼寝|ひるね}で、30{分|ぷん}ぐらいで{自然|しぜん}に{起|お}きるためには、{昼寝|ひるね}の@chokuzen([直前|ちょくぜん])にコーヒーを{飲|の}むといい。', 'Để tự nhiên dậy sau khoảng 30 phút ngủ trưa, nên uống cà phê ngay trước khi ngủ.', 'Đúng. Tác dụng xuất hiện sau 30 phút → uống trước khi ngủ trưa thì 30 phút sau tự tỉnh (s5).']
@@ -310,6 +312,7 @@ window.BAI = {
     /* ───────────── 問題5 (1) ───────────── */
     {
       id: '5-1',
+      srcNotes: ['Câu 29 trong đề in 「とありあるが」 (thừa あり). Bài đã sửa thành 「とあるが」.'],
       kind: '中文・随筆',
       kindVi: 'Đoạn văn trung bình – tùy bút',
       style: 'essay',
@@ -344,7 +347,7 @@ window.BAI = {
           options: [
             ['{自分|じぶん}で{野菜|やさい}を{育|そだ}てること。', 'Tự trồng rau.', 'Đúng. Muốn tự trồng rau (s1) nhưng nhà không có vườn, ban công nên đã từ bỏ (s2).'],
             ['{庭|にわ}やベランダがある{家|いえ}に{住|す}むこと。', 'Sống ở nhà có vườn, ban công.', 'Sai. Không có vườn là lý do, không phải điều từ bỏ.'],
-            ['{友達|ともだち}に{野菜|やさい}の{育|そだ}て{方|かた}を{教|おし}えてもらうこと。', 'Nhờ bạn dạy cách trồng rau.', 'Sai. Bài không nói vậy.'],
+            ['{友達|ともだち}に{野菜|やさい}の{育|そだ}て{方|かた}を{教|おし}えてもらうこと。', 'Nhờ bạn dạy cách trồng rau.', 'Sai. Tác giả chưa từng muốn nhờ bạn dạy rồi bỏ cuộc; chính bạn sau này là người chỉ cách.'],
             ['{部屋|へや}の{中|なか}でホウレンソウを{育|そだ}てること。', 'Trồng rau chân vịt trong phòng.', 'Sai. Đây là việc tác giả làm SAU khi nghe bạn kể.']
           ],
           answer: 1,
@@ -368,7 +371,7 @@ window.BAI = {
           options: [
             ['{昼|ひる}、ホウレンソウにも{光|ひかり}が{当|あ}たるようにしたから。', 'Vì ban ngày cho ánh sáng chiếu vào.', 'Sai. Cây chết không phải do thiếu sáng ban ngày.'],
             ['{昼|ひる}、ホウレンソウにあまり{光|ひかり}が{当|あ}たらないようにしたから。', 'Vì ban ngày hạn chế ánh sáng.', 'Sai. Vấn đề là ban ĐÊM.'],
-            ['{夜|よる}、ホウレンソウに{光|ひかり}が{当|あ}たるようにしたから。', 'Vì ban đêm cho ánh sáng chiếu vào.', 'Sai. Ngược lại.'],
+            ['{夜|よる}、ホウレンソウに{光|ひかり}が{当|あ}たるようにしたから。', 'Vì ban đêm cho ánh sáng chiếu vào.', 'Sai. Ngược lại – ban đêm KHÔNG được để ánh sáng chiếu vào (夜になったら、光が当たってはいけない).'],
             ['{夜|よる}、ホウレンソウに{光|ひかり}が{当|あ}たらないようにしたから。', 'Vì ban đêm không để ánh sáng chiếu vào.', 'Đúng. Ban đêm không được để ánh sáng chiếu (s8); che bằng thùng các-tông như bạn (s10–s11).']
           ],
           answer: 4,
@@ -394,6 +397,7 @@ window.BAI = {
     /* ───────────── 問題5 (2) ───────────── */
     {
       id: '5-2',
+      srcNotes: ['Câu 1 đoạn 1 trong đề in 「0.3mmから 1.mmまで」 – mất một chữ số sau dấu chấm. Bài để 「1.□mm」; con số này không ảnh hưởng đến câu hỏi.', 'Câu 30, lựa chọn 4 đề in 「シャーペンのだけを売る」 (thừa の). Bài đã sửa.'],
       kind: '中文・随筆',
       kindVi: 'Đoạn văn trung bình – tùy bút du học sinh',
       style: 'essay',
@@ -403,7 +407,7 @@ window.BAI = {
         { t: 'p', s: [
           ['s1', '{日本|にほん}に[留学|りゅうがく]したばかりのころ、@bunbouguten({文房具|ぶんぼうぐ}{店|てん})に{入|はい}って‹[驚|おどろ]いてしまった›。', 'Hồi mới sang Nhật du học, tôi bước vào một cửa hàng văn phòng phẩm và đã rất ngạc nhiên.'],
           ['s2', '{私|わたし}の{国|くに}では、シャープペンシルはあまり{売|う}られていないが、その{店|みせ}には100{円|えん}の{安|やす}い{物|もの}から5000{円|えん}{以上|いじょう}する{高|たか}い{物|もの}まで、すごい{数|かず}のシャーペンが@narabu({並|なら}んで)いたのだ。', 'Ở nước tôi bút chì kim không được bán nhiều, nhưng cửa hàng đó bày vô số bút chì kim, từ loại rẻ 100 yên đến loại đắt trên 5.000 yên.'],
-          ['s3', '@shin([芯|しん])も@futosa({太|ふと}さ)が0.3mmから1.○mm（{数字|すうじ}は{印刷|いんさつ}が{不鮮明|ふせんめい}）まであって、@kosa([濃|こ]さ)もいろいろな{物|もの}が{売|う}られていた。', 'Ruột bút cũng có độ to từ 0,3 mm đến 1,… mm (số trong đề in không rõ), độ đậm cũng đủ loại.']
+          ['s3', '@shin([芯|しん])も@futosa({太|ふと}さ)が0.3mmから1.□mmまであって、@kosa([濃|こ]さ)もいろいろな{物|もの}が{売|う}られていた。', 'Ruột bút cũng có độ to từ 0,3 mm đến 1,□ mm, độ đậm cũng đủ loại.']
         ] },
         { t: 'p', s: [
           ['s4', 'イギリスで{生|う}まれたシャーペンだが、{初|はじ}めは1.5mmや1.0mmのしかなかった。', 'Bút chì kim ra đời ở Anh, nhưng ban đầu chỉ có loại 1,5 mm hay 1,0 mm.'],
@@ -437,7 +441,7 @@ window.BAI = {
           options: [
             ['{日本|にほん}の{会社|かいしゃ}が、{太|ふと}くて[折|お]れにくい[芯|しん]を{作|つく}ってから。', 'Từ khi công ty Nhật làm ra ruột to, khó gãy.', 'Sai. Ruột 0,5 mm là ruột NHỎ hơn loại ban đầu (1,0–1,5 mm).'],
             ['{日本|にほん}の{会社|かいしゃ}が、{細|ほそ}くて[折|お]れにくい[芯|しん]を{作|つく}ってから。', 'Từ khi công ty Nhật làm ra ruột nhỏ, khó gãy.', 'Đúng. Ruột 0,5 mm khó gãy → 「それから日本中で使われるようになった」 (s5–s6).'],
-            ['{日本|にほん}の{会社|かいしゃ}が、{日本|にほん}でイギリスのシャーペンを{売|う}るようになってから。', 'Từ khi công ty Nhật bán bút chì kim của Anh ở Nhật.', 'Sai. Bài không nói vậy.'],
+            ['{日本|にほん}の{会社|かいしゃ}が、{日本|にほん}でイギリスのシャーペンを{売|う}るようになってから。', 'Từ khi công ty Nhật bán bút chì kim của Anh ở Nhật.', 'Sai. Bài không nói công ty Nhật bán bút của Anh; công ty Nhật tự làm ruột 0,5 mm.'],
             ['{日本|にほん}の{会社|かいしゃ}が、{世界|せかい}で{初|はじ}めてシャーペンを{作|つく}ってから。', 'Từ khi công ty Nhật làm ra bút chì kim đầu tiên trên thế giới.', 'Sai. Bút chì kim ra đời ở Anh; "đầu tiên trên thế giới" là ruột 0,5 mm.']
           ],
           answer: 2,

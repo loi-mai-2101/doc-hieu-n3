@@ -120,16 +120,16 @@ window.BAI = {
       kindVi: 'Đoạn văn ngắn – email công ty du lịch',
       style: 'mail',
       before: null,
-      lead: ['l', 'これはある@ryokou([旅行|りょこう]{会社|がいしゃ})が{客|きゃく}の[水川|みずかわ]さんに{書|か}いたメールである。', 'Đây là email một công ty du lịch viết cho khách là chị Mizukawa.'],
+      lead: ['l', 'これはある@ryokou([旅行|りょこう]{会社|がいしゃ})が{客|きゃく}の[水川|みずかわ]さんに{書|か}いたメールである。', 'Đây là email một công ty du lịch viết cho khách là Mizukawa.'],
       blocks: [
-        { t: 'lines', s: [['s0', '[水川|みずかわ][真理|まり][様|さま]', 'Kính gửi chị Mizukawa Mari']] },
+        { t: 'lines', s: [['s0', '[水川|みずかわ][真理|まり][様|さま]', 'Kính gửi quý khách Mizukawa Mari']] },
         { t: 'p', s: [
-          ['s1', '「{京都|きょうと}の{旅|たび}@hakuu(2[泊|はく]3{日|か})」へのお@moushikomi([申|もう]し[込|こ]み)、ありがとうございました。', 'Cảm ơn chị đã đăng ký tour "Du lịch Kyoto 3 ngày 2 đêm".'],
-          ['s2', '{下|した}のご{予約|よやく}{内容|ないよう}を{確認|かくにん}していただき、ご@shuppatsu({出発|しゅっぱつ}){日|び}の1{週間|しゅうかん}{前|まえ}までに{旅行|りょこう}@daikin([代金|だいきん])をお@furikomu([振|ふ]り[込|こ]み)ください。', 'Xin chị kiểm tra nội dung đặt tour bên dưới và chuyển khoản tiền tour trước ngày khởi hành 1 tuần.']
+          ['s1', '「{京都|きょうと}の{旅|たび}@hakuu(2[泊|はく]3{日|か})」へのお@moushikomi([申|もう]し[込|こ]み)、ありがとうございました。', 'Cảm ơn quý khách đã đăng ký tour "Du lịch Kyoto 3 ngày 2 đêm".'],
+          ['s2', '{下|した}のご{予約|よやく}{内容|ないよう}を{確認|かくにん}していただき、ご@shuppatsu({出発|しゅっぱつ}){日|び}の1{週間|しゅうかん}{前|まえ}までに{旅行|りょこう}@daikin([代金|だいきん])をお@furikomu([振|ふ]り[込|こ]み)ください。', 'Xin quý khách kiểm tra nội dung đặt tour bên dưới và chuyển khoản tiền tour trước ngày khởi hành 1 tuần.']
         ] },
         { t: 'p', s: [
           ['s3', 'なお、ご{出発|しゅっぱつ}{日|び}の20{日|か}{前|まえ}{以降|いこう}のお@torikeshi({取|と}り{消|け}し)には、キャンセル{料|りょう}が@hassei([発生|はっせい])します（20{日|か}{前|まえ}～8{日|か}{前|まえ}まで20%、7{日|か}{前|まえ}～{前日|ぜんじつ}まで30%、{当日|とうじつ}100%）。', 'Lưu ý: hủy từ 20 ngày trước ngày khởi hành sẽ mất phí hủy (20–8 ngày trước: 20%; 7 ngày – ngày trước: 30%; ngày khởi hành: 100%).'],
-          ['s4', 'ご{質問|しつもん}などございましたら、ご{連絡|れんらく}ください。', 'Nếu có câu hỏi, xin chị liên hệ.']
+          ['s4', 'ご{質問|しつもん}などございましたら、ご{連絡|れんらく}ください。', 'Nếu có câu hỏi, xin quý khách liên hệ.']
         ] },
         { t: 'lines', cls: 'gap', s: [
           ['i0', '＜ご{予約|よやく}{内容|ないよう}＞', '<Nội dung đặt tour>'],
@@ -153,7 +153,7 @@ window.BAI = {
         ],
         answer: 2, evidence: ['s2']
       }],
-      summary: 'Công ty du lịch cảm ơn chị Mizukawa đã đăng ký tour Kyoto 3 ngày 2 đêm (khởi hành 13/2, 86.000 yên), yêu cầu kiểm tra nội dung và chuyển khoản trước ngày khởi hành 1 tuần. Hủy từ 20 ngày trước sẽ mất phí.',
+      summary: 'Công ty du lịch cảm ơn Mizukawa đã đăng ký tour Kyoto 3 ngày 2 đêm (khởi hành 13/2, 86.000 yên), yêu cầu kiểm tra nội dung và chuyển khoản trước ngày khởi hành 1 tuần. Hủy từ 20 ngày trước sẽ mất phí.',
       structure: [['Đoạn 1', 'Cảm ơn + YÊU CẦU chuyển khoản → ý chính'], ['Đoạn 2', 'なお: phí hủy · liên hệ khi có câu hỏi'], ['Phụ lục', 'Nội dung đặt tour, tài khoản']],
       grammar: [
         ['〜ていただき', 'Xin (quý khách) vui lòng…', '確認していただき'],
@@ -166,6 +166,7 @@ window.BAI = {
 
     {
       id: '4-3',
+      srcNotes: ['Bài đọc trong đề in 「こんな意外サービス」 (thiếu な) và không gạch chân; câu hỏi lại viết 「意外なサービス」. Bài đã sửa thành 「意外なサービス」 và gạch chân cho khớp câu hỏi.'],
       kind: '短文・説明文',
       kindVi: 'Đoạn văn ngắn – văn giải thích',
       style: 'essay',
@@ -173,7 +174,7 @@ window.BAI = {
       blocks: [
         { t: 'p', s: [
           ['s1', '@yuubinkyoku([郵便局|ゆうびんきょく])と{聞|き}くと、まず@omoitsuku({思|おも}いつく)のは{手紙|てがみ}や{荷物|にもつ}の@haitatsu([配達|はいたつ])だろう。', 'Nghe đến bưu điện, điều đầu tiên nghĩ đến chắc là việc phát thư và hàng.'],
-          ['s2', 'だが、こんな‹@igai({意外|いがい})サービス›があることを{知|し}っているだろうか。', 'Nhưng bạn có biết có một dịch vụ bất ngờ như thế này không?'],
+          ['s2', 'だが、こんな‹@igai({意外|いがい}な)サービス›があることを{知|し}っているだろうか。', 'Nhưng bạn có biết có một dịch vụ bất ngờ như thế này không?'],
           ['s3', '@hitorigurashi({一人|ひとり}[暮|ぐ]らし)をしている@toshiyori(お{年|とし}[寄|よ]り)とその{家族|かぞく}の@anshin({安心|あんしん})のため、{郵便局|ゆうびんきょく}{員|いん}がお{年|とし}[寄|よ]りの{家|いえ}を@houmon([訪問|ほうもん])する。', 'Để người cao tuổi sống một mình và gia đình họ yên tâm, nhân viên bưu điện đến thăm nhà người cao tuổi.'],
           ['s4', 'そして、そのときのお{年|とし}[寄|よ]りの@yousu([様子|ようす])をEメールで{家族|かぞく}に{教|おし}えてくれるのだ。', 'Rồi họ báo tình trạng của người cao tuổi lúc đó cho gia đình qua email.'],
           ['s5', '{親|おや}になかなか{会|あ}いに{行|い}けない{人|ひと}には、うれしいサービスだ。', 'Với những người khó có dịp về thăm bố mẹ, đây là dịch vụ đáng mừng.']
@@ -185,9 +186,9 @@ window.BAI = {
         question: ['q1', '‹{意外|いがい}なサービス›とあるが、{一人|ひとり}[暮|ぐ]らしのお{年|とし}[寄|よ]りとその{家族|かぞく}に{対|たい}するどのようなサービスか。', '"Dịch vụ bất ngờ" là dịch vụ gì dành cho người cao tuổi sống một mình và gia đình?'],
         options: [
           ['{家族|かぞく}の@shitei([指定|してい])した{時間|じかん}に、お{年|とし}[寄|よ]りに{荷物|にもつ}を[配達|はいたつ]する。', 'Giao hàng cho người già vào giờ gia đình chỉ định.', 'Sai. Đó là dịch vụ phát hàng thông thường.'],
-          ['お{年|とし}[寄|よ]りを[訪問|ほうもん]し、その[様子|ようす]を{家族|かぞく}にEメールで{連絡|れんらく}する。', 'Thăm người già rồi báo tình trạng cho gia đình qua email.', 'Đúng. (s3–s4).'],
+          ['お{年|とし}[寄|よ]りを[訪問|ほうもん]し、その[様子|ようす]を{家族|かぞく}にEメールで{連絡|れんらく}する。', 'Thăm người già rồi báo tình trạng cho gia đình qua email.', 'Đúng. 「郵便局員がお年寄りの家を訪問する」「様子をEメールで家族に教えてくれる」.'],
           ['{家族|かぞく}からのEメールを{郵便局|ゆうびんきょく}{員|いん}が{受|う}け{取|と}り、{印刷|いんさつ}してお{年|とし}[寄|よ]りに{渡|わた}す。', 'Nhận email của gia đình, in ra đưa cho người già.', 'Sai. Ngược chiều – email gửi CHO gia đình.'],
-          ['ふだんなかなか{会|あ}えない{家族|かぞく}のところに、お{年|とし}[寄|よ]りを{連|つ}れて{行|い}く。', 'Đưa người già đến chỗ gia đình.', 'Sai. Bài không nói vậy.']
+          ['ふだんなかなか{会|あ}えない{家族|かぞく}のところに、お{年|とし}[寄|よ]りを{連|つ}れて{行|い}く。', 'Đưa người già đến chỗ gia đình.', 'Sai. Nhân viên bưu điện đến nhà người cao tuổi, không đưa họ đi đâu.']
         ],
         answer: 2, evidence: ['s3', 's4']
       }],
@@ -242,6 +243,7 @@ window.BAI = {
 
     {
       id: '5-1',
+      srcNotes: ['Câu 27, lựa chọn 1 đề in 「飲み物温度」 (thiếu の); câu 28, lựa chọn 2 in 「入れら」 (thiếu た). Bài đã sửa thành 「飲み物の温度」「入れたら」.'],
       kind: '中文・随筆',
       kindVi: 'Đoạn văn trung bình – tùy bút về bình nước',
       style: 'essay',
@@ -270,7 +272,7 @@ window.BAI = {
           label: '27',
           question: ['q1', '‹①この{水筒|すいとう}›とあるが、どのような{水筒|すいとう}か。', '"Cái bình này" là bình như thế nào?'],
           options: [
-            ['{飲|の}み{物|もの}[温度|おんど]が{変|か}わりにくい、[直接|ちょくせつ]{口|くち}をつけて{飲|の}む{水筒|すいとう}', 'Giữ nhiệt tốt, uống trực tiếp.', 'Đúng. (s3).'],
+            ['{飲|の}み{物|もの}の[温度|おんど]が{変|か}わりにくい、[直接|ちょくせつ]{口|くち}をつけて{飲|の}む{水筒|すいとう}', 'Giữ nhiệt tốt, uống trực tiếp.', 'Đúng. 「直接口をつけて飲む水筒で、飲み物の温度が長時間変わらない物」.'],
             ['{飲|の}み{物|もの}の[温度|おんど]が{変|か}わりにくい、コップが{付|つ}いている{水筒|すいとう}', 'Giữ nhiệt tốt, có cốc.', 'Sai. Không có cốc.'],
             ['{熱|あつ}い{飲|の}み{物|もの}を[冷|さ]ましやすい、[直接|ちょくせつ]{口|くち}をつけて{飲|の}む{水筒|すいとう}', 'Dễ làm nguội, uống trực tiếp.', 'Sai. Ngược lại – không làm nguội được.'],
             ['{熱|あつ}い{飲|の}み{物|もの}を[冷|さ]ましやすい、コップがついている{水筒|すいとう}', 'Dễ làm nguội, có cốc.', 'Sai. Đây là bình thứ hai mua sau.']
@@ -281,8 +283,8 @@ window.BAI = {
           label: '28',
           question: ['q2', '‹②[困|こま]ったこと›とあるが、どのようなことか。', '"Chuyện rắc rối" là gì?'],
           options: [
-            ['{熱|あつ}い{飲|の}み{物|もの}を{外|そと}で{飲|の}む{機会|きかい}が{少|すく}なくなったこと。', 'Ít dịp uống đồ nóng bên ngoài.', 'Sai.'],
-            ['{熱|あつ}い{飲|の}み{物|もの}を{入|い}れたら、{水筒|すいとう}が{壊|こわ}れてしまったこと。', 'Bình bị hỏng khi cho đồ nóng vào.', 'Sai.'],
+            ['{熱|あつ}い{飲|の}み{物|もの}を{外|そと}で{飲|の}む{機会|きかい}が{少|すく}なくなったこと。', 'Ít dịp uống đồ nóng bên ngoài.', 'Sai. Bài không nói về số lần uống đồ nóng bên ngoài.'],
+            ['{熱|あつ}い{飲|の}み{物|もの}を{入|い}れたら、{水筒|すいとう}が{壊|こわ}れてしまったこと。', 'Bình bị hỏng khi cho đồ nóng vào.', 'Sai. Bình không hỏng; vấn đề là đồ uống quá nóng.'],
             ['{熱|あつ}い{飲|の}み{物|もの}が{水筒|すいとう}から[直接|ちょくせつ]{飲|の}めなかったこと。', 'Không uống trực tiếp đồ nóng từ bình được.', 'Đúng. 「熱すぎて、直接は飲めなかった」 (s6).'],
             ['{熱|あつ}い{飲|の}み{物|もの}がすぐに[冷|さ]めてしまったこと。', 'Đồ nóng nguội nhanh.', 'Sai. Bình giữ nhiệt lâu.']
           ],
@@ -345,8 +347,8 @@ window.BAI = {
           label: '30',
           question: ['q1', '‹①この{問題|もんだい}›とあるが、{何|なに}か。', '"Vấn đề này" là gì?'],
           options: [
-            ['{日本|にほん}にカラスが{多|おお}すぎること。', 'Nhật Bản có quá nhiều quạ.', 'Sai. Quá chung chung.'],
-            ['{日本|にほん}にカラスを[嫌|いや]がる{人|ひと}が{多|おお}いこと。', 'Ở Nhật nhiều người ghét quạ.', 'Sai.'],
+            ['{日本|にほん}にカラスが{多|おお}すぎること。', 'Nhật Bản có quá nhiều quạ.', 'Sai. Quá chung chung; この問題 chỉ chuyện quạ tụ về công viên thị trấn tác giả (ngay câu trước).'],
+            ['{日本|にほん}にカラスを[嫌|いや]がる{人|ひと}が{多|おお}いこと。', 'Ở Nhật nhiều người ghét quạ.', 'Sai. Đây là ý của đoạn 1 nói chung về người Nhật; この問題 chỉ chuyện quạ tụ tập ở công viên thị trấn tác giả (đoạn 2).'],
             ['カラスが{人|ひと}に{向|む}かって{飛|と}んできたり、{食|た}べ{物|もの}を{取|と}ったりして、[危険|きけん]で[困|こま]ること。', 'Quạ bay về phía người, cướp đồ ăn, nguy hiểm.', 'Sai. Đó là đoạn 1 (nói chung), không phải vấn đề ở thị trấn tác giả.'],
             ['「{私|わたし}」の{町|まち}の{公園|こうえん}に、カラスが{夕方|ゆうがた}たくさん{集|あつ}まってきて、うるさくて{怖|こわ}いこと。', 'Quạ tụ về công viên thị trấn "tôi" mỗi chiều, ồn và đáng sợ.', 'Đúng. この問題 chỉ nội dung ngay trước (s3–s5).']
           ],
@@ -356,10 +358,10 @@ window.BAI = {
           label: '31',
           question: ['q2', 'どのような‹②[実験|じっけん]›か。', 'Đó là thí nghiệm gì?'],
           options: [
-            ['カラスを「{集|あつ}まっても{問題|もんだい}のない{場所|ばしょ}」でよく{眠|ねむ}らせて、{静|しず}かにさせる[実験|じっけん]。', 'Cho quạ ngủ ngon ở nơi không sao để chúng im lặng.', 'Sai.'],
-            ['カラスが「いてほしくない{場所|ばしょ}」にいても、[鳴|な]き{声|ごえ}は{周|まわ}りに{聞|き}こえないようにする[実験|じっけん]。', 'Làm cho tiếng kêu không vọng ra xung quanh.', 'Sai.'],
+            ['カラスを「{集|あつ}まっても{問題|もんだい}のない{場所|ばしょ}」でよく{眠|ねむ}らせて、{静|しず}かにさせる[実験|じっけん]。', 'Cho quạ ngủ ngon ở nơi không sao để chúng im lặng.', 'Sai. Thí nghiệm không làm quạ ngủ hay im lặng; nó di chuyển quạ sang nơi khác.'],
+            ['カラスが「いてほしくない{場所|ばしょ}」にいても、[鳴|な]き{声|ごえ}は{周|まわ}りに{聞|き}こえないようにする[実験|じっけん]。', 'Làm cho tiếng kêu không vọng ra xung quanh.', 'Sai. Thí nghiệm không làm tắt tiếng kêu; ngược lại, nó tận dụng tiếng kêu.'],
             ['カラスの{苦手|にがて}な{食|た}べ{物|もの}を{利用|りよう}して、「いてほしくない{場所|ばしょ}」に{来|こ}ないようにする[実験|じっけん]。', 'Dùng thức ăn quạ ghét.', 'Sai. Dùng tiếng kêu, không phải thức ăn.'],
-            ['カラスの[鳴|な]き{方|かた}の{違|ちが}いを{利用|りよう}して、「{集|あつ}まっても{問題|もんだい}のない{場所|ばしょ}」に{行|い}かせる[実験|じっけん]。', 'Dùng sự khác biệt tiếng kêu để đưa quạ đến nơi không sao.', 'Đúng. (s8).']
+            ['カラスの[鳴|な]き{方|かた}の{違|ちが}いを{利用|りよう}して、「{集|あつ}まっても{問題|もんだい}のない{場所|ばしょ}」に{行|い}かせる[実験|じっけん]。', 'Dùng sự khác biệt tiếng kêu để đưa quạ đến nơi không sao.', 'Đúng. 「鳴き方の違いを利用して、…『集まっても問題のない場所』にカラスを移動させる」.']
           ],
           answer: 4, evidence: ['s8']
         },
@@ -369,7 +371,7 @@ window.BAI = {
           options: [
             ['「{私|わたし}」の{町|まち}で{成功|せいこう}した{方法|ほうほう}を、これからも{続|つづ}けていきたい。', 'Muốn tiếp tục cách đã thành công ở thị trấn mình.', 'Sai. Thành công ở thị trấn KHÁC.'],
             ['「{私|わたし}」の{町|まち}でも、{別|べつ}の{町|まち}で{成功|せいこう}した{方法|ほうほう}を{使|つか}って[解決|かいけつ]してほしい。', 'Mong dùng cách của thị trấn khác.', 'Sai. "同じ方法は使えそうにありません".'],
-            ['{別|べつ}の{町|まち}で{成功|せいこう}した{方法|ほうほう}とは{違|ちが}う、「{私|わたし}」の{町|まち}に{合|あ}った{新|あたら}しい{方法|ほうほう}が{必要|ひつよう}だ。', 'Cần cách mới phù hợp với thị trấn mình, khác cách của thị trấn kia.', 'Đúng. (s10–s11).'],
+            ['{別|べつ}の{町|まち}で{成功|せいこう}した{方法|ほうほう}とは{違|ちが}う、「{私|わたし}」の{町|まち}に{合|あ}った{新|あたら}しい{方法|ほうほう}が{必要|ひつよう}だ。', 'Cần cách mới phù hợp với thị trấn mình, khác cách của thị trấn kia.', 'Đúng. 「同じ方法は使えそうにありません。私の町に合った解決方法が見つかればいい」.'],
             ['{別|べつ}の{町|まち}で{成功|せいこう}した{方法|ほうほう}は「{私|わたし}」の{町|まち}では{使|つか}えないから、[解決|かいけつ]はあきらめよう。', 'Không dùng được nên bỏ cuộc.', 'Sai. Tác giả mong tìm được cách khác.']
           ],
           answer: 3, evidence: ['s10', 's11']

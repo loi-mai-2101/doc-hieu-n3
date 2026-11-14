@@ -82,6 +82,7 @@ window.BAI = {
   problems: [
     {
       id: '4-1',
+      srcNotes: ['Cuối tờ thông báo trong đề có thêm địa chỉ web và email của phòng Thể thao; bài lược bỏ vì không ảnh hưởng đến câu hỏi.'],
       kind: '短文・お知らせ',
       kindVi: 'Đoạn văn ngắn – thông báo tuyển tình nguyện viên',
       style: 'notice',
@@ -183,7 +184,7 @@ window.BAI = {
         { t: 'right', s: [['d', '10{月|がつ}15{日|にち}', 'Ngày 15/10']] },
         { t: 'lines', s: [
           ['a1', '[田中|たなか]{電気|でんき}@kabushikigaisha([株式|かぶしき]{会社|がいしゃ})@eigyoubu([営業部|えいぎょうぶ])', 'Phòng kinh doanh, công ty cổ phần Điện Tanaka'],
-          ['a2', '[青山|あおやま]{一郎|いちろう}[様|さま]', 'Kính gửi ông Aoyama Ichiro']
+          ['a2', '[青山|あおやま]{一郎|いちろう}[様|さま]', 'Kính gửi Ngài Aoyama Ichiro']
         ] },
         { t: 'right', s: [
           ['f1', '[鈴木|すずき]{電気|でんき}{工業|こうぎょう}[株式|かぶしき]{会社|がいしゃ}', 'Công ty cổ phần Công nghiệp điện Suzuki'],
@@ -191,16 +192,16 @@ window.BAI = {
         ] },
         { t: 'lines', s: [['h', '@haikei([拝啓|はいけい])', 'Kính gửi']] },
         { t: 'p', s: [
-          ['s1', 'いつも@osewa(お[世話|せわ]になって)おります。', 'Cảm ơn ông luôn quan tâm giúp đỡ.'],
-          ['s2', '[先日|せんじつ]は@waga(わが{社|しゃ})の@shinseihin({新|しん}[製品|せいひん]){説明会|せつめいかい}にご{参加|さんか}くださいまして、ありがとうございました。', 'Cảm ơn ông hôm trước đã tham dự buổi giới thiệu sản phẩm mới của công ty chúng tôi.'],
-          ['s3', '@sonota(その{他|た})の[製品|せいひん]についての{説明|せつめい}を、ということでしたので、パンフレットと@setsumeisho({説明書|せつめいしょ})、@kakakuhyou([価格|かかく]{表|ひょう})をお{送|おく}りいたします。', 'Vì ông có nói muốn được giới thiệu về các sản phẩm khác, chúng tôi xin gửi tờ giới thiệu, sách hướng dẫn và bảng giá.'],
-          ['s4', 'よろしくお{願|ねが}いいたします。', 'Rất mong được ông quan tâm.']
+          ['s1', 'いつも@osewa(お[世話|せわ]になって)おります。', 'Cảm ơn Ngài luôn quan tâm giúp đỡ.'],
+          ['s2', '[先日|せんじつ]は@waga(わが{社|しゃ})の@shinseihin({新|しん}[製品|せいひん]){説明会|せつめいかい}にご{参加|さんか}くださいまして、ありがとうございました。', 'Cảm ơn Ngài hôm trước đã tham dự buổi giới thiệu sản phẩm mới của công ty chúng tôi.'],
+          ['s3', '@sonota(その{他|た})の[製品|せいひん]についての{説明|せつめい}を、ということでしたので、パンフレットと@setsumeisho({説明書|せつめいしょ})、@kakakuhyou([価格|かかく]{表|ひょう})をお{送|おく}りいたします。', 'Vì Ngài có nói muốn được giới thiệu về các sản phẩm khác, chúng tôi xin gửi tờ giới thiệu, sách hướng dẫn và bảng giá.'],
+          ['s4', 'よろしくお{願|ねが}いいたします。', 'Rất mong được Ngài quan tâm.']
         ] }
       ],
       notes: [], refs: {},
       questions: [{
         label: '25',
-        question: ['q1', '{山本|やまもと}さんがしたことはどれか。', 'Ông Yamamoto đã làm gì?'],
+        question: ['q1', '{山本|やまもと}さんがしたことはどれか。', 'Yamamoto đã làm gì?'],
         options: [
           ['[田中|たなか]{電気|でんき}の{新|しん}[製品|せいひん]のパンフレットと{説明書|せつめいしょ}、[価格|かかく]{表|ひょう}を{送|おく}った。', 'Gửi tài liệu sản phẩm mới của Điện Tanaka.', 'Sai. Yamamoto làm ở Suzuki, gửi tài liệu của công ty mình.'],
           ['[鈴木|すずき]{電気|でんき}の{新|しん}[製品|せいひん]のパンフレットと{説明書|せつめいしょ}、[価格|かかく]{表|ひょう}を{送|おく}った。', 'Gửi tài liệu sản phẩm MỚI của Suzuki.', 'Sai. Sản phẩm mới đã giới thiệu ở buổi thuyết minh; lần này là "sản phẩm khác".'],
@@ -214,7 +215,7 @@ window.BAI = {
       grammar: [
         ['お世話になっております', 'Câu chào trong thư công việc', 'いつもお世話になっております'],
         ['ご〜くださいまして', 'Vì đã (vui lòng)… (tôn kính)', 'ご参加くださいまして'],
-        ['〜を、ということでした', 'Ông có nói là muốn…', 'その他の製品についての説明を、ということでした'],
+        ['〜を、ということでした', 'Ngài có nói là muốn…', 'その他の製品についての説明を、ということでした'],
         ['お〜いたします', 'Khiêm nhường', 'お送りいたします']
       ],
       tip: 'Thư công việc: xác định rõ ai gửi (右下) – ai nhận (左上). "わが社" = công ty người viết. "その他" = ngoài thứ vừa nhắc (sản phẩm mới).'
@@ -240,7 +241,7 @@ window.BAI = {
         label: '26',
         question: ['q1', '‹{今回|こんかい}のように{仕方|しかた}ないとき›とあるが、どのようなときか。', '"Những lúc không còn cách nào khác như lần này" là lúc nào?'],
         options: [
-          ['[近所|きんじょ]の{店|みせ}に{行|い}く{時間|じかん}がないとき', 'Khi không có thời gian ra tiệm gần nhà.', 'Sai. Bài không nói vậy.'],
+          ['[近所|きんじょ]の{店|みせ}に{行|い}く{時間|じかん}がないとき', 'Khi không có thời gian ra tiệm gần nhà.', 'Sai. Tác giả có mang áo ra tiệm gần nhà, chỉ là bị từ chối; không phải vì thiếu thời gian.'],
           ['[近所|きんじょ]の{店|みせ}に[断|ことわ]られたとき', 'Khi bị tiệm gần nhà từ chối.', 'Đúng. Lần này tác giả phải tìm tiệm xa vì tiệm gần nhà từ chối (s2–s3).'],
           ['{白|しろ}い{服|ふく}を[汚|よご]したとき', 'Khi làm bẩn áo trắng.', 'Sai. Làm bẩn áo trắng thì vẫn có thể nhờ tiệm gần nhà.'],
           ['あまりお{金|かね}がないとき', 'Khi không có nhiều tiền.', 'Sai. Ngược lại – tiệm này đắt.']
@@ -261,6 +262,7 @@ window.BAI = {
 
     {
       id: '5-1',
+      srcNotes: ['Câu 29, lựa chọn 1 đề in 「生きる値段のある人間」 (値段 = giá tiền) – rõ ràng là lỗi in của 「生きる価値のある人間」 (người có giá trị để sống). Bài đã sửa.'],
       kind: '中文・随筆',
       kindVi: 'Đoạn văn trung bình – tùy bút về mẹ',
       style: 'essay',
@@ -295,7 +297,7 @@ window.BAI = {
           question: ['q1', '{母|はは}が{元気|げんき}をなくした{原因|げんいん}は{何|なに}か。', 'Nguyên nhân mẹ mất sức sống là gì?'],
           options: [
             ['[食欲|しょくよく]が{落|お}ちたから', 'Vì ăn không ngon.', 'Sai. Đây là KẾT QUẢ của việc mất sức sống.'],
-            ['[体重|たいじゅう]が{減|へ}ったから', 'Vì giảm cân.', 'Sai. Cũng là kết quả.'],
+            ['[体重|たいじゅう]が{減|へ}ったから', 'Vì giảm cân.', 'Sai. Giảm cân là KẾT QUẢ của việc mất sức sống (食欲が落ち、体重も減った), không phải nguyên nhân.'],
             ['[腕|うで]を[骨折|こっせつ]したから', 'Vì gãy tay.', 'Đúng. 「腕を骨折し、それ以来すっかり元気をなくしてしまっていた」 (s4).'],
             ['@kega([怪我|けが])が{治|なお}らないから', 'Vì vết thương không lành.', 'Sai. 3 tuần đã lành.']
           ],
@@ -307,7 +309,7 @@ window.BAI = {
           options: [
             ['{無理|むり}をせずにできるトレーニングを{自分|じぶん}{用|よう}に{作|つく}ってもらったから', 'Vì được thiết kế bài tập vừa sức riêng.', 'Sai. Bệnh viện cũng làm điều này (病院でもスポーツクラブでも).'],
             ['{若|わか}い{人|ひと}たちがいるところで{運動|うんどう}したり、{仲間|なかま}と{頑張|がんば}ったりできたから', 'Vì được vận động ở nơi có người trẻ và cùng cố gắng với bạn bè.', 'Đúng. 「スポーツクラブだからできた」 (s10).'],
-            ['たった1か{月|げつ}で[効果|こうか]が{出|で}るようなトレーニングを{考|かんが}えてもらったから', 'Vì có bài tập hiệu quả sau 1 tháng.', 'Sai. Bài không nói vậy.'],
+            ['たった1か{月|げつ}で[効果|こうか]が{出|で}るようなトレーニングを{考|かんが}えてもらったから', 'Vì có bài tập hiệu quả sau 1 tháng.', 'Sai. "1 tháng" là thời gian mẹ khỏe lại, không phải đặc điểm của bài tập. Bài tập vừa sức thì bệnh viện cũng có.'],
             ['{元気|げんき}な{人|ひと}と{仲間|なかま}になったり、{若|わか}い{人|ひと}たちと{同|おな}じ{運動|うんどう}をしたりしたから', 'Vì làm bạn với người khỏe, tập cùng bài với người trẻ.', 'Sai. Bài nói "cùng CHỖ" với người trẻ, và bạn bè "cùng tuổi".']
           ],
           answer: 2, evidence: ['s9', 's10']
@@ -316,9 +318,9 @@ window.BAI = {
           label: '29',
           question: ['q3', 'この{文章|ぶんしょう}を{書|か}いた{人|ひと}は、スポーツクラブにはどんな{特別|とくべつ}な[価値|かち]があると{考|かんが}えているか。', 'Tác giả cho rằng câu lạc bộ có giá trị đặc biệt gì?'],
           options: [
-            ['{自分|じぶん}は{生|い}きる{値段|ねだん}のある{人間|にんげん}だと{気|き}づかせてくれる。', 'Cho ta nhận ra mình là người đáng sống.', 'Sai. Bài không nói vậy.'],
+            ['{自分|じぶん}は{生|い}きる[価値|かち]のある{人間|にんげん}だと{気|き}づかせてくれる。', 'Cho ta nhận ra mình là người đáng sống.', 'Sai. Bài không nói câu lạc bộ giúp nhận ra giá trị bản thân; giá trị được nêu là 「生きる力を引き出してくれた」.'],
             ['{運動|うんどう}{不足|ぶそく}にならないようにしてくれる。', 'Giúp không thiếu vận động.', 'Sai. Đó là chức năng "vận động" thông thường.'],
-            ['けがを{早|はや}く{治|なお}す{方法|ほうほう}を{考|かんが}えてくれる。', 'Nghĩ cách chữa thương nhanh.', 'Sai. Bài không nói vậy.'],
+            ['けがを{早|はや}く{治|なお}す{方法|ほうほう}を{考|かんが}えてくれる。', 'Nghĩ cách chữa thương nhanh.', 'Sai. Vết gãy đã lành sau 3 tuần, trước khi mẹ đi câu lạc bộ.'],
             ['{生|い}きる{力|ちから}を{引|ひ}き{出|だ}してくれる。', 'Khơi dậy sức sống.', 'Đúng. 「それが母の生きる力を引き出してくれた…それ以上の価値がある」 (s11–s13).']
           ],
           answer: 4, evidence: ['s11', 's12', 's13']
@@ -370,7 +372,7 @@ window.BAI = {
           question: ['q1', '‹①[財布|さいふ]を{開|ひら}く›とあるが、どうしてですか。', '"Mở ví" – vì sao?'],
           options: [
             ['まだ{部屋|へや}に{物|もの}を{入|い}れる{場所|ばしょ}があるから', 'Vì phòng vẫn còn chỗ để đồ.', 'Sai. Họ không hề nghĩ đến chỗ cất.'],
-            ['{何|なに}も{買|か}わずに{店|みせ}を{出|で}るのは{悪|わる}いと{思|おも}うから', 'Vì thấy ngại ra về không mua gì.', 'Sai. Bài không nói vậy.'],
+            ['{何|なに}も{買|か}わずに{店|みせ}を{出|で}るのは{悪|わる}いと{思|おも}うから', 'Vì thấy ngại ra về không mua gì.', 'Sai. Lý do bài nêu là thấy rẻ thì vui (喜んで), không có chuyện ngại với cửa hàng.'],
             ['{安|やす}い{値段|ねだん}がうれしくて{買|か}いたくなるから', 'Vì vui với giá rẻ nên muốn mua.', 'Đúng. Thấy sale "喜んで", thấy rẻ là mua không suy nghĩ (s3–s4).'],
             ['{自分|じぶん}にとって{必要|ひつよう}な{物|もの}@chigainai(に{違|ちが}いない)と{思|おも}うから', 'Vì nghĩ chắc chắn mình cần.', 'Sai. Họ "必要かどうか深く考えず".']
           ],
@@ -382,7 +384,7 @@ window.BAI = {
           options: [
             ['しまえる{場所|ばしょ}があったら、{同|おな}じような{物|もの}を{持|も}っていても、{買|か}えばいい。', 'Có chỗ cất thì dù đã có đồ tương tự vẫn mua.', 'Sai. Đã có đồ tương tự thì không mua.'],
             ['{必要|ひつよう}な{物|もの}だと{思|おも}ったら、いろいろなことを{考|かんが}えずに、すぐ{買|か}えばいい。', 'Thấy cần thì mua ngay không cần nghĩ.', 'Sai. Còn phải nghĩ thêm 2 bước.'],
-            ['{必要|ひつよう}かどうか、{同|おな}じような{物|もの}がないか、しまう{場所|ばしょ}があるかを、よく{考|かんが}える。', 'Suy nghĩ kỹ: có cần không, đã có đồ tương tự chưa, có chỗ cất không.', 'Đúng. Đúng 3 bước trong s7–s9.'],
+            ['{必要|ひつよう}かどうか、{同|おな}じような{物|もの}がないか、しまう{場所|ばしょ}があるかを、よく{考|かんが}える。', 'Suy nghĩ kỹ: có cần không, đã có đồ tương tự chưa, có chỗ cất không.', 'Đúng. Đủ 3 bước: まず必要かどうか → 次に同じような物を持っていないか → 最後にしまう場所があるか (s7–s9).'],
             ['{似|に}た{物|もの}を{持|も}っていないか、しまう{場所|ばしょ}があるか、{本当|ほんとう}に{安|やす}いかを、よく{考|かんが}える。', 'Nghĩ: có đồ tương tự chưa, có chỗ cất không, có thật rẻ không.', 'Sai. Không có bước "thật sự rẻ không"; thiếu bước "có cần không".']
           ],
           answer: 3, evidence: ['s7', 's8', 's9']
@@ -391,9 +393,9 @@ window.BAI = {
           label: '32',
           question: ['q3', '（　　）に{入|い}れるのに、{最|もっと}もよいものはどれか。', 'Điền gì vào (　　) là phù hợp nhất?'],
           options: [
-            ['{部屋|へや}の[整理|せいり]が{上手|じょうず}な{人|ひと}も、{買|か}い{物|もの}を{楽|たの}しもう', 'Người giỏi sắp xếp cũng hãy tận hưởng mua sắm.', 'Sai. Không phải đối tượng của bài.'],
+            ['{部屋|へや}の[整理|せいり]が{上手|じょうず}な{人|ひと}も、{買|か}い{物|もの}を{楽|たの}しもう', 'Người giỏi sắp xếp cũng hãy tận hưởng mua sắm.', 'Sai. Đối tượng của bài là người "không dọn được phòng", và bài không khuyến khích mua sắm.'],
             ['{買|か}い{物|もの}が{好|す}きな{人|ひと}は、[値段|ねだん]をよく{見|み}て{買|か}おう', 'Người thích mua sắm hãy xem kỹ giá.', 'Sai. Bài khuyên đừng chỉ nhìn giá.'],
-            ['{安|やす}い{物|もの}を{買|か}いたい{人|ひと}は、{急|いそ}いで{店|みせ}に{行|い}こう', 'Ai muốn mua rẻ hãy nhanh chân đến cửa hàng.', 'Sai. Ngược với lời khuyên.'],
+            ['{安|やす}い{物|もの}を{買|か}いたい{人|ひと}は、{急|いそ}いで{店|みせ}に{行|い}こう', 'Ai muốn mua rẻ hãy nhanh chân đến cửa hàng.', 'Sai. Ngược với lời khuyên – bài cảnh báo đừng mua chỉ vì rẻ (安いからといって…).'],
             ['{部屋|へや}の[整理|せいり]に[悩|なや]んでいる{人|ひと}は、{気|き}をつけよう', 'Ai đang phiền vì phòng bừa bộn hãy cẩn thận.', 'Đúng. Đối tượng là người "片付けられない" (s1) và cảnh báo sale (s12–s13).']
           ],
           answer: 4, evidence: ['s1', 's12', 's13']

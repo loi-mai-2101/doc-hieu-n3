@@ -101,12 +101,12 @@ window.BAI = {
       blocks: [
         { t: 'lines', s: [['s0', 'ジョンさん', 'Gửi John']] },
         { t: 'p', s: [
-          ['s1', '{先週|せんしゅう}は、@seihin([製品|せいひん])@happyoukai({発表会|はっぴょうかい})の{英語|えいご}@shiryou([資料|しりょう])のチェックをしてくれて、ありがとうございました。', 'Cảm ơn anh tuần trước đã kiểm tra giúp tài liệu tiếng Anh cho buổi ra mắt sản phẩm.'],
-          ['s2', 'チェックしてもらったあと、{少|すこ}し{文章|ぶんしょう}を@kakikuwaeru({書|か}き{加|くわ}え)ました。', 'Sau khi được anh kiểm tra, tôi đã viết thêm một chút.'],
-          ['s3', 'それから、@naosu({直|なお})したほうがいいとアドバイスをもらった@gurafu(グラフ)も{作|つく}り{直|なお}しました。', 'Ngoài ra, tôi cũng làm lại biểu đồ mà anh khuyên nên sửa.'],
-          ['s4', '{直|なお}した[資料|しりょう]をこのメールと{一緒|いっしょ}に{送|おく}りますので、もう{一度|いちど}{見|み}てもらえませんか。', 'Tôi gửi tài liệu đã sửa kèm email này, anh xem lại giúp một lần nữa được không?'],
+          ['s1', '{先週|せんしゅう}は、@seihin([製品|せいひん])@happyoukai({発表会|はっぴょうかい})の{英語|えいご}@shiryou([資料|しりょう])のチェックをしてくれて、ありがとうございました。', 'Cảm ơn bạn tuần trước đã kiểm tra giúp tài liệu tiếng Anh cho buổi ra mắt sản phẩm.'],
+          ['s2', 'チェックしてもらったあと、{少|すこ}し{文章|ぶんしょう}を@kakikuwaeru({書|か}き{加|くわ}え)ました。', 'Sau khi được bạn kiểm tra, tôi đã viết thêm một chút.'],
+          ['s3', 'それから、@naosu({直|なお})したほうがいいとアドバイスをもらった@gurafu(グラフ)も{作|つく}り{直|なお}しました。', 'Ngoài ra, tôi cũng làm lại biểu đồ mà bạn khuyên nên sửa.'],
+          ['s4', '{直|なお}した[資料|しりょう]をこのメールと{一緒|いっしょ}に{送|おく}りますので、もう{一度|いちど}{見|み}てもらえませんか。', 'Tôi gửi tài liệu đã sửa kèm email này, bạn xem lại giúp một lần nữa được không?'],
           ['s5', '{新|あたら}しく{書|か}き{加|くわ}えた@bubun({部分|ぶぶん})は、{赤|あか}い{字|じ}になっています。', 'Phần mới viết thêm được tô chữ đỏ.'],
-          ['s6', 'すみませんが、@konshuuchuu({今週|こんしゅう}{中|ちゅう})にご@henshin([返信|へんしん])をお{願|ねが}いいたします。', 'Xin lỗi, nhưng mong anh hồi âm trong tuần này.']
+          ['s6', 'すみませんが、@konshuuchuu({今週|こんしゅう}{中|ちゅう})にご@henshin([返信|へんしん])をお{願|ねが}いいたします。', 'Xin lỗi, nhưng mong bạn hồi âm trong tuần này.']
         ] },
         { t: 'lines', s: [['sg', '[木村|きむら]', 'Kimura']] }
       ],
@@ -144,6 +144,7 @@ window.BAI = {
     /* ───────────── 問題4 (2) ───────────── */
     {
       id: '4-2',
+      srcNotes: ['Đề in 「特別別窓口」 (lặp chữ 別). Bài đã sửa thành 「特別窓口」.'],
       kind: '短文・お知らせ',
       kindVi: 'Đoạn văn ngắn – thông báo thư viện',
       style: 'notice',
@@ -228,7 +229,7 @@ window.BAI = {
             ['{紙|かみ}コップのように、{一度|いちど}{使|つか}ったら{捨|す}てる{紙|かみ}の[靴下|くつした]があること', 'Có tất giấy dùng một lần rồi vứt như cốc giấy.', 'Sai. Đây là DỰ ĐOÁN ban đầu, không phải sự thật.'],
             ['{記事|きじ}で{紹介|しょうかい}されていた[靴下|くつした]は、[洗濯|せんたく]ができ、@kurikaesu({繰|く}り{返|かえ})して{使|つか}えること', 'Đôi tất trong bài giặt được và dùng lại nhiều lần.', 'Đúng. Dự đoán "dùng một lần" ↔ thực tế "giặt và dùng nhiều lần" (s2, s4) – ngay trước câu gạch chân.'],
             ['{記事|きじ}で{紹介|しょうかい}されていた[靴下|くつした]は、よく[汗|あせ]を{吸|す}ってすぐ[乾|かわ]くこと', 'Đôi tất thấm mồ hôi tốt và mau khô.', 'Sai. Thông tin này nằm SAU câu gạch chân, không đối lập với dự đoán.'],
-            ['{長|なが}い{時間|じかん}[靴|くつ]をはく{人|ひと}のための[靴下|くつした]があること', 'Có loại tất dành cho người mang giày lâu.', 'Sai. Không phải điều trái với dự đoán.']
+            ['{長|なが}い{時間|じかん}[靴|くつ]をはく{人|ひと}のための[靴下|くつした]があること', 'Có loại tất dành cho người mang giày lâu.', 'Sai. Thông tin này nằm SAU câu gạch chân và không đối lập với dự đoán "dùng một lần".']
           ],
           answer: 2,
           evidence: ['s2', 's4', 's5']
@@ -361,7 +362,7 @@ window.BAI = {
           question: ['q3', '‹②{妹|いもうと}もしかられた›とあるが、{妹|いもうと}はなぜしかられたのか。', '"Em gái cũng bị mắng" – vì sao?'],
           options: [
             ['{夏休|なつやす}みが{終|お}わる{数|すう}{日|じつ}{前|まえ}になって{宿題|しゅくだい}をやり{始|はじ}めたから', 'Vì vài ngày trước khi hết hè mới bắt đầu làm bài.', 'Sai. Đó là "tôi".'],
-            ['「{私|わたし}」の{作文|さくぶん}と{同|おな}じことを「{今年|ことし}の{夏休|なつやす}みの{思|おも}い{出|で}」に{書|か}いたから', 'Vì viết giống bài văn của "tôi".', 'Sai. Bài không nói vậy.'],
+            ['「{私|わたし}」の{作文|さくぶん}と{同|おな}じことを「{今年|ことし}の{夏休|なつやす}みの{思|おも}い{出|で}」に{書|か}いたから', 'Vì viết giống bài văn của "tôi".', 'Sai. Bài không nói em chép bài của "tôi"; vấn đề là nội dung bài văn là bịa (うそ).'],
             ['「{今年|ことし}の{夏休|なつやす}みの{思|おも}い{出|で}」に、@jissai({実際|じっさい}に)はしていないことを{書|か}いたから', 'Vì viết vào bài "Kỷ niệm hè năm nay" những việc chưa thực sự làm.', 'Đúng. Em làm xong bài ngay đầu hè nên phải bịa kỷ niệm; mẹ phát hiện "うそ" (s8, s11).'],
             ['「{今年|ことし}の{夏休|なつやす}みの{思|おも}い{出|で}」を、{夏休|なつやす}みの{最後|さいご}の{日|ひ}まで{書|か}かなかったから', 'Vì đến ngày cuối hè mới viết bài.', 'Sai. Em đã viết xong ngay từ đầu hè.']
           ],
@@ -390,6 +391,7 @@ window.BAI = {
     /* ───────────── 問題5 (2) ───────────── */
     {
       id: '5-2',
+      srcNotes: ['Câu 32, lựa chọn 4 đề in 「「カラス侵入禁止」と聞かれた紙」 – lỗi in của 「書かれた紙」 (tờ giấy có ghi). Bài đã sửa.'],
       kind: '中文・随筆',
       kindVi: 'Đoạn văn trung bình – tùy bút về loài quạ',
       style: 'essay',
@@ -425,9 +427,9 @@ window.BAI = {
           question: ['q1', '‹①[冗談|じょうだん]だと{思|おも}った›とあるが、なぜそう{思|おも}ったのか。', '"Nghĩ là chuyện đùa" – vì sao?'],
           options: [
             ['カラスが{文字|もじ}を{読|よ}めないと{意味|いみ}がない{方法|ほうほう}だから', 'Vì đây là cách vô nghĩa nếu quạ không đọc được chữ.', 'Đúng. 「カラスは字が読めるはずがないのに」 (s8) – dán chữ cho quạ đọc nghe như đùa.'],
-            ['カラスの{研究者|けんきゅうしゃ}でなくても@omoitsuku({思|おも}いつく)ような{方法|ほうほう}だから', 'Vì cách này ai cũng nghĩ ra được.', 'Sai. Bài không nói vậy.'],
+            ['カラスの{研究者|けんきゅうしゃ}でなくても@omoitsuku({思|おも}いつく)ような{方法|ほうほう}だから', 'Vì cách này ai cũng nghĩ ra được.', 'Sai. Bài không bàn chuyện ai nghĩ ra được; điều khiến họ tưởng đùa là quạ không thể đọc chữ.'],
             ['カラスの{研究者|けんきゅうしゃ}でないと{実行|じっこう}できないような{方法|ほうほう}だから', 'Vì chỉ nhà nghiên cứu mới làm được.', 'Sai. Dán giấy thì ai cũng làm được.'],
-            ['カラスがいなくならず、[逆|ぎゃく]に、{集|あつ}まってしまいそうな{方法|ほうほう}だから', 'Vì có vẻ sẽ khiến quạ tụ tập nhiều hơn.', 'Sai. Bài không nói vậy.']
+            ['カラスがいなくならず、[逆|ぎゃく]に、{集|あつ}まってしまいそうな{方法|ほうほう}だから', 'Vì có vẻ sẽ khiến quạ tụ tập nhiều hơn.', 'Sai. Không có ý nào nói tờ giấy sẽ làm quạ tụ tập.']
           ],
           answer: 1,
           evidence: ['s6', 's7', 's8']
@@ -436,7 +438,7 @@ window.BAI = {
           label: '31',
           question: ['q2', '‹②{本当|ほんとう}に{来|こ}なくなった›とあるが、なぜか。', '"Thật sự không đến nữa" – vì sao?'],
           options: [
-            ['[倉庫|そうこ]が{汚|きたな}くなって、カラスが{好|す}きな{場所|ばしょ}ではなくなったから', 'Vì nhà kho bẩn, quạ không thích nữa.', 'Sai. Bài không nói vậy.'],
+            ['[倉庫|そうこ]が{汚|きたな}くなって、カラスが{好|す}きな{場所|ばしょ}ではなくなったから', 'Vì nhà kho bẩn, quạ không thích nữa.', 'Sai. Nhà kho bị quạ làm bẩn là VẤN ĐỀ ban đầu, không phải lý do quạ bỏ đi.'],
             ['カラスが{今|いま}までなかった{紙|かみ}を{見|み}て、[危険|きけん]な{場所|ばしょ}になったと{感|かん}じたから', 'Vì quạ thấy tờ giấy lạ nên cảm thấy nơi đó nguy hiểm.', 'Sai. Quạ sợ ÁNH NHÌN của người, không phải tờ giấy.'],
             ['{研究者|けんきゅうしゃ}が@kansatsu([観察|かんさつ])しに{来|く}るようになったことを、カラスが{嫌|きら}ったから', 'Vì quạ ghét nhà nghiên cứu đến quan sát.', 'Sai. Người nhìn quạ là người đi ngang qua.'],
             ['カラスをよく{見|み}る{人|ひと}が{増|ふ}えて、カラスが[危険|きけん]を{感|かん}じたから', 'Vì người nhìn quạ nhiều hơn, quạ cảm thấy nguy hiểm.', 'Đúng. Người thấy giấy → nhìn quạ → quạ cảm thấy nguy hiểm (s9–s11).']
@@ -448,10 +450,10 @@ window.BAI = {
           label: '32',
           question: ['q3', '‹③[予想|よそう]できていた›とあるが、{人間|にんげん}の[行動|こうどう]について、{研究者|けんきゅうしゃ}はどのように[予想|よそう]していたと{考|かんが}えられるか。', '"Đã đoán trước được" – nhà nghiên cứu đã đoán hành vi con người thế nào?'],
           options: [
-            ['ニュースで@toriageru({取|と}り{上|あ}げられて){有名|ゆうめい}になった{場所|ばしょ}には、{行|い}ってみたくなる。', 'Người ta muốn đến chỗ nổi tiếng nhờ lên bản tin.', 'Sai. Không liên quan.'],
-            ['カラスに{入|はい}って{欲|ほ}しくない{場所|ばしょ}には、カラスが{入|はい}らないような[工夫|くふう]をする。', 'Người ta nghĩ cách để quạ không vào chỗ mình không muốn.', 'Sai. Đây không phải hành vi mà tờ giấy tạo ra.'],
-            ['カラスがいる{場所|ばしょ}では、[危険|きけん]を{感|かん}じてカラスの{近|ちか}くに{行|い}かないようにする。', 'Thấy quạ thì sợ, tránh lại gần.', 'Sai. Người ta lại NHÌN quạ.'],
-            ['「カラス[侵入|しんにゅう][禁止|きんし]」と{書|か}かれた{紙|かみ}を{見|み}たら、{近|ちか}くにいるカラスを{観察|かんさつ}したくなる。', 'Thấy giấy "Cấm quạ xâm nhập" thì muốn quan sát quạ ở gần.', 'Đúng. 「紙を見た人が不思議に思って、近くにいるカラスをよく見る」 (s9). (Đề in "聞かれた" – nên hiểu là "書かれた".)']
+            ['ニュースで@toriageru({取|と}り{上|あ}げられて){有名|ゆうめい}になった{場所|ばしょ}には、{行|い}ってみたくなる。', 'Người ta muốn đến chỗ nổi tiếng nhờ lên bản tin.', 'Sai. Bài không nói gì về việc nơi đó nổi tiếng hay người ta muốn đến.'],
+            ['カラスに{入|はい}って{欲|ほ}しくない{場所|ばしょ}には、カラスが{入|はい}らないような[工夫|くふう]をする。', 'Người ta nghĩ cách để quạ không vào chỗ mình không muốn.', 'Sai. Đó là việc của viện nghiên cứu; câu hỏi hỏi hành vi của NGƯỜI ĐI ĐƯỜNG khi thấy tờ giấy.'],
+            ['カラスがいる{場所|ばしょ}では、[危険|きけん]を{感|かん}じてカラスの{近|ちか}くに{行|い}かないようにする。', 'Thấy quạ thì sợ, tránh lại gần.', 'Sai. Ngược lại – người ta tò mò và NHÌN quạ kỹ hơn.'],
+            ['「カラス[侵入|しんにゅう][禁止|きんし]」と{書|か}かれた{紙|かみ}を{見|み}たら、{近|ちか}くにいるカラスを{観察|かんさつ}したくなる。', 'Thấy giấy "Cấm quạ xâm nhập" thì muốn quan sát quạ ở gần.', 'Đúng. 「紙を見た人が不思議に思って、近くにいるカラスをよく見る」 (s9). Con người thấy tờ giấy lạ sẽ nhìn quạ – đó chính là hành vi nhà nghiên cứu đã đoán trước.']
           ],
           answer: 4,
           evidence: ['s9', 's12']

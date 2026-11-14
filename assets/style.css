@@ -311,3 +311,8 @@ html.locked body > :not(.login-screen) { display: none !important; }
 .role-student .admin-only { display: none !important; }
 .login-card .btn.ghost { color: var(--accent); }
 .top .wrap { flex-wrap: wrap; }
+
+/* Ghi chú về lỗi in trong đề gốc */
+.src-notes { margin: 12px 0 0; padding: 10px 12px; border-left: 3px solid var(--accent); background: var(--surface-2); border-radius: 6px; font-size: .85em; line-height: 1.6; color: var(--ink-2); }
+.src-notes .src-tag { font-weight: 600; margin-bottom: 4px; }
+.src-notes ul { margin: 0; padding-left: 18px; }

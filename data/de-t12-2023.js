@@ -96,10 +96,10 @@ window.BAI = {
       kindVi: 'Đoạn văn ngắn – email đặt vé xem phim',
       style: 'mail',
       before: null,
-      lead: ['l', 'これは、ある@eigakan({映画館|えいがかん})のインターネットチケット@yoyaku({予約|よやく})サービスから、[村田|むらた]さんに[届|とど]いたメールである。', 'Đây là email mà anh/chị Murata nhận được từ dịch vụ đặt vé qua mạng của một rạp chiếu phim.'],
+      lead: ['l', 'これは、ある@eigakan({映画館|えいがかん})のインターネットチケット@yoyaku({予約|よやく})サービスから、[村田|むらた]さんに[届|とど]いたメールである。', 'Đây là email mà Murata nhận được từ dịch vụ đặt vé qua mạng của một rạp chiếu phim.'],
       blocks: [
         { t: 'lines', s: [
-          ['s1', '[村田新一|むらたしんいち][様|さま]', 'Kính gửi anh Murata Shinichi'],
+          ['s1', '[村田新一|むらたしんいち][様|さま]', 'Kính gửi quý khách Murata Shinichi'],
           ['s2', 'チケット@daikin([代金|だいきん])を@shiharau([支払|しはら]って)いただき、ありがとうございました。', 'Cảm ơn quý khách đã thanh toán tiền vé.']
         ] },
         { t: 'lines', cls: 'gap', s: [
@@ -283,7 +283,7 @@ window.BAI = {
             ['{体|からだ}へのよい[効果|こうか]が{弱|よわ}くなってしまう{料理|りょうり}のしかたで、[納豆|なっとう]を{食|た}べていたから', 'Vì đã ăn natto theo cách nấu làm yếu đi tác dụng tốt cho cơ thể.', 'Đúng. Tác giả chiên với trứng, cho vào canh nóng → nhiệt trên 50 độ làm giảm enzym có lợi (s2, s5).'],
             ['{体|からだ}へのよい[効果|こうか]が{消|き}えるような、たくさんの{量|りょう}の[納豆|なっとう]を{食|た}べていたから', 'Vì ăn quá nhiều natto đến mức mất tác dụng.', 'Sai. Bài không nói về lượng.'],
             ['おいしさがわからなくなるような{料理|りょうり}のしかたで、[納豆|なっとう]を{食|た}べていたから', 'Vì nấu theo cách làm mất vị ngon.', 'Sai. Vấn đề là tác dụng với sức khỏe, không phải vị ngon.'],
-            ['おいしくなる{料理|りょうり}{方法|ほうほう}があるのに、それを{知|し}らないで[納豆|なっとう]を{食|た}べていたから', 'Vì không biết cách nấu cho ngon hơn.', 'Sai. Bài không nói vậy.']
+            ['おいしくなる{料理|りょうり}{方法|ほうほう}があるのに、それを{知|し}らないで[納豆|なっとう]を{食|た}べていたから', 'Vì không biết cách nấu cho ngon hơn.', 'Sai. Vấn đề không phải vị ngon mà là enzym tốt cho sức khỏe bị giảm do nhiệt.']
           ],
           answer: 1,
           evidence: ['s2', 's5', 's6']
@@ -306,6 +306,7 @@ window.BAI = {
     /* ───────────── 問題5 (1) ───────────── */
     {
       id: '5-1',
+      srcNotes: ['Câu 2 trong đề in 「私子供のころから」 – thiếu は. Bài đã sửa thành 「私は子供のころから」.'],
       kind: '中文・随筆',
       kindVi: 'Đoạn văn trung bình – tùy bút du học sinh',
       style: 'essay',
@@ -364,8 +365,8 @@ window.BAI = {
           question: ['q3', '「{私|わたし}」は{今|いま}、どんな{気持|きも}ちになっているか。', 'Bây giờ "tôi" có cảm giác thế nào?'],
           options: [
             ['しばらくは、{休|やす}みの{日|ひ}だけに[漫画|まんが]を{読|よ}もう。', 'Tạm thời chỉ đọc truyện vào ngày nghỉ.', 'Sai. "お休みにしたい" = muốn tạm nghỉ đọc, không phải đọc vào ngày nghỉ.'],
-            ['しばらくは、{好|す}きな[漫画|まんが]しか{読|よ}みたくない。', 'Tạm thời chỉ muốn đọc truyện mình thích.', 'Sai. Bài không nói vậy.'],
-            ['しばらくは、[我慢|がまん]して[漫画|まんが]を{読|よ}もう。', 'Tạm thời cố nhịn mà đọc truyện.', 'Sai. Ngược nghĩa.'],
+            ['しばらくは、{好|す}きな[漫画|まんが]しか{読|よ}みたくない。', 'Tạm thời chỉ muốn đọc truyện mình thích.', 'Sai. Tác giả muốn tạm nghỉ đọc truyện tranh nói chung (お休み), không chọn lọc theo sở thích.'],
+            ['しばらくは、[我慢|がまん]して[漫画|まんが]を{読|よ}もう。', 'Tạm thời cố nhịn mà đọc truyện.', 'Sai. Ngược nghĩa – tác giả muốn tạm NGHỈ đọc, không phải cố đọc.'],
             ['しばらくは、[漫画|まんが]は{読|よ}みたくない。', 'Tạm thời không muốn đọc truyện tranh.', 'Đúng. 「しばらく漫画はお休みにしたい気分です」 (s11).']
           ],
           answer: 4,
@@ -392,6 +393,7 @@ window.BAI = {
     /* ───────────── 問題5 (2) ───────────── */
     {
       id: '5-2',
+      srcNotes: ['Câu đầu trong đề in 「A市は景色の美しい海沿いの町で」, nhưng toàn bài và các câu hỏi đều gọi là 「A町」. Bài thống nhất thành 「A町」.'],
       kind: '中文・説明文',
       kindVi: 'Đoạn văn trung bình – văn giải thích',
       style: 'essay',
@@ -423,7 +425,7 @@ window.BAI = {
           options: [
             ['{町|まち}の{中|なか}に、{安|やす}く{買|か}い{物|もの}ができるところを{増|ふ}やすため', 'Để tăng chỗ mua sắm rẻ trong thị trấn.', 'Sai. Bài không nói về giá rẻ.'],
             ['{町|まち}の{中|なか}に、{近|ちか}くの{市|し}や{町|まち}から{来|く}る{客|きゃく}が{楽|たの}しめる{場所|ばしょ}を{作|つく}るため', 'Để tạo nơi vui chơi cho khách từ nơi khác.', 'Sai. Khách nơi khác đến là kết quả, không phải mục đích.'],
-            ['{自分|じぶん}たちの{町|まち}の[景色|けしき]の{美|うつく}しさをもっと@senden([宣伝|せんでん])するため', 'Để quảng bá phong cảnh đẹp của thị trấn.', 'Sai. Bài không nói vậy.'],
+            ['{自分|じぶん}たちの{町|まち}の[景色|けしき]の{美|うつく}しさをもっと@senden([宣伝|せんでん])するため', 'Để quảng bá phong cảnh đẹp của thị trấn.', 'Sai. Phong cảnh đẹp chỉ là phần giới thiệu thị trấn; mục đích mở chợ là để mọi người biết hàng hóa của cửa hàng.'],
             ['{自分|じぶん}たちの{店|みせ}の[商品|しょうひん]の{良|よ}さをもっと{知|し}ってもらうため', 'Để mọi người biết thêm cái hay của hàng hóa cửa hàng mình.', 'Đúng. 「自分たちの店の商品の良さをもっと知ってもらおうと、朝市を始めた」 (s5).']
           ],
           answer: 4,
@@ -435,8 +437,8 @@ window.BAI = {
           options: [
             ['{朝市|あさいち}で{人気|にんき}がある[商品|しょうひん]を、{店|みせ}で{売|う}るより{高|たか}く{売|う}ること', 'Bán hàng được ưa chuộng ở chợ với giá cao hơn ở cửa hàng.', 'Sai. Bài không nói về giá.'],
             ['{朝市|あさいち}で{人気|にんき}がある[商品|しょうひん]を、{朝市|あさいち}でもっと{売|う}ること', 'Bán thêm nhiều hàng được ưa chuộng ngay tại chợ phiên.', 'Đúng. それ = 「（人気がある商品を）たくさん売る」 (s7).'],
-            ['{朝市|あさいち}でしか{買|か}えない[商品|しょうひん]の[種類|しゅるい]を{増|ふ}やすこと', 'Tăng loại hàng chỉ mua được ở chợ.', 'Sai. Không được nhắc đến.'],
-            ['{朝市|あさいち}でしか{買|か}えない[商品|しょうひん]を@heijitsu([平日|へいじつ])に{店|みせ}でも{売|う}ること', 'Bán hàng chỉ có ở chợ vào ngày thường ở cửa hàng.', 'Sai. Không được nhắc đến.']
+            ['{朝市|あさいち}でしか{買|か}えない[商品|しょうひん]の[種類|しゅるい]を{増|ふ}やすこと', 'Tăng loại hàng chỉ mua được ở chợ.', 'Sai. Bài không nói gì về hàng chỉ có ở chợ; それ chỉ việc "bán thật nhiều" (たくさん売る).'],
+            ['{朝市|あさいち}でしか{買|か}えない[商品|しょうひん]を@heijitsu([平日|へいじつ])に{店|みせ}でも{売|う}ること', 'Bán hàng chỉ có ở chợ vào ngày thường ở cửa hàng.', 'Sai. Bài không nhắc đến hàng chỉ có ở chợ hay bán vào ngày thường.']
           ],
           answer: 2,
           evidence: ['s6', 's7']
@@ -446,7 +448,7 @@ window.BAI = {
           question: ['q3', '（　　）に{入|い}れるのに{最|もっと}もよいものはどれか。', 'Điền gì vào (　　) là phù hợp nhất?'],
           options: [
             ['A{町|まち}に{店|みせ}がある{人|ひと}', 'Người có cửa hàng ở thị trấn A.', 'Đúng. Mục đích là để khách biết đến và mua ở cửa hàng thị trấn A thường ngày (s8), nên chỉ người có cửa hàng ở A mới được bày hàng.'],
-            ['A{町|まち}{以外|いがい}の{市|し}や{町|まち}に{店|みせ}がある{人|ひと}', 'Người có cửa hàng ở nơi khác ngoài thị trấn A.', 'Sai. Ngược với mục đích.'],
+            ['A{町|まち}{以外|いがい}の{市|し}や{町|まち}に{店|みせ}がある{人|ひと}', 'Người có cửa hàng ở nơi khác ngoài thị trấn A.', 'Sai. Mục đích là tăng khách cho cửa hàng TRONG thị trấn A, nên người có cửa hàng nơi khác không phù hợp.'],
             ['A{町|まち}で{店|みせ}を{開|ひら}きたいと{思|おも}っている{人|ひと}', 'Người muốn mở cửa hàng ở thị trấn A.', 'Sai. Chưa có cửa hàng thì khách không thể "ふだん買い物" ở đó.'],
             ['A{町|まち}の{店|みせ}でふだんから{買|か}い{物|もの}をしている{人|ひと}', 'Người thường mua sắm ở cửa hàng thị trấn A.', 'Sai. Đây là khách hàng, không phải người bán.']
           ],

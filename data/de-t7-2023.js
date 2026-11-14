@@ -181,7 +181,7 @@ window.BAI = {
           options: [
             ['{自分|じぶん}でも{忘|わす}れていた、アメリカに[留学|りゅうがく]したいという{夢|ゆめ}が{本当|ほんとう}になったから。', 'Vì ước mơ du học Mỹ mà chính mình đã quên đã thành sự thật.', 'Sai. Ước mơ trong bài văn là làm GIÁO VIÊN, không phải du học.'],
             ['{自分|じぶん}でも{忘|わす}れていた、{先生|せんせい}になりたいという{夢|ゆめ}が{本当|ほんとう}になったから。', 'Vì ước mơ làm giáo viên mà chính mình đã quên đã thành sự thật.', 'Đúng. 「先生になりたいと書いてあった」「すっかり忘れていた」「子供のころの夢が本当になったのだし」 (s4–s6).'],
-            ['{子供|こども}のころからずっと{行|い}きたいと{思|おも}い{続|つづ}けていたアメリカに[留学|りゅうがく]できたから。', 'Vì đã du học được ở Mỹ – nơi luôn muốn đến từ nhỏ.', 'Sai. Bài không nói vậy.'],
+            ['{子供|こども}のころからずっと{行|い}きたいと{思|おも}い{続|つづ}けていたアメリカに[留学|りゅうがく]できたから。', 'Vì đã du học được ở Mỹ – nơi luôn muốn đến từ nhỏ.', 'Sai. Bài không nói du học Mỹ là ước mơ từ nhỏ; ước mơ trong bài văn là làm giáo viên.'],
             ['{子供|こども}のころからずっとなりたいと{思|おも}い{続|つづ}けていた{先生|せんせい}になれたから。', 'Vì đã trở thành giáo viên – điều luôn mong muốn từ nhỏ.', 'Sai. Tác giả đã "すっかり忘れていた" (quên hẳn), không phải "ずっと思い続けていた" (luôn nghĩ).']
           ],
           answer: 2,
@@ -291,7 +291,7 @@ window.BAI = {
           options: [
             ['[鏡|かがみ]を{見|み}て、{自分|じぶん}に[汚|よご]れをつけるものがいる。', 'Có con nhìn gương rồi tự bôi bẩn lên mình.', 'Sai. Vết bẩn là do người làm thí nghiệm bôi.'],
             ['[鏡|かがみ]の{中|なか}の{魚|さかな}が{自分|じぶん}だとわかるものがいる。', 'Có con biết con cá trong gương là chính mình.', 'Đúng. 「魚にもそれができるものがいる」, それ = nhận ra mình trong gương (s5–s6).'],
-            ['[鏡|かがみ]に{気|き}づくと、すぐに[鏡|かがみ]の{前|まえ}に{行|い}きたがるものがいる。', 'Có con hễ thấy gương là muốn đến trước gương ngay.', 'Sai. Bài không nói vậy.'],
+            ['[鏡|かがみ]に{気|き}づくと、すぐに[鏡|かがみ]の{前|まえ}に{行|い}きたがるものがいる。', 'Có con hễ thấy gương là muốn đến trước gương ngay.', 'Sai. Con cá nhìn gương để kiểm tra vết bẩn, không phải vì muốn đến trước gương.'],
             ['[鏡|かがみ]が[汚|よご]れていたら、きれいにしようとするものがいる。', 'Có con thấy gương bẩn thì muốn lau sạch.', 'Sai. Vết bẩn ở trên MẶT CÁ, không phải trên gương.']
           ],
           answer: 2,
@@ -316,6 +316,7 @@ window.BAI = {
     /* ───────────── 問題5 (1) ───────────── */
     {
       id: '5-1',
+      srcNotes: ['Đoạn 2 trong đề in 「荷物を持って板を上がって帰る」 (板 = tấm ván) – lỗi in của 「坂」 (con dốc), vì câu trước nói nhà ở trên đồi, siêu thị ở dưới dốc. Bài đã sửa.'],
       kind: '中文・随筆',
       kindVi: 'Đoạn văn trung bình – tùy bút',
       style: 'essay',
@@ -356,7 +357,7 @@ window.BAI = {
             ['{運転|うんてん}に{自信|じしん}があったのに、{車|くるま}をぶつけてしまったから。', 'Vì dù tự tin nhưng đã đâm xe.', 'Sai. Người đâm xe là NGƯỜI BẠN, không phải tác giả.'],
             ['{自分|じぶん}も{安全|あんぜん}に{運転|うんてん}が{続|つづ}けられるか{心配|しんぱい}になったから。', 'Vì lo không biết mình có lái xe an toàn tiếp được không.', 'Đúng. 「安全に運転が続けられるか不安になってきた。それで、…」 (s2–s3).'],
             ['{若|わか}いころから{自分|じぶん}の{運転|うんてん}{技術|ぎじゅつ}に{不安|ふあん}があったから。', 'Vì từ trẻ đã không tự tin vào tay lái.', 'Sai. Tác giả vốn "運転に自信があった".'],
-            ['{車|くるま}の{運転|うんてん}をやめたほうがいいと[妻|つま]に{言|い}われたから。', 'Vì bị vợ khuyên nên thôi lái.', 'Sai. Bài không nói vậy.']
+            ['{車|くるま}の{運転|うんてん}をやめたほうがいいと[妻|つま]に{言|い}われたから。', 'Vì bị vợ khuyên nên thôi lái.', 'Sai. Bài không nhắc đến lời khuyên của vợ; tác giả tự quyết định sau khi nghe chuyện của bạn.']
           ],
           answer: 2,
           evidence: ['s2', 's3']
@@ -434,8 +435,8 @@ window.BAI = {
           label: '30',
           question: ['q1', '‹①{行|い}くのを[我慢|がまん]してしまうことがあります›とあるが、どうしてか。', '"Đành nhịn không đi" – vì sao?'],
           options: [
-            ['{音楽|おんがく}や{絵|え}や{映画|えいが}などを{楽|たの}しめる{場所|ばしょ}が、{近|ちか}くにないことが{多|おお}いから。', 'Vì thường không có nơi thưởng thức ở gần.', 'Sai. Bài không nói vậy.'],
-            ['{子供|こども}の@sewa({世話|せわ})をするのに{忙|いそが}しくて、{時間|じかん}がないから。', 'Vì bận chăm con, không có thời gian.', 'Sai. Bài không nói vậy.'],
+            ['{音楽|おんがく}や{絵|え}や{映画|えいが}などを{楽|たの}しめる{場所|ばしょ}が、{近|ちか}くにないことが{多|おお}いから。', 'Vì thường không có nơi thưởng thức ở gần.', 'Sai. Bài không nói thiếu nơi giải trí; lý do là chuyện con còn nhỏ.'],
+            ['{子供|こども}の@sewa({世話|せわ})をするのに{忙|いそが}しくて、{時間|じかん}がないから。', 'Vì bận chăm con, không có thời gian.', 'Sai. Lý do được nêu là sợ trẻ làm ồn và khó gửi con, không phải bận.'],
             ['{子供|こども}を{連|つ}れて{行|い}くのも、{親|おや}だけで{出|で}かけるのも{難|むずか}しいから。', 'Vì dẫn con theo cũng khó, mà bố mẹ đi riêng cũng khó.', 'Đúng. 「連れて行けないし、人に預けることも簡単ではない」 (s2) = dẫn theo không được, gửi con để đi một mình cũng khó.'],
             ['{大人|おとな}だけでなく、{子供|こども}の{料金|りょうきん}も{払|はら}わなければならないから。', 'Vì phải trả tiền vé cho cả trẻ em.', 'Sai. Bài không nói về tiền.']
           ],
@@ -446,9 +447,9 @@ window.BAI = {
           label: '31',
           question: ['q2', '‹②{親子|おやこ}が{楽|たの}しめるように[工夫|くふう]をする›とあるが、どのようなことをしている{映画館|えいがかん}があると{言|い}っているか。', '"Nghĩ cách để cha mẹ và con cùng thưởng thức" – bài nói có rạp phim làm gì?'],
           options: [
-            ['{子供|こども}と{親|おや}が{話|はな}しながら{映画|えいが}が{見|み}られる{特別|とくべつ}な{席|せき}を{用意|ようい}する。', 'Chuẩn bị ghế đặc biệt để vừa xem vừa nói chuyện.', 'Sai. Bài không nói vậy.'],
+            ['{子供|こども}と{親|おや}が{話|はな}しながら{映画|えいが}が{見|み}られる{特別|とくべつ}な{席|せき}を{用意|ようい}する。', 'Chuẩn bị ghế đặc biệt để vừa xem vừa nói chuyện.', 'Sai. Ví dụ rạp phim chỉ nói về độ sáng và âm lượng, không có ghế đặc biệt.'],
             ['{子供|こども}が[騒|さわ]ぐ{音|おと}が{気|き}にならないように、{映画|えいが}の{音|おと}を{大|おお}きくする。', 'Mở to tiếng phim để không để ý tiếng trẻ ồn.', 'Sai. Ngược lại, âm thanh được chỉnh KHÔNG quá lớn.'],
-            ['{子供|こども}にも{大人|おとな}にも{楽|たの}しんで{見|み}てもらえるような{映画|えいが}を{選|えら}ぶ。', 'Chọn phim cả trẻ em lẫn người lớn đều thích.', 'Sai. Bài không nói vậy.'],
+            ['{子供|こども}にも{大人|おとな}にも{楽|たの}しんで{見|み}てもらえるような{映画|えいが}を{選|えら}ぶ。', 'Chọn phim cả trẻ em lẫn người lớn đều thích.', 'Sai. Rạp chỉnh môi trường xem phim (ánh sáng, âm thanh), không phải chọn phim.'],
             ['{子供|こども}が[怖|こわ]がったり[驚|おどろ]いたりしないような{明|あか}るさや@onryou({音量|おんりょう})にする。', 'Chỉnh độ sáng và âm lượng để trẻ không sợ hay giật mình.', 'Đúng. Để hội trường hơi sáng (vì trẻ sợ tối) và âm thanh không quá to (vì trẻ giật mình) (s5–s7).']
           ],
           answer: 4,
@@ -459,9 +460,9 @@ window.BAI = {
           question: ['q3', 'この{文章|ぶんしょう}の@teema(テーマ)は{何|なに}か。', 'Chủ đề của đoạn văn là gì?'],
           options: [
             ['{日本|にほん}で、{子供|こども}がいる{親|おや}も{音楽|おんがく}や{映画|えいが}を{楽|たの}しめる@kankyou([環境|かんきょう])ができてきたこと。', 'Ở Nhật, môi trường để cha mẹ có con nhỏ cũng thưởng thức âm nhạc, phim ảnh đã hình thành.', 'Đúng. Câu kết 「このように、…小さな子供がいる人が安心して、出かけて楽しめる場所が増えてきています」 (s8).'],
-            ['{日本|にほん}で、{大人|おとな}と{子供|こども}が{一緒|いっしょ}に{楽|たの}しめる{音楽|おんがく}や{映画|えいが}が{減|へ}ってきたこと。', 'Âm nhạc, phim cho cả người lớn và trẻ em giảm đi.', 'Sai. Ngược với bài (増えてきた).'],
+            ['{日本|にほん}で、{大人|おとな}と{子供|こども}が{一緒|いっしょ}に{楽|たの}しめる{音楽|おんがく}や{映画|えいが}が{減|へ}ってきたこと。', 'Âm nhạc, phim cho cả người lớn và trẻ em giảm đi.', 'Sai. Ngược với bài – những nơi cho gia đình có con nhỏ đang TĂNG (増えてきた).'],
             ['{日本|にほん}で、{大人|おとな}だけで{音楽会|おんがくかい}や{映画|えいが}に{出|で}かける{親|おや}が{増|ふ}えてきたこと。', 'Cha mẹ đi xem hòa nhạc, phim một mình tăng lên.', 'Sai. Cái tăng lên là "địa điểm", không phải số cha mẹ đi riêng.'],
-            ['{日本|にほん}で、{音楽|おんがく}や{映画|えいが}を{楽|たの}しむ{子供|こども}が{増|ふ}えてきたこと。', 'Trẻ em thưởng thức âm nhạc, phim tăng lên.', 'Sai. Bài không nói vậy.']
+            ['{日本|にほん}で、{音楽|おんがく}や{映画|えいが}を{楽|たの}しむ{子供|こども}が{増|ふ}えてきたこと。', 'Trẻ em thưởng thức âm nhạc, phim tăng lên.', 'Sai. Bài nói về nơi dành cho CHA MẸ có con nhỏ, không nói số trẻ em thích phim tăng.']
           ],
           answer: 1,
           evidence: ['s8']

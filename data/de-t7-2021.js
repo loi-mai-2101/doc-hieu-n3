@@ -89,28 +89,28 @@ window.BAI = {
       blocks: [
         { t: 'lines', s: [['s0', 'たかしへ', 'Gửi Takashi']] },
         { t: 'p', s: [
-          ['s1', '@kyuu([急|きゅう]な)@youji({用事|ようじ})で、ちょっとおじいちゃんの{所|ところ}へ{行|い}かなければならなくなりました。', 'Mẹ có việc gấp nên phải đến chỗ ông một chút.'],
-          ['s2', '7{時|じ}までには{帰|かえ}れると{思|おも}うけど、おなかがすいて{待|ま}てなかったら、{昨日|きのう}のカレーの@nokori({残|のこ}り)を@atatameru({温|あたた}めて){食|た}べてください。', 'Mẹ nghĩ trước 7 giờ sẽ về, nhưng nếu đói không đợi được thì hâm cà ri còn lại hôm qua mà ăn nhé.']
+          ['s1', '@kyuu([急|きゅう]な)@youji({用事|ようじ})で、ちょっとおじいちゃんの{所|ところ}へ{行|い}かなければならなくなりました。', 'Bố/mẹ có việc gấp nên phải đến chỗ ông một chút.'],
+          ['s2', '7{時|じ}までには{帰|かえ}れると{思|おも}うけど、おなかがすいて{待|ま}てなかったら、{昨日|きのう}のカレーの@nokori({残|のこ}り)を@atatameru({温|あたた}めて){食|た}べてください。', 'Bố/mẹ nghĩ trước 7 giờ sẽ về, nhưng nếu đói không đợi được thì hâm cà ri còn lại hôm qua mà ăn nhé.']
         ] },
         { t: 'p', s: [
-          ['s3', 'それから、@sentakumono([洗濯物|せんたくもの])が@hosu([干|ほ]した)ままになっているから、@torikomu({取|と}り[込|こ]んで)おいてね。', 'Còn nữa, quần áo vẫn đang phơi đấy, con thu vào giúp mẹ nhé.'],
-          ['s4', '{時間|じかん}があったら、@tatamu(たたんで)おいてください。', 'Nếu có thời gian thì gấp luôn giúp mẹ.']
+          ['s3', 'それから、@sentakumono([洗濯物|せんたくもの])が@hosu([干|ほ]した)ままになっているから、@torikomu({取|と}り[込|こ]んで)おいてね。', 'Còn nữa, quần áo vẫn đang phơi đấy, con thu vào giúp bố/mẹ nhé.'],
+          ['s4', '{時間|じかん}があったら、@tatamu(たたんで)おいてください。', 'Nếu có thời gian thì gấp luôn giúp bố/mẹ.']
         ] },
-        { t: 'p', s: [['s5', 'おいしいケーキでも{買|か}って{帰|かえ}るね。', 'Mẹ sẽ mua bánh ngọt ngon gì đó mang về nhé.']] }
+        { t: 'p', s: [['s5', 'おいしいケーキでも{買|か}って{帰|かえ}るね。', 'Bố/mẹ sẽ mua bánh ngọt ngon gì đó mang về nhé.']] }
       ],
       notes: [], refs: {},
       questions: [{
         label: '23',
         question: ['q1', 'このメモを{読|よ}んで、たかしさんがしなければならないことは{何|なに}か。', 'Đọc mẩu ghi chú, Takashi BẮT BUỘC phải làm gì?'],
         options: [
-          ['おじいちゃんの{所|ところ}へ{行|い}く。', 'Đến chỗ ông.', 'Sai. Người đi là mẹ (người viết).'],
+          ['おじいちゃんの{所|ところ}へ{行|い}く。', 'Đến chỗ ông.', 'Sai. Người đi là người viết ghi chú, không phải Takashi.'],
           ['{昨日|きのう}のカレーの{残|のこ}りを{温|あたた}めて{食|た}べる。', 'Hâm cà ri còn lại để ăn.', 'Sai. Chỉ khi "đói không đợi được" (〜たら) – không bắt buộc.'],
           ['[洗濯物|せんたくもの]を{取|と}り[込|こ]む。', 'Thu quần áo vào.', 'Đúng. 「取り込んでおいてね」 không kèm điều kiện (s3). Gấp quần áo thì chỉ "nếu có thời gian".'],
-          ['ケーキを{買|か}って{帰|かえ}る。', 'Mua bánh mang về.', 'Sai. Mẹ mua.']
+          ['ケーキを{買|か}って{帰|かえ}る。', 'Mua bánh mang về.', 'Sai. Người viết ghi chú mới là người mua (おいしいケーキでも買って帰るね).']
         ],
         answer: 3, evidence: ['s3']
       }],
-      summary: 'Mẹ có việc gấp phải sang nhà ông, sẽ về trước 7 giờ. Nếu đói thì hâm cà ri ăn; phải thu quần áo đang phơi, có thời gian thì gấp luôn; mẹ sẽ mua bánh về.',
+      summary: 'Người viết (bố/mẹ của Takashi) có việc gấp phải sang nhà ông, sẽ về trước 7 giờ. Nếu đói thì hâm cà ri ăn; phải thu quần áo đang phơi, có thời gian thì gấp luôn; người viết sẽ mua bánh về.',
       structure: [['Đoạn 1', 'Lý do vắng + việc tùy chọn (〜たら)'], ['Đoạn 2', 'Việc bắt buộc (thu quần áo) + việc tùy chọn (gấp)'], ['Đoạn 3', 'Mẹ sẽ mua bánh']],
       grammar: [
         ['〜なければならなくなる', 'Trở nên phải…', '行かなければならなくなりました'],
@@ -127,13 +127,13 @@ window.BAI = {
       kindVi: 'Đoạn văn ngắn – email khách sạn',
       style: 'mail',
       before: null,
-      lead: ['l', 'これは、あるホテルから{山田|やまだ}さんに[届|とど]いたメールである。', 'Đây là email anh Yamada nhận được từ một khách sạn.'],
+      lead: ['l', 'これは、あるホテルから{山田|やまだ}さんに[届|とど]いたメールである。', 'Đây là email Yamada nhận được từ một khách sạn.'],
       blocks: [
         { t: 'meta', s: [
           ['m1', '@atesaki(あて{先|さき})：syamada@232mail.com', 'Người nhận: syamada@232mail.com'],
           ['m2', '@soushin({送信|そうしん}{日時|にちじ})：2{月|がつ}1{日|ついたち}　16:20', 'Gửi lúc: 16:20 ngày 1/2']
         ] },
-        { t: 'lines', s: [['s0', '{山田|やまだ}[真二|しんじ][様|さま]', 'Kính gửi anh Yamada Shinji']] },
+        { t: 'lines', s: [['s0', '{山田|やまだ}[真二|しんじ][様|さま]', 'Kính gửi quý khách Yamada Shinji']] },
         { t: 'p', s: [
           ['s1', 'いつもご{利用|りよう}ありがとうございます。', 'Cảm ơn quý khách luôn sử dụng dịch vụ.'],
           ['s2', '@genzai({現在|げんざい})、{東京|とうきょう}ホテルでは、インターネット{予約|よやく}@waribiki({割引|わりびき})サービスを{行|おこな}っております。', 'Hiện nay, khách sạn Tokyo đang có dịch vụ giảm giá đặt phòng qua mạng.'],
@@ -190,9 +190,9 @@ window.BAI = {
         question: ['q1', '‹がっかりしてしまった›のはなぜか。', 'Vì sao lại thất vọng?'],
         options: [
           ['{自分|じぶん}では{歩|ある}くのが{速|はや}くなったと{思|おも}っていたが、{実|じつ}はそうではなかったから。', 'Vì tưởng mình đi nhanh hơn nhưng thật ra không phải.', 'Đúng. Lý do thật là đèn xanh được kéo dài, không phải mình đi nhanh hơn (s3–s4).'],
-          ['@sekkaku(せっかく){走|はし}って{渡|わた}れるようになったのに、その{必要|ひつよう}がなくなったから。', 'Vì khó khăn lắm mới chạy qua được thì lại không cần nữa.', 'Sai. Bài không nói vậy.'],
+          ['@sekkaku(せっかく){走|はし}って{渡|わた}れるようになったのに、その{必要|ひつよう}がなくなったから。', 'Vì khó khăn lắm mới chạy qua được thì lại không cần nữa.', 'Sai. Tác giả không hề muốn chạy; trước đây phải chạy là do đèn đổi đỏ nhanh.'],
           ['{自分|じぶん}は{時間|じかん}{内|ない}に{歩|ある}いて{渡|わた}れるのに、{歩行者|ほこうしゃ}{用|よう}{信号|しんごう}の{青|あお}の{時間|じかん}が{長|なが}くなったから。', 'Vì mình đi kịp mà đèn xanh lại bị kéo dài.', 'Sai. Trước đây tác giả cũng không kịp.'],
-          ['{警察|けいさつ}が、{歩行者|ほこうしゃ}{用|よう}{信号|しんごう}の{青|あお}の{時間|じかん}を{少|すこ}ししか{長|なが}くしてくれなかったから。', 'Vì cảnh sát chỉ kéo dài đèn xanh một chút.', 'Sai. Không phải lý do.']
+          ['{警察|けいさつ}が、{歩行者|ほこうしゃ}{用|よう}{信号|しんごう}の{青|あお}の{時間|じかん}を{少|すこ}ししか{長|なが}くしてくれなかったから。', 'Vì cảnh sát chỉ kéo dài đèn xanh một chút.', 'Sai. Tác giả không phàn nàn về cảnh sát; thất vọng là vì mình không thật sự đi nhanh hơn.']
         ],
         answer: 1, evidence: ['s3', 's4', 's5']
       }],
@@ -284,7 +284,7 @@ window.BAI = {
             ['わたしが{小学校|しょうがっこう}に{入学|にゅうがく}した{時|とき}に、この{花屋|はなや}が{開店|かいてん}したこと。', 'Tiệm khai trương khi tôi vào tiểu học.', 'Sai. Tiệm mở TRƯỚC khi tôi vào tiểu học.'],
             ['{小学校|しょうがっこう}を[卒業|そつぎょう]する{時|とき}に、{先生|せんせい}といっしょにこの{花屋|はなや}で{花|はな}を{買|か}ったこと。', 'Khi tốt nghiệp, cùng cô giáo mua hoa ở tiệm.', 'Sai. Mua để TẶNG cô, không đi cùng cô.'],
             ['{特別|とくべつ}なことがある{時|とき}には、よくこの{店|みせ}で{花|はな}を{買|か}っていたこと。', 'Khi có dịp đặc biệt hay mua hoa ở tiệm này.', 'Đúng. Sinh nhật, nhà có khách… thì cùng mẹ mua hoa ở đây (s5).'],
-            ['おじさんが{大好|だいす}きだったので、よくこの{店|みせ}で{花|はな}を{買|か}っていたこと。', 'Vì rất quý chú nên hay mua hoa ở đây.', 'Sai. Bài không nói vậy.']
+            ['おじさんが{大好|だいす}きだったので、よくこの{店|みせ}で{花|はな}を{買|か}っていたこと。', 'Vì rất quý chú nên hay mua hoa ở đây.', 'Sai. Bài không nói mua hoa vì quý chú; kỷ niệm là mua hoa vào những dịp đặc biệt.']
           ],
           answer: 3, evidence: ['s4', 's5']
         },
@@ -294,7 +294,7 @@ window.BAI = {
           options: [
             ['もうすぐ[閉店|へいてん]する{花屋|はなや}のおじさんに、@muri({無理|むり}な)お{願|ねが}いをするから。', 'Vì nhờ việc khó với chú sắp đóng cửa tiệm.', 'Sai. Lúc đó tiệm chưa đóng cửa.'],
             ['いやそうな{顔|かお}をしているおじさんに、{無理|むり}なお{願|ねが}いをするから。', 'Vì chú đang tỏ vẻ khó chịu.', 'Sai. Chú "いやな顔もしないで".'],
-            ['お{店|みせ}に{花|はな}があまりないのに、おじさんに{無理|むり}なお{願|ねが}いをするから。', 'Vì tiệm không có nhiều hoa.', 'Sai. Bài không nói vậy.'],
+            ['お{店|みせ}に{花|はな}があまりないのに、おじさんに{無理|むり}なお{願|ねが}いをするから。', 'Vì tiệm không có nhiều hoa.', 'Sai. Bài không nói tiệm thiếu hoa; vấn đề là tiền gom được ít.'],
             ['お{金|かね}が{少|すこ}ししかないのに、おじさんに{無理|むり}なお{願|ねが}いをするから。', 'Vì ít tiền mà lại nhờ việc khó.', 'Đúng. Tiền gom được ít mà lại nhờ làm bó hoa thật to (s9–s10).']
           ],
           answer: 4, evidence: ['s9', 's10']
@@ -306,7 +306,7 @@ window.BAI = {
             ['{小学校|しょうがっこう}{時代|じだい}にとてもお{世話|せわ}になった{先生|せんせい}へのお[礼|れい]の{気持|き}ち。', 'Lòng biết ơn cô giáo thời tiểu học.', 'Sai. Đó chỉ là một kỷ niệm.'],
             ['よい{思|おも}い{出|で}を{作|つく}ってくれた{花屋|はなや}のおじさんへの@kansha([感謝|かんしゃ])の{気持|き}ち。', 'Lòng biết ơn chú chủ tiệm hoa đã tạo nên kỷ niệm đẹp.', 'Đúng. Câu kết 「あたたかい思い出を作ってくれたおじさんに、ありがとう…と言いたい」 (s12).'],
             ['{大好|だいす}きだった{花屋|はなや}さんが[閉店|へいてん]するので、さびしいという{気持|き}ち。', 'Buồn vì tiệm đóng cửa.', 'Sai. Bài không nhấn mạnh nỗi buồn.'],
-            ['{近所|きんじょ}の{花屋|はなや}さんが[閉店|へいてん]したので、とても{不便|ふべん}だという{気持|き}ち。', 'Bất tiện vì tiệm đóng cửa.', 'Sai. Bài không nói vậy.']
+            ['{近所|きんじょ}の{花屋|はなや}さんが[閉店|へいてん]したので、とても{不便|ふべん}だという{気持|き}ち。', 'Bất tiện vì tiệm đóng cửa.', 'Sai. Bài không nhắc đến sự bất tiện; đoạn cuối là lời cảm ơn.']
           ],
           answer: 2, evidence: ['s12']
         }
@@ -325,6 +325,7 @@ window.BAI = {
 
     {
       id: '5-2',
+      srcNotes: ['Câu 2 trong đề in 「暑い夏に食べること、体が涼しくなるし」 – thiếu nghĩa; hiểu đúng là 「食べると」 (ăn vào thì…). Bài đã sửa.', 'Câu 32, lựa chọn 2 đề in 「みんな氷がまんしていた」 – thiếu trợ từ; hiểu đúng là 「氷でがまんしていた」 (đành chịu ăn đá). Bài đã sửa.'],
       kind: '中文・説明文',
       kindVi: 'Đoạn văn trung bình – văn giải thích',
       style: 'essay',
@@ -332,7 +333,7 @@ window.BAI = {
       blocks: [
         { t: 'p', s: [
           ['s1', 'あなたはアイスクリームが{好|す}きですか。', 'Bạn có thích kem không?'],
-          ['s2', '{甘|あま}くて{冷|つめ}たいアイスクリームは{暑|あつ}い{夏|なつ}に{食|た}べること、{体|からだ}が@suzushii({涼|すず}しく)なるし、{寒|さむ}い{冬|ふゆ}に{暖|あたた}かい{部屋|へや}で{食|た}べるのも、おいしいものです。', 'Kem ngọt và lạnh, ăn vào mùa hè nóng thì mát người, ăn trong phòng ấm vào mùa đông lạnh cũng ngon.'],
+          ['s2', '{甘|あま}くて{冷|つめ}たいアイスクリームは{暑|あつ}い{夏|なつ}に{食|た}べると、{体|からだ}が@suzushii({涼|すず}しく)なるし、{寒|さむ}い{冬|ふゆ}に{暖|あたた}かい{部屋|へや}で{食|た}べるのも、おいしいものです。', 'Kem ngọt và lạnh, ăn vào mùa hè nóng thì mát người, ăn trong phòng ấm vào mùa đông lạnh cũng ngon.'],
           ['s3', '{今|いま}ではアイスクリームは{一年|いちねん}{中|じゅう}いつでも{食|た}べられますが、‹①{面白|おもしろ}いのは›、{夏|なつ}と{冬|ふゆ}ではよく{売|う}れるアイスの@shurui({種類|しゅるい})が{違|ちが}うことです。', 'Bây giờ quanh năm lúc nào cũng ăn được kem, nhưng điều thú vị là loại kem bán chạy ở mùa hè và mùa đông khác nhau.'],
           ['s4', '{夏|なつ}にはレモン{味|あじ}のシャーベットなどが、{冬|ふゆ}にはチョコレート{味|あじ}などの@koi([濃|こ]い){味|あじ}のものがよく{売|う}れるそうです。', 'Nghe nói mùa hè bán chạy kem que vị chanh, mùa đông bán chạy loại vị đậm như sô-cô-la.']
         ] },
@@ -376,7 +377,7 @@ window.BAI = {
           question: ['q3', '‹③{夏|なつ}の[氷|こおり]は{特別|とくべつ}なごちそうだったのでしょう›とあるが、ここで{言|い}いたいことはどのようなことか。', '"Đá mùa hè là món ngon đặc biệt" – muốn nói điều gì?'],
           options: [
             ['[氷|こおり]は{昔|むかし}は{冬|ふゆ}の{食|た}べ{物|もの}だったので、{夏|なつ}に{食|た}べることはとてもめずらしいことだった。', 'Đá xưa là đồ ăn mùa đông nên ăn vào hè rất hiếm.', 'Sai. Không nói đá là đồ ăn mùa đông.'],
-            ['まだアイスクリームを{買|か}うことは{難|むずか}しかったので、みんな[氷|こおり]がまんしていた。', 'Chưa mua được kem nên đành chịu ăn đá.', 'Sai. Bài không nói vậy.'],
+            ['まだアイスクリームを{買|か}うことは{難|むずか}しかったので、みんな[氷|こおり]でがまんしていた。', 'Chưa mua được kem nên đành chịu ăn đá.', 'Sai. Bài không so sánh với kem; ý chính là đá mùa hè hiếm, không phải thứ ăn thường ngày.'],
             ['{暑|あつ}い{夏|なつ}に[氷|こおり]を{食|た}べて{涼|すず}しさを{感|かん}じることは、@nichijouteki([日常的|にちじょうてき])にできることではなかった。', 'Ăn đá giải nhiệt mùa hè không phải việc làm được thường ngày.', 'Đúng. "今とは違い" + "特別な" = không phải ai cũng ăn được hằng ngày như bây giờ.'],
             ['{涼|すず}しくなるように[氷|こおり]を{食|た}べることは、そのころ{人々|ひとびと}がよくやっていたことだった。', 'Ăn đá giải nhiệt là việc người ta hay làm.', 'Sai. Ngược nghĩa với "特別".']
           ],

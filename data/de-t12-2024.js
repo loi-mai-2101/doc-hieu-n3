@@ -104,17 +104,17 @@ window.BAI = {
       blocks: [
         { t: 'lines', s: [['s0', 'ミゲルさん', 'Gửi Miguel']] },
         { t: 'lines', cls: 'gap', s: [
-          ['s1', 'メールをありがとう。', 'Cảm ơn email của em.'],
-          ['s2', '{同|おな}じ{会社|かいしゃ}で{働|はたら}くことになって、うれしいです。', 'Anh rất vui vì chúng ta sẽ làm cùng công ty.']
+          ['s1', 'メールをありがとう。', 'Cảm ơn email của bạn.'],
+          ['s2', '{同|おな}じ{会社|かいしゃ}で{働|はたら}くことになって、うれしいです。', 'Tôi rất vui vì chúng ta sẽ làm cùng công ty.']
         ] },
         { t: 'p', s: [
-          ['s3', '{住|す}む{所|ところ}について@adobaisu(アドバイス)をくださいと{書|か}いてあったので、お{答|こた}えします。', 'Em có viết nhờ cho lời khuyên về chỗ ở, nên anh xin trả lời.'],
-          ['s4', '{会社|かいしゃ}まで{歩|ある}いて{行|い}きたいと{書|か}いてありましたが、{会社|かいしゃ}の@mawari({周|まわ}り)はオフィスばかりで、アパートは@hotondo(ほとんど)ありません。', 'Em viết là muốn đi bộ đến công ty, nhưng xung quanh công ty toàn là văn phòng, hầu như không có căn hộ.'],
-          ['s5', '{電車|でんしゃ}@tsuukin([通勤|つうきん])になりますが、{私|わたし}が@izen({以前|いぜん}){住|す}んでいた[緑野|みどりの]という{町|まち}はいいですよ。', 'Sẽ phải đi làm bằng tàu, nhưng thị trấn Midorino nơi anh từng sống rất được đấy.'],
+          ['s3', '{住|す}む{所|ところ}について@adobaisu(アドバイス)をくださいと{書|か}いてあったので、お{答|こた}えします。', 'Bạn có viết nhờ cho lời khuyên về chỗ ở, nên tôi xin trả lời.'],
+          ['s4', '{会社|かいしゃ}まで{歩|ある}いて{行|い}きたいと{書|か}いてありましたが、{会社|かいしゃ}の@mawari({周|まわ}り)はオフィスばかりで、アパートは@hotondo(ほとんど)ありません。', 'Bạn viết là muốn đi bộ đến công ty, nhưng xung quanh công ty toàn là văn phòng, hầu như không có căn hộ.'],
+          ['s5', '{電車|でんしゃ}@tsuukin([通勤|つうきん])になりますが、{私|わたし}が@izen({以前|いぜん}){住|す}んでいた[緑野|みどりの]という{町|まち}はいいですよ。', 'Sẽ phải đi làm bằng tàu, nhưng thị trấn Midorino nơi tôi từng sống rất được đấy.'],
           ['s6', '[緑野|みどりの]{駅|えき}から{会社|かいしゃ}のある[北園|きたぞの]{駅|えき}まで{電車|でんしゃ}で15{分|ふん}だし、いろいろなお{店|みせ}があって@benri({便利|べんり})です。', 'Từ ga Midorino đến ga Kitazono – nơi có công ty – đi tàu mất 15 phút, lại có nhiều cửa hàng, rất tiện.']
         ] },
         { t: 'lines', s: [
-          ['s7', 'いい{所|ところ}が{見|み}つかるといいですね。{会|あ}えるのを@tanoshimi({楽|たの}しみにして)います。', 'Mong em tìm được chỗ tốt. Anh mong được gặp em.'],
+          ['s7', 'いい{所|ところ}が{見|み}つかるといいですね。{会|あ}えるのを@tanoshimi({楽|たの}しみにして)います。', 'Mong bạn tìm được chỗ tốt. Tôi mong được gặp bạn.'],
           ['sg', '[今川|いまがわ]', 'Imagawa']
         ] }
       ],
@@ -180,7 +180,7 @@ window.BAI = {
           options: [
             ['「いいこと」ばかりが{起|お}きる、{運|うん}がいい{人|ひと}', 'Người may mắn, toàn gặp chuyện tốt.', 'Sai. Đây là suy nghĩ CŨ, đã bị phủ định (そうではないと気づいた).'],
             ['「{私|わたし}」と{一緒|いっしょ}に@keiken([経験|けいけん])したことは、{何|なん}でも「いいこと」だと{思|おも}える{人|ひと}', 'Người thấy mọi việc trải qua cùng "tôi" đều là chuyện tốt.', 'Sai. Không giới hạn ở việc làm cùng "tôi".'],
-            ['ほかの{人|ひと}に{起|お}こった「いいこと」を{一緒|いっしょ}に@yorokobu([喜|よろこ]んで)あげられる{人|ひと}', 'Người biết vui cùng chuyện tốt của người khác.', 'Sai. Bài không nói vậy.'],
+            ['ほかの{人|ひと}に{起|お}こった「いいこと」を{一緒|いっしょ}に@yorokobu([喜|よろこ]んで)あげられる{人|ひと}', 'Người biết vui cùng chuyện tốt của người khác.', 'Sai. Ví dụ trong bài là chuyện chính Maki gặp (phải đi bộ về), không phải chuyện vui của người khác.'],
             ['ほかの{人|ひと}が「いいこと」だと{思|おも}わないことも「いいこと」だと{思|おも}える{人|ひと}', 'Người thấy cả những điều người khác không cho là tốt cũng là chuyện tốt.', 'Đúng. "Tôi" thấy đi bộ về là chán, Maki lại thấy vui (s5–s7).']
           ],
           answer: 4,
@@ -214,13 +214,13 @@ window.BAI = {
         { t: 'p', s: [
           ['s1', '{子|こ}どもが@netsu({熱|ねつ}を{出|だ}した)ので、@soutai([早退|そうたい])します。', 'Con tôi bị sốt nên tôi về sớm.'],
           ['s2', '{午後|ごご}、{明日|あした}の{会議|かいぎ}の@shinkou([進行|しんこう])について[確認|かくにん]する@yakusoku({約束|やくそく})だったのに、すみません。', 'Chiều nay đã hẹn kiểm tra lại cách điều hành cuộc họp ngày mai, vậy mà xin lỗi nhé.'],
-          ['s3', '{午後|ごご}の@hanashiai({話|はな}し{合|あ}い)のために{予約|よやく}していた{小|しょう}@kaigishitsu({会議室|かいぎしつ})はキャンセルしてくれますか。', 'Em hủy giúp phòng họp nhỏ đã đặt cho buổi trao đổi chiều nay được không?'],
+          ['s3', '{午後|ごご}の@hanashiai({話|はな}し{合|あ}い)のために{予約|よやく}していた{小|しょう}@kaigishitsu({会議室|かいぎしつ})はキャンセルしてくれますか。', 'Bạn hủy giúp phòng họp nhỏ đã đặt cho buổi trao đổi chiều nay được không?'],
           ['s4', '{席|せき}に{戻|もど}ったら、すぐお{願|ねが}いします。', 'Về chỗ là làm ngay giúp tôi nhé.'],
           ['s5', '{会議|かいぎ}の[進行|しんこう]については、{明日|あした}の{朝|あさ}、{最初|さいしょ}に[確認|かくにん]して、そのあとに{会議室|かいぎしつ}の{準備|じゅんび}をしましょう。', 'Về cách điều hành cuộc họp, sáng mai chúng ta kiểm tra đầu tiên, sau đó chuẩn bị phòng họp.']
         ] },
         { t: 'p', s: [
-          ['s6', 'それから、ミンさんの{作|つく}った@shiryou([資料|しりょう])ですが、{問題|もんだい}ないので、{今日中|きょうじゅう}に8{人|にん}{分|ぶん}@insatsu([印刷|いんさつ])しておいてください。', 'Ngoài ra, tài liệu em làm không có vấn đề gì, nên trong hôm nay hãy in sẵn 8 bản.'],
-          ['s7', 'よろしくお{願|ねが}いします。', 'Nhờ em nhé.']
+          ['s6', 'それから、ミンさんの{作|つく}った@shiryou([資料|しりょう])ですが、{問題|もんだい}ないので、{今日中|きょうじゅう}に8{人|にん}{分|ぶん}@insatsu([印刷|いんさつ])しておいてください。', 'Ngoài ra, tài liệu bạn làm không có vấn đề gì, nên trong hôm nay hãy in sẵn 8 bản.'],
+          ['s7', 'よろしくお{願|ねが}いします。', 'Nhờ bạn nhé.']
         ] },
         { t: 'right', s: [['sg1', '9{月|がつ}8{日|か}　12:10', '8/9, 12:10'], ['sg2', '[原口|はらぐち]', 'Haraguchi']] }
       ],
@@ -284,7 +284,7 @@ window.BAI = {
           options: [
             ['{店|みせ}の@danbou([暖房|だんぼう])にあまりお{金|かね}がかからないようにするため', 'Để tiết kiệm tiền sưởi.', 'Sai. Bài không nói đến sưởi.'],
             ['{客|きゃく}に、{店|みせ}の{料理|りょうり}と{店|みせ}で{過|す}ごす{時間|じかん}にいい@inshou([印象|いんしょう])を{持|も}ってもらうため', 'Để khách có ấn tượng tốt về món ăn và thời gian ở quán.', 'Đúng. Món ăn trông ngon (s2) + cảm thấy được thư thả (s3–s4).'],
-            ['{店|みせ}をおしゃれに{見|み}せて、{客|きゃく}に{店|みせ}に{入|はい}りたいと{思|おも}ってもらうため', 'Để quán trông sành điệu, khách muốn vào.', 'Sai. Bài không nói vậy.'],
+            ['{店|みせ}をおしゃれに{見|み}せて、{客|きゃく}に{店|みせ}に{入|はい}りたいと{思|おも}ってもらうため', 'Để quán trông sành điệu, khách muốn vào.', 'Sai. Bài nói màu ấm tác động đến cảm giác thèm ăn và cảm nhận thời gian, không nói đến vẻ sành điệu để thu hút khách vào.'],
             ['{客|きゃく}に{長|なが}く{店|みせ}にいてもらって、{料理|りょうり}をたくさん{注文|ちゅうもん}してもらうため', 'Để khách ngồi lâu và gọi nhiều món.', 'Sai. Khách ở thời gian NGẮN nhưng CẢM THẤY thư thả.']
           ],
           answer: 2,
@@ -358,7 +358,7 @@ window.BAI = {
             ['{日本|にほん}で{売|う}っている[材料|ざいりょう]でチャーハンを{作|つく}って、{国|くに}の[香辛料|こうしんりょう]をかけたもの', 'Nấu cơm rang bằng nguyên liệu bán ở Nhật, rắc gia vị nước mình.', 'Đúng. Cơm rang bình thường kiểu Nhật (thịt, trứng) + gia vị mẹ đưa (s8–s9).'],
             ['{日本|にほん}で{売|う}っている[材料|ざいりょう]でチャーハンを{作|つく}って、{日本|にほん}の[香辛料|こうしんりょう]をかけたもの', 'Nguyên liệu Nhật + gia vị Nhật.', 'Sai. Gia vị là của nước tác giả.'],
             ['{国|くに}から{持|も}ってきた[材料|ざいりょう]でチャーハンを{作|つく}って、{国|くに}の[香辛料|こうしんりょう]をかけたもの', 'Nguyên liệu mang từ nước mình + gia vị nước mình.', 'Sai. Chỉ mang gia vị, nguyên liệu (thịt, trứng) mua ở Nhật.'],
-            ['{国|くに}から{持|も}ってきた[材料|ざいりょう]でチャーハンを{作|つく}って、{日本|にほん}の[香辛料|こうしんりょう]をかけたもの', 'Nguyên liệu nước mình + gia vị Nhật.', 'Sai. Ngược hoàn toàn.']
+            ['{国|くに}から{持|も}ってきた[材料|ざいりょう]でチャーハンを{作|つく}って、{日本|にほん}の[香辛料|こうしんりょう]をかけたもの', 'Nguyên liệu nước mình + gia vị Nhật.', 'Sai. Ngược cả hai: nguyên liệu (thịt, trứng) mua ở Nhật, còn gia vị là của nước tác giả.']
           ],
           answer: 1,
           evidence: ['s8', 's9']
@@ -370,7 +370,7 @@ window.BAI = {
             ['{国|くに}の[香辛料|こうしんりょう]が、どうして{日本|にほん}で[役|やく]に{立|た}つと{思|おも}ったのか。', 'Vì sao mẹ nghĩ gia vị nước mình sẽ có ích ở Nhật.', 'Đúng. 「母はこういうことを予想していたのでしょうか」 → hỏi mẹ đã đoán trước việc gia vị có ích như thế nào (s2, s11).'],
             ['どんな{料理|りょうり}を{作|つく}るときに、{国|くに}の[香辛料|こうしんりょう]を{使|つか}えばいいのか。', 'Nên dùng gia vị khi nấu món gì.', 'Sai. Không liên quan đến "予想".'],
             ['「{私|わたし}」が{日本|にほん}に[留学|りゅうがく]することを[予想|よそう]していたかどうか。', 'Mẹ có đoán trước việc "tôi" đi du học không.', 'Sai. Mẹ đưa gia vị khi biết con sắp đi du học.'],
-            ['{次|つぎ}の[留学生|りゅうがくせい]{交流会|こうりゅうかい}に、どんな{料理|りょうり}を{持|も}っていけばいいと{思|おも}うか。', 'Buổi giao lưu sau nên mang món gì.', 'Sai. Bài không nói vậy.']
+            ['{次|つぎ}の[留学生|りゅうがくせい]{交流会|こうりゅうかい}に、どんな{料理|りょうり}を{持|も}っていけばいいと{思|おも}うか。', 'Buổi giao lưu sau nên mang món gì.', 'Sai. Câu hỏi với mẹ gắn với 「予想していたのでしょうか」 – tức mẹ có đoán trước việc gia vị sẽ có ích không, không phải chuyện lần sau.']
           ],
           answer: 1,
           evidence: ['s2', 's11', 's12']
@@ -445,7 +445,7 @@ window.BAI = {
           label: '31',
           question: ['q2', '[漁師|りょうし]たちは、なぜ「{海外|かいがい}のファッションの{会社|かいしゃ}」が{始|はじ}めた{活動|かつどう}に{参加|さんか}するのか。', 'Vì sao ngư dân tham gia hoạt động này?'],
           options: [
-            ['ほかの[漁師|りょうし]たちとの@kyouryoku([協力|きょうりょく]){関係|かんけい}ができるから', 'Vì tạo được quan hệ hợp tác với ngư dân khác.', 'Sai. Bài không nói vậy.'],
+            ['ほかの[漁師|りょうし]たちとの@kyouryoku([協力|きょうりょく]){関係|かんけい}ができるから', 'Vì tạo được quan hệ hợp tác với ngư dân khác.', 'Sai. Lợi ích nêu trong bài là không tốn tiền vứt rác, không nói về quan hệ giữa các ngư dân.'],
             ['{自分|じぶん}たちのお{金|かね}をかけずに、{海|うみ}のごみを{減|へ}らすことができるから', 'Vì giảm được rác biển mà không tốn tiền của mình.', 'Đúng. 「自分のお金を使わずに海をきれいにできる良さがある」 (s9).'],
             ['{魚|さかな}をとるためにかかっていたお{金|かね}を{減|へ}らすことができるから', 'Vì giảm được chi phí đánh cá.', 'Sai. Chi phí được nói là phí vứt rác, không phải phí đánh cá.'],
             ['{自分|じぶん}たちが{少|すこ}しお{金|かね}を{出|だ}すだけで、{海|うみ}をきれいにしてもらえるから', 'Vì chỉ cần bỏ ra chút tiền là biển được làm sạch.', 'Sai. Ngư dân không phải trả tiền.']
@@ -460,7 +460,7 @@ window.BAI = {
             ['{海外|かいがい}のファッションに[関心|かんしん]を{持|も}つ{人|ひと}が{増|ふ}えているので、{売|う}れるだろう。', 'Sẽ bán được vì người quan tâm thời trang nước ngoài tăng.', 'Sai. Cái tăng là sự quan tâm đến vấn đề môi trường.'],
             ['[環境|かんきょう]{問題|もんだい}に[関心|かんしん]を{持|も}つ{人|ひと}が{増|ふ}えているし、デザインも{悪|わる}くないので、{売|う}れるだろう。', 'Sẽ bán được vì người quan tâm môi trường tăng và thiết kế không tệ.', 'Đúng. 「デザインも悪くない」「消費者の意識が変化している今…受け入れられるだろう」 (s3, s11–s12).'],
             ['デザインの{良|よ}さで@seihin([製品|せいひん])を[選|えら]ぶ{人|ひと}が{増|ふ}えているので、{値段|ねだん}が{高|たか}くても{売|う}れるだろう。', 'Sẽ bán được dù đắt vì người chọn theo thiết kế tăng.', 'Sai. Bài không nói về giá.'],
-            ['{製品|せいひん}のデザインが{日本|にほん}の{消費者|しょうひしゃ}には{合|あ}わないので、あまり{売|う}れないだろう。', 'Thiết kế không hợp người Nhật nên khó bán.', 'Sai. Ngược với ý bài.']
+            ['{製品|せいひん}のデザインが{日本|にほん}の{消費者|しょうひしゃ}には{合|あ}わないので、あまり{売|う}れないだろう。', 'Thiết kế không hợp người Nhật nên khó bán.', 'Sai. Ngược với ý bài – tác giả khen 「デザインも悪くない」 và cho rằng sẽ được đón nhận.']
           ],
           answer: 2,
           evidence: ['s3', 's11', 's12']
