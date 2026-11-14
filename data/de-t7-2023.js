@@ -129,11 +129,12 @@ window.BAI = {
           label: '23',
           question: ['q1', '[夏祭|なつまつ]りの{日|ひ}にホテル[岩中|いわなか]に[泊|と]まっている{人|ひと}が、ホテルから{受|う}けられるサービスとして{合|あ}っているのはどれか。', 'Dịch vụ mà người nghỉ tại khách sạn Iwanaka vào ngày lễ hội có thể nhận từ khách sạn là gì?'],
           options: [
-            ['[浴衣|ゆかた]を{着|き}れば、[夏祭|なつまつ]り[会場|かいじょう]まで、ホテルのバスが{利用|りよう}できる。', 'Nếu mặc yukata thì được đi xe buýt khách sạn tới lễ hội.', 'Sai. Xe buýt ai cũng đi được, không có điều kiện mặc yukata (s2).'],
-            ['ホテルのレストランで、ドリンクが1[杯|ぱい][無料|むりょう]で{飲|の}める。', 'Được uống miễn phí 1 ly ở nhà hàng khách sạn.', 'Sai. Đồ uống miễn phí là ở các quầy TRONG KHU LỄ HỘI, và do lễ hội tặng chứ không phải khách sạn (s3).'],
-            ['ホテルから、{好|す}きな[浴衣|ゆかた]と[帯|おび]を{特別|とくべつ}{料金|りょうきん}で{借|か}りられる。', 'Được thuê yukata và đai lưng tùy chọn với giá đặc biệt.', 'Đúng. 「お好きな浴衣と帯を特別料金でお貸しします」 (s5).'],
-            ['[浴衣|ゆかた]と[帯|おび]の{料金|りょうきん}のほかに2,000{円|えん}{払|はら}えば、ホテルの{人|ひと}に{着|き}るのを[手伝|てつだ]ってもらえる。', 'Trả thêm 2.000 yên ngoài tiền thuê thì nhân viên giúp mặc.', 'Sai. 2.000 yên là tiền thuê; việc giúp mặc không tính thêm phí (s6).']
+            ['[浴衣|ゆかた]を{着|き}れば、[夏祭|なつまつ]り[会場|かいじょう]まで、ホテルのバスが{利用|りよう}できる。', 'Nếu mặc yukata thì được đi xe buýt khách sạn tới lễ hội.', 'Chưa đúng. Xe buýt của khách sạn thì ai cũng đi được, bài không đặt điều kiện phải mặc yukata. Lựa chọn này đã lấy điều kiện "mặc yukata" của ưu đãi đồ uống gắn nhầm sang xe buýt.'],
+            ['ホテルのレストランで、ドリンクが1[杯|ぱい][無料|むりょう]で{飲|の}める。', 'Được uống miễn phí 1 ly ở nhà hàng khách sạn.', 'Chưa đúng. Đồ uống miễn phí là ở các quầy trong khu lễ hội (会場内の店), không phải ở nhà hàng của khách sạn, và đó là ưu đãi của lễ hội chứ không phải của khách sạn.'],
+            ['ホテルから、{好|す}きな[浴衣|ゆかた]と[帯|おび]を{特別|とくべつ}{料金|りょうきん}で{借|か}りられる。', 'Được thuê yukata và đai lưng tùy chọn với giá đặc biệt.', 'Đúng. Bài viết rõ khách sạn cho thuê yukata và đai lưng theo ý thích với giá đặc biệt (お好きな浴衣と帯を特別料金でお貸しします). Đây đúng là dịch vụ "từ khách sạn".'],
+            ['[浴衣|ゆかた]と[帯|おび]の{料金|りょうきん}のほかに2,000{円|えん}{払|はら}えば、ホテルの{人|ひと}に{着|き}るのを[手伝|てつだ]ってもらえる。', 'Trả thêm 2.000 yên ngoài tiền thuê thì nhân viên giúp mặc.', 'Chưa đúng. 2.000 yên chính là tiền thuê yukata và đai lưng cho một ngày. Việc nhân viên giúp mặc (お手伝いいたします) không tính thêm tiền, nên "trả thêm 2.000 yên" là sai.']
           ],
+          guide: 'Câu hỏi hỏi: người nghỉ ở khách sạn Iwanaka được KHÁCH SẠN cung cấp dịch vụ gì? Chữ quan trọng nhất là 「ホテルから」 (từ phía khách sạn). Tờ rơi này nói về hai bên khác nhau: lễ hội và khách sạn, nên bạn phải tách rõ cái nào của ai.\nĐoạn thứ hai nói về lễ hội: ai mặc yukata thì được một ly đồ uống miễn phí ở các quầy trong khu lễ hội. Đây là ưu đãi của lễ hội, không phải của khách sạn.\nĐoạn thứ ba mới nói về khách sạn: 「ホテルでは、お好きな浴衣と帯を特別料金【1日2000円】でお貸しします」 – khách sạn cho thuê yukata và đai lưng theo ý thích với giá đặc biệt 2.000 yên một ngày. Đây chính là đáp án 3.\nMẹo: với loại tờ rơi nhiều thông tin, hãy gạch chân "ai làm – ở đâu – điều kiện gì" cho từng câu. Các lựa chọn sai thường lấy điều kiện của câu này ghép vào câu khác.',
           answer: 3,
           evidence: ['s5']
         }
@@ -179,11 +180,12 @@ window.BAI = {
           label: '24',
           question: ['q1', '‹[頑張|がんば]ろう›とあるが、どうしてそう{思|おも}ったのか。', '"Sẽ cố gắng" – vì sao tác giả nghĩ vậy?'],
           options: [
-            ['{自分|じぶん}でも{忘|わす}れていた、アメリカに[留学|りゅうがく]したいという{夢|ゆめ}が{本当|ほんとう}になったから。', 'Vì ước mơ du học Mỹ mà chính mình đã quên đã thành sự thật.', 'Sai. Ước mơ trong bài văn là làm GIÁO VIÊN, không phải du học.'],
-            ['{自分|じぶん}でも{忘|わす}れていた、{先生|せんせい}になりたいという{夢|ゆめ}が{本当|ほんとう}になったから。', 'Vì ước mơ làm giáo viên mà chính mình đã quên đã thành sự thật.', 'Đúng. 「先生になりたいと書いてあった」「すっかり忘れていた」「子供のころの夢が本当になったのだし」 (s4–s6).'],
-            ['{子供|こども}のころからずっと{行|い}きたいと{思|おも}い{続|つづ}けていたアメリカに[留学|りゅうがく]できたから。', 'Vì đã du học được ở Mỹ – nơi luôn muốn đến từ nhỏ.', 'Sai. Bài không nói du học Mỹ là ước mơ từ nhỏ; ước mơ trong bài văn là làm giáo viên.'],
-            ['{子供|こども}のころからずっとなりたいと{思|おも}い{続|つづ}けていた{先生|せんせい}になれたから。', 'Vì đã trở thành giáo viên – điều luôn mong muốn từ nhỏ.', 'Sai. Tác giả đã "すっかり忘れていた" (quên hẳn), không phải "ずっと思い続けていた" (luôn nghĩ).']
+            ['{自分|じぶん}でも{忘|わす}れていた、アメリカに[留学|りゅうがく]したいという{夢|ゆめ}が{本当|ほんとう}になったから。', 'Vì ước mơ du học Mỹ mà chính mình đã quên đã thành sự thật.', 'Chưa đúng. Ước mơ viết trong bài văn hồi nhỏ là làm giáo viên, không phải đi du học Mỹ. Du học chỉ là chuyện tác giả đã làm xong trước đó.'],
+            ['{自分|じぶん}でも{忘|わす}れていた、{先生|せんせい}になりたいという{夢|ゆめ}が{本当|ほんとう}になったから。', 'Vì ước mơ làm giáo viên mà chính mình đã quên đã thành sự thật.', 'Đúng. Tác giả từng viết muốn làm giáo viên, rồi quên hẳn (すっかり忘れていた), nay lại sắp dạy đại học. Ước mơ đã quên mà vẫn thành sự thật, nên tác giả quyết tâm cố gắng.'],
+            ['{子供|こども}のころからずっと{行|い}きたいと{思|おも}い{続|つづ}けていたアメリカに[留学|りゅうがく]できたから。', 'Vì đã du học được ở Mỹ – nơi luôn muốn đến từ nhỏ.', 'Chưa đúng. Bài không nói du học Mỹ là ước mơ từ nhỏ, cũng không phải điều làm tác giả muốn cố gắng.'],
+            ['{子供|こども}のころからずっとなりたいと{思|おも}い{続|つづ}けていた{先生|せんせい}になれたから。', 'Vì đã trở thành giáo viên – điều luôn mong muốn từ nhỏ.', 'Chưa đúng. Nghe rất giống đáp án đúng, nhưng có chữ "ずっと…思い続けていた" (luôn luôn mong muốn). Thực tế tác giả đã quên hẳn ước mơ này, nên lựa chọn này sai ở đúng chi tiết đó.']
           ],
+          guide: 'Câu hỏi hỏi lý do tác giả nghĩ "mình sẽ cố gắng" (頑張ろう). Lý do nằm ngay trước câu đó: 「子供のころの夢が本当になったのだし」 – "vì ước mơ hồi nhỏ đã thành sự thật".\nVậy ước mơ hồi nhỏ là gì? Quay lên trên: trong bài văn hồi tiểu học, tác giả viết 「先生になりたい」 – muốn làm giáo viên. Và bây giờ tác giả sắp dạy toán ở đại học, tức là đã thành giáo viên.\nCòn một chi tiết nữa để chọn giữa đáp án 2 và 4: tác giả nói 「そんなことはすっかり忘れていた」 – "tôi đã quên hẳn chuyện đó". Nghĩa là tác giả KHÔNG hề luôn ấp ủ ước mơ này, mà đã quên rồi mới tình cờ nhớ lại. Vì vậy đáp án là 2 (ước mơ mà chính mình đã quên).\nMẹo: khi hai lựa chọn gần giống nhau, hãy so những từ chỉ mức độ như すっかり (hoàn toàn), ずっと (suốt, luôn luôn). Chỉ một từ đó thôi là đủ để đúng hay sai.',
           answer: 2,
           evidence: ['s4', 's5', 's6']
         }
@@ -236,11 +238,12 @@ window.BAI = {
           label: '25',
           question: ['q1', 'このメールによると、{自分|じぶん}で{野球場|やきゅうじょう}に{行|い}こうと{思|おも}っている{学生|がくせい}が、@kanarazu([必|かなら]ず)しなければならないことは{何|なに}か。', 'Theo email, học sinh định tự đi đến sân bóng nhất định phải làm gì?'],
           options: [
-            ['26{日|にち}までに{学校|がっこう}で[招待券|しょうたいけん]を{受|う}け{取|と}っておく。', 'Nhận vé mời ở trường trước ngày 26.', 'Đúng. Chỉ người đi cùng thầy cô mới được nhận vé hôm đó (s7); người tự đi phải tự lấy vé ở văn phòng trước ngày 26 (s4).'],
-            ['26{日|にち}までに{学校|がっこう}で[招待券|しょうたいけん]を{受|う}け{取|と}って、{当日|とうじつ}、13{時|じ}に{野球場|やきゅうじょう}の{前|まえ}に[集合|しゅうごう]する。', 'Nhận vé trước ngày 26 và tập trung trước sân bóng lúc 13 giờ hôm đó.', 'Sai. Người tự đi không cần tập trung ở đâu cả (s8).'],
-            ['{当日|とうじつ}、12{時|じ}に{学校|がっこう}に{行|い}って、[招待券|しょうたいけん]を[中川|なかがわ]{先生|せんせい}から{受|う}け{取|と}る。', 'Hôm đó 12 giờ đến trường nhận vé từ thầy/cô Nakagawa.', 'Sai. Đó là cách dành cho người đi CÙNG thầy cô (s6–s7).'],
-            ['{当日|とうじつ}、13{時|じ}に{野球場|やきゅうじょう}に{行|い}って、[招待券|しょうたいけん]を[中川|なかがわ]{先生|せんせい}から{受|う}け{取|と}る。', 'Hôm đó 13 giờ đến sân bóng nhận vé từ thầy/cô Nakagawa.', 'Sai. Không có hẹn nhận vé ở sân bóng.']
+            ['26{日|にち}までに{学校|がっこう}で[招待券|しょうたいけん]を{受|う}け{取|と}っておく。', 'Nhận vé mời ở trường trước ngày 26.', 'Đúng. Người tự đi không được nhận vé vào hôm đó (đó là quyền của nhóm đi cùng thầy/cô), nên bắt buộc phải lấy vé ở văn phòng trường trước ngày 26.'],
+            ['26{日|にち}までに{学校|がっこう}で[招待券|しょうたいけん]を{受|う}け{取|と}って、{当日|とうじつ}、13{時|じ}に{野球場|やきゅうじょう}の{前|まえ}に[集合|しゅうごう]する。', 'Nhận vé trước ngày 26 và tập trung trước sân bóng lúc 13 giờ hôm đó.', 'Chưa đúng. Nửa đầu đúng, nhưng nửa sau sai: bài nói rõ người tự đi không cần tập trung ở trường hay ở sân bóng, nên không có chuyện tập trung trước sân lúc 13 giờ.'],
+            ['{当日|とうじつ}、12{時|じ}に{学校|がっこう}に{行|い}って、[招待券|しょうたいけん]を[中川|なかがわ]{先生|せんせい}から{受|う}け{取|と}る。', 'Hôm đó 12 giờ đến trường nhận vé từ thầy/cô Nakagawa.', 'Chưa đúng. Đến trường lúc 12 giờ và nhận vé từ thầy/cô Nakagawa là cách dành cho nhóm muốn đi CÙNG thầy/cô, không phải nhóm tự đi.'],
+            ['{当日|とうじつ}、13{時|じ}に{野球場|やきゅうじょう}に{行|い}って、[招待券|しょうたいけん]を[中川|なかがわ]{先生|せんせい}から{受|う}け{取|と}る。', 'Hôm đó 13 giờ đến sân bóng nhận vé từ thầy/cô Nakagawa.', 'Chưa đúng. Bài không có cuộc hẹn nào để nhận vé ở sân bóng. 13 giờ chỉ là giờ mở cửa sân.']
           ],
+          guide: 'Câu hỏi hỏi về người TỰ ĐI đến sân bóng (自分で野球場に行こうと思っている学生) và việc họ BẮT BUỘC phải làm. Email chia học sinh thành hai nhóm: nhóm đi cùng thầy/cô Nakagawa và nhóm tự đi. Bạn cần tìm đúng thông tin cho nhóm tự đi.\nVới nhóm đi cùng thầy/cô: tập trung ở trường lúc 12 giờ, và 「その場合、招待券は当日、中川先生からもらってもいい」 – trong trường hợp đó có thể nhận vé vào hôm đi. Chữ 「その場合」 nghĩa là ưu đãi này CHỈ dành cho nhóm đi cùng thầy/cô.\nVới nhóm tự đi: 「学校にも野球場にも集合する必要はありません」 – không cần tập trung ở đâu cả. Nhưng vì họ không được nhận vé hôm đó, họ phải lấy vé trước theo câu chung: 「26日（金）までに事務室に取りに来てください」 – đến văn phòng lấy vé trước ngày 26. Vậy đáp án là 1.\nMẹo: khi thấy 「その場合」 (trong trường hợp đó), hãy hỏi lại "trường hợp nào?". Điều kiện sau nó chỉ áp dụng cho trường hợp vừa nói.',
           answer: 1,
           evidence: ['s4', 's7', 's8']
         }
@@ -289,11 +292,12 @@ window.BAI = {
           label: '26',
           question: ['q1', 'この[実験|じっけん]から、{魚|さかな}の{中|なか}には、どのようなものがいることがわかったか。', 'Qua thí nghiệm, người ta biết rằng trong loài cá có những con như thế nào?'],
           options: [
-            ['[鏡|かがみ]を{見|み}て、{自分|じぶん}に[汚|よご]れをつけるものがいる。', 'Có con nhìn gương rồi tự bôi bẩn lên mình.', 'Sai. Vết bẩn là do người làm thí nghiệm bôi.'],
-            ['[鏡|かがみ]の{中|なか}の{魚|さかな}が{自分|じぶん}だとわかるものがいる。', 'Có con biết con cá trong gương là chính mình.', 'Đúng. 「魚にもそれができるものがいる」, それ = nhận ra mình trong gương (s5–s6).'],
-            ['[鏡|かがみ]に{気|き}づくと、すぐに[鏡|かがみ]の{前|まえ}に{行|い}きたがるものがいる。', 'Có con hễ thấy gương là muốn đến trước gương ngay.', 'Sai. Con cá nhìn gương để kiểm tra vết bẩn, không phải vì muốn đến trước gương.'],
-            ['[鏡|かがみ]が[汚|よご]れていたら、きれいにしようとするものがいる。', 'Có con thấy gương bẩn thì muốn lau sạch.', 'Sai. Vết bẩn ở trên MẶT CÁ, không phải trên gương.']
+            ['[鏡|かがみ]を{見|み}て、{自分|じぶん}に[汚|よご]れをつけるものがいる。', 'Có con nhìn gương rồi tự bôi bẩn lên mình.', 'Chưa đúng. Vết bẩn là do người làm thí nghiệm bôi lên mặt cá, cá không tự bôi bẩn lên mình.'],
+            ['[鏡|かがみ]の{中|なか}の{魚|さかな}が{自分|じぶん}だとわかるものがいる。', 'Có con biết con cá trong gương là chính mình.', 'Đúng. Câu cuối nói trong loài cá cũng có con làm được "điều đó", tức là nhìn gương và biết con cá trong gương là chính mình.'],
+            ['[鏡|かがみ]に{気|き}づくと、すぐに[鏡|かがみ]の{前|まえ}に{行|い}きたがるものがいる。', 'Có con hễ thấy gương là muốn đến trước gương ngay.', 'Chưa đúng. Cá soi gương để kiểm tra xem vết bẩn còn không, bài không nói cá thích đến trước gương.'],
+            ['[鏡|かがみ]が[汚|よご]れていたら、きれいにしようとするものがいる。', 'Có con thấy gương bẩn thì muốn lau sạch.', 'Chưa đúng. Vết bẩn nằm trên mặt con cá, không phải trên mặt gương. Cá cọ mặt mình chứ không lau gương.']
           ],
+          guide: 'Câu hỏi hỏi: qua thí nghiệm, người ta biết trong loài cá có những con như thế nào? Câu trả lời nằm ở câu cuối của bài: 「魚にもそれができるものがいる」 – "trong loài cá cũng có con làm được điều đó".\n"Điều đó" (それ) là gì? Nhìn câu ngay trước: 「鏡の中にいる自分を見て、それが自分自身だとわかる」 – nhìn mình trong gương và biết đó là chính mình. Trước đây người ta nghĩ chỉ động vật thông minh như khỉ mới làm được, nhưng nhà nghiên cứu nói có loài cá cũng làm được. Vậy đáp án là 2.\nThí nghiệm cụ thể: người ta bôi bẩn lên mặt cá, cho cá soi gương; cá cọ mặt xuống cát rồi lại soi gương để xem vết bẩn đã hết chưa. Cá biết vết bẩn nằm trên mặt MÌNH, tức là nó nhận ra mình trong gương.\nMẹo: bài có mẫu "trước đây người ta nghĩ… (と考えられていた). しかし…" thì ý chính luôn nằm sau しかし. Và nếu câu kết có それ, hãy tìm nó chỉ cái gì – đó thường là đáp án.',
           answer: 2,
           evidence: ['s5', 's6']
         }
@@ -354,11 +358,12 @@ window.BAI = {
           label: '27',
           question: ['q1', '‹①{運転|うんてん}をやめることにして›とあるが、それはなぜか。', '"Quyết định thôi lái xe" – vì sao?'],
           options: [
-            ['{運転|うんてん}に{自信|じしん}があったのに、{車|くるま}をぶつけてしまったから。', 'Vì dù tự tin nhưng đã đâm xe.', 'Sai. Người đâm xe là NGƯỜI BẠN, không phải tác giả.'],
-            ['{自分|じぶん}も{安全|あんぜん}に{運転|うんてん}が{続|つづ}けられるか{心配|しんぱい}になったから。', 'Vì lo không biết mình có lái xe an toàn tiếp được không.', 'Đúng. 「安全に運転が続けられるか不安になってきた。それで、…」 (s2–s3).'],
-            ['{若|わか}いころから{自分|じぶん}の{運転|うんてん}{技術|ぎじゅつ}に{不安|ふあん}があったから。', 'Vì từ trẻ đã không tự tin vào tay lái.', 'Sai. Tác giả vốn "運転に自信があった".'],
-            ['{車|くるま}の{運転|うんてん}をやめたほうがいいと[妻|つま]に{言|い}われたから。', 'Vì bị vợ khuyên nên thôi lái.', 'Sai. Bài không nhắc đến lời khuyên của vợ; tác giả tự quyết định sau khi nghe chuyện của bạn.']
+            ['{運転|うんてん}に{自信|じしん}があったのに、{車|くるま}をぶつけてしまったから。', 'Vì dù tự tin nhưng đã đâm xe.', 'Chưa đúng. Người đâm xe vào tường là người bạn của tác giả, không phải tác giả. Lựa chọn này đã đổi chủ ngữ.'],
+            ['{自分|じぶん}も{安全|あんぜん}に{運転|うんてん}が{続|つづ}けられるか{心配|しんぱい}になったから。', 'Vì lo không biết mình có lái xe an toàn tiếp được không.', 'Đúng. Nghe chuyện người bạn, tác giả lo không biết mình còn lái an toàn được không (不安になってきた), và vì thế (それで) quyết định thôi lái.'],
+            ['{若|わか}いころから{自分|じぶん}の{運転|うんてん}{技術|ぎじゅつ}に{不安|ふあん}があったから。', 'Vì từ trẻ đã không tự tin vào tay lái.', 'Chưa đúng. Ngược lại, bài nói tác giả vốn rất tự tin vào tay lái (運転に自信があった).'],
+            ['{車|くるま}の{運転|うんてん}をやめたほうがいいと[妻|つま]に{言|い}われたから。', 'Vì bị vợ khuyên nên thôi lái.', 'Chưa đúng. Bài hoàn toàn không nhắc đến việc vợ khuyên. Tác giả tự quyết định sau khi nghe chuyện của bạn.']
           ],
+          guide: 'Câu hỏi hỏi vì sao tác giả quyết định thôi lái xe. Hãy nhìn ngay trước câu gạch chân: có chữ 「それで」 (vì thế). Phần trước 「それで」 chính là lý do.\nPhần đó viết: tác giả nghe chuyện người bạn cùng 70 tuổi đâm xe vào tường nhà, và 「安全に運転が続けられるか不安になってきた」 – bắt đầu lo không biết mình có tiếp tục lái xe an toàn được không. Vì lo như vậy nên tác giả thôi lái. Đáp án là 2.\nChú ý: người đâm xe là NGƯỜI BẠN, không phải tác giả. Còn bản thân tác giả thì vốn rất tự tin vào tay lái (運転に自信があった).\nMẹo: câu hỏi "なぜか" thường có đáp án ngay trước các từ nối chỉ kết quả như それで, だから, そのため.',
           answer: 2,
           evidence: ['s2', 's3']
         },
@@ -366,11 +371,12 @@ window.BAI = {
           label: '28',
           question: ['q2', '‹②[困|こま]ったこと›とあるが、どんなことか。', '"Chuyện khó khăn" là chuyện gì?'],
           options: [
-            ['{毎日|まいにち}、[妻|つま]と{二人|ふたり}でスーパーに{買|か}い{物|もの}に{行|い}かなければならなくなったこと。', 'Ngày nào cũng phải cùng vợ đi siêu thị.', 'Sai. Việc đi chợ cùng vợ vẫn như trước (これまでと変わらず).'],
-            ['{今|いま}までより{遠|とお}くのスーパーまで、{買|か}い{物|もの}に{行|い}かなければならなくなったこと。', 'Phải đi siêu thị xa hơn trước.', 'Sai. Vẫn là siêu thị dưới dốc.'],
-            ['スーパーに{行|い}くとき、ついでにしていた{運動|うんどう}ができなくなり、{運動|うんどう}{不足|ぶそく}になったこと。', 'Không còn vận động khi đi siêu thị, nên thiếu vận động.', 'Sai. Ngược lại, đi bộ còn thành vận động.'],
-            ['スーパーで{買|か}った{物|もの}を{歩|ある}いて{持|も}って{帰|かえ}ってくるのが、@yosou([予想|よそう])ほど{楽|らく}ではなかったこと。', 'Xách đồ mua ở siêu thị đi bộ về không nhẹ nhàng như dự tính.', 'Đúng. 「荷物を持って坂を上がって帰るのは、思ったより大変だった」 (s8).']
+            ['{毎日|まいにち}、[妻|つま]と{二人|ふたり}でスーパーに{買|か}い{物|もの}に{行|い}かなければならなくなったこと。', 'Ngày nào cũng phải cùng vợ đi siêu thị.', 'Chưa đúng. Đi siêu thị cùng vợ là việc hai người vẫn làm từ trước (これまでと変わらず), không phải chuyện mới gây khó khăn.'],
+            ['{今|いま}までより{遠|とお}くのスーパーまで、{買|か}い{物|もの}に{行|い}かなければならなくなったこと。', 'Phải đi siêu thị xa hơn trước.', 'Chưa đúng. Vẫn là siêu thị cũ dưới chân dốc, không phải siêu thị xa hơn.'],
+            ['スーパーに{行|い}くとき、ついでにしていた{運動|うんどう}ができなくなり、{運動|うんどう}{不足|ぶそく}になったこと。', 'Không còn vận động khi đi siêu thị, nên thiếu vận động.', 'Chưa đúng. Ngược lại, tác giả còn nghĩ đi bộ đến siêu thị sẽ thành một cách vận động. Không có chuyện thiếu vận động.'],
+            ['スーパーで{買|か}った{物|もの}を{歩|ある}いて{持|も}って{帰|かえ}ってくるのが、@yosou([予想|よそう])ほど{楽|らく}ではなかったこと。', 'Xách đồ mua ở siêu thị đi bộ về không nhẹ nhàng như dự tính.', 'Đúng. Bài viết xách đồ leo dốc về nhà "vất vả hơn mình tưởng" (思ったより大変だった), đúng với "không nhẹ nhàng như dự tính".']
           ],
+          guide: 'Câu hỏi hỏi "chuyện khó khăn" (困ったこと) là gì. Ngay sau câu gạch chân, tác giả kể: hai vợ chồng sống trên đồi, vẫn đi siêu thị dưới dốc như trước. Lúc đầu nghĩ đi bộ cũng được, lại thành vận động.\nRồi đến câu quan trọng có 「しかし」: 「車を使わず荷物を持って坂を上がって帰るのは、思ったより大変だった」 – không có xe, xách đồ leo dốc về nhà vất vả hơn mình tưởng. Đây chính là chuyện khó khăn. Đáp án 4 nói lại ý này bằng từ khác: 予想ほど楽ではなかった (không nhẹ nhàng như dự tính) = 思ったより大変だった.\nMẹo: đề thi hay đổi cách nói. "思ったより大変" và "予想ほど楽ではない" là cùng một nghĩa. Hãy hiểu ý, đừng chỉ dò chữ giống nhau.',
           answer: 4,
           evidence: ['s8']
         },
@@ -378,11 +384,12 @@ window.BAI = {
           label: '29',
           question: ['q3', 'スーパーのサービスを{利用|りよう}して、「{私|わたし}」は{今|いま}、{引|ひ}っ{越|こ}しについてどう{考|かんが}えているか。', 'Sau khi dùng dịch vụ của siêu thị, giờ "tôi" nghĩ gì về việc chuyển nhà?'],
           options: [
-            ['{買|か}った{商品|しょうひん}を{持|も}って{帰|かえ}るのが{大変|たいへん}なので、スーパーの{近|ちか}くに{引|ひ}っ{越|こ}したほうがいいかもしれない。', 'Xách đồ về vất vả nên có lẽ nên chuyển đến gần siêu thị.', 'Sai. Tác giả kết luận không cần chuyển nhà.'],
-            ['{買|か}った{商品|しょうひん}を{届|とど}けてもらうと{配達料|はいたつりょう}がかかるので、スーパーの{近|ちか}くに{引|ひ}っ{越|こ}したほうがいいかもしれない。', 'Giao hàng tốn phí nên có lẽ nên chuyển nhà.', 'Sai. 「配達料はかかるが、便利さのほうが重要だ」.'],
-            ['{届|とど}けてもらった{商品|しょうひん}に@manzoku([満足|まんぞく])したし、{今後|こんご}はこのサービスを{利用|りよう}すれば、{引|ひ}っ{越|こ}す{必要|ひつよう}はない。', 'Hài lòng với hàng được giao, sau này dùng dịch vụ thì không cần chuyển nhà.', 'Đúng. 「どれもとても良かった」「これで引っ越しをしなくてもよさそう」 (s12–s15).'],
-            ['{届|とど}けてもらった{商品|しょうひん}の{中|なか}には{満足|まんぞく}できないものもあったが、このサービスを{利用|りよう}すれば、{引|ひ}っ{越|こ}す{必要|ひつよう}はないだろう。', 'Có món chưa hài lòng nhưng dùng dịch vụ thì không cần chuyển nhà.', 'Sai. Món nào cũng rất tốt (どれもとても良かった).']
+            ['{買|か}った{商品|しょうひん}を{持|も}って{帰|かえ}るのが{大変|たいへん}なので、スーパーの{近|ちか}くに{引|ひ}っ{越|こ}したほうがいいかもしれない。', 'Xách đồ về vất vả nên có lẽ nên chuyển đến gần siêu thị.', 'Chưa đúng. Đây là suy nghĩ của tác giả TRƯỚC khi biết dịch vụ giao hàng. Đến đoạn cuối, tác giả đã thấy không cần chuyển nhà.'],
+            ['{買|か}った{商品|しょうひん}を{届|とど}けてもらうと{配達料|はいたつりょう}がかかるので、スーパーの{近|ちか}くに{引|ひ}っ{越|こ}したほうがいいかもしれない。', 'Giao hàng tốn phí nên có lẽ nên chuyển nhà.', 'Chưa đúng. Tác giả có nhắc phí giao hàng, nhưng nói ngay là tiện lợi quan trọng hơn (便利さのほうが重要だ). Phí đó không phải lý do để chuyển nhà.'],
+            ['{届|とど}けてもらった{商品|しょうひん}に@manzoku([満足|まんぞく])したし、{今後|こんご}はこのサービスを{利用|りよう}すれば、{引|ひ}っ{越|こ}す{必要|ひつよう}はない。', 'Hài lòng với hàng được giao, sau này dùng dịch vụ thì không cần chuyển nhà.', 'Đúng. Hàng giao đến món nào cũng tốt, và tác giả kết luận "thế này thì không cần chuyển nhà" (引っ越しをしなくてもよさそう).'],
+            ['{届|とど}けてもらった{商品|しょうひん}の{中|なか}には{満足|まんぞく}できないものもあったが、このサービスを{利用|りよう}すれば、{引|ひ}っ{越|こ}す{必要|ひつよう}はないだろう。', 'Có món chưa hài lòng nhưng dùng dịch vụ thì không cần chuyển nhà.', 'Chưa đúng. Bài nói "món nào cũng rất tốt" (どれもとても良かった), không có món nào làm tác giả không hài lòng.']
           ],
+          guide: 'Câu hỏi hỏi suy nghĩ HIỆN TẠI của tác giả về chuyện chuyển nhà, sau khi dùng dịch vụ giao hàng của siêu thị. Suy nghĩ hiện tại luôn nằm ở đoạn cuối.\nĐoạn cuối có ba ý: (1) 「翌日届いた品物はどれもとても良かった」 – hàng giao hôm sau món nào cũng rất tốt; (2) 「配達料はかかるが、便利さのほうが重要だ」 – tuy mất phí giao hàng nhưng tiện lợi quan trọng hơn; (3) 「これで引っ越しをしなくてもよさそうである」 – thế này thì có vẻ không cần chuyển nhà.\nĐáp án 3 gói đủ hai ý: hài lòng với hàng, và không cần chuyển nhà nữa.\nHai bẫy cần chú ý: đáp án 2 lấy chi tiết "phí giao hàng" ra làm lý do chuyển nhà, trong khi tác giả nói phí đó không quan trọng bằng sự tiện lợi; đáp án 4 nói "có món chưa hài lòng", ngược với "どれも" (món nào cũng tốt).',
           answer: 3,
           evidence: ['s12', 's13', 's14', 's15']
         }
@@ -435,11 +442,12 @@ window.BAI = {
           label: '30',
           question: ['q1', '‹①{行|い}くのを[我慢|がまん]してしまうことがあります›とあるが、どうしてか。', '"Đành nhịn không đi" – vì sao?'],
           options: [
-            ['{音楽|おんがく}や{絵|え}や{映画|えいが}などを{楽|たの}しめる{場所|ばしょ}が、{近|ちか}くにないことが{多|おお}いから。', 'Vì thường không có nơi thưởng thức ở gần.', 'Sai. Bài không nói thiếu nơi giải trí; lý do là chuyện con còn nhỏ.'],
-            ['{子供|こども}の@sewa({世話|せわ})をするのに{忙|いそが}しくて、{時間|じかん}がないから。', 'Vì bận chăm con, không có thời gian.', 'Sai. Lý do được nêu là sợ trẻ làm ồn và khó gửi con, không phải bận.'],
-            ['{子供|こども}を{連|つ}れて{行|い}くのも、{親|おや}だけで{出|で}かけるのも{難|むずか}しいから。', 'Vì dẫn con theo cũng khó, mà bố mẹ đi riêng cũng khó.', 'Đúng. 「連れて行けないし、人に預けることも簡単ではない」 (s2) = dẫn theo không được, gửi con để đi một mình cũng khó.'],
-            ['{大人|おとな}だけでなく、{子供|こども}の{料金|りょうきん}も{払|はら}わなければならないから。', 'Vì phải trả tiền vé cho cả trẻ em.', 'Sai. Bài không nói về tiền.']
+            ['{音楽|おんがく}や{絵|え}や{映画|えいが}などを{楽|たの}しめる{場所|ばしょ}が、{近|ちか}くにないことが{多|おお}いから。', 'Vì thường không có nơi thưởng thức ở gần.', 'Chưa đúng. Bài không nói thiếu nơi giải trí ở gần. Vấn đề là chuyện có con nhỏ.'],
+            ['{子供|こども}の@sewa({世話|せわ})をするのに{忙|いそが}しくて、{時間|じかん}がないから。', 'Vì bận chăm con, không có thời gian.', 'Chưa đúng. Bài không nói cha mẹ bận chăm con. Lý do là sợ con làm ồn và khó gửi con.'],
+            ['{子供|こども}を{連|つ}れて{行|い}くのも、{親|おや}だけで{出|で}かけるのも{難|むずか}しいから。', 'Vì dẫn con theo cũng khó, mà bố mẹ đi riêng cũng khó.', 'Đúng. Dẫn con đi thì sợ con làm ồn (連れて行けない), mà gửi con để cha mẹ đi một mình cũng không dễ (預けることも簡単ではない).'],
+            ['{大人|おとな}だけでなく、{子供|こども}の{料金|りょうきん}も{払|はら}わなければならないから。', 'Vì phải trả tiền vé cho cả trẻ em.', 'Chưa đúng. Bài không nhắc đến tiền vé của trẻ em.']
           ],
+          guide: 'Câu hỏi hỏi vì sao người thích đi nghe nhạc, xem tranh, xem phim lại phải nhịn không đi khi con còn nhỏ. Câu tiếp theo trả lời luôn, có đuôi 「〜からです」 (là vì…): 「子供は、騒いでしまう心配があるので連れて行けないし、人に預けることも簡単ではないからです」.\nCâu này có HAI vế: (1) dẫn con đi thì sợ con làm ồn nên không dẫn được; (2) gửi con cho người khác trông để tự đi cũng không dễ. Tức là: dẫn con đi cũng khó, mà đi một mình cũng khó. Đáp án 3 nói đúng cả hai vế.\nMẹo: câu có 「〜し、〜も」 là đang liệt kê hai lý do. Đáp án đúng phải bao gồm cả hai.',
           answer: 3,
           evidence: ['s2']
         },
@@ -447,11 +455,12 @@ window.BAI = {
           label: '31',
           question: ['q2', '‹②{親子|おやこ}が{楽|たの}しめるように[工夫|くふう]をする›とあるが、どのようなことをしている{映画館|えいがかん}があると{言|い}っているか。', '"Nghĩ cách để cha mẹ và con cùng thưởng thức" – bài nói có rạp phim làm gì?'],
           options: [
-            ['{子供|こども}と{親|おや}が{話|はな}しながら{映画|えいが}が{見|み}られる{特別|とくべつ}な{席|せき}を{用意|ようい}する。', 'Chuẩn bị ghế đặc biệt để vừa xem vừa nói chuyện.', 'Sai. Ví dụ rạp phim chỉ nói về độ sáng và âm lượng, không có ghế đặc biệt.'],
-            ['{子供|こども}が[騒|さわ]ぐ{音|おと}が{気|き}にならないように、{映画|えいが}の{音|おと}を{大|おお}きくする。', 'Mở to tiếng phim để không để ý tiếng trẻ ồn.', 'Sai. Ngược lại, âm thanh được chỉnh KHÔNG quá lớn.'],
-            ['{子供|こども}にも{大人|おとな}にも{楽|たの}しんで{見|み}てもらえるような{映画|えいが}を{選|えら}ぶ。', 'Chọn phim cả trẻ em lẫn người lớn đều thích.', 'Sai. Rạp chỉnh môi trường xem phim (ánh sáng, âm thanh), không phải chọn phim.'],
-            ['{子供|こども}が[怖|こわ]がったり[驚|おどろ]いたりしないような{明|あか}るさや@onryou({音量|おんりょう})にする。', 'Chỉnh độ sáng và âm lượng để trẻ không sợ hay giật mình.', 'Đúng. Để hội trường hơi sáng (vì trẻ sợ tối) và âm thanh không quá to (vì trẻ giật mình) (s5–s7).']
+            ['{子供|こども}と{親|おや}が{話|はな}しながら{映画|えいが}が{見|み}られる{特別|とくべつ}な{席|せき}を{用意|ようい}する。', 'Chuẩn bị ghế đặc biệt để vừa xem vừa nói chuyện.', 'Chưa đúng. Ví dụ chỉ nói về ánh sáng và âm thanh, không có ghế đặc biệt nào.'],
+            ['{子供|こども}が[騒|さわ]ぐ{音|おと}が{気|き}にならないように、{映画|えいが}の{音|おと}を{大|おお}きくする。', 'Mở to tiếng phim để không để ý tiếng trẻ ồn.', 'Chưa đúng. Ngược lại, rạp chỉnh âm thanh để KHÔNG quá to (大きすぎないように), chứ không mở to lên.'],
+            ['{子供|こども}にも{大人|おとな}にも{楽|たの}しんで{見|み}てもらえるような{映画|えいが}を{選|えら}ぶ。', 'Chọn phim cả trẻ em lẫn người lớn đều thích.', 'Chưa đúng. Rạp chỉnh không gian xem phim (ánh sáng, âm thanh), bài không nói chuyện chọn phim.'],
+            ['{子供|こども}が[怖|こわ]がったり[驚|おどろ]いたりしないような{明|あか}るさや@onryou({音量|おんりょう})にする。', 'Chỉnh độ sáng và âm lượng để trẻ không sợ hay giật mình.', 'Đúng. Để đèn hơi sáng vì trẻ sợ tối (怖がって), và giảm âm lượng vì trẻ giật mình với tiếng to (びっくりする). Đây đúng là "độ sáng và âm lượng giúp trẻ không sợ, không giật mình".']
           ],
+          guide: 'Câu hỏi hỏi: rạp phim trong ví dụ đã làm gì để cả cha mẹ và con đều thưởng thức được? Tìm chữ 「例えば」 (ví dụ) ngay sau câu gạch chân, phần ví dụ có hai chi tiết.\nChi tiết 1: trong lúc chiếu phim vẫn để hội trường hơi sáng, vì nếu tối thì có trẻ sợ mà khóc. Chi tiết 2: âm thanh được chỉnh để không quá to, vì có trẻ nghe tiếng to là giật mình.\nGộp hai chi tiết lại: rạp chỉnh độ sáng và âm lượng để trẻ không sợ, không giật mình. Đáp án là 4.\nMẹo: khi bài đưa ví dụ có nhiều chi tiết, đáp án đúng thường là câu tóm được TẤT CẢ các chi tiết đó.',
           answer: 4,
           evidence: ['s5', 's6', 's7']
         },
@@ -459,11 +468,12 @@ window.BAI = {
           label: '32',
           question: ['q3', 'この{文章|ぶんしょう}の@teema(テーマ)は{何|なに}か。', 'Chủ đề của đoạn văn là gì?'],
           options: [
-            ['{日本|にほん}で、{子供|こども}がいる{親|おや}も{音楽|おんがく}や{映画|えいが}を{楽|たの}しめる@kankyou([環境|かんきょう])ができてきたこと。', 'Ở Nhật, môi trường để cha mẹ có con nhỏ cũng thưởng thức âm nhạc, phim ảnh đã hình thành.', 'Đúng. Câu kết 「このように、…小さな子供がいる人が安心して、出かけて楽しめる場所が増えてきています」 (s8).'],
-            ['{日本|にほん}で、{大人|おとな}と{子供|こども}が{一緒|いっしょ}に{楽|たの}しめる{音楽|おんがく}や{映画|えいが}が{減|へ}ってきたこと。', 'Âm nhạc, phim cho cả người lớn và trẻ em giảm đi.', 'Sai. Ngược với bài – những nơi cho gia đình có con nhỏ đang TĂNG (増えてきた).'],
-            ['{日本|にほん}で、{大人|おとな}だけで{音楽会|おんがくかい}や{映画|えいが}に{出|で}かける{親|おや}が{増|ふ}えてきたこと。', 'Cha mẹ đi xem hòa nhạc, phim một mình tăng lên.', 'Sai. Cái tăng lên là "địa điểm", không phải số cha mẹ đi riêng.'],
-            ['{日本|にほん}で、{音楽|おんがく}や{映画|えいが}を{楽|たの}しむ{子供|こども}が{増|ふ}えてきたこと。', 'Trẻ em thưởng thức âm nhạc, phim tăng lên.', 'Sai. Bài nói về nơi dành cho CHA MẸ có con nhỏ, không nói số trẻ em thích phim tăng.']
+            ['{日本|にほん}で、{子供|こども}がいる{親|おや}も{音楽|おんがく}や{映画|えいが}を{楽|たの}しめる@kankyou([環境|かんきょう])ができてきたこと。', 'Ở Nhật, môi trường để cha mẹ có con nhỏ cũng thưởng thức âm nhạc, phim ảnh đã hình thành.', 'Đúng. Câu kết bài (このように…) nói những nơi cha mẹ có con nhỏ có thể yên tâm đến thưởng thức đang tăng lên, đúng với "môi trường đã hình thành".'],
+            ['{日本|にほん}で、{大人|おとな}と{子供|こども}が{一緒|いっしょ}に{楽|たの}しめる{音楽|おんがく}や{映画|えいが}が{減|へ}ってきたこと。', 'Âm nhạc, phim cho cả người lớn và trẻ em giảm đi.', 'Chưa đúng. Bài nói những nơi như vậy đang TĂNG lên (増えてきた), không phải giảm đi.'],
+            ['{日本|にほん}で、{大人|おとな}だけで{音楽会|おんがくかい}や{映画|えいが}に{出|で}かける{親|おや}が{増|ふ}えてきたこと。', 'Cha mẹ đi xem hòa nhạc, phim một mình tăng lên.', 'Chưa đúng. Cái tăng lên là "nơi dành cho gia đình có con nhỏ", bài không nói số cha mẹ đi xem một mình tăng lên.'],
+            ['{日本|にほん}で、{音楽|おんがく}や{映画|えいが}を{楽|たの}しむ{子供|こども}が{増|ふ}えてきたこと。', 'Trẻ em thưởng thức âm nhạc, phim tăng lên.', 'Chưa đúng. Bài nói về cha mẹ có con nhỏ, không nói số trẻ em thích âm nhạc, phim ảnh tăng lên.']
           ],
+          guide: 'Câu hỏi hỏi chủ đề (テーマ) của cả bài. Với bài văn giải thích, câu tóm tắt thường nằm cuối bài và bắt đầu bằng 「このように」 (như vậy).\nCâu đó viết: 「このように、最近は、小さな子供がいる人が安心して、出かけて楽しめる場所が増えてきています」 – như vậy, gần đây những nơi mà người có con nhỏ có thể yên tâm đi chơi đang tăng lên.\nĐáp án 1 nói đúng ý đó: ở Nhật, môi trường để cha mẹ có con nhỏ cũng thưởng thức âm nhạc, phim ảnh đã hình thành. Các lựa chọn còn lại hoặc nói ngược (giảm đi), hoặc đổi đối tượng (cha mẹ đi một mình, trẻ em thích phim).\nMẹo: câu hỏi テーマ hãy đọc câu đầu và câu cuối của bài trước, nhất là câu có このように, つまり, 要するに.',
           answer: 1,
           evidence: ['s8']
         }

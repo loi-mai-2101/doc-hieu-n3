@@ -125,11 +125,12 @@ window.BAI = {
           label: '23',
           question: ['q1', '[今川|いまがわ]さんは、ミゲルさんのすむ{所|ところ}について、どんなアドバイスをしているか。', 'Imagawa cho Miguel lời khuyên gì về chỗ ở?'],
           options: [
-            ['{生活|せいかつ}に{便利|べんり}なところより、[通勤|つうきん]のしやすいところにしたらどうか。', 'Nên chọn chỗ dễ đi làm hơn là chỗ tiện sinh hoạt.', 'Sai. Midorino vừa đi làm nhanh vừa tiện sinh hoạt; không có so sánh này.'],
-            ['{会社|かいしゃ}に{歩|ある}いて{行|い}きたいなら、[緑野|みどりの]にしたらどうか。', 'Nếu muốn đi bộ đến công ty thì chọn Midorino.', 'Sai. Ở Midorino phải đi tàu (電車通勤になります).'],
-            ['[北園|きたぞの]{駅|えき}まで{電車|でんしゃ}で15{分|ふん}で{行|い}けるし、{店|みせ}も{多|おお}いので、[緑野|みどりの]にしたらどうか。', 'Đến ga Kitazono đi tàu 15 phút, nhiều cửa hàng, nên chọn Midorino.', 'Đúng. 「緑野駅から…北園駅まで電車で15分だし、いろいろなお店があって便利です」 (s6).'],
-            ['いろいろな{店|みせ}があって{便利|べんり}なので、[北園|きたぞの]{駅|えき}の{近|ちか}くにしたらどうか。', 'Nhiều cửa hàng tiện lợi nên chọn gần ga Kitazono.', 'Sai. Gần công ty (ga Kitazono) hầu như không có căn hộ.']
+            ['{生活|せいかつ}に{便利|べんり}なところより、[通勤|つうきん]のしやすいところにしたらどうか。', 'Nên chọn chỗ dễ đi làm hơn là chỗ tiện sinh hoạt.', 'Chưa đúng. Midorino vừa đi làm nhanh vừa tiện sinh hoạt, Imagawa không bảo phải chọn một trong hai.'],
+            ['{会社|かいしゃ}に{歩|ある}いて{行|い}きたいなら、[緑野|みどりの]にしたらどうか。', 'Nếu muốn đi bộ đến công ty thì chọn Midorino.', 'Chưa đúng. Ở Midorino thì phải đi tàu (電車通勤になります), không đi bộ đến công ty được.'],
+            ['[北園|きたぞの]{駅|えき}まで{電車|でんしゃ}で15{分|ふん}で{行|い}けるし、{店|みせ}も{多|おお}いので、[緑野|みどりの]にしたらどうか。', 'Đến ga Kitazono đi tàu 15 phút, nhiều cửa hàng, nên chọn Midorino.', 'Đúng. Imagawa giới thiệu Midorino vì đi tàu đến ga Kitazono chỉ 15 phút, lại có nhiều cửa hàng tiện lợi.'],
+            ['いろいろな{店|みせ}があって{便利|べんり}なので、[北園|きたぞの]{駅|えき}の{近|ちか}くにしたらどうか。', 'Nhiều cửa hàng tiện lợi nên chọn gần ga Kitazono.', 'Chưa đúng. Gần ga Kitazono (gần công ty) hầu như không có căn hộ, nên Imagawa không khuyên ở đó.']
           ],
+          guide: 'Câu hỏi hỏi Imagawa khuyên Miguel nên ở đâu. Email đi theo ba bước, bạn hãy đọc theo đúng thứ tự đó.\nBước 1, mong muốn của Miguel: muốn đi bộ đến công ty (会社まで歩いて行きたい).\nBước 2, thực tế: 「会社の周りはオフィスばかりで、アパートはほとんどありません」 – quanh công ty toàn văn phòng, hầu như không có căn hộ. Nghĩa là mong muốn đi bộ khó thực hiện.\nBước 3, đề xuất: 「電車通勤になりますが、…緑野という町はいいですよ」 – sẽ phải đi tàu, nhưng thị trấn Midorino rất được. Lý do: từ ga Midorino đến ga Kitazono (nơi có công ty) chỉ mất 15 phút, lại có nhiều cửa hàng tiện lợi.\nĐáp án 3 gói đủ đề xuất và hai lý do.\nMẹo: email khuyên nhủ thường bác bỏ mong muốn ban đầu rồi mới đưa ra đề xuất. Đáp án nằm ở phần đề xuất, kèm lý do.',
           answer: 3,
           evidence: ['s5', 's6']
         }
@@ -178,11 +179,12 @@ window.BAI = {
           label: '24',
           question: ['q1', '{最近|さいきん}、「{私|わたし}」はマキのことをどのような{人|ひと}だと{思|おも}うようになったか。', 'Gần đây "tôi" nghĩ Maki là người như thế nào?'],
           options: [
-            ['「いいこと」ばかりが{起|お}きる、{運|うん}がいい{人|ひと}', 'Người may mắn, toàn gặp chuyện tốt.', 'Sai. Đây là suy nghĩ CŨ, đã bị phủ định (そうではないと気づいた).'],
-            ['「{私|わたし}」と{一緒|いっしょ}に@keiken([経験|けいけん])したことは、{何|なん}でも「いいこと」だと{思|おも}える{人|ひと}', 'Người thấy mọi việc trải qua cùng "tôi" đều là chuyện tốt.', 'Sai. Không giới hạn ở việc làm cùng "tôi".'],
-            ['ほかの{人|ひと}に{起|お}こった「いいこと」を{一緒|いっしょ}に@yorokobu([喜|よろこ]んで)あげられる{人|ひと}', 'Người biết vui cùng chuyện tốt của người khác.', 'Sai. Ví dụ trong bài là chuyện chính Maki gặp (phải đi bộ về), không phải chuyện vui của người khác.'],
-            ['ほかの{人|ひと}が「いいこと」だと{思|おも}わないことも「いいこと」だと{思|おも}える{人|ひと}', 'Người thấy cả những điều người khác không cho là tốt cũng là chuyện tốt.', 'Đúng. "Tôi" thấy đi bộ về là chán, Maki lại thấy vui (s5–s7).']
+            ['「いいこと」ばかりが{起|お}きる、{運|うん}がいい{人|ひと}', 'Người may mắn, toàn gặp chuyện tốt.', 'Chưa đúng. Đây là suy nghĩ CŨ của tác giả, đã bị phủ nhận bằng câu 「そうではないと気づいた」.'],
+            ['「{私|わたし}」と{一緒|いっしょ}に@keiken([経験|けいけん])したことは、{何|なん}でも「いいこと」だと{思|おも}える{人|ひと}', 'Người thấy mọi việc trải qua cùng "tôi" đều là chuyện tốt.', 'Chưa đúng. Câu cuối nói cả những chuyện tác giả từng nghe kể, không chỉ những việc làm cùng tác giả.'],
+            ['ほかの{人|ひと}に{起|お}こった「いいこと」を{一緒|いっしょ}に@yorokobu([喜|よろこ]んで)あげられる{人|ひと}', 'Người biết vui cùng chuyện tốt của người khác.', 'Chưa đúng. Ví dụ trong bài là chuyện chính Maki gặp (phải đi bộ về), không phải chuyện vui của người khác.'],
+            ['ほかの{人|ひと}が「いいこと」だと{思|おも}わないことも「いいこと」だと{思|おも}える{人|ひと}', 'Người thấy cả những điều người khác không cho là tốt cũng là chuyện tốt.', 'Đúng. Chuyện tác giả thấy chán (đi bộ về) thì Maki lại thấy vui. Maki là người nhìn ra điều tốt ở cả những chuyện người khác không thấy tốt.']
           ],
+          guide: 'Câu hỏi hỏi GẦN ĐÂY tác giả nghĩ Maki là người thế nào. Bài có mẫu rất quen: 「…と思っていた。しかし、最近、そうではないと気づいた」 – trước tôi nghĩ…, nhưng gần đây nhận ra không phải vậy. Suy nghĩ trước chữ しかし (Maki là người may mắn) là suy nghĩ cũ, đã bị bác bỏ.\nSuy nghĩ mới đến từ một ví dụ: tàu dừng vì sự cố, hai người phải đi bộ về mấy cây số. Tác giả thấy chán (嫌だな), còn Maki lại vui: "Được đi dạo ở thị trấn lạ nhỉ". Tác giả kết luận: 「こんなことでも、マキは楽しめてしまう」 – chuyện như vậy mà Maki cũng vui được.\nTức là: điều người khác (ở đây là tác giả) thấy không vui, Maki vẫn thấy là "chuyện tốt". Đáp án 4.',
           answer: 4,
           evidence: ['s5', 's6', 's7']
         }
@@ -231,11 +233,12 @@ window.BAI = {
           label: '25',
           question: ['q1', 'このメモを{読|よ}んで、ミンさんはまず{何|なに}をしなければならないか。', 'Đọc ghi chú xong, Minh phải làm gì TRƯỚC TIÊN?'],
           options: [
-            ['{会議|かいぎ}の[進行|しんこう]について[原口|はらぐち]{課長|かちょう}と[確認|かくにん]する。', 'Kiểm tra cách điều hành cuộc họp với trưởng phòng.', 'Sai. Việc này để sáng mai.'],
-            ['{小|しょう}{会議室|かいぎしつ}をキャンセルする。', 'Hủy phòng họp nhỏ.', 'Đúng. 「席に戻ったら、すぐお願いします」 (s3–s4).'],
-            ['{会議室|かいぎしつ}の{準備|じゅんび}をする。', 'Chuẩn bị phòng họp.', 'Sai. Làm vào sáng mai, sau khi kiểm tra.'],
-            ['{会議|かいぎ}の[資料|しりょう]を8{人|にん}{分|ぶん}[印刷|いんさつ]する。', 'In tài liệu 8 bản.', 'Sai. Làm trong hôm nay, nhưng không phải "ngay lập tức".']
+            ['{会議|かいぎ}の[進行|しんこう]について[原口|はらぐち]{課長|かちょう}と[確認|かくにん]する。', 'Kiểm tra cách điều hành cuộc họp với trưởng phòng.', 'Chưa đúng. Việc kiểm tra cách điều hành cuộc họp đã dời sang sáng mai (明日の朝、最初に確認して).'],
+            ['{小|しょう}{会議室|かいぎしつ}をキャンセルする。', 'Hủy phòng họp nhỏ.', 'Đúng. Trưởng phòng dặn về chỗ là làm ngay (席に戻ったら、すぐお願いします), nên đây là việc đầu tiên.'],
+            ['{会議室|かいぎしつ}の{準備|じゅんび}をする。', 'Chuẩn bị phòng họp.', 'Chưa đúng. Chuẩn bị phòng họp làm vào sáng mai, sau khi kiểm tra cách điều hành cuộc họp.'],
+            ['{会議|かいぎ}の[資料|しりょう]を8{人|にん}{分|ぶん}[印刷|いんさつ]する。', 'In tài liệu 8 bản.', 'Chưa đúng. In tài liệu chỉ cần xong trong hôm nay (今日中に), không gấp bằng việc hủy phòng họp.']
           ],
+          guide: 'Câu hỏi hỏi Minh phải làm gì TRƯỚC TIÊN (まず). Ghi chú có nhiều việc, nên hãy ghi lại mốc thời gian của từng việc:\n- Hủy phòng họp nhỏ: 「席に戻ったら、すぐお願いします」 – về chỗ là làm NGAY.\n- Kiểm tra cách điều hành cuộc họp, rồi chuẩn bị phòng họp: 「明日の朝」 – sáng mai.\n- In 8 bản tài liệu: 「今日中に」 – trong hôm nay.\nSo sánh: "ngay lập tức" sớm hơn "trong hôm nay" và "sáng mai". Vậy việc đầu tiên là hủy phòng họp nhỏ. Đáp án 2.\nMẹo: câu hỏi "まず何を" thì hãy đánh dấu các từ chỉ thời gian: すぐ, 今日中に, 明日, 〜までに…',
           answer: 2,
           evidence: ['s3', 's4']
         }
@@ -282,11 +285,12 @@ window.BAI = {
           label: '26',
           question: ['q1', '{日本|にほん}のファミリーレストランが、[暖色|だんしょく]を{多|おお}く{使|つか}うのはなぜか。', 'Vì sao nhà hàng gia đình Nhật dùng nhiều màu ấm?'],
           options: [
-            ['{店|みせ}の@danbou([暖房|だんぼう])にあまりお{金|かね}がかからないようにするため', 'Để tiết kiệm tiền sưởi.', 'Sai. Bài không nói đến sưởi.'],
-            ['{客|きゃく}に、{店|みせ}の{料理|りょうり}と{店|みせ}で{過|す}ごす{時間|じかん}にいい@inshou([印象|いんしょう])を{持|も}ってもらうため', 'Để khách có ấn tượng tốt về món ăn và thời gian ở quán.', 'Đúng. Món ăn trông ngon (s2) + cảm thấy được thư thả (s3–s4).'],
-            ['{店|みせ}をおしゃれに{見|み}せて、{客|きゃく}に{店|みせ}に{入|はい}りたいと{思|おも}ってもらうため', 'Để quán trông sành điệu, khách muốn vào.', 'Sai. Bài nói màu ấm tác động đến cảm giác thèm ăn và cảm nhận thời gian, không nói đến vẻ sành điệu để thu hút khách vào.'],
-            ['{客|きゃく}に{長|なが}く{店|みせ}にいてもらって、{料理|りょうり}をたくさん{注文|ちゅうもん}してもらうため', 'Để khách ngồi lâu và gọi nhiều món.', 'Sai. Khách ở thời gian NGẮN nhưng CẢM THẤY thư thả.']
+            ['{店|みせ}の@danbou([暖房|だんぼう])にあまりお{金|かね}がかからないようにするため', 'Để tiết kiệm tiền sưởi.', 'Chưa đúng. Bài không nhắc đến máy sưởi hay tiền điện.'],
+            ['{客|きゃく}に、{店|みせ}の{料理|りょうり}と{店|みせ}で{過|す}ごす{時間|じかん}にいい@inshou([印象|いんしょう])を{持|も}ってもらうため', 'Để khách có ấn tượng tốt về món ăn và thời gian ở quán.', 'Đúng. Màu ấm làm món ăn trông ngon hơn và khiến khách thấy được thư thả, tức là có ấn tượng tốt về cả món ăn lẫn thời gian ở quán.'],
+            ['{店|みせ}をおしゃれに{見|み}せて、{客|きゃく}に{店|みせ}に{入|はい}りたいと{思|おも}ってもらうため', 'Để quán trông sành điệu, khách muốn vào.', 'Chưa đúng. Bài nói màu ấm tác động đến cảm giác thèm ăn và cảm nhận thời gian, không nói đến vẻ sành điệu để thu hút khách vào.'],
+            ['{客|きゃく}に{長|なが}く{店|みせ}にいてもらって、{料理|りょうり}をたくさん{注文|ちゅうもん}してもらうため', 'Để khách ngồi lâu và gọi nhiều món.', 'Chưa đúng. Bài nói khách ở quán thời gian ngắn mà vẫn thấy thư thả (短くても、ゆっくりできたように感じる), không nói muốn khách ngồi lâu.']
           ],
+          guide: 'Câu hỏi hỏi vì sao nhà hàng gia đình hay dùng màu ấm. Đoạn 2 nêu HAI tác dụng của màu ấm, nối với nhau bằng chữ 「また」 (ngoài ra).\nTác dụng 1: 「食欲を感じさせる効果」 – gợi cảm giác thèm ăn, nên món ăn trông ngon hơn.\nTác dụng 2: 「時間を実際より長く感じさせる効果」 – khiến thời gian cảm giác dài hơn thực tế, nên khách dù ở quán ngắn vẫn thấy được thư thả.\nGộp lại: khách có ấn tượng tốt về món ăn VÀ về thời gian ở quán. Đáp án 2.\nBẫy là lựa chọn 4: bài nói khách ở quán thời gian NGẮN mà vẫn thấy thư thả, chứ không nói muốn khách ngồi lâu để gọi nhiều món.',
           answer: 2,
           evidence: ['s2', 's3', 's4']
         }
@@ -343,11 +347,12 @@ window.BAI = {
           label: '27',
           question: ['q1', '‹①ちょっと[困|こま]ったことがありました›とあるが、「{私|わたし}」が[困|こま]ったのはなぜか。', '"Gặp chuyện hơi khó xử" – vì sao "tôi" khó xử?'],
           options: [
-            ['{母|はは}に、[普段|ふだん]あまり{使|つか}わない[香辛料|こうしんりょう]を{持|も}っていくように{言|い}われたから', 'Vì bị mẹ bảo mang theo gia vị ít dùng.', 'Sai. Đó là chuyện trước khi sang Nhật, không phải chuyện khó xử tháng trước.'],
-            ['[得意|とくい]な{料理|りょうり}がないのに、{国|くに}の{料理|りょうり}を{作|つく}ってきてほしいと{言|い}われたから', 'Vì không có món sở trường mà bị nhờ nấu món nước mình.', 'Sai. Tác giả CÓ món sở trường.'],
-            ['{国|くに}の{料理|りょうり}を{作|つく}ってきてほしいと{言|い}われたが、{日本|にほん}では[得意|とくい]な{料理|りょうり}が{作|つく}れないから', 'Vì bị nhờ nấu món nước mình nhưng ở Nhật không nấu được món sở trường.', 'Đúng. Món sở trường cần nguyên liệu không mua được ở Nhật (s5–s6).'],
-            ['チャーハンが{作|つく}れないのに、チャーハンを{作|つく}ってきてほしいと{言|い}われたから', 'Vì không biết làm cơm rang mà bị nhờ làm cơm rang.', 'Sai. Không ai yêu cầu cơm rang.']
+            ['{母|はは}に、[普段|ふだん]あまり{使|つか}わない[香辛料|こうしんりょう]を{持|も}っていくように{言|い}われたから', 'Vì bị mẹ bảo mang theo gia vị ít dùng.', 'Chưa đúng. Đó là chuyện trước khi sang Nhật. Chuyện khó xử là chuyện tháng trước, ở buổi giao lưu.'],
+            ['[得意|とくい]な{料理|りょうり}がないのに、{国|くに}の{料理|りょうり}を{作|つく}ってきてほしいと{言|い}われたから', 'Vì không có món sở trường mà bị nhờ nấu món nước mình.', 'Chưa đúng. Tác giả có món sở trường (得意な料理はある), chỉ là không nấu được ở Nhật.'],
+            ['{国|くに}の{料理|りょうり}を{作|つく}ってきてほしいと{言|い}われたが、{日本|にほん}では[得意|とくい]な{料理|りょうり}が{作|つく}れないから', 'Vì bị nhờ nấu món nước mình nhưng ở Nhật không nấu được món sở trường.', 'Đúng. Được nhờ nấu món nước mình, nhưng món sở trường cần nguyên liệu không mua được ở Nhật nên không nấu được.'],
+            ['チャーハンが{作|つく}れないのに、チャーハンを{作|つく}ってきてほしいと{言|い}われたから', 'Vì không biết làm cơm rang mà bị nhờ làm cơm rang.', 'Chưa đúng. Không ai yêu cầu làm cơm rang. Cơm rang là món tác giả tự nghĩ ra sau đó.']
           ],
+          guide: 'Câu hỏi hỏi vì sao "tôi" thấy khó xử. Hai câu ngay sau câu gạch chân là câu trả lời.\nCâu 1: được nhờ nấu một món của nước mình mang đến buổi giao lưu.\nCâu 2: 「私にも得意な料理はあるのですが、日本では買えない材料を使うので作れません」 – tôi cũng có món sở trường, nhưng nó cần nguyên liệu không mua được ở Nhật nên không nấu được.\nVậy: được nhờ nấu món nước mình, nhưng ở Nhật lại không nấu được món sở trường. Đáp án 3.\nChú ý chữ 「私にも得意な料理はある」 – tác giả CÓ món sở trường, nên lựa chọn 2 ("không có món sở trường") sai.',
           answer: 3,
           evidence: ['s5', 's6']
         },
@@ -355,11 +360,12 @@ window.BAI = {
           label: '28',
           question: ['q2', '‹②[特別|とくべつ]なチャーハン›とは、どのようなチャーハンか。', '"Cơm rang đặc biệt" là cơm rang như thế nào?'],
           options: [
-            ['{日本|にほん}で{売|う}っている[材料|ざいりょう]でチャーハンを{作|つく}って、{国|くに}の[香辛料|こうしんりょう]をかけたもの', 'Nấu cơm rang bằng nguyên liệu bán ở Nhật, rắc gia vị nước mình.', 'Đúng. Cơm rang bình thường kiểu Nhật (thịt, trứng) + gia vị mẹ đưa (s8–s9).'],
-            ['{日本|にほん}で{売|う}っている[材料|ざいりょう]でチャーハンを{作|つく}って、{日本|にほん}の[香辛料|こうしんりょう]をかけたもの', 'Nguyên liệu Nhật + gia vị Nhật.', 'Sai. Gia vị là của nước tác giả.'],
-            ['{国|くに}から{持|も}ってきた[材料|ざいりょう]でチャーハンを{作|つく}って、{国|くに}の[香辛料|こうしんりょう]をかけたもの', 'Nguyên liệu mang từ nước mình + gia vị nước mình.', 'Sai. Chỉ mang gia vị, nguyên liệu (thịt, trứng) mua ở Nhật.'],
-            ['{国|くに}から{持|も}ってきた[材料|ざいりょう]でチャーハンを{作|つく}って、{日本|にほん}の[香辛料|こうしんりょう]をかけたもの', 'Nguyên liệu nước mình + gia vị Nhật.', 'Sai. Ngược cả hai: nguyên liệu (thịt, trứng) mua ở Nhật, còn gia vị là của nước tác giả.']
+            ['{日本|にほん}で{売|う}っている[材料|ざいりょう]でチャーハンを{作|つく}って、{国|くに}の[香辛料|こうしんりょう]をかけたもの', 'Nấu cơm rang bằng nguyên liệu bán ở Nhật, rắc gia vị nước mình.', 'Đúng. Thịt, trứng mua ở Nhật làm thành cơm rang bình thường, rồi rắc gia vị mẹ đưa từ nước mình nên thành món đặc biệt.'],
+            ['{日本|にほん}で{売|う}っている[材料|ざいりょう]でチャーハンを{作|つく}って、{日本|にほん}の[香辛料|こうしんりょう]をかけたもの', 'Nguyên liệu Nhật + gia vị Nhật.', 'Chưa đúng. Gia vị là gói mẹ đưa từ nước tác giả, không phải gia vị Nhật.'],
+            ['{国|くに}から{持|も}ってきた[材料|ざいりょう]でチャーハンを{作|つく}って、{国|くに}の[香辛料|こうしんりょう]をかけたもの', 'Nguyên liệu mang từ nước mình + gia vị nước mình.', 'Chưa đúng. Tác giả chỉ mang theo gia vị. Thịt và trứng là nguyên liệu mua ở Nhật.'],
+            ['{国|くに}から{持|も}ってきた[材料|ざいりょう]でチャーハンを{作|つく}って、{日本|にほん}の[香辛料|こうしんりょう]をかけたもの', 'Nguyên liệu nước mình + gia vị Nhật.', 'Chưa đúng. Ngược cả hai: nguyên liệu (thịt, trứng) mua ở Nhật, còn gia vị là của nước tác giả.']
           ],
+          guide: 'Câu hỏi hỏi "cơm rang đặc biệt" là món thế nào. Đọc đoạn 3: 「肉と卵を使ってチャーハンを作り、香辛料をかけてみました」 – dùng thịt và trứng nấu cơm rang, rồi rắc gia vị lên.\nThịt và trứng là nguyên liệu mua ở Nhật (bình thường), còn gia vị là gói mẹ đưa từ nước tác giả. Nhờ gia vị đó, 「日本によくある普通のチャーハン」 (món cơm rang bình thường ở Nhật) trở thành món mang hương vị nước mình.\nVậy: nguyên liệu Nhật + gia vị nước mình. Đáp án 1.\nBốn lựa chọn là bốn tổ hợp "nguyên liệu Nhật/nước mình × gia vị Nhật/nước mình". Chỉ cần xác định đúng nguồn gốc của từng thứ.',
           answer: 1,
           evidence: ['s8', 's9']
         },
@@ -367,11 +373,12 @@ window.BAI = {
           label: '29',
           question: ['q3', '‹③{母|はは}に{聞|き}いてみようと{思|おも}います›とあるが、「{私|わたし}」はどのようなことを{聞|き}くと{考|かんが}えられるか。', '"Định hỏi mẹ thử" – có thể đoán "tôi" sẽ hỏi gì?'],
           options: [
-            ['{国|くに}の[香辛料|こうしんりょう]が、どうして{日本|にほん}で[役|やく]に{立|た}つと{思|おも}ったのか。', 'Vì sao mẹ nghĩ gia vị nước mình sẽ có ích ở Nhật.', 'Đúng. 「母はこういうことを予想していたのでしょうか」 → hỏi mẹ đã đoán trước việc gia vị có ích như thế nào (s2, s11).'],
-            ['どんな{料理|りょうり}を{作|つく}るときに、{国|くに}の[香辛料|こうしんりょう]を{使|つか}えばいいのか。', 'Nên dùng gia vị khi nấu món gì.', 'Sai. Không liên quan đến "予想".'],
-            ['「{私|わたし}」が{日本|にほん}に[留学|りゅうがく]することを[予想|よそう]していたかどうか。', 'Mẹ có đoán trước việc "tôi" đi du học không.', 'Sai. Mẹ đưa gia vị khi biết con sắp đi du học.'],
-            ['{次|つぎ}の[留学生|りゅうがくせい]{交流会|こうりゅうかい}に、どんな{料理|りょうり}を{持|も}っていけばいいと{思|おも}うか。', 'Buổi giao lưu sau nên mang món gì.', 'Sai. Câu hỏi với mẹ gắn với 「予想していたのでしょうか」 – tức mẹ có đoán trước việc gia vị sẽ có ích không, không phải chuyện lần sau.']
+            ['{国|くに}の[香辛料|こうしんりょう]が、どうして{日本|にほん}で[役|やく]に{立|た}つと{思|おも}ったのか。', 'Vì sao mẹ nghĩ gia vị nước mình sẽ có ích ở Nhật.', 'Đúng. Tác giả thắc mắc mẹ có đoán trước việc gia vị có ích không, tức là muốn hỏi sao mẹ nghĩ gia vị đó sẽ có ích ở Nhật.'],
+            ['どんな{料理|りょうり}を{作|つく}るときに、{国|くに}の[香辛料|こうしんりょう]を{使|つか}えばいいのか。', 'Nên dùng gia vị khi nấu món gì.', 'Chưa đúng. Tác giả không hỏi cách dùng gia vị. Điều tác giả thắc mắc là mẹ có đoán trước hay không (予想していた).'],
+            ['「{私|わたし}」が{日本|にほん}に[留学|りゅうがく]することを[予想|よそう]していたかどうか。', 'Mẹ có đoán trước việc "tôi" đi du học không.', 'Chưa đúng. Mẹ đưa gia vị đúng lúc biết con sắp đi du học, nên không có gì để hỏi về chuyện này.'],
+            ['{次|つぎ}の[留学生|りゅうがくせい]{交流会|こうりゅうかい}に、どんな{料理|りょうり}を{持|も}っていけばいいと{思|おも}うか。', 'Buổi giao lưu sau nên mang món gì.', 'Chưa đúng. Câu hỏi với mẹ gắn với 「予想していたのでしょうか」 – mẹ có đoán trước việc gia vị sẽ có ích không, không phải chuyện lần sau.']
           ],
+          guide: 'Câu hỏi hỏi "tôi" định hỏi mẹ điều gì. Câu ngay trước câu gạch chân là: 「あのとき、母はこういうことを予想していたのでしょうか」 – không biết lúc đó mẹ đã đoán trước chuyện như thế này chưa nhỉ.\n"Chuyện như thế này" là chuyện gói gia vị mẹ đưa, thứ tác giả ít dùng, lại trở nên có ích ở Nhật. Lúc đưa, mẹ đã nói 「役に立つかもしれない」 (biết đâu sẽ có ích). Vậy tác giả muốn hỏi: sao mẹ lại nghĩ gia vị đó sẽ có ích ở Nhật? Đáp án 1.\nMẹo: khi đề hỏi "sẽ hỏi gì", nội dung câu hỏi thường nằm ngay câu trước, ở dạng 「〜のでしょうか」 hoặc 「〜のだろうか」.',
           answer: 1,
           evidence: ['s2', 's11', 's12']
         }
@@ -433,11 +440,12 @@ window.BAI = {
           label: '30',
           question: ['q1', '「{海外|かいがい}のファッションの{会社|かいしゃ}」がしていることとして、{合|あ}っているのはどれか。', 'Điều "công ty thời trang nước ngoài" đang làm là gì?'],
           options: [
-            ['[漁師|りょうし]たちと{一緒|いっしょ}に、{海|うみ}にごみをとりに{行|い}っている。', 'Cùng ngư dân ra biển nhặt rác.', 'Sai. Ngư dân tự mang rác về khi đánh cá.'],
-            ['[漁師|りょうし]たちから{海|うみ}でごみを{受|う}け{取|と}って、[港|みなと]に{持|も}ち{帰|かえ}っている。', 'Nhận rác từ ngư dân trên biển rồi mang về cảng.', 'Sai. Ngư dân là người mang về cảng.'],
-            ['[漁師|りょうし]たちがプラスチックごみから{服|ふく}や[靴|くつ]を{作|つく}るのを{助|たす}けて、それを{売|う}っている。', 'Giúp ngư dân làm quần áo, giày từ rác nhựa rồi bán.', 'Sai. Công ty tự làm, ngư dân không làm.'],
-            ['[漁師|りょうし]たちが{海|うみ}でとったプラスチックごみを{利用|りよう}して、{服|ふく}や[靴|くつ]を{作|つく}っている。', 'Dùng rác nhựa ngư dân vớt được để làm quần áo, giày.', 'Đúng. Thu gom, phân loại, biến nhựa thành sợi, làm quần áo, giày (s5–s6).']
+            ['[漁師|りょうし]たちと{一緒|いっしょ}に、{海|うみ}にごみをとりに{行|い}っている。', 'Cùng ngư dân ra biển nhặt rác.', 'Chưa đúng. Công ty không ra biển. Ngư dân tự kéo rác lên trong lúc đánh cá.'],
+            ['[漁師|りょうし]たちから{海|うみ}でごみを{受|う}け{取|と}って、[港|みなと]に{持|も}ち{帰|かえ}っている。', 'Nhận rác từ ngư dân trên biển rồi mang về cảng.', 'Chưa đúng. Ngư dân mới là người mang rác về cảng. Công ty nhận rác ở cảng rồi xử lý.'],
+            ['[漁師|りょうし]たちがプラスチックごみから{服|ふく}や[靴|くつ]を{作|つく}るのを{助|たす}けて、それを{売|う}っている。', 'Giúp ngư dân làm quần áo, giày từ rác nhựa rồi bán.', 'Chưa đúng. Ngư dân không làm quần áo. Chính công ty biến nhựa thành sợi rồi làm sản phẩm.'],
+            ['[漁師|りょうし]たちが{海|うみ}でとったプラスチックごみを{利用|りよう}して、{服|ふく}や[靴|くつ]を{作|つく}っている。', 'Dùng rác nhựa ngư dân vớt được để làm quần áo, giày.', 'Đúng. Công ty thu gom rác nhựa ngư dân mang về, biến thành sợi rồi làm quần áo, giày để bán.']
           ],
+          guide: 'Câu hỏi hỏi công ty thời trang đang làm gì. Hoạt động này có hai bên, nên hãy xác định rõ ai làm việc gì:\n- Ngư dân: đánh cá thì kéo lên cả rác, họ mang rác đó về cảng (港に持ち帰ってもらう).\n- Công ty: 「そのごみを回収、分別し、その中のプラスチックを繊維に変え、服や靴にして売る」 – thu gom, phân loại rác, biến nhựa thành sợi, làm thành quần áo, giày để bán.\nVậy công ty dùng rác nhựa ngư dân vớt được để làm quần áo và giày. Đáp án 4.\nMẹo: câu có 「〜に頼んで〜てもらう」 (nhờ ai làm gì) thì người làm hành động là người được nhờ, không phải công ty.',
           answer: 4,
           evidence: ['s5', 's6']
         },
@@ -445,11 +453,12 @@ window.BAI = {
           label: '31',
           question: ['q2', '[漁師|りょうし]たちは、なぜ「{海外|かいがい}のファッションの{会社|かいしゃ}」が{始|はじ}めた{活動|かつどう}に{参加|さんか}するのか。', 'Vì sao ngư dân tham gia hoạt động này?'],
           options: [
-            ['ほかの[漁師|りょうし]たちとの@kyouryoku([協力|きょうりょく]){関係|かんけい}ができるから', 'Vì tạo được quan hệ hợp tác với ngư dân khác.', 'Sai. Lợi ích nêu trong bài là không tốn tiền vứt rác, không nói về quan hệ giữa các ngư dân.'],
-            ['{自分|じぶん}たちのお{金|かね}をかけずに、{海|うみ}のごみを{減|へ}らすことができるから', 'Vì giảm được rác biển mà không tốn tiền của mình.', 'Đúng. 「自分のお金を使わずに海をきれいにできる良さがある」 (s9).'],
-            ['{魚|さかな}をとるためにかかっていたお{金|かね}を{減|へ}らすことができるから', 'Vì giảm được chi phí đánh cá.', 'Sai. Chi phí được nói là phí vứt rác, không phải phí đánh cá.'],
-            ['{自分|じぶん}たちが{少|すこ}しお{金|かね}を{出|だ}すだけで、{海|うみ}をきれいにしてもらえるから', 'Vì chỉ cần bỏ ra chút tiền là biển được làm sạch.', 'Sai. Ngư dân không phải trả tiền.']
+            ['ほかの[漁師|りょうし]たちとの@kyouryoku([協力|きょうりょく]){関係|かんけい}ができるから', 'Vì tạo được quan hệ hợp tác với ngư dân khác.', 'Chưa đúng. Lợi ích nêu trong bài là không tốn tiền vứt rác, không nói về quan hệ giữa các ngư dân.'],
+            ['{自分|じぶん}たちのお{金|かね}をかけずに、{海|うみ}のごみを{減|へ}らすことができるから', 'Vì giảm được rác biển mà không tốn tiền của mình.', 'Đúng. Trước đây vứt rác phải tốn tiền; nay công ty nhận rác nên ngư dân làm sạch biển mà không mất tiền của mình.'],
+            ['{魚|さかな}をとるためにかかっていたお{金|かね}を{減|へ}らすことができるから', 'Vì giảm được chi phí đánh cá.', 'Chưa đúng. Khoản tiền được nhắc đến là tiền vứt rác, không phải tiền chi cho việc đánh cá.'],
+            ['{自分|じぶん}たちが{少|すこ}しお{金|かね}を{出|だ}すだけで、{海|うみ}をきれいにしてもらえるから', 'Vì chỉ cần bỏ ra chút tiền là biển được làm sạch.', 'Chưa đúng. Ngư dân không phải trả đồng nào (自分のお金を使わずに), không phải "bỏ ra một chút".']
           ],
+          guide: 'Câu hỏi hỏi vì sao ngư dân tham gia hoạt động này. Đoạn 3 giải thích, bắt đầu bằng 「実は」 (thật ra).\nTrước đây, ngư dân kéo được rác lên cũng thả lại xuống biển, vì 「港に持ち帰ると捨てるのにお金がかかるからだ」 – mang về cảng thì phải tốn tiền để vứt.\nBây giờ công ty nhận rác, nên ngư dân 「自分のお金を使わずに海をきれいにできる」 – làm sạch biển mà không tốn tiền của mình. Đáp án 2.\nLựa chọn 4 là bẫy: ngư dân không phải bỏ ra đồng nào cả, không phải "bỏ ra một chút tiền".',
           answer: 2,
           evidence: ['s8', 's9']
         },
@@ -457,11 +466,12 @@ window.BAI = {
           label: '32',
           question: ['q3', 'この{文章|ぶんしょう}を{書|か}いた{人|ひと}は、{日本|にほん}で{売|う}られ{始|はじ}めた「{海外|かいがい}のファッションの{会社|かいしゃ}」の{服|ふく}や[靴|くつ]について、どのように{考|かんが}えているか。', 'Người viết nghĩ gì về quần áo, giày của công ty này bắt đầu được bán ở Nhật?'],
           options: [
-            ['{海外|かいがい}のファッションに[関心|かんしん]を{持|も}つ{人|ひと}が{増|ふ}えているので、{売|う}れるだろう。', 'Sẽ bán được vì người quan tâm thời trang nước ngoài tăng.', 'Sai. Cái tăng là sự quan tâm đến vấn đề môi trường.'],
-            ['[環境|かんきょう]{問題|もんだい}に[関心|かんしん]を{持|も}つ{人|ひと}が{増|ふ}えているし、デザインも{悪|わる}くないので、{売|う}れるだろう。', 'Sẽ bán được vì người quan tâm môi trường tăng và thiết kế không tệ.', 'Đúng. 「デザインも悪くない」「消費者の意識が変化している今…受け入れられるだろう」 (s3, s11–s12).'],
-            ['デザインの{良|よ}さで@seihin([製品|せいひん])を[選|えら]ぶ{人|ひと}が{増|ふ}えているので、{値段|ねだん}が{高|たか}くても{売|う}れるだろう。', 'Sẽ bán được dù đắt vì người chọn theo thiết kế tăng.', 'Sai. Bài không nói về giá.'],
-            ['{製品|せいひん}のデザインが{日本|にほん}の{消費者|しょうひしゃ}には{合|あ}わないので、あまり{売|う}れないだろう。', 'Thiết kế không hợp người Nhật nên khó bán.', 'Sai. Ngược với ý bài – tác giả khen 「デザインも悪くない」 và cho rằng sẽ được đón nhận.']
+            ['{海外|かいがい}のファッションに[関心|かんしん]を{持|も}つ{人|ひと}が{増|ふ}えているので、{売|う}れるだろう。', 'Sẽ bán được vì người quan tâm thời trang nước ngoài tăng.', 'Chưa đúng. Cái tăng lên là sự quan tâm đến vấn đề môi trường, không phải đến thời trang nước ngoài.'],
+            ['[環境|かんきょう]{問題|もんだい}に[関心|かんしん]を{持|も}つ{人|ひと}が{増|ふ}えているし、デザインも{悪|わる}くないので、{売|う}れるだろう。', 'Sẽ bán được vì người quan tâm môi trường tăng và thiết kế không tệ.', 'Đúng. Người quan tâm đến môi trường đang tăng (ý thức thay đổi), thiết kế cũng không tệ, nên tác giả nghĩ sản phẩm sẽ được đón nhận.'],
+            ['デザインの{良|よ}さで@seihin([製品|せいひん])を[選|えら]ぶ{人|ひと}が{増|ふ}えているので、{値段|ねだん}が{高|たか}くても{売|う}れるだろう。', 'Sẽ bán được dù đắt vì người chọn theo thiết kế tăng.', 'Chưa đúng. Bài không nói gì về giá, cũng không nói người ta chọn chỉ vì thiết kế.'],
+            ['{製品|せいひん}のデザインが{日本|にほん}の{消費者|しょうひしゃ}には{合|あ}わないので、あまり{売|う}れないだろう。', 'Thiết kế không hợp người Nhật nên khó bán.', 'Chưa đúng. Ngược với ý bài: tác giả khen 「デザインも悪くない」 và cho rằng sản phẩm sẽ được đón nhận.']
           ],
+          guide: 'Câu hỏi hỏi ý kiến người viết về việc bán các sản phẩm này ở Nhật. Ý kiến nằm ở đoạn cuối: 「デザインも悪くない。消費者の意識が変化している今、日本でもきっと受け入れられるだろう」 – thiết kế cũng không tệ; trong lúc ý thức người tiêu dùng đang thay đổi, chắc chắn ở Nhật cũng sẽ được đón nhận.\n"Ý thức người tiêu dùng thay đổi" là gì? Hãy nối với đoạn 1: 「このような問題に関心を持つ企業や消費者は、日本でも海外でも増えている」 – người quan tâm đến vấn đề rác thải môi trường đang tăng lên.\nGộp lại: người quan tâm đến môi trường tăng, thiết kế lại không tệ, nên sẽ bán được. Đáp án 2.\nMẹo: ý kiến ở cuối bài thường nhắc lại một ý từ đầu bài bằng cách nói khác. Hãy nối hai đầu bài lại với nhau.',
           answer: 2,
           evidence: ['s3', 's11', 's12']
         }

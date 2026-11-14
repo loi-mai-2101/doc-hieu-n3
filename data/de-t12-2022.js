@@ -102,11 +102,12 @@ window.BAI = {
         label: '23',
         question: ['q1', '[営業|えいぎょう]{課|か}のホンさんは、{明日|あした}の{朝|あさ}の{会議|かいぎ}で{使|つか}う{資料|しりょう}を{今日中|きょうじゅう}に5{枚|まい}コピーしたいと{考|かんが}えている。どうしなければならないか。', 'Hong (phòng kinh doanh) muốn photo trong hôm nay 5 tờ tài liệu cho cuộc họp sáng mai. Phải làm gì?'],
         options: [
-          ['[営業|えいぎょう]{課|か}でコピーをする。[中島|なかじま]さんに{言|い}う{必要|ひつよう}はない。', 'Photo ở phòng kinh doanh, không cần báo Nakajima.', 'Sai. Máy phòng kinh doanh đang hỏng.'],
-          ['{会計|かいけい}{課|か}でコピーをする。[中島|なかじま]さんに{言|い}う{必要|ひつよう}はない。', 'Photo ở phòng kế toán, không cần báo Nakajima.', 'Đúng. Cần trong hôm nay → dùng máy phòng kế toán (s4); chỉ 5 tờ (< 50) → không cần báo (s5).'],
-          ['[中島|なかじま]さんに{言|い}ってから、[営業|えいぎょう]{課|か}でコピーをする。', 'Báo Nakajima rồi photo ở phòng kinh doanh.', 'Sai. Máy phòng kinh doanh đang hỏng (故障していて使えません); và chỉ 5 tờ (dưới 50) thì không cần báo Nakajima.'],
-          ['[中島|なかじま]さんに{言|い}ってから、{会計|かいけい}{課|か}でコピーをする。', 'Báo Nakajima rồi photo ở phòng kế toán.', 'Sai. Chỉ cần báo khi photo từ 50 tờ.']
+          ['[営業|えいぎょう]{課|か}でコピーをする。[中島|なかじま]さんに{言|い}う{必要|ひつよう}はない。', 'Photo ở phòng kinh doanh, không cần báo Nakajima.', 'Chưa đúng. Máy của phòng kinh doanh đang hỏng (故障していて使えません).'],
+          ['{会計|かいけい}{課|か}でコピーをする。[中島|なかじま]さんに{言|い}う{必要|ひつよう}はない。', 'Photo ở phòng kế toán, không cần báo Nakajima.', 'Đúng. Cần trong hôm nay nên dùng máy phòng kế toán; chỉ 5 tờ (dưới 50) nên không cần báo Nakajima.'],
+          ['[中島|なかじま]さんに{言|い}ってから、[営業|えいぎょう]{課|か}でコピーをする。', 'Báo Nakajima rồi photo ở phòng kinh doanh.', 'Chưa đúng. Máy phòng kinh doanh đang hỏng (故障していて使えません), và chỉ 5 tờ (dưới 50) thì không cần báo Nakajima.'],
+          ['[中島|なかじま]さんに{言|い}ってから、{会計|かいけい}{課|か}でコピーをする。', 'Báo Nakajima rồi photo ở phòng kế toán.', 'Chưa đúng. Chỉ khi photo từ 50 tờ trở lên mới phải báo Nakajima. Hong chỉ photo 5 tờ.']
         ],
+        guide: 'Đây là câu hỏi áp dụng: bài cho quy tắc, câu hỏi cho một tình huống cụ thể, bạn phải áp quy tắc vào. Tình huống của Hong: phòng kinh doanh, cần photo TRONG HÔM NAY, chỉ 5 TỜ.\nQuy tắc 1: máy photo của phòng kinh doanh đang hỏng (故障していて使えません), đến chiều mai mới sửa. Vậy không dùng được máy phòng mình.\nQuy tắc 2: 「今日中にコピーしなければならない書類がある場合は、会計課のコピー機を使用してください」 – giấy tờ cần photo trong hôm nay thì dùng máy phòng kế toán. Hong cần trong hôm nay, nên sang phòng kế toán.\nQuy tắc 3: 「50枚以上コピーをする場合は、…中島に知らせてください」 – từ 50 tờ trở lên mới phải báo Nakajima. Hong chỉ photo 5 tờ, nên không cần báo.\nKết luận: photo ở phòng kế toán, không cần báo Nakajima. Đáp án 2.',
         answer: 2, evidence: ['s1', 's4', 's5']
       }],
       summary: 'Máy photo phòng kinh doanh hỏng đến chiều mai. Việc không gấp thì đợi; việc cần trong hôm nay thì dùng máy phòng kế toán. Photo từ 50 tờ phải báo Nakajima trước.',
@@ -144,11 +145,12 @@ window.BAI = {
         label: '24',
         question: ['q1', 'テレビ[番組|ばんぐみ]を{見|み}て、「{私|わたし}」は[娘|むすめ]のボール[投|な]げがうまくならないのは、なぜだと{思|おも}ったか。', 'Xem chương trình xong, "tôi" nghĩ vì sao con ném bóng mãi không giỏi?'],
         options: [
-          ['{上手|じょうず}な[投|な]げ{方|かた}についての「{私|わたし}」の{説明|せつめい}が{下手|へた}だったから。', 'Vì "tôi" giải thích kém.', 'Sai. Vấn đề không phải giải thích giỏi hay dở.'],
-          ['@kurikaesu({繰|く}り{返|かえ})し{同|おな}じ[投|な]げ{方|かた}で[投|な]げる{練習|れんしゅう}をさせていなかったから。', 'Vì không cho tập lặp lại cùng một cách ném.', 'Sai. Tác giả đã cho ném nhiều lần.'],
-          ['{実際|じっさい}に「{私|わたし}」が{上手|じょうず}に[投|な]げているところを{見|み}せていなかったから。', 'Vì không cho con xem mình ném giỏi.', 'Sai. Chương trình TV không nói đến việc làm mẫu; điểm mới là cho trẻ ném nhiều loại bóng để cơ thể tự nhớ cách dùng lực.'],
-          ['ちょうどいい{力|ちから}の{入|い}れ{方|かた}を{体|からだ}で{覚|おぼ}える{練習|れんしゅう}をさせていなかったから。', 'Vì không cho con tập để cơ thể nhớ cách dùng lực vừa phải.', 'Đúng. 「娘に必要なのは、これかもしれない」 (s4–s5).']
+          ['{上手|じょうず}な[投|な]げ{方|かた}についての「{私|わたし}」の{説明|せつめい}が{下手|へた}だったから。', 'Vì "tôi" giải thích kém.', 'Chưa đúng. Vấn đề không phải giải thích hay hay dở, mà là giải thích bằng lời thì cơ thể chưa nhớ được.'],
+          ['@kurikaesu({繰|く}り{返|かえ})し{同|おな}じ[投|な]げ{方|かた}で[投|な]げる{練習|れんしゅう}をさせていなかったから。', 'Vì không cho tập lặp lại cùng một cách ném.', 'Chưa đúng. Tác giả đã cho con ném rất nhiều lần (何回もボールを投げさせている).'],
+          ['{実際|じっさい}に「{私|わたし}」が{上手|じょうず}に[投|な]げているところを{見|み}せていなかったから。', 'Vì không cho con xem mình ném giỏi.', 'Chưa đúng. Chương trình TV không nói đến việc làm mẫu. Điểm mới là cho trẻ ném nhiều loại bóng để cơ thể tự nhớ cách dùng lực.'],
+          ['ちょうどいい{力|ちから}の{入|い}れ{方|かた}を{体|からだ}で{覚|おぼ}える{練習|れんしゅう}をさせていなかったから。', 'Vì không cho con tập để cơ thể nhớ cách dùng lực vừa phải.', 'Đúng. Trên TV, trẻ được luyện để cơ thể tự nhớ cách dùng lực vừa phải (体で覚えさせていた), và tác giả nhận ra con mình thiếu đúng điều đó.']
         ],
+        guide: 'Câu hỏi hỏi sau khi xem TV, tác giả nghĩ vì sao con ném bóng mãi không giỏi. Hãy so cách dạy CŨ của tác giả với cách trên TV.\nCách cũ (đoạn 1): giải thích bằng lời các lỗi trong cách ném, rồi bắt con ném nhiều lần. Kết quả: không tiến bộ.\nCách trên TV (đoạn 2): cho trẻ ném nhiều loại bóng khác nhau về kích cỡ, trọng lượng, phóng máy bay giấy… để 「ちょうどいい力の入れ方を体で覚えさせていた」 – để cơ thể tự nhớ cách dùng lực vừa phải.\nTác giả kết luận: 「娘に必要なのは、これかもしれない」 – thứ con cần có lẽ là điều này. Tức là cách cũ thiếu việc luyện để CƠ THỂ tự nhớ cách dùng lực. Đáp án 4.',
         answer: 4, evidence: ['s4', 's5']
       }],
       summary: 'Con gái 6 tuổi muốn ném bóng giỏi; tác giả giải thích lỗi và cho ném nhiều lần nhưng không tiến bộ. Xem TV thấy trẻ được cho ném nhiều loại bóng, phóng máy bay giấy để cơ thể nhớ cách dùng lực – tác giả nghĩ con cần điều đó và định thử.',
@@ -190,11 +192,12 @@ window.BAI = {
         label: '25',
         question: ['q1', 'このメールで{言|い}いたいこととして、{合|あ}っているのはどれか。', 'Điều email muốn nói là gì?'],
         options: [
-          ['[商品|しょうひん]が[品切|しなぎ]れになったから、3{月|がつ}[上旬|じょうじゅん]に{送|おく}る。', 'Hết hàng nên sẽ gửi đầu tháng 3.', 'Sai. Cửa hàng hỏi ý khách, chưa quyết định gửi.'],
-          ['[商品|しょうひん]が[品切|しなぎ]れになったから、3{月|がつ}[上旬|じょうじゅん]にもう{一度|いちど}{注文|ちゅうもん}してほしい。', 'Hết hàng nên mong khách đặt lại đầu tháng 3.', 'Sai. Cửa hàng không yêu cầu đặt lại; đơn vẫn còn, chỉ hỏi khách muốn chờ hay hủy.'],
-          ['[商品|しょうひん]が[品切|しなぎ]れで、[届|とど]けるまでに{時間|じかん}がかかるから、どうしたいか{知|し}らせてほしい。', 'Hết hàng, cần thời gian mới giao được, mong khách cho biết muốn thế nào.', 'Đúng. 「いかがいたしましょうか」「ご希望をお聞かせください」 (s5–s6).'],
-          ['{注文|ちゅうもん}と{違|ちが}う{色|いろ}の[商品|しょうひん]を{送|おく}ってしまったから、{正|ただ}しい{色|いろ}のものをすぐに{送|おく}る。', 'Gửi nhầm màu nên sẽ gửi đúng màu ngay.', 'Sai. Cửa hàng chưa gửi gì; "khác màu" chỉ là phương án gợi ý thêm (なお…).']
+          ['[商品|しょうひん]が[品切|しなぎ]れになったから、3{月|がつ}[上旬|じょうじゅん]に{送|おく}る。', 'Hết hàng nên sẽ gửi đầu tháng 3.', 'Chưa đúng. Cửa hàng chưa quyết định giao vào tháng 3, mà đang hỏi khách muốn chờ hay hủy (いかがいたしましょうか).'],
+          ['[商品|しょうひん]が[品切|しなぎ]れになったから、3{月|がつ}[上旬|じょうじゅん]にもう{一度|いちど}{注文|ちゅうもん}してほしい。', 'Hết hàng nên mong khách đặt lại đầu tháng 3.', 'Chưa đúng. Cửa hàng không yêu cầu đặt lại. Đơn hàng vẫn còn, chỉ hỏi khách muốn chờ hay hủy.'],
+          ['[商品|しょうひん]が[品切|しなぎ]れで、[届|とど]けるまでに{時間|じかん}がかかるから、どうしたいか{知|し}らせてほしい。', 'Hết hàng, cần thời gian mới giao được, mong khách cho biết muốn thế nào.', 'Đúng. Hết hàng, đầu tháng 3 mới giao được, nên cửa hàng hỏi khách muốn thế nào (ご希望をお聞かせください).'],
+          ['{注文|ちゅうもん}と{違|ちが}う{色|いろ}の[商品|しょうひん]を{送|おく}ってしまったから、{正|ただ}しい{色|いろ}のものをすぐに{送|おく}る。', 'Gửi nhầm màu nên sẽ gửi đúng màu ngay.', 'Chưa đúng. Cửa hàng chưa gửi gì cả. "Khác màu" chỉ là phương án gợi ý thêm (なお…).']
         ],
+        guide: 'Câu hỏi hỏi email muốn nói gì. Email loại này thường có một câu hỏi hoặc lời đề nghị khách phải trả lời, và đó là điều email muốn nói nhất.\nDiễn biến: chiếc ví da màu nâu khách đặt đã hết hàng → xin lỗi → 「お届けできるのは3月上旬になってしまいますが、いかがいたしましょうか」 – đầu tháng 3 mới giao được, quý khách muốn thế nào ạ? → 「キャンセルもお受けいたしますので、ご希望をお聞かせください」 – hủy đơn cũng được, xin cho biết mong muốn.\nVậy điều email muốn nói: hết hàng, phải chờ lâu mới giao được, mong khách cho biết muốn làm thế nào. Đáp án 3.\nLựa chọn 1 là bẫy: cửa hàng chưa tự quyết định giao vào tháng 3, mà đang hỏi ý khách.',
         answer: 3, evidence: ['s5', 's6']
       }],
       summary: 'Cửa hàng báo chiếc ví da nâu quý khách Terasaka đặt ngày 4/2 đã hết hàng, đầu tháng 3 mới giao được; hỏi quý khách muốn chờ hay hủy. Nếu khác màu thì gửi ngay được.',
@@ -228,11 +231,12 @@ window.BAI = {
         label: '26',
         question: ['q1', '「{私|わたし}」が{古|ふる}い{靴|くつ}を{店|みせ}に{持|も}っていこうと{思|おも}った{理由|りゆう}の{中|なか}で、{最|もっと}も{大|おお}きいものはどれか。', 'Lý do lớn nhất khiến "tôi" định mang giày cũ đến tiệm là gì?'],
         options: [
-          ['{古|ふる}い{靴|くつ}を[割引券|わりびきけん]と[交換|こうかん]して、{新|あたら}しい{靴|くつ}を{買|か}うときに{使|つか}いたいと{思|おも}ったから。', 'Muốn đổi lấy phiếu giảm giá để dùng khi mua giày mới.', 'Đúng. 「新しい靴が安く買えるなら…持っていこう」 (s5).'],
-          ['{古|ふる}い{靴|くつ}を{売|う}ってお{金|かね}をもらい、そのお{金|かね}で{新|あたら}しい{靴|くつ}を{買|か}いたいと{思|おも}ったから。', 'Bán giày lấy tiền mua giày mới.', 'Sai. Đổi lấy phiếu giảm giá, không phải tiền.'],
-          ['{古|ふる}い{靴|くつ}をきれいに{直|なお}してもらって、もう{一度|いちど}[履|は]きたいと{思|おも}ったから。', 'Muốn sửa lại giày cũ để đi tiếp.', 'Sai. Tiệm thu giày cũ để đốt lấy nhiệt, không sửa giày.'],
-          ['{古|ふる}い{靴|くつ}を{利用|りよう}してもらって、[環境|かんきょう]をよくしたいと{思|おも}ったから。', 'Muốn giày cũ được tận dụng để cải thiện môi trường.', 'Sai. Tác giả nghĩ một mình mình thì không ảnh hưởng lớn – đó không phải lý do chính.']
+          ['{古|ふる}い{靴|くつ}を[割引券|わりびきけん]と[交換|こうかん]して、{新|あたら}しい{靴|くつ}を{買|か}うときに{使|つか}いたいと{思|おも}ったから。', 'Muốn đổi lấy phiếu giảm giá để dùng khi mua giày mới.', 'Đúng. Tác giả nói "nếu mua được giày mới rẻ" thì sẽ mang đi. Lý do lớn nhất là phiếu giảm giá đổi được.'],
+          ['{古|ふる}い{靴|くつ}を{売|う}ってお{金|かね}をもらい、そのお{金|かね}で{新|あたら}しい{靴|くつ}を{買|か}いたいと{思|おも}ったから。', 'Bán giày lấy tiền mua giày mới.', 'Chưa đúng. Giày cũ được đổi lấy phiếu giảm giá, không phải bán lấy tiền.'],
+          ['{古|ふる}い{靴|くつ}をきれいに{直|なお}してもらって、もう{一度|いちど}[履|は]きたいと{思|おも}ったから。', 'Muốn sửa lại giày cũ để đi tiếp.', 'Chưa đúng. Tiệm thu giày cũ để đốt lấy nhiệt, không sửa giày.'],
+          ['{古|ふる}い{靴|くつ}を{利用|りよう}してもらって、[環境|かんきょう]をよくしたいと{思|おも}ったから。', 'Muốn giày cũ được tận dụng để cải thiện môi trường.', 'Chưa đúng. Tác giả nghĩ một mình mình mang đi thì chẳng ảnh hưởng lớn tới môi trường (そんなに大きい影響はない), nên đây không phải lý do chính.']
         ],
+        guide: 'Câu hỏi hỏi lý do LỚN NHẤT khiến tác giả mang giày cũ đến tiệm. Tờ rơi nêu hai lợi ích: đổi được phiếu giảm giá của tiệm, và tốt cho môi trường.\nCâu cuối cho biết tác giả coi trọng lợi ích nào: 「私一人が持っていっても、環境にそんなに大きい影響はないと思うが、新しい靴が安く買えるなら、古い靴は捨てないで店に持っていこうと思った」.\nMẫu câu 「Aと思うが、Bなら〜」: A là điều tác giả không coi trọng ("một mình tôi thì chẳng ảnh hưởng mấy tới môi trường"), B mới là lý do thật ("nếu mua được giày mới rẻ"). Mua giày mới rẻ nhờ phiếu giảm giá. Đáp án 1.\nLựa chọn 4 là bẫy: môi trường có được nhắc tới, nhưng tác giả nói rõ đó không phải lý do chính.',
         answer: 1, evidence: ['s3', 's5']
       }],
       summary: 'Tác giả có nhiều giày cũ định vứt, thấy tờ rơi tiệm giày: mang giày cũ đến sẽ được đổi phiếu giảm giá, giày thu gom đốt lấy nhiệt phát điện, tốt cho môi trường. Tác giả nghĩ mình mình thì chẳng ảnh hưởng mấy tới môi trường, nhưng mua được giày mới rẻ nên sẽ mang đi.',
@@ -281,33 +285,36 @@ window.BAI = {
           label: '27',
           question: ['q1', '‹①[懐|なつ]かしい{声|こえ}›とあるが、{何|なに}か。', '"Giọng nói thân quen" là gì?'],
           options: [
-            ['「{私|わたし}」が{高校生|こうこうせい}のころの{父|ちち}の{声|こえ}。', 'Giọng bố hồi "tôi" học cấp ba.', 'Sai. Radio của bố, nhưng giọng là của phát thanh viên.'],
-            ['「{私|わたし}」が{高校生|こうこうせい}のころの{自分|じぶん}の{声|こえ}。', 'Giọng của chính mình hồi cấp ba.', 'Sai. Tiếng phát ra từ radio là giọng phát thanh viên, không phải của tác giả.'],
-            ['「{私|わたし}」が{高校生|こうこうせい}のころ{大好|だいす}きだった{歌手|かしゅ}の{声|こえ}。', 'Giọng ca sĩ yêu thích hồi cấp ba.', 'Sai. Chương trình âm nhạc, nhưng người nói là phát thanh viên.'],
-            ['「{私|わたし}」が{高校生|こうこうせい}のころ{聞|き}いていたアナウンサーの{声|こえ}。', 'Giọng phát thanh viên "tôi" hay nghe hồi cấp ba.', 'Đúng. 「高校生のころ、大好きだったラジオの音楽番組のアナウンサーだった」 – giọng thân quen chính là của phát thanh viên.']
+            ['「{私|わたし}」が{高校生|こうこうせい}のころの{父|ちち}の{声|こえ}。', 'Giọng bố hồi "tôi" học cấp ba.', 'Chưa đúng. Chiếc radio là của bố, nhưng giọng phát ra là của phát thanh viên.'],
+            ['「{私|わたし}」が{高校生|こうこうせい}のころの{自分|じぶん}の{声|こえ}。', 'Giọng của chính mình hồi cấp ba.', 'Chưa đúng. Tiếng phát ra từ radio là giọng phát thanh viên, không phải của tác giả.'],
+            ['「{私|わたし}」が{高校生|こうこうせい}のころ{大好|だいす}きだった{歌手|かしゅ}の{声|こえ}。', 'Giọng ca sĩ yêu thích hồi cấp ba.', 'Chưa đúng. Đó là chương trình âm nhạc, nhưng giọng thân quen là của phát thanh viên (アナウンサー), không phải ca sĩ.'],
+            ['「{私|わたし}」が{高校生|こうこうせい}のころ{聞|き}いていたアナウンサーの{声|こえ}。', 'Giọng phát thanh viên "tôi" hay nghe hồi cấp ba.', 'Đúng. Bài nói rõ đó là giọng phát thanh viên của chương trình âm nhạc tác giả rất thích hồi cấp ba.']
           ],
+          guide: 'Câu hỏi hỏi "giọng nói thân quen" là giọng của ai. Câu ngay sau câu gạch chân trả lời: 「高校生のころ、大好きだったラジオの音楽番組のアナウンサーだった」 – đó là phát thanh viên của chương trình âm nhạc trên radio mà tôi rất thích hồi cấp ba. Đáp án 4.\nBẫy: chiếc radio là của BỐ, và chương trình là chương trình ÂM NHẠC, nên dễ chọn nhầm "giọng bố" hay "giọng ca sĩ". Nhưng người nói là phát thanh viên.',
           answer: 4, evidence: ['s3']
         },
         {
           label: '28',
           question: ['q2', '‹②また、ラジオを{聞|き}こうと{思|おも}った›のはどうしてか。', '"Sẽ lại nghe radio" – vì sao?'],
           options: [
-            ['ラジオは、テレビより{小|ちい}さくて[身近|みぢか]に{置|お}くことができるから', 'Radio nhỏ hơn tivi, để gần được.', 'Sai. "身近" ở đây là gần gũi trong đời sống, không phải kích cỡ.'],
-            ['ラジオは、インターネットより{多|おお}くのことを{教|おし}えてくれるから', 'Radio cho biết nhiều hơn internet.', 'Sai. Bài không so sánh lượng thông tin radio với internet; internet được nhắc chỉ để giải thích vì sao người nghe radio giảm.'],
-            ['ラジオは、{新|あたら}しいことだけでなく{古|ふる}いことも{伝|つた}えてくれるから', 'Radio truyền cả chuyện mới lẫn cũ.', 'Sai. Bài không so sánh tin mới – tin cũ; ưu điểm được nêu là nghe được trong lúc làm việc khác.'],
-            ['ラジオは、{何|なに}かをしながらでも、いろいろなことを{知|し}ることができるから', 'Với radio, vừa làm việc khác vẫn biết được nhiều thứ.', 'Đúng. 「ほかのことをしながらでも、さまざまな情報が手に入る」 (s11).']
+            ['ラジオは、テレビより{小|ちい}さくて[身近|みぢか]に{置|お}くことができるから', 'Radio nhỏ hơn tivi, để gần được.', 'Chưa đúng. "身近" trong bài nghĩa là gần gũi trong đời sống, không nói radio nhỏ hơn tivi.'],
+            ['ラジオは、インターネットより{多|おお}くのことを{教|おし}えてくれるから', 'Radio cho biết nhiều hơn internet.', 'Chưa đúng. Bài không so sánh lượng thông tin của radio với internet. Internet được nhắc chỉ để giải thích vì sao người nghe radio giảm.'],
+            ['ラジオは、{新|あたら}しいことだけでなく{古|ふる}いことも{伝|つた}えてくれるから', 'Radio truyền cả chuyện mới lẫn cũ.', 'Chưa đúng. Bài không so sánh tin mới với tin cũ. Ưu điểm được nêu là nghe được trong lúc làm việc khác.'],
+            ['ラジオは、{何|なに}かをしながらでも、いろいろなことを{知|し}ることができるから', 'Với radio, vừa làm việc khác vẫn biết được nhiều thứ.', 'Đúng. Radio cho phép vừa làm việc khác vừa nhận thông tin (ほかのことをしながらでも), nên tác giả định nghe khi dọn dẹp, nấu ăn.']
           ],
+          guide: 'Câu hỏi hỏi vì sao tác giả định nghe radio lại. Câu ngay trước câu gạch chân nói lý do: 「ほかのことをしながらでも、さまざまな情報が手に入るというラジオにしかない良さ、便利さがあるのだ」 – radio có cái hay, cái tiện chỉ riêng nó có: dù đang làm việc khác vẫn nhận được đủ loại thông tin.\nVì vậy tác giả nghĩ: những lúc dọn dẹp, nấu ăn (đang bận tay) thì sẽ nghe radio. Đáp án 4.\nLựa chọn 1 là bẫy: chữ 「身近」 trong bài nghĩa là "gần gũi trong đời sống", không phải "nhỏ gọn, để gần".',
           answer: 4, evidence: ['s11', 's12']
         },
         {
           label: '29',
           question: ['q3', 'この{文章|ぶんしょう}の@teema(テーマ)は{何|なに}か。', 'Chủ đề của đoạn văn là gì?'],
           options: [
-            ['ラジオ[番組|ばんぐみ]の{楽|たの}しさ。', 'Niềm vui của chương trình radio.', 'Sai. Chương trình radio yêu thích chỉ là chuyện mở đầu; phần sau (しかし…) mới nói ý chính là cái hay của radio.'],
-            ['ラジオの{良|よ}さ。', 'Cái hay của radio.', 'Đúng. Bài nhấn mạnh 「ラジオにしかない良さ、便利さ」.'],
-            ['ラジオの{歴史|れきし}の{長|なが}さ。', 'Lịch sử lâu đời của radio.', 'Sai. Bài không nói về lịch sử radio, chỉ có kỷ niệm của tác giả và ưu điểm của radio.'],
-            ['ラジオの{使|つか}い{方|かた}の[工夫|くふう]。', 'Mẹo dùng radio.', 'Sai. Bài không hướng dẫn cách dùng radio.']
+            ['ラジオ[番組|ばんぐみ]の{楽|たの}しさ。', 'Niềm vui của chương trình radio.', 'Chưa đúng. Chương trình radio yêu thích chỉ là chuyện mở đầu. Phần sau (しかし…) mới nói ý chính là cái hay của radio.'],
+            ['ラジオの{良|よ}さ。', 'Cái hay của radio.', 'Đúng. Cả bài nói về cái hay của radio, và kết luận là radio có ưu điểm chỉ riêng nó có (ラジオにしかない良さ、便利さ).'],
+            ['ラジオの{歴史|れきし}の{長|なが}さ。', 'Lịch sử lâu đời của radio.', 'Chưa đúng. Bài không nói về lịch sử radio, chỉ có kỷ niệm của tác giả và ưu điểm của radio.'],
+            ['ラジオの{使|つか}い{方|かた}の[工夫|くふう]。', 'Mẹo dùng radio.', 'Chưa đúng. Bài không hướng dẫn cách dùng radio.']
           ],
+          guide: 'Câu hỏi hỏi chủ đề (テーマ) của bài. Bài đi theo bốn bước: tìm thấy radio cũ → nhớ lại hồi cấp ba radio rất tiện → bây giờ người nghe radio giảm vì có internet → 「しかし」: radio vẫn có cái hay riêng, tác giả sẽ nghe lại.\nPhần sau 「しかし」 là kết luận: 「ラジオにしかない良さ、便利さがあるのだ」. Đoạn 2 cũng khen radio 「身近で便利」. Cả bài xoay quanh cái hay của radio. Đáp án 2.\nLựa chọn 1 (niềm vui của chương trình radio) chỉ là chuyện mở đầu, không phải chủ đề.\nMẹo: tùy bút thường mở bằng một kỷ niệm. Đừng chọn chủ đề theo kỷ niệm đó, mà hãy xem tác giả rút ra điều gì ở cuối.',
           answer: 2, evidence: ['s7', 's11']
         }
       ],
@@ -355,33 +362,36 @@ window.BAI = {
           label: '30',
           question: ['q1', '{町|まち}が‹①{説明会|せつめいかい}›を{開|ひら}いた{目的|もくてき}は{何|なに}か。', 'Mục đích thị trấn tổ chức buổi giới thiệu là gì?'],
           options: [
-            ['{町|まち}に{引|ひ}っ{越|こ}して{来|き}てくれる{人|ひと}を[募集|ぼしゅう]すること。', 'Tuyển người chuyển đến thị trấn.', 'Đúng. 「町民を募集するために説明会を開いています」 (s3).'],
-            ['{町|まち}に{引|ひ}っ{越|こ}して{来|く}る{人|ひと}を{助|たす}けてくれる{町民|ちょうみん}を[募集|ぼしゅう]すること。', 'Tuyển cư dân giúp người mới đến.', 'Sai. Người được tuyển chính là người chuyển đến sống (町民を募集), không phải người giúp đỡ.'],
-            ['{町|まち}の{農業|のうぎょう}について、アドバイスをしてくれる{専門家|せんもんか}を[募集|ぼしゅう]すること。', 'Tuyển chuyên gia nông nghiệp.', 'Sai. Bài không nhắc đến chuyên gia nông nghiệp.'],
-            ['{町|まち}の{人口|じんこう}を{増|ふ}やすにはどうしたらいいか、{考|かんが}えてくれる{人|ひと}を[募集|ぼしゅう]すること。', 'Tuyển người nghĩ cách tăng dân số.', 'Sai. Thị trấn tuyển người đến sống để tăng dân số, không tuyển người nghĩ cách.']
+            ['{町|まち}に{引|ひ}っ{越|こ}して{来|き}てくれる{人|ひと}を[募集|ぼしゅう]すること。', 'Tuyển người chuyển đến thị trấn.', 'Đúng. Thị trấn tổ chức buổi giới thiệu để tuyển cư dân (町民を募集するために), tức là tìm người chuyển đến sống.'],
+            ['{町|まち}に{引|ひ}っ{越|こ}して{来|く}る{人|ひと}を{助|たす}けてくれる{町民|ちょうみん}を[募集|ぼしゅう]すること。', 'Tuyển cư dân giúp người mới đến.', 'Chưa đúng. Người được tuyển chính là người chuyển đến sống (町民を募集), không phải người giúp đỡ.'],
+            ['{町|まち}の{農業|のうぎょう}について、アドバイスをしてくれる{専門家|せんもんか}を[募集|ぼしゅう]すること。', 'Tuyển chuyên gia nông nghiệp.', 'Chưa đúng. Bài không nhắc đến chuyên gia nông nghiệp.'],
+            ['{町|まち}の{人口|じんこう}を{増|ふ}やすにはどうしたらいいか、{考|かんが}えてくれる{人|ひと}を[募集|ぼしゅう]すること。', 'Tuyển người nghĩ cách tăng dân số.', 'Chưa đúng. Thị trấn tuyển người đến sống để tăng dân số, không tuyển người nghĩ cách.']
           ],
+          guide: 'Câu hỏi hỏi mục đích thị trấn tổ chức buổi giới thiệu. Câu ngay sau câu gạch chân: 「その町では人口が減ったので、町民を募集するために説明会を開いています」 – thị trấn đó dân số giảm nên tổ chức buổi giới thiệu để tuyển cư dân.\n「〜ために」 (để…) là mục đích. "Tuyển cư dân" nghĩa là tìm người chuyển đến sống ở thị trấn. Đáp án 1.',
           answer: 1, evidence: ['s3']
         },
         {
           label: '31',
           question: ['q2', '‹②{共通点|きょうつうてん}›とあるが、それはどのような{点|てん}だと{考|かんが}えられるか。', '"Điểm chung" là điểm nào?'],
           options: [
-            ['@kitai({期待|きたい})していた{生活|せいかつ}ができていないが、{我慢|がまん}して{生活|せいかつ}している{点|てん}。', 'Không được như kỳ vọng nhưng vẫn cố chịu.', 'Sai. Có người đã quay về thành phố.'],
-            ['{期待|きたい}していた{生活|せいかつ}ができるようになり、{楽|たの}しく{生活|せいかつ}ができている{点|てん}。', 'Sống được như kỳ vọng, vui vẻ.', 'Sai. Đây là trường hợp thành công.'],
-            ['{期待|きたい}していた{生活|せいかつ}と{実際|じっさい}の{生活|せいかつ}が{同|おな}じではなかったが、{満足|まんぞく}している{点|てん}。', 'Khác kỳ vọng nhưng hài lòng.', 'Sai. Các ví dụ đều là không hài lòng (嫌になった、都会に戻ってしまった、めんどうくさい).'],
-            ['{期待|きたい}していた{生活|せいかつ}と{実際|じっさい}の{生活|せいかつ}が{違|ちが}い、@fuman([不満|ふまん])を{感|かん}じた{点|てん}。', 'Thực tế khác kỳ vọng nên thấy bất mãn.', 'Đúng. Mơ ước cuộc sống quê → chán; muốn làm nông → quá vất vả; việc khu phố → phiền (s7–s9).']
+            ['@kitai({期待|きたい})していた{生活|せいかつ}ができていないが、{我慢|がまん}して{生活|せいかつ}している{点|てん}。', 'Không được như kỳ vọng nhưng vẫn cố chịu.', 'Chưa đúng. Có người đã quay về thành phố, nên không phải ai cũng "cố chịu".'],
+            ['{期待|きたい}していた{生活|せいかつ}ができるようになり、{楽|たの}しく{生活|せいかつ}ができている{点|てん}。', 'Sống được như kỳ vọng, vui vẻ.', 'Chưa đúng. Đây là các trường hợp thành công, không phải thất bại.'],
+            ['{期待|きたい}していた{生活|せいかつ}と{実際|じっさい}の{生活|せいかつ}が{同|おな}じではなかったが、{満足|まんぞく}している{点|てん}。', 'Khác kỳ vọng nhưng hài lòng.', 'Chưa đúng. Các ví dụ đều là không hài lòng (嫌になった、都会に戻ってしまった、めんどうくさい).'],
+            ['{期待|きたい}していた{生活|せいかつ}と{実際|じっさい}の{生活|せいかつ}が{違|ちが}い、@fuman([不満|ふまん])を{感|かん}じた{点|てん}。', 'Thực tế khác kỳ vọng nên thấy bất mãn.', 'Đúng. Cả ba ví dụ đều là thực tế khác với điều mình mong, nên thấy không hài lòng.']
           ],
+          guide: 'Câu hỏi hỏi "điểm chung" của các trường hợp thất bại là gì. Bài không nói thẳng điểm chung, mà đưa ra ba ví dụ. Bạn phải tự khái quát:\n1. Có người mơ về cuộc sống nông thôn nên chuyển đến, nhưng nhanh chóng chán những ngày tẻ nhạt (退屈な毎日が嫌になった).\n2. Có người đến vì muốn làm nông, nhưng quá vất vả nên quay về thành phố.\n3. Có người thấy việc chưa từng làm ở thành phố, như dọn dẹp khu phố hằng tháng, lại phiền phức ngoài dự đoán.\nCả ba đều có cùng một hình: tưởng sẽ thế này (kỳ vọng), thực tế lại khác, nên không hài lòng. Đáp án 4.\nMẹo: câu hỏi về "điểm chung" thì đáp án phải đúng với TẤT CẢ các ví dụ. Hãy thử từng lựa chọn với cả ba ví dụ.',
           answer: 4, evidence: ['s7', 's8', 's9']
         },
         {
           label: '32',
           question: ['q3', '{説明会|せつめいかい}に{行|い}ってから、{自分|じぶん}の{夢|ゆめ}について、「{私|わたし}」はどう{思|おも}うようになったか。', 'Sau buổi giới thiệu, "tôi" nghĩ gì về ước mơ của mình?'],
           options: [
-            ['@shippairei([失敗|しっぱい]{例|れい})が{多|おお}すぎるから、[実行|じっこう]するのはあきらめたほうがよさそうだ。', 'Nhiều thất bại quá nên bỏ thì hơn.', 'Sai. "夢はあきらめたくない".'],
-            ['[失敗|しっぱい]{例|れい}を{知|し}ったので、[実行|じっこう]するかしないかを{検討|けんとう}したい。', 'Biết thất bại rồi nên muốn cân nhắc có làm hay không.', 'Sai. Đã quyết định thực hiện.'],
-            ['[失敗|しっぱい]{例|れい}のことも{考|かんが}えて、しっかり{計画|けいかく}を{立|た}てて[実行|じっこう]したい。', 'Tính cả các trường hợp thất bại, lập kế hoạch kỹ rồi thực hiện.', 'Đúng. 「よく調べて、計画を立てて、実行できるように頑張りたい」 – vẫn giữ ước mơ nhưng chuẩn bị kỹ hơn sau khi biết các trường hợp thất bại.'],
-            ['[失敗|しっぱい]{例|れい}より{成功|せいこう}{例|れい}がたくさんあるから、[失敗|しっぱい]{例|れい}は{気|き}にせずにすぐ[実行|じっこう]したい。', 'Thành công nhiều hơn nên không cần bận tâm, làm ngay.', 'Sai. Tác giả nhận ra mình từng chỉ nhìn thành công là "甘い".']
+            ['@shippairei([失敗|しっぱい]{例|れい})が{多|おお}すぎるから、[実行|じっこう]するのはあきらめたほうがよさそうだ。', 'Nhiều thất bại quá nên bỏ thì hơn.', 'Chưa đúng. Tác giả nói rõ không muốn bỏ ước mơ (夢はあきらめたくない).'],
+            ['[失敗|しっぱい]{例|れい}を{知|し}ったので、[実行|じっこう]するかしないかを{検討|けんとう}したい。', 'Biết thất bại rồi nên muốn cân nhắc có làm hay không.', 'Chưa đúng. Tác giả đã quyết định thực hiện, chỉ là sẽ chuẩn bị kỹ hơn, không còn phân vân làm hay không.'],
+            ['[失敗|しっぱい]{例|れい}のことも{考|かんが}えて、しっかり{計画|けいかく}を{立|た}てて[実行|じっこう]したい。', 'Tính cả các trường hợp thất bại, lập kế hoạch kỹ rồi thực hiện.', 'Đúng. Tác giả nhận ra mình đã nghĩ đơn giản, nên sẽ tìm hiểu kỹ và lập kế hoạch để thực hiện ước mơ.'],
+            ['[失敗|しっぱい]{例|れい}より{成功|せいこう}{例|れい}がたくさんあるから、[失敗|しっぱい]{例|れい}は{気|き}にせずにすぐ[実行|じっこう]したい。', 'Thành công nhiều hơn nên không cần bận tâm, làm ngay.', 'Chưa đúng. Tác giả nhận ra chỉ nhìn các trường hợp thành công là "nghĩ quá đơn giản" (考えが甘かった), nên không thể mặc kệ thất bại.']
           ],
+          guide: 'Câu hỏi hỏi sau buổi giới thiệu, tác giả nghĩ gì về ước mơ của mình. Đoạn cuối có hai ý nối với nhau bằng 「でも」 (nhưng):\nÝ 1: 「成功例ばかり見ていた私たちは、考えが甘かったようです」 – chúng tôi chỉ nhìn các trường hợp thành công, có vẻ đã nghĩ quá đơn giản.\nÝ 2: 「でも、夢はあきらめたくないので、よく調べて、計画を立てて、実行できるように頑張りたい」 – nhưng không muốn bỏ ước mơ, nên sẽ tìm hiểu kỹ, lập kế hoạch và cố gắng thực hiện.\nGộp lại: tính đến cả các trường hợp thất bại, lập kế hoạch kỹ rồi thực hiện. Đáp án 3.\nLựa chọn 1 và 4 là hai thái cực sai: bỏ cuộc, hoặc mặc kệ thất bại mà làm ngay.',
           answer: 3, evidence: ['s11', 's12']
         }
       ],

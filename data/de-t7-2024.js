@@ -124,11 +124,12 @@ window.BAI = {
           label: '23',
           question: ['q1', '[野村|のむら]さんがこのメールで{知|し}らせたいことは{何|なに}か。', 'Điều Nomura muốn thông báo trong email này là gì?'],
           options: [
-            ['{部長|ぶちょう}{会議|かいぎ}は、{来週|らいしゅう}に[延期|えんき]する。', 'Cuộc họp hoãn sang tuần sau.', 'Sai. Chỉ hoãn NẾU bão chắc chắn đi qua – chưa quyết định.'],
-            ['{部長|ぶちょう}{会議|かいぎ}は、{明日|あした}の15{時|じ}から{行|おこな}う。', 'Cuộc họp diễn ra từ 15 giờ ngày mai.', 'Sai. 15 giờ ngày mai là giờ gửi thông báo cuối cùng.'],
-            ['{部長|ぶちょう}{会議|かいぎ}は{天気|てんき}@kankeinaku(に[関係|かんけい]なく)、あさって{行|おこな}う。', 'Cuộc họp diễn ra ngày kia bất kể thời tiết.', 'Sai. Có thể hoãn tùy theo bão.'],
-            ['{部長|ぶちょう}{会議|かいぎ}を[延期|えんき]するかどうか、{明日|あした}の15{時|じ}に{連絡|れんらく}する。', 'Ngày mai 15 giờ sẽ thông báo có hoãn họp hay không.', 'Đúng. Hoãn hay không còn tùy dự báo (s5), thông báo cuối cùng lúc 15 giờ ngày mai (s6).']
+            ['{部長|ぶちょう}{会議|かいぎ}は、{来週|らいしゅう}に[延期|えんき]する。', 'Cuộc họp hoãn sang tuần sau.', 'Chưa đúng. Chỉ hoãn NẾU chắc chắn bão đi qua Tokyo (確実になった場合は). Hiện tại chưa quyết định hoãn.'],
+            ['{部長|ぶちょう}{会議|かいぎ}は、{明日|あした}の15{時|じ}から{行|おこな}う。', 'Cuộc họp diễn ra từ 15 giờ ngày mai.', 'Chưa đúng. 15 giờ ngày mai là lúc gửi thông báo cuối cùng, không phải giờ họp. Cuộc họp dự kiến vào ngày kia.'],
+            ['{部長|ぶちょう}{会議|かいぎ}は{天気|てんき}@kankeinaku(に[関係|かんけい]なく)、あさって{行|おこな}う。', 'Cuộc họp diễn ra ngày kia bất kể thời tiết.', 'Chưa đúng. Cuộc họp có thể bị hoãn tùy theo cơn bão, nên không phải "bất kể thời tiết".'],
+            ['{部長|ぶちょう}{会議|かいぎ}を[延期|えんき]するかどうか、{明日|あした}の15{時|じ}に{連絡|れんらく}する。', 'Ngày mai 15 giờ sẽ thông báo có hoãn họp hay không.', 'Đúng. Hoãn hay không còn tùy dự báo bão, và kết quả sẽ được báo qua email lúc 15 giờ ngày mai (最終的なご連絡は…15時にメールいたします).']
           ],
+          guide: 'Câu hỏi hỏi Nomura muốn THÔNG BÁO điều gì. Đọc kỹ thì email này chưa quyết định gì cả, chỉ báo trước một khả năng.\nEmail nói: bão có thể đi qua gần Tokyo tối mai, giao thông có thể bị ảnh hưởng đến ngày kia. 「台風が東京を通ることが確実になった場合は、来週に会議を延期することにします」 – NẾU chắc chắn bão đi qua Tokyo thì sẽ hoãn họp sang tuần sau. Chữ 「〜場合は」 (trường hợp…) cho thấy đây chỉ là điều kiện, chưa phải quyết định.\nCâu tiếp theo: 「最終的なご連絡は、明日11日（木）の15時にメールいたします」 – thông báo cuối cùng sẽ gửi lúc 15 giờ ngày mai. Ghép lại: có hoãn hay không, 15 giờ mai sẽ báo. Đáp án 4.\nMẹo: email có "〜場合は" thì việc đó chưa chắc xảy ra. Đừng chọn lựa chọn nói như thể việc đã được quyết định (như đáp án 1).',
           answer: 4,
           evidence: ['s5', 's6']
         }
@@ -178,11 +179,12 @@ window.BAI = {
           label: '24',
           question: ['q1', '‹[不思議|ふしぎ]な{気|き}がした›とあるが、どうしてか。', '"Thấy khó hiểu" – vì sao?'],
           options: [
-            ['{高校生|こうこうせい}なのに、[孫|まご]が{有名|ゆうめい}なEスポーツの{大会|たいかい}に{出|で}ると{言|い}っているから。', 'Vì cháu mới học cấp ba mà nói sẽ dự giải E-sports nổi tiếng.', 'Sai. Bài không nói giải nổi tiếng hay tuổi tác là vấn đề.'],
-            ['コンピューターゲームにも{大会|たいかい}があると{聞|き}いたから。', 'Vì nghe nói game máy tính cũng có giải đấu.', 'Sai. Điều khó hiểu là "tại sao lại là THỂ THAO", không phải việc có giải đấu.'],
-            ['{体|からだ}を{動|うご}かさないのに、コンピューターゲームをスポーツと{言|い}っているから。', 'Vì không vận động cơ thể mà lại gọi game máy tính là thể thao.', 'Đúng. 「なぜ、それがスポーツの大会なのだろうか」 + 「体を動かすことをスポーツだと思っていた」 (s3, s6).'],
-            ['{子供|こども}のころからずっとなりたいと{思|おも}い{続|つづ}けていた{先生|せんせい}になれたから。', 'Trở thành giáo viên – điều luôn mong muốn từ nhỏ. (Lựa chọn bị in nhầm từ đề khác.)', 'Sai. Lựa chọn này không liên quan gì đến bài (bị in nhầm từ câu 24 đề T7/2023). Loại ngay.']
+            ['{高校生|こうこうせい}なのに、[孫|まご]が{有名|ゆうめい}なEスポーツの{大会|たいかい}に{出|で}ると{言|い}っているから。', 'Vì cháu mới học cấp ba mà nói sẽ dự giải E-sports nổi tiếng.', 'Chưa đúng. Bài không nói giải đấu nổi tiếng, cũng không thấy lạ vì cháu còn học cấp ba.'],
+            ['コンピューターゲームにも{大会|たいかい}があると{聞|き}いたから。', 'Vì nghe nói game máy tính cũng có giải đấu.', 'Chưa đúng. Tác giả không ngạc nhiên vì game có giải đấu. Điều khó hiểu là vì sao giải đó lại được gọi là "thể thao".'],
+            ['{体|からだ}を{動|うご}かさないのに、コンピューターゲームをスポーツと{言|い}っているから。', 'Vì không vận động cơ thể mà lại gọi game máy tính là thể thao.', 'Đúng. Tác giả nghĩ thể thao là phải vận động cơ thể, nên thấy lạ khi trò chơi máy tính không vận động gì cũng được gọi là thể thao.'],
+            ['{子供|こども}のころからずっとなりたいと{思|おも}い{続|つづ}けていた{先生|せんせい}になれたから。', 'Trở thành giáo viên – điều luôn mong muốn từ nhỏ. (Lựa chọn bị in nhầm từ đề khác.)', 'Chưa đúng. Lựa chọn này không liên quan gì đến bài (bị in nhầm từ câu 24 đề T7/2023). Loại ngay.']
           ],
+          guide: 'Câu hỏi hỏi vì sao tác giả "thấy khó hiểu" (不思議な気がした). Ngay sau câu gạch chân, tác giả tự hỏi: 「なぜ、それがスポーツの大会なのだろうか」 – tại sao một giải đấu game máy tính lại được gọi là giải THỂ THAO?\nCâu cuối bài cho biết tại sao tác giả thắc mắc: 「体を動かすことをスポーツだと思っていた私は驚いた」 – tôi vẫn nghĩ thể thao là phải vận động cơ thể. Chơi game thì không vận động cơ thể, vậy mà lại gọi là thể thao, nên thấy khó hiểu. Đáp án 3.\nLựa chọn 4 không liên quan gì đến bài (đề in nhầm từ đề khác, xem "Ghi chú về đề gốc"). Gặp lựa chọn lạc đề như vậy thì cứ loại.',
           answer: 3,
           evidence: ['s3', 's6']
         }
@@ -233,11 +235,12 @@ window.BAI = {
           label: '25',
           question: ['q1', 'カラオケ{大会|たいかい}に{参加|さんか}したい{人|ひと}で、{当日|とうじつ}、{会場|かいじょう}で{練習|れんしゅう}したい{人|ひと}はどうしなければならないか。', 'Người muốn tham gia cuộc thi và muốn luyện tập ở hội trường vào hôm đó phải làm gì?'],
           options: [
-            ['5{月|がつ}7{日|か}までに[留学生|りゅうがくせい]{課|か}で{参加|さんか}と{練習|れんしゅう}の[申|もう]し[込|こ]みをして、29{日|にち}の10{時|じ}に{会場|かいじょう}へ{行|い}く。', 'Đăng ký tham gia + luyện tập trước 7/5, rồi 10 giờ ngày 29 đến hội trường.', 'Đúng. Đăng ký luyện tập cùng lúc đăng ký tham gia (hạn 7/5) (s2, s5); người luyện tập tập trung lúc 10 giờ (s4).'],
-            ['5{月|がつ}7{日|か}までに[留学生|りゅうがくせい]{課|か}で{参加|さんか}と{練習|れんしゅう}の[申|もう]し[込|こ]みをして、29{日|にち}の12{時|じ}に{会場|かいじょう}へ{行|い}く。', 'Đăng ký trước 7/5, rồi 12 giờ ngày 29 đến hội trường.', 'Sai. 12 giờ là giờ tập trung của người KHÔNG luyện tập.'],
-            ['5{月|がつ}7{日|か}までに[留学生|りゅうがくせい]{課|か}で{参加|さんか}の[申|もう]し[込|こ]みだけして、29{日|にち}の10{時|じ}に{会場|かいじょう}へ{行|い}く。', 'Chỉ đăng ký tham gia trước 7/5, rồi 10 giờ đến hội trường.', 'Sai. Phải đăng ký cả luyện tập.'],
-            ['5{月|がつ}29{日|にち}の10{時|じ}までに[留学生|りゅうがくせい]{課|か}で{参加|さんか}と{練習|れんしゅう}の[申|もう]し[込|こ]みをして、12{時|じ}に{会場|かいじょう}へ{行|い}く。', 'Đăng ký trước 10 giờ ngày 29, rồi 12 giờ đến hội trường.', 'Sai. Hạn đăng ký là 7/5.']
+            ['5{月|がつ}7{日|か}までに[留学生|りゅうがくせい]{課|か}で{参加|さんか}と{練習|れんしゅう}の[申|もう]し[込|こ]みをして、29{日|にち}の10{時|じ}に{会場|かいじょう}へ{行|い}く。', 'Đăng ký tham gia + luyện tập trước 7/5, rồi 10 giờ ngày 29 đến hội trường.', 'Đúng. Đăng ký cả tham gia và luyện tập trước 7/5 ở phòng du học sinh, rồi ngày 29 đến hội trường lúc 10 giờ – giờ tập trung của người luyện tập.'],
+            ['5{月|がつ}7{日|か}までに[留学生|りゅうがくせい]{課|か}で{参加|さんか}と{練習|れんしゅう}の[申|もう]し[込|こ]みをして、29{日|にち}の12{時|じ}に{会場|かいじょう}へ{行|い}く。', 'Đăng ký trước 7/5, rồi 12 giờ ngày 29 đến hội trường.', 'Chưa đúng. 12 giờ là giờ tập trung của người KHÔNG luyện tập. Người luyện tập phải đến lúc 10 giờ.'],
+            ['5{月|がつ}7{日|か}までに[留学生|りゅうがくせい]{課|か}で{参加|さんか}の[申|もう]し[込|こ]みだけして、29{日|にち}の10{時|じ}に{会場|かいじょう}へ{行|い}く。', 'Chỉ đăng ký tham gia trước 7/5, rồi 10 giờ đến hội trường.', 'Chưa đúng. Muốn luyện tập thì phải đăng ký luyện tập cùng lúc đăng ký tham gia, không thể chỉ đăng ký tham gia.'],
+            ['5{月|がつ}29{日|にち}の10{時|じ}までに[留学生|りゅうがくせい]{課|か}で{参加|さんか}と{練習|れんしゅう}の[申|もう]し[込|こ]みをして、12{時|じ}に{会場|かいじょう}へ{行|い}く。', 'Đăng ký trước 10 giờ ngày 29, rồi 12 giờ đến hội trường.', 'Chưa đúng. Hạn đăng ký là 7/5, không phải sáng ngày thi. Và người luyện tập đến lúc 10 giờ, không phải 12 giờ.']
           ],
+          guide: 'Câu hỏi hỏi về người vừa muốn tham gia, vừa muốn LUYỆN TẬP ở hội trường hôm thi. Bạn cần gom ba thông tin: hạn đăng ký, có phải đăng ký luyện tập không, và mấy giờ phải đến.\nHạn đăng ký: 「5月7日（金）までに留学生課で申し込んでください」 – đăng ký ở phòng du học sinh trước 7/5.\nĐăng ký luyện tập: 「希望者は、参加の申し込みのときに、練習も申し込んでください」 – ai muốn luyện tập thì đăng ký luôn lúc đăng ký tham gia.\nGiờ đến: bình thường tập trung lúc 12 giờ, nhưng 「その場合の集合時間は10時になります」 – người luyện tập thì tập trung lúc 10 giờ.\nGhép lại: trước 7/5 đăng ký cả tham gia lẫn luyện tập, ngày 29 đến hội trường lúc 10 giờ. Đáp án 1.',
           answer: 1,
           evidence: ['s2', 's4', 's5']
         }
@@ -285,11 +288,12 @@ window.BAI = {
           label: '26',
           question: ['q1', 'この{文章|ぶんしょう}を{書|か}いた{人|ひと}が{言|い}いたいことは{何|なに}か。', 'Người viết muốn nói điều gì?'],
           options: [
-            ['コーヒーを{飲|の}むと{眠|ねむ}れなくなるから、{昼寝|ひるね}の{前|まえ}には{飲|の}まないほうがいい。', 'Cà phê làm khó ngủ nên không nên uống trước khi ngủ trưa.', 'Sai. Đây là quan niệm thông thường được nêu ra để phản bác (しかし…); bài khuyên NÊN uống trước khi ngủ trưa.'],
-            ['[集中力|しゅうちゅうりょく]が{高|たか}くなるから、{昼寝|ひるね}のあとで30{分|ぷん}{以内|いない}にコーヒーを{飲|の}むといい。', 'Nên uống cà phê trong 30 phút sau khi ngủ trưa.', 'Sai. Uống TRƯỚC khi ngủ trưa.'],
-            ['{昼寝|ひるね}で{寝|ね}すぎないためには、{昼寝|ひるね}をする30{分|ぷん}{前|まえ}にコーヒーを{飲|の}むといい。', 'Nên uống cà phê 30 phút trước khi ngủ trưa.', 'Sai. Uống 30 phút trước thì vừa nằm xuống đã tỉnh. Phải uống NGAY TRƯỚC khi ngủ để 30 phút sau tỉnh dậy.'],
-            ['{昼寝|ひるね}で、30{分|ぷん}ぐらいで{自然|しぜん}に{起|お}きるためには、{昼寝|ひるね}の@chokuzen([直前|ちょくぜん])にコーヒーを{飲|の}むといい。', 'Để tự nhiên dậy sau khoảng 30 phút ngủ trưa, nên uống cà phê ngay trước khi ngủ.', 'Đúng. Tác dụng xuất hiện sau 30 phút → uống trước khi ngủ trưa thì 30 phút sau tự tỉnh (s5).']
+            ['コーヒーを{飲|の}むと{眠|ねむ}れなくなるから、{昼寝|ひるね}の{前|まえ}には{飲|の}まないほうがいい。', 'Cà phê làm khó ngủ nên không nên uống trước khi ngủ trưa.', 'Chưa đúng. Đây là quan niệm thông thường được nêu ra để phản bác (しかし…). Bài khuyên NÊN uống trước khi ngủ trưa.'],
+            ['[集中力|しゅうちゅうりょく]が{高|たか}くなるから、{昼寝|ひるね}のあとで30{分|ぷん}{以内|いない}にコーヒーを{飲|の}むといい。', 'Nên uống cà phê trong 30 phút sau khi ngủ trưa.', 'Chưa đúng. Bài khuyên uống TRƯỚC khi ngủ trưa, không phải sau khi dậy.'],
+            ['{昼寝|ひるね}で{寝|ね}すぎないためには、{昼寝|ひるね}をする30{分|ぷん}{前|まえ}にコーヒーを{飲|の}むといい。', 'Nên uống cà phê 30 phút trước khi ngủ trưa.', 'Chưa đúng. Uống 30 phút trước khi ngủ thì vừa nằm xuống cà phê đã có tác dụng, sẽ khó ngủ. Phải uống ngay trước khi ngủ.'],
+            ['{昼寝|ひるね}で、30{分|ぷん}ぐらいで{自然|しぜん}に{起|お}きるためには、{昼寝|ひるね}の@chokuzen([直前|ちょくぜん])にコーヒーを{飲|の}むといい。', 'Để tự nhiên dậy sau khoảng 30 phút ngủ trưa, nên uống cà phê ngay trước khi ngủ.', 'Đúng. Tác dụng tỉnh ngủ đến sau khoảng 30 phút, nên uống ngay trước khi ngủ trưa thì khoảng 30 phút sau sẽ tự tỉnh dậy.']
           ],
+          guide: 'Câu hỏi hỏi tác giả muốn nói gì. Bài này mở đầu bằng một quan niệm quen thuộc (uống cà phê thì khó ngủ), rồi dùng 「しかし」 để đưa ra ý mới: nên uống cà phê TRƯỚC khi ngủ trưa.\nLý do: ngủ trưa giúp tăng tập trung nhưng ngủ lâu thì không tốt. Cà phê có tác dụng làm tỉnh, và 「この効果は、飲んでから約30分後に出る」 – tác dụng này xuất hiện khoảng 30 phút sau khi uống. Nên nếu uống ngay trước khi ngủ, khoảng 30 phút sau bạn sẽ tự tỉnh dậy, không bị ngủ quá lâu.\nĐáp án 4: uống ngay trước khi ngủ trưa để tự dậy sau khoảng 30 phút.\nBẫy là lựa chọn 3 (uống 30 phút trước khi ngủ). Nếu làm vậy, vừa nằm xuống thì cà phê đã bắt đầu có tác dụng, khó ngủ được. Hãy tự tính mốc thời gian theo đúng thứ tự.',
           answer: 4,
           evidence: ['s4', 's5', 's6']
         }
@@ -345,11 +349,12 @@ window.BAI = {
           label: '27',
           question: ['q1', '‹①[諦|あきら]めていた›とあるが、{何|なに}を[諦|あきら]めていたのか。', '"Đã từ bỏ" – từ bỏ điều gì?'],
           options: [
-            ['{自分|じぶん}で{野菜|やさい}を{育|そだ}てること。', 'Tự trồng rau.', 'Đúng. Muốn tự trồng rau (s1) nhưng nhà không có vườn, ban công nên đã từ bỏ (s2).'],
-            ['{庭|にわ}やベランダがある{家|いえ}に{住|す}むこと。', 'Sống ở nhà có vườn, ban công.', 'Sai. Không có vườn là lý do, không phải điều từ bỏ.'],
-            ['{友達|ともだち}に{野菜|やさい}の{育|そだ}て{方|かた}を{教|おし}えてもらうこと。', 'Nhờ bạn dạy cách trồng rau.', 'Sai. Tác giả chưa từng muốn nhờ bạn dạy rồi bỏ cuộc; chính bạn sau này là người chỉ cách.'],
-            ['{部屋|へや}の{中|なか}でホウレンソウを{育|そだ}てること。', 'Trồng rau chân vịt trong phòng.', 'Sai. Đây là việc tác giả làm SAU khi nghe bạn kể.']
+            ['{自分|じぶん}で{野菜|やさい}を{育|そだ}てること。', 'Tự trồng rau.', 'Đúng. Tác giả muốn tự trồng rau từ lâu, nhưng vì nhà không có vườn hay ban công nên đã từ bỏ.'],
+            ['{庭|にわ}やベランダがある{家|いえ}に{住|す}むこと。', 'Sống ở nhà có vườn, ban công.', 'Chưa đúng. Không có vườn, ban công là lý do khiến tác giả từ bỏ, chứ không phải điều bị từ bỏ.'],
+            ['{友達|ともだち}に{野菜|やさい}の{育|そだ}て{方|かた}を{教|おし}えてもらうこと。', 'Nhờ bạn dạy cách trồng rau.', 'Chưa đúng. Bài không nói tác giả muốn nhờ bạn dạy rồi bỏ cuộc. Chính bạn sau này là người chỉ cách.'],
+            ['{部屋|へや}の{中|なか}でホウレンソウを{育|そだ}てること。', 'Trồng rau chân vịt trong phòng.', 'Chưa đúng. Trồng rau chân vịt trong phòng là việc tác giả bắt đầu làm SAU khi nghe bạn kể, không phải điều đã từ bỏ.']
           ],
+          guide: 'Câu hỏi hỏi tác giả đã từ bỏ (諦めていた) điều gì. Câu đầu bài: 「前から自分で野菜を育てたいと思っていました」 – từ lâu tôi đã muốn tự trồng rau. Câu sau: nhà không có vườn cũng không có ban công 「ので、諦めていた」 – nên tôi đã từ bỏ.\nVậy điều bị từ bỏ chính là mong muốn ở câu đầu: tự trồng rau. Đáp án 1.\nĐừng nhầm "không có vườn, ban công" (lý do từ bỏ) với điều bị từ bỏ. Còn việc trồng rau chân vịt trong phòng là điều tác giả làm SAU khi nghe bạn kể, nên không phải thứ đã từ bỏ.',
           answer: 1,
           evidence: ['s1', 's2']
         },
@@ -357,11 +362,12 @@ window.BAI = {
           label: '28',
           question: ['q2', '‹②がっかりして›とあるが、どうしてがっかりしたのか。', '"Thất vọng" – vì sao?'],
           options: [
-            ['ホウレンソウの[芽|め]が{出|で}なかったから。', 'Vì mầm không nhú.', 'Sai. 4 ngày đã nhú mầm.'],
-            ['ホウレンソウが{全部|ぜんぶ}[枯|か]れてしまったから。', 'Vì rau chân vịt chết héo hết.', 'Đúng. 「全部枯れてしまったのです」 (s6) ngay trước "がっかりして".'],
-            ['ホウレンソウについての{友達|ともだち}の@chishiki([知識|ちしき])が{間違|まちが}っていたから。', 'Vì kiến thức của bạn về rau chân vịt sai.', 'Sai. Lời khuyên của bạn đúng (lần sau cây lớn khỏe).'],
-            ['うまく{育|そだ}ったホウレンソウが{少|すく}なかったから。', 'Vì cây lớn tốt quá ít.', 'Sai. Toàn bộ đã chết.']
+            ['ホウレンソウの[芽|め]が{出|で}なかったから。', 'Vì mầm không nhú.', 'Chưa đúng. Chỉ 4 ngày là mầm đã nhú (4日で芽が出始めました).'],
+            ['ホウレンソウが{全部|ぜんぶ}[枯|か]れてしまったから。', 'Vì rau chân vịt chết héo hết.', 'Đúng. Lá chuyển vàng rồi cây chết héo hết (全部枯れてしまった), ngay sau đó tác giả thất vọng.'],
+            ['ホウレンソウについての{友達|ともだち}の@chishiki([知識|ちしき])が{間違|まちが}っていたから。', 'Vì kiến thức của bạn về rau chân vịt sai.', 'Chưa đúng. Lời khuyên của bạn là đúng, vì làm theo thì lần sau rau lớn tốt.'],
+            ['うまく{育|そだ}ったホウレンソウが{少|すく}なかったから。', 'Vì cây lớn tốt quá ít.', 'Chưa đúng. Không phải "ít cây sống", mà là TẤT CẢ đều chết (全部枯れてしまった).']
           ],
+          guide: 'Câu hỏi hỏi vì sao tác giả thất vọng (がっかりして). Hãy đọc đoạn ngay trước câu gạch chân.\nĐoạn đó kể: trồng gần cửa sổ thì 4 ngày đã nhú mầm, cây lớn dần nên rất vui. 「ところが、だんだん葉が黄色くなって、全部枯れてしまったのです」 – thế nhưng lá dần chuyển vàng, rồi chết héo hết. Ngay sau đó là "がっかりして". Vậy thất vọng vì rau chết hết. Đáp án 2.\nChữ 「ところが」 (thế nhưng) báo hiệu một kết quả trái với mong đợi – thường là nguyên nhân của cảm xúc tiêu cực ngay sau đó.',
           answer: 2,
           evidence: ['s6', 's8']
         },
@@ -369,11 +375,12 @@ window.BAI = {
           label: '29',
           question: ['q3', '‹③{今度|こんど}は{元気|げんき}に{育|そだ}ちました›とあるが、どうして{元気|げんき}に{育|そだ}ったのか。', '"Lần này cây lớn khỏe" – vì sao?'],
           options: [
-            ['{昼|ひる}、ホウレンソウにも{光|ひかり}が{当|あ}たるようにしたから。', 'Vì ban ngày cho ánh sáng chiếu vào.', 'Sai. Cây chết không phải do thiếu sáng ban ngày.'],
-            ['{昼|ひる}、ホウレンソウにあまり{光|ひかり}が{当|あ}たらないようにしたから。', 'Vì ban ngày hạn chế ánh sáng.', 'Sai. Vấn đề là ban ĐÊM.'],
-            ['{夜|よる}、ホウレンソウに{光|ひかり}が{当|あ}たるようにしたから。', 'Vì ban đêm cho ánh sáng chiếu vào.', 'Sai. Ngược lại – ban đêm KHÔNG được để ánh sáng chiếu vào (夜になったら、光が当たってはいけない).'],
-            ['{夜|よる}、ホウレンソウに{光|ひかり}が{当|あ}たらないようにしたから。', 'Vì ban đêm không để ánh sáng chiếu vào.', 'Đúng. Ban đêm không được để ánh sáng chiếu (s8); che bằng thùng các-tông như bạn (s10–s11).']
+            ['{昼|ひる}、ホウレンソウにも{光|ひかり}が{当|あ}たるようにしたから。', 'Vì ban ngày cho ánh sáng chiếu vào.', 'Chưa đúng. Vấn đề không nằm ở ban ngày, mà ở ánh sáng ban đêm.'],
+            ['{昼|ひる}、ホウレンソウにあまり{光|ひかり}が{当|あ}たらないようにしたから。', 'Vì ban ngày hạn chế ánh sáng.', 'Chưa đúng. Ban ngày không phải vấn đề. Bài nói phải tránh ánh sáng vào BAN ĐÊM.'],
+            ['{夜|よる}、ホウレンソウに{光|ひかり}が{当|あ}たるようにしたから。', 'Vì ban đêm cho ánh sáng chiếu vào.', 'Chưa đúng. Ngược lại: ban đêm KHÔNG được để ánh sáng chiếu vào (夜になったら、光が当たってはいけない).'],
+            ['{夜|よる}、ホウレンソウに{光|ひかり}が{当|あ}たらないようにしたから。', 'Vì ban đêm không để ánh sáng chiếu vào.', 'Đúng. Rau chân vịt không được bị ánh sáng chiếu vào ban đêm. Che bằng thùng các-tông giúp chặn ánh đèn trong phòng nên rau lớn tốt.']
           ],
+          guide: 'Câu hỏi hỏi vì sao lần này rau lớn khỏe. Muốn trả lời, phải biết lần trước vì sao rau chết.\nKhi gọi hỏi bạn, tác giả biết: 「ホウレンソウは夜になったら、光が当たってはいけない」 – rau chân vịt khi trời tối thì không được để ánh sáng chiếu vào. Lần trước, đèn điện trong phòng chiếu vào rau ban đêm nên rau chết.\nBạn của tác giả dùng thùng các-tông che rau, tác giả làm theo, và lần này rau lớn khỏe. Tức là ban đêm đã không để ánh sáng chiếu vào. Đáp án 4.\nBốn lựa chọn là bốn tổ hợp "ngày/đêm × có/không ánh sáng". Hãy chốt hai từ khóa trong bài: 夜 (ban đêm) và 当たってはいけない (không được chiếu vào).',
           answer: 4,
           evidence: ['s8', 's10', 's11']
         }
@@ -427,11 +434,12 @@ window.BAI = {
           label: '30',
           question: ['q1', '‹[驚|おどろ]いてしまった›とあるが、{文房具|ぶんぼうぐ}{店|てん}のどんなことに[驚|おどろ]いたのか。', '"Đã rất ngạc nhiên" – ngạc nhiên về điều gì ở cửa hàng văn phòng phẩm?'],
           options: [
-            ['シャーペンがあまり{売|う}られていなかったこと。', 'Bút chì kim không được bán nhiều.', 'Sai. Đó là tình hình ở NƯỚC tác giả.'],
-            ['たくさんの{種類|しゅるい}のシャーペンや[芯|しん]が{売|う}られていたこと。', 'Có bán rất nhiều loại bút chì kim và ruột bút.', 'Đúng. Vô số bút từ 100 yên đến trên 5.000 yên, ruột nhiều độ to, độ đậm (s2–s3).'],
-            ['{値段|ねだん}の{高|たか}いシャーペンばかりが{売|う}られていたこと。', 'Toàn bán bút chì kim đắt tiền.', 'Sai. Có cả loại rẻ 100 yên.'],
-            ['シャーペンだけを{売|う}る@senmon([専門|せんもん])の{店|みせ}だったこと。', 'Là cửa hàng chuyên bán bút chì kim.', 'Sai. Đó là cửa hàng văn phòng phẩm thông thường.']
+            ['シャーペンがあまり{売|う}られていなかったこと。', 'Bút chì kim không được bán nhiều.', 'Chưa đúng. "Bút chì kim không được bán nhiều" là tình hình ở nước của tác giả, không phải ở cửa hàng ở Nhật.'],
+            ['たくさんの{種類|しゅるい}のシャーペンや[芯|しん]が{売|う}られていたこと。', 'Có bán rất nhiều loại bút chì kim và ruột bút.', 'Đúng. Cửa hàng bày vô số bút chì kim đủ mức giá, ruột bút cũng nhiều cỡ và nhiều độ đậm.'],
+            ['{値段|ねだん}の{高|たか}いシャーペンばかりが{売|う}られていたこと。', 'Toàn bán bút chì kim đắt tiền.', 'Chưa đúng. Có cả loại rẻ 100 yên, không phải toàn loại đắt.'],
+            ['シャーペンだけを{売|う}る@senmon([専門|せんもん])の{店|みせ}だったこと。', 'Là cửa hàng chuyên bán bút chì kim.', 'Chưa đúng. Đó là cửa hàng văn phòng phẩm (文房具店) bình thường, không phải cửa hàng chỉ bán bút chì kim.']
           ],
+          guide: 'Câu hỏi hỏi tác giả ngạc nhiên vì điều gì ở cửa hàng văn phòng phẩm. Câu sau câu gạch chân giải thích: ở nước tác giả bút chì kim không được bán nhiều, nhưng cửa hàng này bày 「すごい数のシャーペン」 – vô số bút chì kim, từ loại 100 yên đến loại trên 5.000 yên. Ruột bút cũng có nhiều cỡ, nhiều độ đậm.\nTóm lại là: rất nhiều loại bút và ruột bút. Đáp án 2.\nLựa chọn 1 là bẫy: "không bán nhiều" là tình hình ở NƯỚC tác giả, không phải ở cửa hàng Nhật.',
           answer: 2,
           evidence: ['s2', 's3']
         },
@@ -439,11 +447,12 @@ window.BAI = {
           label: '31',
           question: ['q2', 'シャーペンが{日本|にほん}{中|じゅう}で{使|つか}われるようになったのは、いつからか。', 'Bút chì kim được dùng khắp Nhật từ khi nào?'],
           options: [
-            ['{日本|にほん}の{会社|かいしゃ}が、{太|ふと}くて[折|お]れにくい[芯|しん]を{作|つく}ってから。', 'Từ khi công ty Nhật làm ra ruột to, khó gãy.', 'Sai. Ruột 0,5 mm là ruột NHỎ hơn loại ban đầu (1,0–1,5 mm).'],
-            ['{日本|にほん}の{会社|かいしゃ}が、{細|ほそ}くて[折|お]れにくい[芯|しん]を{作|つく}ってから。', 'Từ khi công ty Nhật làm ra ruột nhỏ, khó gãy.', 'Đúng. Ruột 0,5 mm khó gãy → 「それから日本中で使われるようになった」 (s5–s6).'],
-            ['{日本|にほん}の{会社|かいしゃ}が、{日本|にほん}でイギリスのシャーペンを{売|う}るようになってから。', 'Từ khi công ty Nhật bán bút chì kim của Anh ở Nhật.', 'Sai. Bài không nói công ty Nhật bán bút của Anh; công ty Nhật tự làm ruột 0,5 mm.'],
-            ['{日本|にほん}の{会社|かいしゃ}が、{世界|せかい}で{初|はじ}めてシャーペンを{作|つく}ってから。', 'Từ khi công ty Nhật làm ra bút chì kim đầu tiên trên thế giới.', 'Sai. Bút chì kim ra đời ở Anh; "đầu tiên trên thế giới" là ruột 0,5 mm.']
+            ['{日本|にほん}の{会社|かいしゃ}が、{太|ふと}くて[折|お]れにくい[芯|しん]を{作|つく}ってから。', 'Từ khi công ty Nhật làm ra ruột to, khó gãy.', 'Chưa đúng. 0,5 mm mảnh hơn loại ban đầu (1,5 mm, 1,0 mm), nên không phải ruột "to".'],
+            ['{日本|にほん}の{会社|かいしゃ}が、{細|ほそ}くて[折|お]れにくい[芯|しん]を{作|つく}ってから。', 'Từ khi công ty Nhật làm ra ruột nhỏ, khó gãy.', 'Đúng. Công ty Nhật làm ra ruột 0,5 mm (mảnh hơn trước) mà khó gãy, "từ đó" (それから) bút chì kim được dùng khắp Nhật.'],
+            ['{日本|にほん}の{会社|かいしゃ}が、{日本|にほん}でイギリスのシャーペンを{売|う}るようになってから。', 'Từ khi công ty Nhật bán bút chì kim của Anh ở Nhật.', 'Chưa đúng. Bài không nói công ty Nhật bán bút của Anh. Công ty Nhật tự làm ra ruột 0,5 mm.'],
+            ['{日本|にほん}の{会社|かいしゃ}が、{世界|せかい}で{初|はじ}めてシャーペンを{作|つく}ってから。', 'Từ khi công ty Nhật làm ra bút chì kim đầu tiên trên thế giới.', 'Chưa đúng. Bút chì kim ra đời ở Anh. Thứ "đầu tiên trên thế giới" mà công ty Nhật làm ra là ruột 0,5 mm, không phải cây bút.']
           ],
+          guide: 'Câu hỏi hỏi bút chì kim được dùng khắp Nhật Bản TỪ KHI NÀO. Hãy tìm chữ 「それから」 (từ đó trở đi): 「それからシャーペンが日本中で使われるようになったらしい」.\n"Từ đó" là từ sự kiện ngay trước: khoảng 60 năm trước, một công ty Nhật lần đầu tiên trên thế giới làm ra ruột bút 0,5 mm khó gãy.\nBan đầu ruột bút chỉ có loại 1,5 mm hay 1,0 mm, nên 0,5 mm là loại MẢNH hơn. Đáp án 2: từ khi công ty Nhật làm ra ruột mảnh mà khó gãy.\nMẹo: bài cho con số (1,5 → 0,5 mm) nhưng lựa chọn lại dùng tính từ (細い/太い). Hãy tự đổi con số thành "to" hay "mảnh" trước khi so.',
           answer: 2,
           evidence: ['s4', 's5', 's6']
         },
@@ -451,11 +460,12 @@ window.BAI = {
           label: '32',
           question: ['q3', '「{私|わたし}」が{今|いま}、シャーペンを{使|つか}っているのはなぜか。', 'Vì sao bây giờ "tôi" dùng bút chì kim?'],
           options: [
-            ['{日本|にほん}{中|じゅう}で{使|つか}われているから。', 'Vì khắp Nhật đều dùng.', 'Sai. Không phải lý do của tác giả.'],
-            ['{小|ちい}さい{字|じ}が{書|か}きやすいから。', 'Vì dễ viết chữ nhỏ.', 'Đúng. 「先が丸くならず、小さい字がきれいに書けるからだ」 (s8).'],
-            ['[鉛筆|えんぴつ]より{安|やす}く{買|か}えるから。', 'Vì rẻ hơn bút chì gỗ.', 'Sai. Bài không so sánh giá.'],
-            ['{高|たか}くていい{物|もの}を{買|か}ったから。', 'Vì đã mua được cây đắt, tốt.', 'Sai. Đang dùng loại rẻ; sang năm mới định mua loại tốt.']
+            ['{日本|にほん}{中|じゅう}で{使|つか}われているから。', 'Vì khắp Nhật đều dùng.', 'Chưa đúng. Việc bút được dùng khắp Nhật là thông tin lịch sử, không phải lý do tác giả đưa ra.'],
+            ['{小|ちい}さい{字|じ}が{書|か}きやすいから。', 'Vì dễ viết chữ nhỏ.', 'Đúng. Tác giả nói rõ lý do (〜からだ): đầu bút không bị tù, viết chữ nhỏ vẫn đẹp.'],
+            ['[鉛筆|えんぴつ]より{安|やす}く{買|か}えるから。', 'Vì rẻ hơn bút chì gỗ.', 'Chưa đúng. Bài không so sánh giá bút chì kim với bút chì gỗ.'],
+            ['{高|たか}くていい{物|もの}を{買|か}ったから。', 'Vì đã mua được cây đắt, tốt.', 'Chưa đúng. Cây đang dùng là loại rẻ (安い物). Sang năm đi làm tác giả mới định mua cây tốt hơn.']
           ],
+          guide: 'Câu hỏi hỏi lý do tác giả dùng bút chì kim. Đoạn cuối: 「来日してからずっとシャーペンを愛用している。鉛筆のように先が丸くならず、小さい字がきれいに書けるからだ」 – tôi luôn dùng bút chì kim vì đầu bút không bị tù như bút chì gỗ, viết chữ nhỏ vẫn đẹp.\nCâu có đuôi 「〜からだ」 (là vì…) chính là lý do. Đáp án 2: dễ viết chữ nhỏ.\nLựa chọn 4 là bẫy: cây bút đang dùng là loại RẺ. Tác giả chỉ định sang năm đi làm mới mua cây tốt hơn.',
           answer: 2,
           evidence: ['s7', 's8']
         }

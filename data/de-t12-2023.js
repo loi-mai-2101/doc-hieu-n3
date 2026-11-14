@@ -126,11 +126,12 @@ window.BAI = {
           label: '23',
           question: ['q1', '{当日|とうじつ}、{予約|よやく}したチケットを[券売機|けんばいき]で[発券|はっけん]したい{場合|ばあい}、どうしなければならないか。', 'Hôm đó, nếu muốn in vé đã đặt bằng máy bán vé thì phải làm gì?'],
           options: [
-            ['{映画|えいが}{開始|かいし}{時間|じかん}の15{分|ふん}{前|まえ}までに、[券売機|けんばいき]に{必要|ひつよう}な{情報|じょうほう}を{入力|にゅうりょく}する。', 'Nhập thông tin cần thiết vào máy trước giờ chiếu 15 phút.', 'Sai. Hạn là 15 phút SAU khi phim bắt đầu (開始から15分を過ぎますと).'],
-            ['{映画|えいが}{開始|かいし}{時間|じかん}の15{分|ふん}{前|まえ}までに、[券売機|けんばいき]でお{金|かね}を{払|はら}う。', 'Trả tiền ở máy trước giờ chiếu 15 phút.', 'Sai. Tiền đã thanh toán rồi (s2).'],
-            ['{映画|えいが}{開始|かいし}{時間|じかん}の15{分|ふん}{後|ご}までに、[券売機|けんばいき]に{必要|ひつよう}な{情報|じょうほう}を{入力|にゅうりょく}する。', 'Nhập thông tin cần thiết vào máy chậm nhất 15 phút sau giờ chiếu.', 'Đúng. Nhập mã đặt vé + số điện thoại (s4); quá 15 phút sau khi bắt đầu thì máy không in được (s5).'],
-            ['{映画|えいが}{開始|かいし}{時間|じかん}の15{分|ふん}{後|ご}までに、[券売機|けんばいき]でお{金|かね}を{払|はら}う。', 'Trả tiền ở máy chậm nhất 15 phút sau giờ chiếu.', 'Sai. Không cần trả tiền nữa.']
+            ['{映画|えいが}{開始|かいし}{時間|じかん}の15{分|ふん}{前|まえ}までに、[券売機|けんばいき]に{必要|ひつよう}な{情報|じょうほう}を{入力|にゅうりょく}する。', 'Nhập thông tin cần thiết vào máy trước giờ chiếu 15 phút.', 'Chưa đúng. Hạn chót là 15 phút SAU khi phim bắt đầu (開始から15分を過ぎますと), không phải 15 phút trước.'],
+            ['{映画|えいが}{開始|かいし}{時間|じかん}の15{分|ふん}{前|まえ}までに、[券売機|けんばいき]でお{金|かね}を{払|はら}う。', 'Trả tiền ở máy trước giờ chiếu 15 phút.', 'Chưa đúng. Sai cả hai chỗ: tiền vé đã thanh toán rồi (代金を支払っていただき), và mốc 15 phút là sau giờ chiếu chứ không phải trước.'],
+            ['{映画|えいが}{開始|かいし}{時間|じかん}の15{分|ふん}{後|ご}までに、[券売機|けんばいき]に{必要|ひつよう}な{情報|じょうほう}を{入力|にゅうりょく}する。', 'Nhập thông tin cần thiết vào máy chậm nhất 15 phút sau giờ chiếu.', 'Đúng. Phải nhập mã đặt vé và số điện thoại vào máy, và làm trước khi phim chiếu được 15 phút, vì quá mốc đó máy không in vé nữa.'],
+            ['{映画|えいが}{開始|かいし}{時間|じかん}の15{分|ふん}{後|ご}までに、[券売機|けんばいき]でお{金|かね}を{払|はら}う。', 'Trả tiền ở máy chậm nhất 15 phút sau giờ chiếu.', 'Chưa đúng. Mốc thời gian đúng, nhưng không cần trả tiền nữa vì email mở đầu bằng lời cảm ơn đã thanh toán.']
           ],
+          guide: 'Câu hỏi hỏi: muốn in vé bằng MÁY BÁN VÉ (券売機) vào hôm xem phim thì phải làm gì? Hãy tìm những câu có chữ 券売機 trong email.\nCâu thứ nhất: 「券売機に＜予約番号＞と＜電話番号＞をご入力ください」 – nhập mã đặt vé và số điện thoại vào máy. Câu thứ hai: 「映画開始から15分を過ぎますと、券売機での発券はできなくなります」 – quá 15 phút kể từ lúc phim bắt đầu thì máy không in vé được nữa.\nNhư vậy phải nhập thông tin vào máy chậm nhất là 15 phút SAU giờ chiếu. Đáp án là 3.\nHai bẫy: (1) "開始から15分" là 15 phút SAU khi bắt đầu, không phải 15 phút trước. (2) Câu mở đầu email 「チケット代金を支払っていただき」 cho biết tiền vé đã trả rồi, nên mọi lựa chọn có "trả tiền ở máy" đều sai.',
           answer: 3,
           evidence: ['s2', 's4', 's5']
         }
@@ -180,11 +181,12 @@ window.BAI = {
           label: '24',
           question: ['q1', 'アリサさんがこのメモで[頼|たの]まれていることは{何|なに}か。', 'Arisa được nhờ làm gì trong mẩu ghi chú này?'],
           options: [
-            ['{大学|だいがく}の{事務所|じむしょ}に{行|い}って、[書類|しょるい]を{出|だ}すこと', 'Đến văn phòng trường nộp giấy tờ.', 'Sai. Đó là việc Harumi tự đi làm.'],
-            ['カレーとスープを{作|つく}ること', 'Nấu cà ri và súp.', 'Sai. Cà ri và súp đã xong (できたんだけど).'],
-            ['サラダを{作|つく}ること', 'Làm salad.', 'Đúng. 「サラダがまだできていないので、お願いできますか」 (s2).'],
-            ['{甘|あま}いものを{買|か}うこと', 'Mua đồ ngọt.', 'Sai. Harumi sẽ mua đồ ngọt trên đường về.']
+            ['{大学|だいがく}の{事務所|じむしょ}に{行|い}って、[書類|しょるい]を{出|だ}すこと', 'Đến văn phòng trường nộp giấy tờ.', 'Chưa đúng. Đi nộp giấy tờ là việc Harumi tự đi làm (ちょっと行ってきます), không nhờ Arisa.'],
+            ['カレーとスープを{作|つく}ること', 'Nấu cà ri và súp.', 'Chưa đúng. Cà ri và súp Harumi đã nấu xong rồi (できたんだけど).'],
+            ['サラダを{作|つく}ること', 'Làm salad.', 'Đúng. Harumi viết salad chưa làm và hỏi 「お願いできますか」 (nhờ bạn được không?), còn chỉ cả nguyên liệu trong tủ lạnh.'],
+            ['{甘|あま}いものを{買|か}うこと', 'Mua đồ ngọt.', 'Chưa đúng. Harumi nói chính mình sẽ mua đồ ngọt trên đường về (帰りに…買ってきますね).']
           ],
+          guide: 'Câu hỏi hỏi Arisa được NHỜ làm gì. Trong mẩu ghi chú, hãy tìm mẫu câu nhờ vả như 「お願いできますか」, 「〜てください」, 「〜てくれる？」.\nCâu nhờ vả nằm ở đoạn hai: 「カレーとスープはできたんだけど、サラダがまだできていないので、お願いできますか」 – cà ri và súp thì xong rồi, nhưng salad chưa làm, bạn làm giúp được không? Câu sau còn chỉ cách: trong tủ lạnh có cà chua, xà lách, cứ dùng tùy ý. Vậy Arisa được nhờ làm salad. Đáp án 3.\nCác việc khác đều là việc Harumi TỰ làm: đi nộp giấy tờ (行ってきます) và mua đồ ngọt khi về (買ってきますね). Đuôi 〜てきます nghĩa là "tôi đi làm rồi về", tức là người viết tự làm.',
           answer: 3,
           evidence: ['s2', 's3']
         }
@@ -230,11 +232,12 @@ window.BAI = {
           label: '25',
           question: ['q1', '‹{意外|いがい}だった›とあるが、[調査|ちょうさ]{結果|けっか}のどのような{点|てん}からそう{思|おも}ったか。', '"Bất ngờ" – tác giả nghĩ vậy từ điểm nào trong kết quả khảo sát?'],
           options: [
-            ['「{私|わたし}」と{同|おな}じタイプの{人|ひと}が、{最|もっと}も{多|おお}い{点|てん}', 'Người cùng kiểu với "tôi" là nhiều nhất.', 'Đúng. "Tôi" đến sớm = nhóm 59%, nhiều nhất, trái với suy nghĩ "mình là kiểu hiếm" (s2, s5).'],
-            ['「{私|わたし}」と{同|おな}じタイプの{人|ひと}が、{二番目|にばんめ}に{多|おお}い{点|てん}', 'Người cùng kiểu với "tôi" nhiều thứ hai.', 'Sai. Nhiều thứ hai là nhóm "đi cho kịp giờ".'],
-            ['「{私|わたし}」と{同|おな}じタイプの{人|ひと}が、{最|もっと}も{少|すく}ない{点|てん}', 'Người cùng kiểu với "tôi" ít nhất.', 'Sai. Ít nhất là nhóm không ngại trễ (3%).'],
-            ['「{私|わたし}」と@hantai([反対|はんたい])のタイプの{人|ひと}が、{最|もっと}も{多|おお}い{点|てん}', 'Người kiểu ngược với "tôi" là nhiều nhất.', 'Sai. Nhóm ngược lại (trễ cũng được) chỉ 3%.']
+            ['「{私|わたし}」と{同|おな}じタイプの{人|ひと}が、{最|もっと}も{多|おお}い{点|てん}', 'Người cùng kiểu với "tôi" là nhiều nhất.', 'Đúng. Tác giả luôn đến sớm, mà nhóm "đến sớm" lại đông nhất (59%). Tưởng mình là kiểu hiếm, hóa ra là kiểu phổ biến nhất, nên bất ngờ.'],
+            ['「{私|わたし}」と{同|おな}じタイプの{人|ひと}が、{二番目|にばんめ}に{多|おお}い{点|てん}', 'Người cùng kiểu với "tôi" nhiều thứ hai.', 'Chưa đúng. Nhóm đông thứ hai (36%) là "đi sao cho kịp giờ", không phải nhóm của tác giả.'],
+            ['「{私|わたし}」と{同|おな}じタイプの{人|ひと}が、{最|もっと}も{少|すく}ない{点|てん}', 'Người cùng kiểu với "tôi" ít nhất.', 'Chưa đúng. Nhóm ít nhất (3%) là người "trễ một chút cũng không bận tâm", ngược hẳn với tác giả.'],
+            ['「{私|わたし}」と@hantai([反対|はんたい])のタイプの{人|ひと}が、{最|もっと}も{多|おお}い{点|てん}', 'Người kiểu ngược với "tôi" là nhiều nhất.', 'Chưa đúng. Nhóm ngược với tác giả (không ngại trễ) chỉ có 3%, ít nhất chứ không phải nhiều nhất.']
           ],
+          guide: 'Câu hỏi hỏi: tác giả thấy "bất ngờ" từ điểm nào trong kết quả khảo sát? Muốn trả lời, bạn cần biết hai điều: tác giả thuộc nhóm nào, và trước đó tác giả nghĩ gì.\nTác giả thuộc nhóm nào? 「私はいつも早めに行く」 – tôi lúc nào cũng đến sớm. Trong khảo sát, nhóm "đến sớm" chiếm 59%, nhiều nhất.\nTrước đó tác giả nghĩ gì? 「私が珍しいタイプなのかと思っていた」 – cứ tưởng mình là kiểu người hiếm, vì bạn bè ai cũng hay đến muộn. Nhưng khảo sát cho thấy kiểu người như mình lại đông nhất. Tưởng hiếm mà hóa ra phổ biến nhất, nên thấy bất ngờ. Đáp án 1.\nMẹo: bài có số liệu thì hãy tự xếp hạng các nhóm (59% > 36% > 3%), rồi xác định nhân vật nằm ở nhóm nào.',
           answer: 1,
           evidence: ['s2', 's4', 's5']
         }
@@ -280,11 +283,12 @@ window.BAI = {
           label: '26',
           question: ['q1', '‹もったいない{食|た}べ{方|かた}をしていた›とあるが、なぜもったいないと{思|おも}ったのか。', '"Đã ăn theo cách lãng phí" – vì sao tác giả nghĩ là lãng phí?'],
           options: [
-            ['{体|からだ}へのよい[効果|こうか]が{弱|よわ}くなってしまう{料理|りょうり}のしかたで、[納豆|なっとう]を{食|た}べていたから', 'Vì đã ăn natto theo cách nấu làm yếu đi tác dụng tốt cho cơ thể.', 'Đúng. Tác giả chiên với trứng, cho vào canh nóng → nhiệt trên 50 độ làm giảm enzym có lợi (s2, s5).'],
-            ['{体|からだ}へのよい[効果|こうか]が{消|き}えるような、たくさんの{量|りょう}の[納豆|なっとう]を{食|た}べていたから', 'Vì ăn quá nhiều natto đến mức mất tác dụng.', 'Sai. Bài không nói về lượng.'],
-            ['おいしさがわからなくなるような{料理|りょうり}のしかたで、[納豆|なっとう]を{食|た}べていたから', 'Vì nấu theo cách làm mất vị ngon.', 'Sai. Vấn đề là tác dụng với sức khỏe, không phải vị ngon.'],
-            ['おいしくなる{料理|りょうり}{方法|ほうほう}があるのに、それを{知|し}らないで[納豆|なっとう]を{食|た}べていたから', 'Vì không biết cách nấu cho ngon hơn.', 'Sai. Vấn đề không phải vị ngon mà là enzym tốt cho sức khỏe bị giảm do nhiệt.']
+            ['{体|からだ}へのよい[効果|こうか]が{弱|よわ}くなってしまう{料理|りょうり}のしかたで、[納豆|なっとう]を{食|た}べていたから', 'Vì đã ăn natto theo cách nấu làm yếu đi tác dụng tốt cho cơ thể.', 'Đúng. Tác giả hay chiên natto hoặc cho vào canh nóng, mà enzym tốt cho sức khỏe lại giảm khi gặp nhiệt trên 50 độ. Cách nấu đó làm yếu tác dụng tốt, nên thấy lãng phí.'],
+            ['{体|からだ}へのよい[効果|こうか]が{消|き}えるような、たくさんの{量|りょう}の[納豆|なっとう]を{食|た}べていたから', 'Vì ăn quá nhiều natto đến mức mất tác dụng.', 'Chưa đúng. Bài không nói gì về chuyện ăn nhiều hay ít. Vấn đề là cách nấu bằng nhiệt.'],
+            ['おいしさがわからなくなるような{料理|りょうり}のしかたで、[納豆|なっとう]を{食|た}べていたから', 'Vì nấu theo cách làm mất vị ngon.', 'Chưa đúng. Tác giả không nói natto mất ngon. Điều tác giả tiếc là tác dụng tốt cho sức khỏe.'],
+            ['おいしくなる{料理|りょうり}{方法|ほうほう}があるのに、それを{知|し}らないで[納豆|なっとう]を{食|た}べていたから', 'Vì không biết cách nấu cho ngon hơn.', 'Chưa đúng. Vấn đề không phải là vị ngon, mà là enzym tốt cho sức khỏe bị giảm do nhiệt.']
           ],
+          guide: 'Câu hỏi hỏi vì sao tác giả thấy mình đã ăn natto theo cách "lãng phí" (もったいない). Muốn hiểu, phải nối hai đoạn lại với nhau.\nĐoạn 1 nói cách ăn của tác giả: 「卵に混ぜて焼いたり、みそ汁に入れたり」 – trộn với trứng rồi chiên, cho vào canh miso. Cả hai cách đều làm natto bị nóng.\nĐoạn 2 nói điều tác giả vừa biết: trong natto có loại enzym (酵素) giúp máu lưu thông tốt, nhưng 「50度以上の熱で減ってしまう」 – gặp nhiệt từ 50 độ trở lên thì bị giảm đi.\nNối lại: tác giả toàn nấu nóng natto, nên chất tốt cho sức khỏe bị giảm mất. Thứ tốt mà để mất đi như vậy thì gọi là もったいない. Đáp án 1.\nMẹo: 「そうだとすると〜ことになる」 (nếu vậy thì hóa ra là…) là dấu hiệu tác giả đang ghép thông tin mới với việc mình từng làm.',
           answer: 1,
           evidence: ['s2', 's5', 's6']
         }
@@ -340,11 +344,12 @@ window.BAI = {
           label: '27',
           question: ['q1', '{毎回|まいかい}の[授業|じゅぎょう]の{前|まえ}に、{学生|がくせい}がしなければならなかったことは{何|なに}か。', 'Trước mỗi buổi học, sinh viên phải làm gì?'],
           options: [
-            ['[授業|じゅぎょう]で{先生|せんせい}に[扱|あつか]ってもらいたい[漫画|まんが]を{見|み}つけてくること', 'Tìm truyện muốn giáo viên dùng trong giờ học.', 'Sai. Truyện do giáo viên chỉ định.'],
-            ['{社会|しゃかい}{問題|もんだい}がテーマになっている[漫画|まんが]を{見|み}つけてくること', 'Tìm truyện có chủ đề vấn đề xã hội.', 'Sai. Không phải tự tìm.'],
-            ['{先生|せんせい}に{読|よ}んでくるように{言|い}われた[漫画|まんが]を{読|よ}んでおくこと', 'Đọc trước truyện giáo viên bảo đọc.', 'Đúng. 「先生が指定した漫画を読んでいくことになっていました」 (s4).'],
-            ['{自分|じぶん}が{読|よ}んだことがない[漫画|まんが]を{探|さが}して、{読|よ}んでおくこと', 'Tự tìm truyện chưa đọc bao giờ để đọc trước.', 'Sai. Truyện chưa biết là do giáo viên chọn, không phải tự tìm.']
+            ['[授業|じゅぎょう]で{先生|せんせい}に[扱|あつか]ってもらいたい[漫画|まんが]を{見|み}つけてくること', 'Tìm truyện muốn giáo viên dùng trong giờ học.', 'Chưa đúng. Truyện do giáo viên chỉ định (先生が指定した), sinh viên không tự đi tìm truyện để đề xuất.'],
+            ['{社会|しゃかい}{問題|もんだい}がテーマになっている[漫画|まんが]を{見|み}つけてくること', 'Tìm truyện có chủ đề vấn đề xã hội.', 'Chưa đúng. Sinh viên không tự tìm truyện, giáo viên đã chọn sẵn.'],
+            ['{先生|せんせい}に{読|よ}んでくるように{言|い}われた[漫画|まんが]を{読|よ}んでおくこと', 'Đọc trước truyện giáo viên bảo đọc.', 'Đúng. Sinh viên phải đọc trước truyện mà giáo viên chỉ định (先生が指定した漫画を読んでいく).'],
+            ['{自分|じぶん}が{読|よ}んだことがない[漫画|まんが]を{探|さが}して、{読|よ}んでおくこと', 'Tự tìm truyện chưa đọc bao giờ để đọc trước.', 'Chưa đúng. Tác giả thấy truyện nào cũng lạ là vì giáo viên chọn toàn truyện tác giả không biết, chứ không phải sinh viên phải tự tìm truyện chưa đọc.']
           ],
+          guide: 'Câu hỏi hỏi: trước mỗi buổi học, sinh viên phải làm gì? Hãy tìm câu có chữ 「毎週の授業の前に」 (trước buổi học hằng tuần).\nCâu đó là: 「学生は毎週の授業の前に、先生が指定した漫画を読んでいくことになっていました」 – theo quy định, trước mỗi buổi học sinh viên phải đọc trước bộ truyện tranh do giáo viên chỉ định. 「指定した」 nghĩa là "chỉ định", tức là giáo viên chọn sẵn. Đáp án 3 nói lại đúng ý này: đọc trước truyện giáo viên bảo đọc.\nCác lựa chọn còn lại đều có ý "sinh viên tự tìm truyện", trái với chữ 指定.',
           answer: 3,
           evidence: ['s4']
         },
@@ -352,11 +357,12 @@ window.BAI = {
           label: '28',
           question: ['q2', '‹このときの{私|わたし}›は、どのような@joutai([状態|じょうたい])だったか。', '"Tôi lúc đó" ở trạng thái thế nào?'],
           options: [
-            ['ほかの{試験|しけん}の{勉強|べんきょう}がしたいのに、[漫画|まんが]を{読|よ}まなければならなかった。', 'Muốn học cho các môn thi khác mà phải đọc truyện tranh.', 'Đúng. Bình thường nhịn đọc truyện để học; lần này ngược lại – phải đọc truyện nên không học được môn khác (s9–s10).'],
-            ['[漫画|まんが]が{読|よ}みたいのに、{試験|しけん}の{勉強|べんきょう}をしなければならなかった。', 'Muốn đọc truyện mà phải học thi.', 'Sai. Đây là trạng thái "bình thường" (いつもなら), không phải "lần này".'],
-            ['{好|す}きな[漫画|まんが]が{読|よ}みたいのに、{好|す}きではない[漫画|まんが]を{読|よ}まなければならなかった。', 'Muốn đọc truyện mình thích mà phải đọc truyện không thích.', 'Sai. Bài không nói là không thích, mà là không biết.'],
-            ['{試験|しけん}の{勉強|べんきょう}をしなければならないのに、[漫画|まんが]を{読|よ}むのを[我慢|がまん]できなかった。', 'Phải học thi mà không nhịn được đọc truyện.', 'Sai. Tác giả đọc truyện vì bị BẮT, không phải vì không nhịn được.']
+            ['ほかの{試験|しけん}の{勉強|べんきょう}がしたいのに、[漫画|まんが]を{読|よ}まなければならなかった。', 'Muốn học cho các môn thi khác mà phải đọc truyện tranh.', 'Đúng. Bình thường thì nhịn truyện để học; lần này ngược lại, phải đọc bộ truyện 3 tập nên không học được cho các môn thi khác.'],
+            ['[漫画|まんが]が{読|よ}みたいのに、{試験|しけん}の{勉強|べんきょう}をしなければならなかった。', 'Muốn đọc truyện mà phải học thi.', 'Chưa đúng. Đây là trạng thái "bình thường" (いつもなら) của tác giả, chính là cái đã bị đảo ngược trong lần này.'],
+            ['{好|す}きな[漫画|まんが]が{読|よ}みたいのに、{好|す}きではない[漫画|まんが]を{読|よ}まなければならなかった。', 'Muốn đọc truyện mình thích mà phải đọc truyện không thích.', 'Chưa đúng. Bài nói các truyện là truyện tác giả không biết, chứ không nói tác giả không thích.'],
+            ['{試験|しけん}の{勉強|べんきょう}をしなければならないのに、[漫画|まんが]を{読|よ}むのを[我慢|がまん]できなかった。', 'Phải học thi mà không nhịn được đọc truyện.', 'Chưa đúng. Tác giả đọc truyện vì bị bắt phải đọc để thi, không phải vì không nhịn được.']
           ],
+          guide: 'Câu hỏi hỏi "tôi lúc đó" đang ở trạng thái thế nào. Câu chứa phần gạch chân viết: 「いつもなら、試験期間中は漫画を読むのを我慢するのですが、このときの私は逆だったのです」 – bình thường, trong mùa thi tôi phải nhịn đọc truyện tranh, nhưng lúc này thì ngược lại.\nBước 1, hiểu trạng thái bình thường: muốn đọc truyện nhưng phải nhịn để học thi.\nBước 2, đảo ngược lại: lúc này phải đọc truyện, mà không học được các môn thi khác. Câu trước đó cũng nói rõ: phải đọc bộ truyện 3 tập nên 「ほかの試験の勉強ができなくなり」 – không học được cho các môn thi khác.\nVậy: muốn học cho các môn khác mà lại phải đọc truyện. Đáp án 1.\nBẫy: lựa chọn 2 mô tả đúng trạng thái BÌNH THƯỜNG, tức là cái bị đảo ngược. Người đọc vội rất dễ chọn nhầm.',
           answer: 1,
           evidence: ['s9', 's10']
         },
@@ -364,11 +370,12 @@ window.BAI = {
           label: '29',
           question: ['q3', '「{私|わたし}」は{今|いま}、どんな{気持|きも}ちになっているか。', 'Bây giờ "tôi" có cảm giác thế nào?'],
           options: [
-            ['しばらくは、{休|やす}みの{日|ひ}だけに[漫画|まんが]を{読|よ}もう。', 'Tạm thời chỉ đọc truyện vào ngày nghỉ.', 'Sai. "お休みにしたい" = muốn tạm nghỉ đọc, không phải đọc vào ngày nghỉ.'],
-            ['しばらくは、{好|す}きな[漫画|まんが]しか{読|よ}みたくない。', 'Tạm thời chỉ muốn đọc truyện mình thích.', 'Sai. Tác giả muốn tạm nghỉ đọc truyện tranh nói chung (お休み), không chọn lọc theo sở thích.'],
-            ['しばらくは、[我慢|がまん]して[漫画|まんが]を{読|よ}もう。', 'Tạm thời cố nhịn mà đọc truyện.', 'Sai. Ngược nghĩa – tác giả muốn tạm NGHỈ đọc, không phải cố đọc.'],
-            ['しばらくは、[漫画|まんが]は{読|よ}みたくない。', 'Tạm thời không muốn đọc truyện tranh.', 'Đúng. 「しばらく漫画はお休みにしたい気分です」 (s11).']
+            ['しばらくは、{休|やす}みの{日|ひ}だけに[漫画|まんが]を{読|よ}もう。', 'Tạm thời chỉ đọc truyện vào ngày nghỉ.', 'Chưa đúng. "休みの日" là ngày nghỉ, còn "お休みにしたい" trong bài là muốn tạm thôi không đọc. Cùng chữ 休み nhưng khác nghĩa.'],
+            ['しばらくは、{好|す}きな[漫画|まんが]しか{読|よ}みたくない。', 'Tạm thời chỉ muốn đọc truyện mình thích.', 'Chưa đúng. Tác giả muốn tạm nghỉ đọc truyện tranh nói chung, không phải chỉ đọc truyện mình thích.'],
+            ['しばらくは、[我慢|がまん]して[漫画|まんが]を{読|よ}もう。', 'Tạm thời cố nhịn mà đọc truyện.', 'Chưa đúng. Ngược nghĩa: tác giả muốn tạm NGHỈ đọc, không phải cố đọc.'],
+            ['しばらくは、[漫画|まんが]は{読|よ}みたくない。', 'Tạm thời không muốn đọc truyện tranh.', 'Đúng. "しばらく漫画はお休みにしたい" nghĩa là tạm thời muốn nghỉ, không đọc truyện tranh nữa.']
           ],
+          guide: 'Câu hỏi hỏi cảm giác hiện tại của "tôi". Câu cuối bài: 「今はしばらく漫画はお休みにしたい気分です」 – bây giờ tôi muốn tạm nghỉ đọc truyện tranh một thời gian.\n「お休みにする」 nghĩa là "cho nghỉ", tức là tạm thời không đọc nữa. Đáp án 4 nói đúng ý đó: tạm thời không muốn đọc truyện tranh.\nCẩn thận với lựa chọn 1: chữ "休み" trong đó là "ngày nghỉ" (休みの日), còn trong bài là "tạm nghỉ việc đọc". Cùng một chữ nhưng nghĩa khác nhau.',
           answer: 4,
           evidence: ['s11']
         }
@@ -423,11 +430,12 @@ window.BAI = {
           label: '30',
           question: ['q1', 'A{町|まち}にある{店|みせ}の{主人|しゅじん}たちは、{何|なん}のために{朝市|あさいち}を{始|はじ}めたのか。', 'Các chủ cửa hàng ở thị trấn A mở chợ phiên để làm gì?'],
           options: [
-            ['{町|まち}の{中|なか}に、{安|やす}く{買|か}い{物|もの}ができるところを{増|ふ}やすため', 'Để tăng chỗ mua sắm rẻ trong thị trấn.', 'Sai. Bài không nói về giá rẻ.'],
-            ['{町|まち}の{中|なか}に、{近|ちか}くの{市|し}や{町|まち}から{来|く}る{客|きゃく}が{楽|たの}しめる{場所|ばしょ}を{作|つく}るため', 'Để tạo nơi vui chơi cho khách từ nơi khác.', 'Sai. Khách nơi khác đến là kết quả, không phải mục đích.'],
-            ['{自分|じぶん}たちの{町|まち}の[景色|けしき]の{美|うつく}しさをもっと@senden([宣伝|せんでん])するため', 'Để quảng bá phong cảnh đẹp của thị trấn.', 'Sai. Phong cảnh đẹp chỉ là phần giới thiệu thị trấn; mục đích mở chợ là để mọi người biết hàng hóa của cửa hàng.'],
-            ['{自分|じぶん}たちの{店|みせ}の[商品|しょうひん]の{良|よ}さをもっと{知|し}ってもらうため', 'Để mọi người biết thêm cái hay của hàng hóa cửa hàng mình.', 'Đúng. 「自分たちの店の商品の良さをもっと知ってもらおうと、朝市を始めた」 (s5).']
+            ['{町|まち}の{中|なか}に、{安|やす}く{買|か}い{物|もの}ができるところを{増|ふ}やすため', 'Để tăng chỗ mua sắm rẻ trong thị trấn.', 'Chưa đúng. Bài không nói chợ phiên để bán rẻ.'],
+            ['{町|まち}の{中|なか}に、{近|ちか}くの{市|し}や{町|まち}から{来|く}る{客|きゃく}が{楽|たの}しめる{場所|ばしょ}を{作|つく}るため', 'Để tạo nơi vui chơi cho khách từ nơi khác.', 'Chưa đúng. Khách từ nơi khác kéo đến là kết quả của việc chợ nổi tiếng, không phải mục đích mở chợ.'],
+            ['{自分|じぶん}たちの{町|まち}の[景色|けしき]の{美|うつく}しさをもっと@senden([宣伝|せんでん])するため', 'Để quảng bá phong cảnh đẹp của thị trấn.', 'Chưa đúng. Phong cảnh đẹp chỉ là câu giới thiệu thị trấn. Mục đích mở chợ là để mọi người biết hàng hóa của các tiệm.'],
+            ['{自分|じぶん}たちの{店|みせ}の[商品|しょうひん]の{良|よ}さをもっと{知|し}ってもらうため', 'Để mọi người biết thêm cái hay của hàng hóa cửa hàng mình.', 'Đúng. "自分たちの店の商品の良さをもっと知ってもらおうと" – mở chợ để mọi người biết thêm cái hay của hàng hóa ở tiệm mình.']
           ],
+          guide: 'Câu hỏi hỏi mục đích các chủ cửa hàng mở chợ phiên. Hãy tìm đoạn kể chuyện "bắt đầu mở chợ" (朝市を始めた).\nĐoạn 2 kể: khoảng 30 năm trước có siêu thị lớn mở ra, nhiều người chuyển sang mua ở siêu thị. Vì thế các chủ tiệm 「自分たちの店の商品の良さをもっと知ってもらおうと、朝市を始めた」 – mở chợ phiên để mọi người biết thêm cái hay của hàng hóa ở tiệm mình.\nMẫu 「〜てもらおうと」 nghĩa là "với ý định để người khác…", đây chính là mục đích. Đáp án 4.\nCác chi tiết khác như phong cảnh đẹp, khách từ nơi khác đến chỉ là phần giới thiệu hoặc kết quả, không phải mục đích.',
           answer: 4,
           evidence: ['s5']
         },
@@ -435,11 +443,12 @@ window.BAI = {
           label: '31',
           question: ['q2', '‹それ›とあるが、{何|なに}か。', '"Điều đó" là gì?'],
           options: [
-            ['{朝市|あさいち}で{人気|にんき}がある[商品|しょうひん]を、{店|みせ}で{売|う}るより{高|たか}く{売|う}ること', 'Bán hàng được ưa chuộng ở chợ với giá cao hơn ở cửa hàng.', 'Sai. Bài không nói về giá.'],
-            ['{朝市|あさいち}で{人気|にんき}がある[商品|しょうひん]を、{朝市|あさいち}でもっと{売|う}ること', 'Bán thêm nhiều hàng được ưa chuộng ngay tại chợ phiên.', 'Đúng. それ = 「（人気がある商品を）たくさん売る」 (s7).'],
-            ['{朝市|あさいち}でしか{買|か}えない[商品|しょうひん]の[種類|しゅるい]を{増|ふ}やすこと', 'Tăng loại hàng chỉ mua được ở chợ.', 'Sai. Bài không nói gì về hàng chỉ có ở chợ; それ chỉ việc "bán thật nhiều" (たくさん売る).'],
-            ['{朝市|あさいち}でしか{買|か}えない[商品|しょうひん]を@heijitsu([平日|へいじつ])に{店|みせ}でも{売|う}ること', 'Bán hàng chỉ có ở chợ vào ngày thường ở cửa hàng.', 'Sai. Bài không nhắc đến hàng chỉ có ở chợ hay bán vào ngày thường.']
+            ['{朝市|あさいち}で{人気|にんき}がある[商品|しょうひん]を、{店|みせ}で{売|う}るより{高|たか}く{売|う}ること', 'Bán hàng được ưa chuộng ở chợ với giá cao hơn ở cửa hàng.', 'Chưa đúng. Bài không nói gì về giá bán ở chợ hay ở tiệm.'],
+            ['{朝市|あさいち}で{人気|にんき}がある[商品|しょうひん]を、{朝市|あさいち}でもっと{売|う}ること', 'Bán thêm nhiều hàng được ưa chuộng ngay tại chợ phiên.', 'Đúng. それ chỉ cụm ngay trước nó: "たくさん売れば" – bán thật nhiều món được ưa chuộng ngay tại chợ.'],
+            ['{朝市|あさいち}でしか{買|か}えない[商品|しょうひん]の[種類|しゅるい]を{増|ふ}やすこと', 'Tăng loại hàng chỉ mua được ở chợ.', 'Chưa đúng. Bài không nhắc đến hàng chỉ có ở chợ.'],
+            ['{朝市|あさいち}でしか{買|か}えない[商品|しょうひん]を@heijitsu([平日|へいじつ])に{店|みせ}でも{売|う}ること', 'Bán hàng chỉ có ở chợ vào ngày thường ở cửa hàng.', 'Chưa đúng. Bài không nhắc đến hàng chỉ có ở chợ hay chuyện bán vào ngày thường.']
           ],
+          guide: 'Câu hỏi hỏi chữ 「それ」 (điều đó) chỉ cái gì. それ luôn chỉ thứ vừa được nhắc ngay trước nó.\nCâu đầy đủ: 「そんなに人気があるなら、たくさん売ればいいのだが、それはしないそうだ」 – nếu được ưa chuộng đến thế thì bán thật nhiều là được, nhưng nghe nói họ không làm "điều đó".\nThứ vừa nhắc ngay trước それ là 「たくさん売れば」 – bán thật nhiều (món đang được ưa chuộng ở chợ). Đáp án 2.\nCâu sau giải thích vì sao họ không bán thêm: mục đích chợ không phải kiếm tiền, mà là để khách biết đến tiệm rồi thường ngày đến tiệm mua.',
           answer: 2,
           evidence: ['s6', 's7']
         },
@@ -447,11 +456,12 @@ window.BAI = {
           label: '32',
           question: ['q3', '（　　）に{入|い}れるのに{最|もっと}もよいものはどれか。', 'Điền gì vào (　　) là phù hợp nhất?'],
           options: [
-            ['A{町|まち}に{店|みせ}がある{人|ひと}', 'Người có cửa hàng ở thị trấn A.', 'Đúng. Mục đích là để khách biết đến và mua ở cửa hàng thị trấn A thường ngày (s8), nên chỉ người có cửa hàng ở A mới được bày hàng.'],
-            ['A{町|まち}{以外|いがい}の{市|し}や{町|まち}に{店|みせ}がある{人|ひと}', 'Người có cửa hàng ở nơi khác ngoài thị trấn A.', 'Sai. Mục đích là tăng khách cho cửa hàng TRONG thị trấn A, nên người có cửa hàng nơi khác không phù hợp.'],
-            ['A{町|まち}で{店|みせ}を{開|ひら}きたいと{思|おも}っている{人|ひと}', 'Người muốn mở cửa hàng ở thị trấn A.', 'Sai. Chưa có cửa hàng thì khách không thể "ふだん買い物" ở đó.'],
-            ['A{町|まち}の{店|みせ}でふだんから{買|か}い{物|もの}をしている{人|ひと}', 'Người thường mua sắm ở cửa hàng thị trấn A.', 'Sai. Đây là khách hàng, không phải người bán.']
+            ['A{町|まち}に{店|みせ}がある{人|ひと}', 'Người có cửa hàng ở thị trấn A.', 'Đúng. Chợ nhằm kéo khách về các tiệm của thị trấn A, nên chỉ người có tiệm ở thị trấn A mới được bày hàng.'],
+            ['A{町|まち}{以外|いがい}の{市|し}や{町|まち}に{店|みせ}がある{人|ひと}', 'Người có cửa hàng ở nơi khác ngoài thị trấn A.', 'Chưa đúng. Người có tiệm ở nơi khác không giúp được các tiệm thị trấn A, trái với mục đích của chợ.'],
+            ['A{町|まち}で{店|みせ}を{開|ひら}きたいと{思|おも}っている{人|ひと}', 'Người muốn mở cửa hàng ở thị trấn A.', 'Chưa đúng. Người chưa có tiệm thì khách không thể "thường ngày đến tiệm mua" được.'],
+            ['A{町|まち}の{店|みせ}でふだんから{買|か}い{物|もの}をしている{人|ひと}', 'Người thường mua sắm ở cửa hàng thị trấn A.', 'Chưa đúng. Người thường mua ở tiệm thị trấn A là khách hàng, không phải người bán hàng ở chợ.']
           ],
+          guide: 'Câu hỏi bắt điền vào chỗ trống ở câu cuối: 「そのため、朝市に商品が出せる人は（　）だけ」 – vì vậy, người được bày hàng ở chợ chỉ là (…).\nChữ 「そのため」 (vì lý do đó) cho biết câu này là hệ quả của câu ngay trước. Câu trước nói mục đích của chợ: để khách biết đến tiệm, rồi 「ふだんA町の店で買い物をする客を増やす」 – tăng số khách thường ngày mua ở các tiệm của thị trấn A.\nMuốn khách quay lại mua ở tiệm thị trấn A, thì người bày hàng ở chợ phải là người CÓ TIỆM ở thị trấn A. Đáp án 1.\nLựa chọn 4 là bẫy: "người thường mua ở tiệm thị trấn A" là KHÁCH, không phải người bán.',
           answer: 1,
           evidence: ['s2', 's8', 's9']
         }

@@ -117,11 +117,12 @@ window.BAI = {
           label: '23',
           question: ['q1', 'ジョンさんがこのメールで@tanomu([頼|たの]まれて)いることはどれか。', 'John được nhờ làm gì trong email này?'],
           options: [
-            ['{今週|こんしゅう}{中|ちゅう}にもう{一度|いちど}、[資料|しりょう]のチェックをすること', 'Kiểm tra tài liệu thêm một lần nữa trong tuần này.', 'Đúng. 「もう一度見てもらえませんか」「今週中にご返信を」 (s4, s6).'],
-            ['{今週|こんしゅう}{中|ちゅう}に[資料|しりょう]のチェックをするために[木村|きむら]さんと{会|あ}うこと', 'Gặp Kimura trong tuần để kiểm tra tài liệu.', 'Sai. Tài liệu gửi kèm email, không cần gặp.'],
-            ['{今週|こんしゅう}{中|ちゅう}に{日本語|にほんご}の[資料|しりょう]を{英語|えいご}に{直|なお}すこと', 'Dịch tài liệu tiếng Nhật sang tiếng Anh.', 'Sai. Tài liệu đã là tiếng Anh; chỉ cần kiểm tra.'],
-            ['{今週|こんしゅう}{中|ちゅう}に{新|あたら}しい[資料|しりょう]を{作|つく}ること', 'Làm tài liệu mới.', 'Sai. Kimura đã tự sửa, John chỉ xem lại.']
+            ['{今週|こんしゅう}{中|ちゅう}にもう{一度|いちど}、[資料|しりょう]のチェックをすること', 'Kiểm tra tài liệu thêm một lần nữa trong tuần này.', 'Đúng. Kimura nhờ John xem lại tài liệu đã sửa thêm một lần (もう一度見てもらえませんか) và hồi âm trong tuần này.'],
+            ['{今週|こんしゅう}{中|ちゅう}に[資料|しりょう]のチェックをするために[木村|きむら]さんと{会|あ}うこと', 'Gặp Kimura trong tuần để kiểm tra tài liệu.', 'Chưa đúng. Tài liệu được gửi kèm email, không cần gặp mặt.'],
+            ['{今週|こんしゅう}{中|ちゅう}に{日本語|にほんご}の[資料|しりょう]を{英語|えいご}に{直|なお}すこと', 'Dịch tài liệu tiếng Nhật sang tiếng Anh.', 'Chưa đúng. Tài liệu vốn đã viết bằng tiếng Anh. John chỉ cần kiểm tra, không phải dịch.'],
+            ['{今週|こんしゅう}{中|ちゅう}に{新|あたら}しい[資料|しりょう]を{作|つく}ること', 'Làm tài liệu mới.', 'Chưa đúng. Kimura đã tự sửa tài liệu. John không phải làm tài liệu mới.']
           ],
+          guide: 'Câu hỏi hỏi John được NHỜ làm gì. Email này có hai loại câu: những việc Kimura đã tự làm, và việc Kimura nhờ John.\nViệc Kimura đã làm: viết thêm vào tài liệu (書き加えました), làm lại biểu đồ (作り直しました). Đuôi 〜ました cho biết đây là việc đã xong, do Kimura làm.\nViệc nhờ John: 「直した資料を…送りますので、もう一度見てもらえませんか」 – tôi gửi tài liệu đã sửa, anh xem lại giúp một lần nữa được không? Và cuối email: 「今週中にご返信をお願いいたします」 – mong anh hồi âm trong tuần này.\nGộp lại: kiểm tra lại tài liệu một lần nữa trong tuần này. Đáp án 1.\nMẹo: email nhờ vả thì hãy tìm 「〜てもらえませんか」, 「お願いします」. Những câu kể việc đã làm chỉ là bối cảnh.',
           answer: 1,
           evidence: ['s4', 's6']
         }
@@ -175,11 +176,12 @@ window.BAI = {
           label: '24',
           question: ['q1', '{駅|えき}ビルの{特別|とくべつ}[窓口|まどぐち]でできることはなんですか。', 'Ở quầy đặc biệt trong tòa nhà ga có thể làm gì?'],
           options: [
-            ['{予約|よやく}した{本|ほん}を{借|か}りることと、{本|ほん}を{返|かえ}すことと、{本|ほん}を{読|よ}むことと、{本|ほん}の{予約|よやく}をすること', 'Mượn sách đã đặt, trả sách, đọc sách, đặt sách.', 'Sai. Không có chỗ đọc sách (s4).'],
-            ['{予約|よやく}した{本|ほん}を{借|か}りること、{本|ほん}を{返|かえ}すことと、{本|ほん}を{読|よ}むこと', 'Mượn sách đã đặt, trả sách, đọc sách.', 'Sai. Không đọc được; thiếu việc đặt sách.'],
-            ['{予約|よやく}した{本|ほん}を{借|か}りること、{本|ほん}を{返|かえ}すことと、{本|ほん}の{予約|よやく}をすること', 'Mượn sách đã đặt, trả sách, đặt sách.', 'Đúng. Mượn + trả (s3), đặt sách cũng được ở quầy (s5).'],
-            ['{予約|よやく}した{本|ほん}を{借|か}りること、{本|ほん}を{返|かえ}すことだけ', 'Chỉ mượn sách đã đặt và trả sách.', 'Sai. Bỏ sót: đặt sách cũng làm được ở quầy (なお…特別窓口でも可能).']
+            ['{予約|よやく}した{本|ほん}を{借|か}りることと、{本|ほん}を{返|かえ}すことと、{本|ほん}を{読|よ}むことと、{本|ほん}の{予約|よやく}をすること', 'Mượn sách đã đặt, trả sách, đọc sách, đặt sách.', 'Chưa đúng. Bài nói rõ không có chỗ đọc sách báo (読む場所はありません).'],
+            ['{予約|よやく}した{本|ほん}を{借|か}りること、{本|ほん}を{返|かえ}すことと、{本|ほん}を{読|よ}むこと', 'Mượn sách đã đặt, trả sách, đọc sách.', 'Chưa đúng. Không đọc sách được, và lựa chọn này còn thiếu việc đặt sách.'],
+            ['{予約|よやく}した{本|ほん}を{借|か}りること、{本|ほん}を{返|かえ}すことと、{本|ほん}の{予約|よやく}をすること', 'Mượn sách đã đặt, trả sách, đặt sách.', 'Đúng. Mượn sách đã đặt và trả sách (câu 1), cộng thêm đặt sách cũng làm được ở quầy (なお…特別窓口でも可能です).'],
+            ['{予約|よやく}した{本|ほん}を{借|か}りること、{本|ほん}を{返|かえ}すことだけ', 'Chỉ mượn sách đã đặt và trả sách.', 'Chưa đúng. Còn thiếu việc đặt sách. Câu "なお…特別窓口でも可能です" cho biết đặt sách ở quầy cũng được.']
           ],
+          guide: 'Câu hỏi hỏi ở quầy đặc biệt trong tòa nhà ga có thể làm những gì. Đây là kiểu câu liệt kê, bạn phải gom đủ, không thừa không thiếu.\nCâu 1: 「特別窓口では、予約した本を借りることと本を返すことができます」 – mượn sách đã đặt trước, và trả sách.\nCâu 2: 「本や新聞を読む場所はありません」 – KHÔNG có chỗ đọc sách báo. Vậy loại các lựa chọn có "đọc sách".\nCâu 3, bắt đầu bằng 「なお」 (ngoài ra): 「本の予約は、インターネットでの予約が便利ですが、特別窓口でも可能です」 – đặt sách qua mạng thì tiện hơn, nhưng đặt ở quầy cũng được.\nGom lại: mượn sách đã đặt, trả sách, đặt sách. Đáp án 3.\nBẫy là lựa chọn 4 ("chỉ mượn và trả"): người đọc vội bỏ qua câu "なお" ở cuối. Thông tin sau なお thường là chỗ đề ra bẫy.',
           answer: 3,
           evidence: ['s3', 's4', 's5']
         }
@@ -226,11 +228,12 @@ window.BAI = {
           label: '25',
           question: ['q1', '‹[予想|よそう]と{違|ちが}っていて、{意外|いがい}だった›とあるが、{何|なに}が{意外|いがい}だったのか。', '"Khác với dự đoán, thật bất ngờ" – điều gì bất ngờ?'],
           options: [
-            ['{紙|かみ}コップのように、{一度|いちど}{使|つか}ったら{捨|す}てる{紙|かみ}の[靴下|くつした]があること', 'Có tất giấy dùng một lần rồi vứt như cốc giấy.', 'Sai. Đây là DỰ ĐOÁN ban đầu, không phải sự thật.'],
-            ['{記事|きじ}で{紹介|しょうかい}されていた[靴下|くつした]は、[洗濯|せんたく]ができ、@kurikaesu({繰|く}り{返|かえ})して{使|つか}えること', 'Đôi tất trong bài giặt được và dùng lại nhiều lần.', 'Đúng. Dự đoán "dùng một lần" ↔ thực tế "giặt và dùng nhiều lần" (s2, s4) – ngay trước câu gạch chân.'],
-            ['{記事|きじ}で{紹介|しょうかい}されていた[靴下|くつした]は、よく[汗|あせ]を{吸|す}ってすぐ[乾|かわ]くこと', 'Đôi tất thấm mồ hôi tốt và mau khô.', 'Sai. Thông tin này nằm SAU câu gạch chân, không đối lập với dự đoán.'],
-            ['{長|なが}い{時間|じかん}[靴|くつ]をはく{人|ひと}のための[靴下|くつした]があること', 'Có loại tất dành cho người mang giày lâu.', 'Sai. Thông tin này nằm SAU câu gạch chân và không đối lập với dự đoán "dùng một lần".']
+            ['{紙|かみ}コップのように、{一度|いちど}{使|つか}ったら{捨|す}てる{紙|かみ}の[靴下|くつした]があること', 'Có tất giấy dùng một lần rồi vứt như cốc giấy.', 'Chưa đúng. "Dùng một lần rồi vứt" là DỰ ĐOÁN của tác giả, và dự đoán đó hóa ra sai.'],
+            ['{記事|きじ}で{紹介|しょうかい}されていた[靴下|くつした]は、[洗濯|せんたく]ができ、@kurikaesu({繰|く}り{返|かえ})して{使|つか}えること', 'Đôi tất trong bài giặt được và dùng lại nhiều lần.', 'Đúng. Tác giả tưởng tất giấy dùng một lần rồi vứt, nhưng thực tế giặt được và dùng nhiều lần. Đó là điều khác với dự đoán.'],
+            ['{記事|きじ}で{紹介|しょうかい}されていた[靴下|くつした]は、よく[汗|あせ]を{吸|す}ってすぐ[乾|かわ]くこと', 'Đôi tất thấm mồ hôi tốt và mau khô.', 'Chưa đúng. Thông tin này có trong bài nhưng nằm sau câu gạch chân, và không trái với dự đoán "dùng một lần".'],
+            ['{長|なが}い{時間|じかん}[靴|くつ]をはく{人|ひと}のための[靴下|くつした]があること', 'Có loại tất dành cho người mang giày lâu.', 'Chưa đúng. Thông tin này nằm SAU câu gạch chân và không đối lập với dự đoán "dùng một lần".']
           ],
+          guide: 'Câu hỏi hỏi điều gì "khác với dự đoán" khiến tác giả bất ngờ. Bạn cần so hai thứ: dự đoán ban đầu và thực tế.\nDự đoán: thấy tiêu đề "tất làm từ giấy", tác giả nghĩ 「紙コップのように、一度使ったら捨ててしまう物なのだろう」 – chắc là đồ dùng một lần rồi vứt, giống cốc giấy.\nThực tế, sau chữ 「しかし」: tất làm từ sợi bền chế từ giấy đặc biệt, 「紙なのに水に強く、洗濯をして何度も使える」 – là giấy mà chịu nước, giặt được, dùng nhiều lần.\n"Dùng một lần" và "giặt rồi dùng nhiều lần" trái ngược nhau, nên tác giả bất ngờ. Đáp án 2.\nLựa chọn 3 (thấm mồ hôi, mau khô) cũng là thông tin đúng trong bài, nhưng nằm SAU câu gạch chân và không đối lập với dự đoán, nên không phải điều gây bất ngờ.',
           answer: 2,
           evidence: ['s2', 's4', 's5']
         }
@@ -275,11 +278,12 @@ window.BAI = {
           label: '26',
           question: ['q1', 'この{文章|ぶんしょう}では、[患者|かんじゃ]が‹「{別|べつ}のところが{痛|いた}くなってきた。{今度|こんど}はそっちが{悪|わる}いみたいだ。」と{言|い}う›のは、なぜだと{言|い}っているか。', 'Bài nói vì sao bệnh nhân lại nói "Chỗ khác bắt đầu đau…"?'],
           options: [
-            ['{悪|わる}いところが{治|なお}ってきたときに、@fukusuu([複数|ふくすう])の{痛|いた}みを{感|かん}じるようになることがあるから', 'Vì khi chỗ đau đỡ, có thể cảm nhận nhiều cơn đau cùng lúc.', 'Sai. Cơ thể chỉ cảm nhận MỘT cơn đau mỗi lúc (s3).'],
-            ['{悪|わる}いところが{治|なお}って、{次|つぎ}に{悪|わる}かったところがもっと{悪|わる}くなってしまうことがあるから', 'Vì chỗ đau thứ hai trở nặng hơn.', 'Sai. Chỗ đó không nặng thêm, chỉ là giờ mới cảm thấy.'],
-            ['{痛|いた}いところがいくつかあっても、[患者|かんじゃ]は{一|ひと}つずつしか{伝|つた}えないことがあるから', 'Vì bệnh nhân chỉ kể từng chỗ đau một.', 'Sai. Vấn đề là cảm nhận, không phải cách kể.'],
-            ['{痛|いた}かったところがよくなると、{別|べつ}のところの{痛|いた}みを{感|かん}じるようになることがあるから', 'Vì khi chỗ đau đỡ thì bắt đầu cảm thấy cơn đau ở chỗ khác.', 'Đúng. 「最も悪かったところが治ってきたので、次の痛みを感じるようになってきた」 (s5).']
+            ['{悪|わる}いところが{治|なお}ってきたときに、@fukusuu([複数|ふくすう])の{痛|いた}みを{感|かん}じるようになることがあるから', 'Vì khi chỗ đau đỡ, có thể cảm nhận nhiều cơn đau cùng lúc.', 'Chưa đúng. Bài nói cơ thể cùng lúc chỉ cảm nhận được MỘT cơn đau, không phải nhiều cơn.'],
+            ['{悪|わる}いところが{治|なお}って、{次|つぎ}に{悪|わる}かったところがもっと{悪|わる}くなってしまうことがあるから', 'Vì chỗ đau thứ hai trở nặng hơn.', 'Chưa đúng. Chỗ đau thứ hai không nặng thêm. Nó vốn đã đau, chỉ là bây giờ mới cảm thấy.'],
+            ['{痛|いた}いところがいくつかあっても、[患者|かんじゃ]は{一|ひと}つずつしか{伝|つた}えないことがあるから', 'Vì bệnh nhân chỉ kể từng chỗ đau một.', 'Chưa đúng. Vấn đề là cơ thể cảm nhận được bao nhiêu cơn đau, không phải bệnh nhân kể với bác sĩ như thế nào.'],
+            ['{痛|いた}かったところがよくなると、{別|べつ}のところの{痛|いた}みを{感|かん}じるようになることがあるから', 'Vì khi chỗ đau đỡ thì bắt đầu cảm thấy cơn đau ở chỗ khác.', 'Đúng. Cơ thể chỉ cảm nhận cơn đau mạnh nhất. Khi chỗ nặng nhất đỡ, người ta mới bắt đầu cảm thấy cơn đau ở chỗ khác.']
           ],
+          guide: 'Câu hỏi hỏi vì sao bệnh nhân lại nói "chỗ khác bắt đầu đau". Bài là văn giải thích một hiện tượng, phần giải thích có ba bước:\nBước 1: 「最初から悪いところがいくつかあった可能性がある」 – có thể ngay từ đầu đã đau nhiều chỗ.\nBước 2, nguyên lý: 「人の体は、同じときに一つの痛みしか感じない。そのときにいちばん強い痛みだけを感じる」 – cơ thể cùng lúc chỉ cảm nhận được một cơn đau, là cơn mạnh nhất.\nBước 3, kết luận: chỗ đau nặng nhất đỡ rồi, nên giờ mới cảm thấy cơn đau tiếp theo.\nTức là: chỗ đau đã đỡ thì mới bắt đầu cảm thấy cơn đau ở chỗ khác. Đáp án 4.\nLựa chọn 1 sai vì trái với nguyên lý ở bước 2 (cơ thể chỉ cảm nhận MỘT cơn đau mỗi lúc).',
           answer: 4,
           evidence: ['s3', 's4', 's5']
         }
@@ -337,11 +341,12 @@ window.BAI = {
           label: '27',
           question: ['q1', '‹①{例|れい}›とあるが、{何|なに}についての{例|れい}か。', '"Ví dụ" – ví dụ về điều gì?'],
           options: [
-            ['「{私|わたし}」と{妹|いもうと}は、{顔|かお}だけでなく、@seikaku({性格|せいかく})も{似|に}ているということ', 'Hai chị em không chỉ giống mặt mà còn giống tính cách.', 'Sai. Ngược lại – tính cách đối lập.'],
-            ['「{私|わたし}」と{妹|いもうと}は、{嫌|きら}いな{物|もの}や[嫌|いや]なことに{対|たい}する[姿勢|しせい]が[逆|ぎゃく]だということ', 'Hai chị em có cách đối diện với điều không thích ngược nhau.', 'Đúng. "もう一つ例" = ví dụ thứ hai cho câu chủ đề s1 (ví dụ thứ nhất là món ăn).'],
-            ['「{私|わたし}」と{妹|いもうと}は、@kyouryoku([協力|きょうりょく]し{合|あ}って){夏休|なつやす}みの{宿題|しゅくだい}をしていたということ', 'Hai chị em cùng nhau làm bài tập hè.', 'Sai. Mỗi người làm một kiểu.'],
-            ['「{私|わたし}」と{妹|いもうと}は、{毎年|まいとし}{夏休|なつやす}みには{必|かなら}ず{両親|りょうしん}にしかられていたこと', 'Năm nào nghỉ hè hai chị em cũng bị mắng.', 'Sai. Chỉ "tôi" bị mắng hằng năm.']
+            ['「{私|わたし}」と{妹|いもうと}は、{顔|かお}だけでなく、@seikaku({性格|せいかく})も{似|に}ているということ', 'Hai chị em không chỉ giống mặt mà còn giống tính cách.', 'Chưa đúng. Ngược lại, bài nói tính cách của hai chị em đối lập nhau (逆です).'],
+            ['「{私|わたし}」と{妹|いもうと}は、{嫌|きら}いな{物|もの}や[嫌|いや]なことに{対|たい}する[姿勢|しせい]が[逆|ぎゃく]だということ', 'Hai chị em có cách đối diện với điều không thích ngược nhau.', 'Đúng. "もう一つ例" là ví dụ thứ hai cho câu chủ đề ở đoạn 1: cách đối diện với điều không thích của hai chị em ngược nhau.'],
+            ['「{私|わたし}」と{妹|いもうと}は、@kyouryoku([協力|きょうりょく]し{合|あ}って){夏休|なつやす}みの{宿題|しゅくだい}をしていたということ', 'Hai chị em cùng nhau làm bài tập hè.', 'Chưa đúng. Hai chị em mỗi người làm bài theo một kiểu, không làm cùng nhau.'],
+            ['「{私|わたし}」と{妹|いもうと}は、{毎年|まいとし}{夏休|なつやす}みには{必|かなら}ず{両親|りょうしん}にしかられていたこと', 'Năm nào nghỉ hè hai chị em cũng bị mắng.', 'Chưa đúng. Chỉ "tôi" bị mắng hằng năm. Em gái chỉ bị mắng có một năm.']
           ],
+          guide: 'Câu hỏi hỏi "ví dụ" (例) ở đây là ví dụ cho điều gì. Chữ 「もう一つ」 (thêm một) cho biết đây là ví dụ THỨ HAI, nên ví dụ thứ nhất đã có ở đoạn trước.\nĐoạn 1 nói ý chính: hai chị em giống mặt, nhưng 「嫌いな物や嫌なことに対する姿勢は逆です」 – cách đối diện với thứ mình ghét, việc mình không thích thì ngược nhau. Ví dụ thứ nhất là món ăn không thích: tôi để ăn cuối, em ăn đầu tiên.\nVí dụ thứ hai là bài tập hè: em làm xong ngay, tôi để đến cuối hè. Cùng minh họa cho ý chính ở đoạn 1. Đáp án 2.',
           answer: 2,
           evidence: ['s1', 's2', 's3']
         },
@@ -349,11 +354,12 @@ window.BAI = {
           label: '28',
           question: ['q2', '「{私|わたし}」と{妹|いもうと}は、{毎年|まいとし}の{夏休|なつやす}みの{宿題|しゅくだい}をどう{思|おも}っていたか。', '"Tôi" và em gái nghĩ gì về bài tập hè hằng năm?'],
           options: [
-            ['「{私|わたし}」も{妹|いもうと}も{好|す}きだった。', 'Cả hai đều thích.', 'Sai. Nếu thích thì không phải ví dụ về "điều không thích".'],
-            ['「{私|わたし}」も{妹|いもうと}も[嫌|いや]だった。', 'Cả hai đều không thích.', 'Đúng. Bài tập hè là ví dụ về "嫌なこと": em làm ngay (như ăn món ghét trước), tôi để cuối (như ăn món ghét sau) (s1–s5).'],
-            ['「{私|わたし}」は{好|す}きだったが、{妹|いもうと}は[嫌|いや]だった。', 'Tôi thích, em không thích.', 'Sai. Điểm khác nhau là cách xử lý, không phải thích/ghét.'],
-            ['「{私|わたし}」は[嫌|いや]だったが、{妹|いもうと}は{好|す}きだった。', 'Tôi không thích, em thích.', 'Sai. Em làm ngay không phải vì thích, mà vì kiểu người làm việc ghét trước.']
+            ['「{私|わたし}」も{妹|いもうと}も{好|す}きだった。', 'Cả hai đều thích.', 'Chưa đúng. Nếu cả hai đều thích thì bài tập hè không thể làm ví dụ cho "cách đối diện với việc không thích".'],
+            ['「{私|わたし}」も{妹|いもうと}も[嫌|いや]だった。', 'Cả hai đều không thích.', 'Đúng. Bài tập hè là ví dụ cho "việc mình không thích" (嫌なこと), nên cả hai đều không thích. Hai người chỉ khác nhau ở cách xử lý.'],
+            ['「{私|わたし}」は{好|す}きだったが、{妹|いもうと}は[嫌|いや]だった。', 'Tôi thích, em không thích.', 'Chưa đúng. Hai chị em khác nhau ở cách xử lý, không khác nhau ở chỗ thích hay ghét.'],
+            ['「{私|わたし}」は[嫌|いや]だったが、{妹|いもうと}は{好|す}きだった。', 'Tôi không thích, em thích.', 'Chưa đúng. Em làm ngay không phải vì thích, mà vì em là kiểu người làm việc mình ghét trước cho xong.']
           ],
+          guide: 'Câu hỏi này cần suy luận một chút, vì bài không nói thẳng "tôi thích hay ghét bài tập hè".\nHãy nhớ: bài tập hè được đưa ra làm VÍ DỤ cho câu chủ đề 「嫌いな物や嫌なことに対する姿勢は逆」 – cách đối diện với việc mình KHÔNG THÍCH thì ngược nhau. Muốn làm ví dụ cho câu này, bài tập hè phải là việc cả hai đều không thích.\nĐối chiếu với ví dụ món ăn: với món mình ghét, em ăn ngay đầu tiên, tôi để cuối. Với bài tập hè cũng vậy: em làm ngay cho xong, tôi để đến cuối. Hai người khác nhau ở CÁCH xử lý, còn cảm xúc (không thích) thì giống nhau. Đáp án 2.\nBẫy: thấy em làm bài ngay thì dễ nghĩ em thích làm bài. Thật ra em làm ngay chỉ vì em là kiểu người "làm việc mình ghét trước cho xong".',
           answer: 2,
           evidence: ['s1', 's2', 's5']
         },
@@ -361,11 +367,12 @@ window.BAI = {
           label: '29',
           question: ['q3', '‹②{妹|いもうと}もしかられた›とあるが、{妹|いもうと}はなぜしかられたのか。', '"Em gái cũng bị mắng" – vì sao?'],
           options: [
-            ['{夏休|なつやす}みが{終|お}わる{数|すう}{日|じつ}{前|まえ}になって{宿題|しゅくだい}をやり{始|はじ}めたから', 'Vì vài ngày trước khi hết hè mới bắt đầu làm bài.', 'Sai. Đó là "tôi".'],
-            ['「{私|わたし}」の{作文|さくぶん}と{同|おな}じことを「{今年|ことし}の{夏休|なつやす}みの{思|おも}い{出|で}」に{書|か}いたから', 'Vì viết giống bài văn của "tôi".', 'Sai. Bài không nói em chép bài của "tôi"; vấn đề là nội dung bài văn là bịa (うそ).'],
-            ['「{今年|ことし}の{夏休|なつやす}みの{思|おも}い{出|で}」に、@jissai({実際|じっさい}に)はしていないことを{書|か}いたから', 'Vì viết vào bài "Kỷ niệm hè năm nay" những việc chưa thực sự làm.', 'Đúng. Em làm xong bài ngay đầu hè nên phải bịa kỷ niệm; mẹ phát hiện "うそ" (s8, s11).'],
-            ['「{今年|ことし}の{夏休|なつやす}みの{思|おも}い{出|で}」を、{夏休|なつやす}みの{最後|さいご}の{日|ひ}まで{書|か}かなかったから', 'Vì đến ngày cuối hè mới viết bài.', 'Sai. Em đã viết xong ngay từ đầu hè.']
+            ['{夏休|なつやす}みが{終|お}わる{数|すう}{日|じつ}{前|まえ}になって{宿題|しゅくだい}をやり{始|はじ}めたから', 'Vì vài ngày trước khi hết hè mới bắt đầu làm bài.', 'Chưa đúng. Đó là việc của "tôi". Em gái luôn làm xong bài tập ngay.'],
+            ['「{私|わたし}」の{作文|さくぶん}と{同|おな}じことを「{今年|ことし}の{夏休|なつやす}みの{思|おも}い{出|で}」に{書|か}いたから', 'Vì viết giống bài văn của "tôi".', 'Chưa đúng. Bài không nói em chép bài của "tôi". Vấn đề là nội dung bài văn là bịa (うそ).'],
+            ['「{今年|ことし}の{夏休|なつやす}みの{思|おも}い{出|で}」に、@jissai({実際|じっさい}に)はしていないことを{書|か}いたから', 'Vì viết vào bài "Kỷ niệm hè năm nay" những việc chưa thực sự làm.', 'Đúng. Em viết "Kỷ niệm kỳ nghỉ hè" ngay đầu kỳ nghỉ, nên phải bịa những việc chưa làm. Mẹ phát hiện là bịa và bắt viết lại.'],
+            ['「{今年|ことし}の{夏休|なつやす}みの{思|おも}い{出|で}」を、{夏休|なつやす}みの{最後|さいご}の{日|ひ}まで{書|か}かなかったから', 'Vì đến ngày cuối hè mới viết bài.', 'Chưa đúng. Em đã viết xong ngay từ đầu kỳ nghỉ, chỉ là đến ngày cuối mẹ mới phát hiện ra.']
           ],
+          guide: 'Câu hỏi hỏi vì sao em gái cũng bị mắng vào năm đó. Hãy nối ba chi tiết trong đoạn 3:\n(1) Em làm xong TẤT CẢ bài tập ngay khi kỳ nghỉ hè vừa bắt đầu (夏休みが始まってすぐに).\n(2) Trong đó có bài văn 「今年の夏休みの思い出」 – "Kỷ niệm kỳ nghỉ hè năm nay".\n(3) Ngày cuối kỳ nghỉ, mẹ phát hiện 「作文の内容がうそである」 – nội dung bài văn là bịa.\nNối lại: kỳ nghỉ chưa diễn ra mà em đã viết "kỷ niệm kỳ nghỉ", nên phải bịa ra những việc chưa làm. Đáp án 3.\nĐây là chi tiết hài hước của bài: em làm xong bài quá sớm, sớm đến mức viết cả kỷ niệm của kỳ nghỉ chưa diễn ra.',
           answer: 3,
           evidence: ['s8', 's10', 's11']
         }
@@ -426,11 +433,12 @@ window.BAI = {
           label: '30',
           question: ['q1', '‹①[冗談|じょうだん]だと{思|おも}った›とあるが、なぜそう{思|おも}ったのか。', '"Nghĩ là chuyện đùa" – vì sao?'],
           options: [
-            ['カラスが{文字|もじ}を{読|よ}めないと{意味|いみ}がない{方法|ほうほう}だから', 'Vì đây là cách vô nghĩa nếu quạ không đọc được chữ.', 'Đúng. 「カラスは字が読めるはずがないのに」 (s8) – dán chữ cho quạ đọc nghe như đùa.'],
-            ['カラスの{研究者|けんきゅうしゃ}でなくても@omoitsuku({思|おも}いつく)ような{方法|ほうほう}だから', 'Vì cách này ai cũng nghĩ ra được.', 'Sai. Bài không bàn chuyện ai nghĩ ra được; điều khiến họ tưởng đùa là quạ không thể đọc chữ.'],
-            ['カラスの{研究者|けんきゅうしゃ}でないと{実行|じっこう}できないような{方法|ほうほう}だから', 'Vì chỉ nhà nghiên cứu mới làm được.', 'Sai. Dán giấy thì ai cũng làm được.'],
-            ['カラスがいなくならず、[逆|ぎゃく]に、{集|あつ}まってしまいそうな{方法|ほうほう}だから', 'Vì có vẻ sẽ khiến quạ tụ tập nhiều hơn.', 'Sai. Không có ý nào nói tờ giấy sẽ làm quạ tụ tập.']
+            ['カラスが{文字|もじ}を{読|よ}めないと{意味|いみ}がない{方法|ほうほう}だから', 'Vì đây là cách vô nghĩa nếu quạ không đọc được chữ.', 'Đúng. Quạ không thể đọc chữ (字が読めるはずがない), nên dán giấy ghi chữ để đuổi quạ nghe như chuyện đùa.'],
+            ['カラスの{研究者|けんきゅうしゃ}でなくても@omoitsuku({思|おも}いつく)ような{方法|ほうほう}だから', 'Vì cách này ai cũng nghĩ ra được.', 'Chưa đúng. Bài không bàn chuyện ai nghĩ ra được. Điều khiến họ tưởng đùa là quạ không thể đọc chữ.'],
+            ['カラスの{研究者|けんきゅうしゃ}でないと{実行|じっこう}できないような{方法|ほうほう}だから', 'Vì chỉ nhà nghiên cứu mới làm được.', 'Chưa đúng. Dán giấy thì ai cũng làm được, đâu cần nhà nghiên cứu.'],
+            ['カラスがいなくならず、[逆|ぎゃく]に、{集|あつ}まってしまいそうな{方法|ほうほう}だから', 'Vì có vẻ sẽ khiến quạ tụ tập nhiều hơn.', 'Chưa đúng. Không có ý nào nói tờ giấy sẽ làm quạ tụ tập.']
           ],
+          guide: 'Câu hỏi hỏi vì sao người trong viện nghiên cứu tưởng lời khuyên là chuyện đùa. Lời khuyên là: dán tờ giấy ghi "Cấm quạ xâm nhập".\nTác giả tự nêu ra chỗ vô lý ở đầu đoạn 3: 「カラスは字が読めるはずがないのに、なぜこの紙に効果があったのだろうか」 – quạ không thể nào đọc được chữ, vậy sao tờ giấy lại có tác dụng?\nĐó chính là lý do họ nghĩ là đùa: dán chữ cho quạ đọc thì chỉ có tác dụng nếu quạ biết đọc. Đáp án 1.\nChữ 「〜はずがない」 nghĩa là "không thể nào…", dùng khi người nói chắc chắn điều đó không xảy ra.',
           answer: 1,
           evidence: ['s6', 's7', 's8']
         },
@@ -438,11 +446,12 @@ window.BAI = {
           label: '31',
           question: ['q2', '‹②{本当|ほんとう}に{来|こ}なくなった›とあるが、なぜか。', '"Thật sự không đến nữa" – vì sao?'],
           options: [
-            ['[倉庫|そうこ]が{汚|きたな}くなって、カラスが{好|す}きな{場所|ばしょ}ではなくなったから', 'Vì nhà kho bẩn, quạ không thích nữa.', 'Sai. Nhà kho bị quạ làm bẩn là VẤN ĐỀ ban đầu, không phải lý do quạ bỏ đi.'],
-            ['カラスが{今|いま}までなかった{紙|かみ}を{見|み}て、[危険|きけん]な{場所|ばしょ}になったと{感|かん}じたから', 'Vì quạ thấy tờ giấy lạ nên cảm thấy nơi đó nguy hiểm.', 'Sai. Quạ sợ ÁNH NHÌN của người, không phải tờ giấy.'],
-            ['{研究者|けんきゅうしゃ}が@kansatsu([観察|かんさつ])しに{来|く}るようになったことを、カラスが{嫌|きら}ったから', 'Vì quạ ghét nhà nghiên cứu đến quan sát.', 'Sai. Người nhìn quạ là người đi ngang qua.'],
-            ['カラスをよく{見|み}る{人|ひと}が{増|ふ}えて、カラスが[危険|きけん]を{感|かん}じたから', 'Vì người nhìn quạ nhiều hơn, quạ cảm thấy nguy hiểm.', 'Đúng. Người thấy giấy → nhìn quạ → quạ cảm thấy nguy hiểm (s9–s11).']
+            ['[倉庫|そうこ]が{汚|きたな}くなって、カラスが{好|す}きな{場所|ばしょ}ではなくなったから', 'Vì nhà kho bẩn, quạ không thích nữa.', 'Chưa đúng. Nhà kho bị quạ làm bẩn là VẤN ĐỀ ban đầu, không phải lý do quạ bỏ đi.'],
+            ['カラスが{今|いま}までなかった{紙|かみ}を{見|み}て、[危険|きけん]な{場所|ばしょ}になったと{感|かん}じたから', 'Vì quạ thấy tờ giấy lạ nên cảm thấy nơi đó nguy hiểm.', 'Chưa đúng. Quạ không sợ tờ giấy. Chúng sợ bị con người nhìn chằm chằm.'],
+            ['{研究者|けんきゅうしゃ}が@kansatsu([観察|かんさつ])しに{来|く}るようになったことを、カラスが{嫌|きら}ったから', 'Vì quạ ghét nhà nghiên cứu đến quan sát.', 'Chưa đúng. Người nhìn quạ là những người đi ngang qua, không phải nhà nghiên cứu đến quan sát.'],
+            ['カラスをよく{見|み}る{人|ひと}が{増|ふ}えて、カラスが[危険|きけん]を{感|かん}じたから', 'Vì người nhìn quạ nhiều hơn, quạ cảm thấy nguy hiểm.', 'Đúng. Người đi qua thấy tờ giấy lạ nên nhìn quạ nhiều hơn, mà quạ ghét bị người nhìn nên thấy nguy hiểm và không đến nữa.']
           ],
+          guide: 'Câu hỏi hỏi vì sao quạ thật sự không đến nữa. Bài giải thích bằng một chuỗi nguyên nhân – kết quả, bạn hãy đọc từng bước:\n1. Người đi qua thấy tờ giấy lạ, thấy kỳ (不思議に思って).\n2. Họ nhìn kỹ những con quạ ở gần (近くにいるカラスをよく見る).\n3. Quạ cảm thấy nguy hiểm và không đến nữa (危険を感じて来なくなる), vì 「カラスは人間に見られるのを嫌う」 – quạ ghét bị người nhìn.\nCâu hỏi hỏi bước cuối: quạ bỏ đi vì có nhiều người nhìn chúng nên chúng thấy nguy hiểm. Đáp án 4.\nLựa chọn 2 là bẫy: quạ không sợ TỜ GIẤY (quạ đâu đọc được), mà sợ ÁNH MẮT của con người.',
           answer: 4,
           evidence: ['s9', 's10', 's11']
         },
@@ -450,11 +459,12 @@ window.BAI = {
           label: '32',
           question: ['q3', '‹③[予想|よそう]できていた›とあるが、{人間|にんげん}の[行動|こうどう]について、{研究者|けんきゅうしゃ}はどのように[予想|よそう]していたと{考|かんが}えられるか。', '"Đã đoán trước được" – nhà nghiên cứu đã đoán hành vi con người thế nào?'],
           options: [
-            ['ニュースで@toriageru({取|と}り{上|あ}げられて){有名|ゆうめい}になった{場所|ばしょ}には、{行|い}ってみたくなる。', 'Người ta muốn đến chỗ nổi tiếng nhờ lên bản tin.', 'Sai. Bài không nói gì về việc nơi đó nổi tiếng hay người ta muốn đến.'],
-            ['カラスに{入|はい}って{欲|ほ}しくない{場所|ばしょ}には、カラスが{入|はい}らないような[工夫|くふう]をする。', 'Người ta nghĩ cách để quạ không vào chỗ mình không muốn.', 'Sai. Đó là việc của viện nghiên cứu; câu hỏi hỏi hành vi của NGƯỜI ĐI ĐƯỜNG khi thấy tờ giấy.'],
-            ['カラスがいる{場所|ばしょ}では、[危険|きけん]を{感|かん}じてカラスの{近|ちか}くに{行|い}かないようにする。', 'Thấy quạ thì sợ, tránh lại gần.', 'Sai. Ngược lại – người ta tò mò và NHÌN quạ kỹ hơn.'],
-            ['「カラス[侵入|しんにゅう][禁止|きんし]」と{書|か}かれた{紙|かみ}を{見|み}たら、{近|ちか}くにいるカラスを{観察|かんさつ}したくなる。', 'Thấy giấy "Cấm quạ xâm nhập" thì muốn quan sát quạ ở gần.', 'Đúng. 「紙を見た人が不思議に思って、近くにいるカラスをよく見る」 (s9). Con người thấy tờ giấy lạ sẽ nhìn quạ – đó chính là hành vi nhà nghiên cứu đã đoán trước.']
+            ['ニュースで@toriageru({取|と}り{上|あ}げられて){有名|ゆうめい}になった{場所|ばしょ}には、{行|い}ってみたくなる。', 'Người ta muốn đến chỗ nổi tiếng nhờ lên bản tin.', 'Chưa đúng. Bài không nói gì về việc nơi đó nổi tiếng hay người ta muốn đến.'],
+            ['カラスに{入|はい}って{欲|ほ}しくない{場所|ばしょ}には、カラスが{入|はい}らないような[工夫|くふう]をする。', 'Người ta nghĩ cách để quạ không vào chỗ mình không muốn.', 'Chưa đúng. Đó là việc của viện nghiên cứu. Câu hỏi hỏi hành vi của NGƯỜI ĐI ĐƯỜNG khi thấy tờ giấy.'],
+            ['カラスがいる{場所|ばしょ}では、[危険|きけん]を{感|かん}じてカラスの{近|ちか}くに{行|い}かないようにする。', 'Thấy quạ thì sợ, tránh lại gần.', 'Chưa đúng. Ngược lại, người ta tò mò và nhìn quạ kỹ hơn, chứ không tránh xa.'],
+            ['「カラス[侵入|しんにゅう][禁止|きんし]」と{書|か}かれた{紙|かみ}を{見|み}たら、{近|ちか}くにいるカラスを{観察|かんさつ}したくなる。', 'Thấy giấy "Cấm quạ xâm nhập" thì muốn quan sát quạ ở gần.', 'Đúng. Nhà nghiên cứu đoán trước được: người thấy tờ giấy lạ sẽ tò mò nhìn quạ ở gần, và chính ánh nhìn đó đuổi được quạ.']
           ],
+          guide: 'Câu hỏi hỏi nhà nghiên cứu đã đoán trước hành vi nào của CON NGƯỜI. Câu gạch chân nói nhà nghiên cứu hiểu cả hành vi của quạ lẫn của người. Hành vi của quạ là ghét bị nhìn. Vậy hành vi của người là gì?\nQuay lại bước 1–2 của chuỗi nguyên nhân: 「紙を見た人が不思議に思って、近くにいるカラスをよく見る」 – người thấy tờ giấy sẽ thấy lạ và nhìn kỹ những con quạ ở gần. Nhà nghiên cứu đã biết trước con người sẽ phản ứng như vậy, nên mới bày cách dán giấy. Đáp án 4.\nSo với câu 31: câu 31 hỏi bước CUỐI (quạ bỏ đi), câu 32 hỏi bước GIỮA (người nhìn quạ). Vẽ chuỗi này ra giấy sẽ giúp bạn không nhầm.',
           answer: 4,
           evidence: ['s9', 's12']
         }

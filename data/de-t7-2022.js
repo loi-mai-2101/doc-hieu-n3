@@ -96,11 +96,12 @@ window.BAI = {
         label: '23',
         question: ['q1', '「{私|わたし}」はどうして[目標|もくひょう]の500{字|じ}を{覚|おぼ}えることができたと{考|かんが}えているか。', 'Vì sao "tôi" cho rằng mình thuộc được 500 chữ?'],
         options: [
-          ['「{私|わたし}」にとって{簡単|かんたん}な[目標|もくひょう]だったから。', 'Vì mục tiêu dễ.', 'Sai. "やってみると大変だった".'],
-          ['クラス{全員|ぜんいん}で{話|はな}し{合|あ}って、{同|おな}じ[目標|もくひょう]に{決|き}めたから。', 'Vì cả lớp bàn bạc chọn chung một mục tiêu.', 'Sai. Mỗi người (それぞれ) một mục tiêu.'],
-          ['{簡単|かんたん}に@akirameru(あきらめ)ないようにしようと、{心|こころ}の{中|なか}で{決|き}めていたから。', 'Vì đã quyết tâm trong lòng không bỏ cuộc.', 'Sai. Bài nói chỉ quyết định trong lòng là chưa đủ (だけではなく).'],
-          ['きめた[目標|もくひょう]が、{自分|じぶん}にもほかの{人|ひと}にも{見|み}えるようにしてあったから。', 'Vì mục tiêu được để sao cho mình và người khác đều thấy.', 'Đúng. Mình thấy (目に入る) + cả lớp biết → không bỏ được (s3, s5).']
+          ['「{私|わたし}」にとって{簡単|かんたん}な[目標|もくひょう]だったから。', 'Vì mục tiêu dễ.', 'Chưa đúng. Tác giả nói làm rồi mới thấy rất vất vả (やってみると大変だった).'],
+          ['クラス{全員|ぜんいん}で{話|はな}し{合|あ}って、{同|おな}じ[目標|もくひょう]に{決|き}めたから。', 'Vì cả lớp bàn bạc chọn chung một mục tiêu.', 'Chưa đúng. Mỗi người tự đặt mục tiêu riêng (それぞれ), không phải cả lớp chọn chung một mục tiêu.'],
+          ['{簡単|かんたん}に@akirameru(あきらめ)ないようにしようと、{心|こころ}の{中|なか}で{決|き}めていたから。', 'Vì đã quyết tâm trong lòng không bỏ cuộc.', 'Chưa đúng. Tác giả nói chỉ quyết định trong lòng là chưa đủ (心の中で決めるだけではなく), phải viết ra và dán lên.'],
+          ['きめた[目標|もくひょう]が、{自分|じぶん}にもほかの{人|ひと}にも{見|み}えるようにしてあったから。', 'Vì mục tiêu được để sao cho mình và người khác đều thấy.', 'Đúng. Mục tiêu dán trong lớp nên mình ngày nào cũng thấy, cả lớp cũng biết, vì vậy không bỏ cuộc được.']
         ],
+        guide: 'Câu hỏi hỏi tác giả nghĩ vì sao mình học thuộc được 500 chữ Hán. Câu kết bài đã nói ra lý do: 「目標を心の中で決めるだけではなく、紙に書いて教室にはったのがよかったのだ」 – không chỉ đặt mục tiêu trong lòng, mà viết ra giấy dán trong lớp, đó là điều tốt.\nVì sao dán lên lại có tác dụng? Câu giữa bài giải thích: 「教室に入ると、自分で書いた目標が目に入るし、クラスのみんなも知っているから、簡単にはやめられない」 – vào lớp là thấy ngay mục tiêu mình viết, cả lớp cũng biết, nên không dễ bỏ cuộc.\nHai điều đó gộp lại: mục tiêu được để sao cho cả mình lẫn người khác đều thấy. Đáp án 4.\nLựa chọn 3 là bẫy: tác giả nói rõ chỉ quyết tâm trong lòng thôi là CHƯA ĐỦ (だけではなく).',
         answer: 4, evidence: ['s3', 's5']
       }],
       summary: 'Đầu học kỳ, mỗi học sinh viết mục tiêu ra giấy dán trong lớp. Tác giả chọn học 500 chữ Hán, thấy vất vả nhưng vì ngày nào cũng thấy mục tiêu và cả lớp đều biết nên không bỏ được, cuối kỳ đã đạt. Viết ra và dán lên là điều tốt.',
@@ -146,11 +147,12 @@ window.BAI = {
         label: '24',
         question: ['q1', '{旅行|りょこう}{会社|がいしゃ}がこのメールで{最|もっと}も{言|い}いたい{事|こと}は{何|なに}か。', 'Điều công ty du lịch muốn nói nhất trong email là gì?'],
         options: [
-          ['{旅行|りょこう}の{予約|よやく}{内容|ないよう}を{確認|かくにん}したら、{連絡|れんらく}してください。', 'Kiểm tra xong nội dung thì hãy liên lạc.', 'Sai. Chỉ cần kiểm tra; liên lạc khi có câu hỏi.'],
-          ['{旅行|りょこう}[代金|だいきん]を{出発|しゅっぱつ}{日|び}の1{週間|しゅうかん}{前|まえ}までに[振|ふ]り[込|こ]んでください。', 'Hãy chuyển khoản tiền tour trước ngày khởi hành 1 tuần.', 'Đúng. Yêu cầu chính của email (s2).'],
-          ['{旅行|りょこう}のキャンセル{料|りょう}を1{週間|しゅうかん}{以内|いない}に{支払|しはら}ってください。', 'Hãy trả phí hủy trong 1 tuần.', 'Sai. Phí hủy chỉ phát sinh khi hủy.'],
-          ['{旅行|りょこう}について{何|なに}かわからないことがあれば{質問|しつもん}をしてください。', 'Có gì không hiểu thì hãy hỏi.', 'Sai. Câu xã giao phụ, không phải ý chính.']
+          ['{旅行|りょこう}の{予約|よやく}{内容|ないよう}を{確認|かくにん}したら、{連絡|れんらく}してください。', 'Kiểm tra xong nội dung thì hãy liên lạc.', 'Chưa đúng. Chỉ cần kiểm tra nội dung (確認していただき). Liên lạc chỉ khi có câu hỏi.'],
+          ['{旅行|りょこう}[代金|だいきん]を{出発|しゅっぱつ}{日|び}の1{週間|しゅうかん}{前|まえ}までに[振|ふ]り[込|こ]んでください。', 'Hãy chuyển khoản tiền tour trước ngày khởi hành 1 tuần.', 'Đúng. Đây là yêu cầu chính của email (お振り込みください): chuyển khoản trước ngày khởi hành một tuần.'],
+          ['{旅行|りょこう}のキャンセル{料|りょう}を1{週間|しゅうかん}{以内|いない}に{支払|しはら}ってください。', 'Hãy trả phí hủy trong 1 tuần.', 'Chưa đúng. Phí hủy chỉ phát sinh khi khách hủy tour. Đây chỉ là lưu ý thêm (なお).'],
+          ['{旅行|りょこう}について{何|なに}かわからないことがあれば{質問|しつもん}をしてください。', 'Có gì không hiểu thì hãy hỏi.', 'Chưa đúng. Đây chỉ là câu xã giao cuối email, không phải điều muốn nói nhất.']
         ],
+        guide: 'Câu hỏi hỏi công ty du lịch muốn nói điều gì NHẤT. Email loại này luôn có một yêu cầu chính, thường ở đoạn đầu, dưới dạng 「お〜ください」.\nYêu cầu chính: 「ご出発日の1週間前までに旅行代金をお振り込みください」 – xin chuyển khoản tiền tour trước ngày khởi hành một tuần. Đáp án 2.\nCác thông tin còn lại là phụ: phí hủy (đoạn bắt đầu bằng 「なお」 – ngoài ra), lời mời liên hệ khi có câu hỏi, và bảng nội dung đặt tour.\nMẹo: "最も言いたいこと" thì hãy tìm câu mà người viết muốn người đọc phải LÀM. Thông tin sau なお là bổ sung.',
         answer: 2, evidence: ['s2']
       }],
       summary: 'Công ty du lịch cảm ơn Mizukawa đã đăng ký tour Kyoto 3 ngày 2 đêm (khởi hành 13/2, 86.000 yên), yêu cầu kiểm tra nội dung và chuyển khoản trước ngày khởi hành 1 tuần. Hủy từ 20 ngày trước sẽ mất phí.',
@@ -185,11 +187,12 @@ window.BAI = {
         label: '25',
         question: ['q1', '‹{意外|いがい}なサービス›とあるが、{一人|ひとり}[暮|ぐ]らしのお{年|とし}[寄|よ]りとその{家族|かぞく}に{対|たい}するどのようなサービスか。', '"Dịch vụ bất ngờ" là dịch vụ gì dành cho người cao tuổi sống một mình và gia đình?'],
         options: [
-          ['{家族|かぞく}の@shitei([指定|してい])した{時間|じかん}に、お{年|とし}[寄|よ]りに{荷物|にもつ}を[配達|はいたつ]する。', 'Giao hàng cho người già vào giờ gia đình chỉ định.', 'Sai. Đó là dịch vụ phát hàng thông thường.'],
-          ['お{年|とし}[寄|よ]りを[訪問|ほうもん]し、その[様子|ようす]を{家族|かぞく}にEメールで{連絡|れんらく}する。', 'Thăm người già rồi báo tình trạng cho gia đình qua email.', 'Đúng. 「郵便局員がお年寄りの家を訪問する」「様子をEメールで家族に教えてくれる」.'],
-          ['{家族|かぞく}からのEメールを{郵便局|ゆうびんきょく}{員|いん}が{受|う}け{取|と}り、{印刷|いんさつ}してお{年|とし}[寄|よ]りに{渡|わた}す。', 'Nhận email của gia đình, in ra đưa cho người già.', 'Sai. Ngược chiều – email gửi CHO gia đình.'],
-          ['ふだんなかなか{会|あ}えない{家族|かぞく}のところに、お{年|とし}[寄|よ]りを{連|つ}れて{行|い}く。', 'Đưa người già đến chỗ gia đình.', 'Sai. Nhân viên bưu điện đến nhà người cao tuổi, không đưa họ đi đâu.']
+          ['{家族|かぞく}の@shitei([指定|してい])した{時間|じかん}に、お{年|とし}[寄|よ]りに{荷物|にもつ}を[配達|はいたつ]する。', 'Giao hàng cho người già vào giờ gia đình chỉ định.', 'Chưa đúng. Đây là dịch vụ phát hàng thông thường, không phải dịch vụ "bất ngờ".'],
+          ['お{年|とし}[寄|よ]りを[訪問|ほうもん]し、その[様子|ようす]を{家族|かぞく}にEメールで{連絡|れんらく}する。', 'Thăm người già rồi báo tình trạng cho gia đình qua email.', 'Đúng. Nhân viên bưu điện đến thăm người cao tuổi (訪問する), rồi báo tình trạng cho gia đình qua email.'],
+          ['{家族|かぞく}からのEメールを{郵便局|ゆうびんきょく}{員|いん}が{受|う}け{取|と}り、{印刷|いんさつ}してお{年|とし}[寄|よ]りに{渡|わた}す。', 'Nhận email của gia đình, in ra đưa cho người già.', 'Chưa đúng. Ngược chiều: email gửi CHO gia đình, không phải gia đình gửi email.'],
+          ['ふだんなかなか{会|あ}えない{家族|かぞく}のところに、お{年|とし}[寄|よ]りを{連|つ}れて{行|い}く。', 'Đưa người già đến chỗ gia đình.', 'Chưa đúng. Nhân viên bưu điện đến nhà người cao tuổi, không đưa họ đi đâu.']
         ],
+        guide: 'Câu hỏi hỏi "dịch vụ bất ngờ" của bưu điện là gì. Câu đầu nói việc thông thường (phát thư, phát hàng), câu thứ hai báo sắp có một dịch vụ bất ngờ, và hai câu tiếp theo mô tả nó:\n「郵便局員がお年寄りの家を訪問する」 – nhân viên bưu điện đến thăm nhà người cao tuổi sống một mình.\n「そのときのお年寄りの様子をEメールで家族に教えてくれる」 – rồi báo tình trạng người cao tuổi cho gia đình qua email.\nĐáp án 2 nói đúng hai việc này.\nBẫy là lựa chọn 3, đảo chiều email: trong bài, email đi TỪ nhân viên bưu điện ĐẾN gia đình, không phải từ gia đình đến bưu điện.',
         answer: 2, evidence: ['s3', 's4']
       }],
       summary: 'Ngoài phát thư, bưu điện còn có dịch vụ bất ngờ: nhân viên đến thăm người cao tuổi sống một mình và gửi email báo tình trạng cho gia đình – rất tiện cho người khó về thăm bố mẹ.',
@@ -223,11 +226,12 @@ window.BAI = {
         label: '26',
         question: ['q1', 'ナムさんがこのメモで[頼|たの]まれていることは{何|なに}か。', 'Nam được nhờ làm gì?'],
         options: [
-          ['[資料|しりょう]を60{部|ぶ}{準備|じゅんび}することと、{教室|きょうしつ}が{変|か}わったことを{全員|ぜんいん}にメールで{知|し}らせること。', 'Chuẩn bị 60 bộ tài liệu + email báo đổi phòng.', 'Sai. Thêm 20 bộ; email do người viết gửi.'],
-          ['{準備|じゅんび}する[資料|しりょう]を20{部|ぶ}{増|ふ}やすことと、304のドアにはる{紙|かみ}を{作|つく}っておくこと。', 'Thêm 20 bộ tài liệu + làm sẵn giấy dán cửa 304.', 'Đúng. 「資料をあと20部お願いします」「紙を…作っておいてください」 (s2, s4).'],
-          ['{教室|きょうしつ}の{予約|よやく}を304から201を{変|か}えることと、304のドアに{紙|かみ}をはること。', 'Đổi phòng + dán giấy.', 'Sai. Đổi phòng người viết đã làm; Nam chỉ cần LÀM giấy.'],
-          ['{教室|きょうしつ}が{変|か}わったことを{全員|ぜんいん}にメールで{知|し}らせることと、304のドアにはる{紙|かみ}を{作|つく}っておくこと。', 'Email báo mọi người + làm giấy.', 'Sai. Người viết sẽ gửi email (お知らせしておきます).']
+          ['[資料|しりょう]を60{部|ぶ}{準備|じゅんび}することと、{教室|きょうしつ}が{変|か}わったことを{全員|ぜんいん}にメールで{知|し}らせること。', 'Chuẩn bị 60 bộ tài liệu + email báo đổi phòng.', 'Chưa đúng. Chỉ cần thêm 20 bộ (người tham gia khoảng 60 người), và email báo đổi phòng là do người viết tự gửi.'],
+          ['{準備|じゅんび}する[資料|しりょう]を20{部|ぶ}{増|ふ}やすことと、304のドアにはる{紙|かみ}を{作|つく}っておくこと。', 'Thêm 20 bộ tài liệu + làm sẵn giấy dán cửa 304.', 'Đúng. Nam được nhờ chuẩn bị thêm 20 bộ tài liệu (あと20部お願いします) và làm sẵn giấy dán ở cửa phòng 304 (作っておいてください).'],
+          ['{教室|きょうしつ}の{予約|よやく}を304から201を{変|か}えることと、304のドアに{紙|かみ}をはること。', 'Đổi phòng + dán giấy.', 'Chưa đúng. Việc đổi phòng người viết đã làm xong. Nam chỉ cần LÀM tờ giấy, không phải đổi phòng.'],
+          ['{教室|きょうしつ}が{変|か}わったことを{全員|ぜんいん}にメールで{知|し}らせることと、304のドアにはる{紙|かみ}を{作|つく}っておくこと。', 'Email báo mọi người + làm giấy.', 'Chưa đúng. Email báo hội viên là việc người viết sẽ làm (メールでお知らせしておきます).']
         ],
+        guide: 'Câu hỏi hỏi Nam được NHỜ làm gì. Ghi chú có nhiều việc, bạn hãy chia theo người làm:\n- Việc người viết đã làm hoặc sẽ tự làm: đổi phòng 304 sang 201 (変えてもらいました – đã nhờ văn phòng đổi rồi); báo cho hội viên qua email (お知らせしておきます – tôi sẽ báo).\n- Việc nhờ Nam: 「資料をあと20部お願いします」 – chuẩn bị thêm 20 bộ tài liệu; và 「304のドアに…紙をはったほうがいいと思うので、作っておいてください」 – làm sẵn tờ giấy báo đổi phòng để dán ở cửa phòng 304.\nVậy Nam phải: thêm 20 bộ tài liệu, và làm sẵn giấy dán cửa 304. Đáp án 2.\nMẹo: 「お〜します」, 「〜てもらいました」 là việc người viết làm; 「お願いします」, 「〜ておいてください」 là việc nhờ người đọc.',
         answer: 2, evidence: ['s2', 's4']
       }],
       summary: 'Buổi nghiên cứu tuần sau có khoảng 60 người nên cần thêm 20 bộ tài liệu. Người viết đã đổi phòng 304 → 201 và sẽ email báo hội viên; nhờ Nam làm sẵn giấy báo dán ở cửa phòng 304.',
@@ -272,33 +276,36 @@ window.BAI = {
           label: '27',
           question: ['q1', '‹①この{水筒|すいとう}›とあるが、どのような{水筒|すいとう}か。', '"Cái bình này" là bình như thế nào?'],
           options: [
-            ['{飲|の}み{物|もの}の[温度|おんど]が{変|か}わりにくい、[直接|ちょくせつ]{口|くち}をつけて{飲|の}む{水筒|すいとう}', 'Giữ nhiệt tốt, uống trực tiếp.', 'Đúng. 「直接口をつけて飲む水筒で、飲み物の温度が長時間変わらない物」.'],
-            ['{飲|の}み{物|もの}の[温度|おんど]が{変|か}わりにくい、コップが{付|つ}いている{水筒|すいとう}', 'Giữ nhiệt tốt, có cốc.', 'Sai. Không có cốc.'],
-            ['{熱|あつ}い{飲|の}み{物|もの}を[冷|さ]ましやすい、[直接|ちょくせつ]{口|くち}をつけて{飲|の}む{水筒|すいとう}', 'Dễ làm nguội, uống trực tiếp.', 'Sai. Ngược lại – không làm nguội được.'],
-            ['{熱|あつ}い{飲|の}み{物|もの}を[冷|さ]ましやすい、コップがついている{水筒|すいとう}', 'Dễ làm nguội, có cốc.', 'Sai. Đây là bình thứ hai mua sau.']
+            ['{飲|の}み{物|もの}の[温度|おんど]が{変|か}わりにくい、[直接|ちょくせつ]{口|くち}をつけて{飲|の}む{水筒|すいとう}', 'Giữ nhiệt tốt, uống trực tiếp.', 'Đúng. Bình không có cốc, uống trực tiếp bằng miệng, và giữ nhiệt độ đồ uống lâu (温度が長時間変わらない).'],
+            ['{飲|の}み{物|もの}の[温度|おんど]が{変|か}わりにくい、コップが{付|つ}いている{水筒|すいとう}', 'Giữ nhiệt tốt, có cốc.', 'Chưa đúng. Cái bình này KHÔNG có cốc (コップが付いていない).'],
+            ['{熱|あつ}い{飲|の}み{物|もの}を[冷|さ]ましやすい、[直接|ちょくせつ]{口|くち}をつけて{飲|の}む{水筒|すいとう}', 'Dễ làm nguội, uống trực tiếp.', 'Chưa đúng. Ngược lại, chính vì bình này không làm nguội được nên mùa đông tác giả mới gặp rắc rối.'],
+            ['{熱|あつ}い{飲|の}み{物|もの}を[冷|さ]ましやすい、コップがついている{水筒|すいとう}', 'Dễ làm nguội, có cốc.', 'Chưa đúng. Đây là bình thứ hai tác giả mua thêm vào mùa đông.']
           ],
+          guide: 'Câu hỏi hỏi "cái bình này" là loại bình nào. Câu ngay trước có lý do chọn: có loại kèm cốc, nhưng rót ra cốc mỗi lần thì phiền, nên chọn loại không cốc.\nCâu trước đó nữa mô tả cái bình: 「コップが付いていない、直接口をつけて飲む水筒で、飲み物の温度が長時間変わらない物」 – không có cốc, uống trực tiếp, giữ nhiệt độ đồ uống lâu. Đáp án 1.\nLựa chọn 4 là bình THỨ HAI mà tác giả mua thêm vào mùa đông, không phải "cái bình này".',
           answer: 1, evidence: ['s3', 's4']
         },
         {
           label: '28',
           question: ['q2', '‹②[困|こま]ったこと›とあるが、どのようなことか。', '"Chuyện rắc rối" là gì?'],
           options: [
-            ['{熱|あつ}い{飲|の}み{物|もの}を{外|そと}で{飲|の}む{機会|きかい}が{少|すく}なくなったこと。', 'Ít dịp uống đồ nóng bên ngoài.', 'Sai. Bài không nói về số lần uống đồ nóng bên ngoài.'],
-            ['{熱|あつ}い{飲|の}み{物|もの}を{入|い}れたら、{水筒|すいとう}が{壊|こわ}れてしまったこと。', 'Bình bị hỏng khi cho đồ nóng vào.', 'Sai. Bình không hỏng; vấn đề là đồ uống quá nóng.'],
-            ['{熱|あつ}い{飲|の}み{物|もの}が{水筒|すいとう}から[直接|ちょくせつ]{飲|の}めなかったこと。', 'Không uống trực tiếp đồ nóng từ bình được.', 'Đúng. 「熱すぎて、直接は飲めなかった」 (s6).'],
-            ['{熱|あつ}い{飲|の}み{物|もの}がすぐに[冷|さ]めてしまったこと。', 'Đồ nóng nguội nhanh.', 'Sai. Bình giữ nhiệt lâu.']
+            ['{熱|あつ}い{飲|の}み{物|もの}を{外|そと}で{飲|の}む{機会|きかい}が{少|すく}なくなったこと。', 'Ít dịp uống đồ nóng bên ngoài.', 'Chưa đúng. Bài không nói về số lần uống đồ nóng bên ngoài.'],
+            ['{熱|あつ}い{飲|の}み{物|もの}を{入|い}れたら、{水筒|すいとう}が{壊|こわ}れてしまったこと。', 'Bình bị hỏng khi cho đồ nóng vào.', 'Chưa đúng. Bình không hỏng. Vấn đề là đồ uống quá nóng.'],
+            ['{熱|あつ}い{飲|の}み{物|もの}が{水筒|すいとう}から[直接|ちょくせつ]{飲|の}めなかったこと。', 'Không uống trực tiếp đồ nóng từ bình được.', 'Đúng. Đồ uống nóng quá nên không thể uống trực tiếp từ bình (熱すぎて、直接は飲めなかった).'],
+            ['{熱|あつ}い{飲|の}み{物|もの}がすぐに[冷|さ]めてしまったこと。', 'Đồ nóng nguội nhanh.', 'Chưa đúng. Ngược lại, bình giữ nhiệt lâu nên đồ nóng vẫn nóng, đó mới là vấn đề.']
           ],
+          guide: 'Câu hỏi hỏi "chuyện rắc rối" là gì. Câu ngay sau câu gạch chân trả lời luôn: 「熱すぎて、直接は飲めなかったのだ」 – nóng quá, không uống trực tiếp được.\nLý do là: bình giữ nhiệt rất tốt, mà lại không có cốc để rót ra cho nguội. Mùa hè đồ lạnh thì tốt, nhưng mùa đông đồ nóng thì không uống được. Đáp án 3.\nLựa chọn 4 là bẫy ngược: bình giữ nhiệt lâu, nên đồ nóng không hề nguội nhanh.',
           answer: 3, evidence: ['s6']
         },
         {
           label: '29',
           question: ['q3', '‹③{最初|さいしょ}に{考|かんが}えていたよりはお{金|かね}がかかってしまった›とあるが、それはなぜか。', '"Tốn tiền hơn dự tính" – vì sao?'],
           options: [
-            ['ペットボトルを{買|か}うことが{増|ふ}えたから', 'Vì mua nước chai nhiều hơn.', 'Sai. Không mua nữa.'],
-            ['とても{高|たか}い{水筒|すいとう}を{買|か}うことになったから', 'Vì phải mua bình rất đắt.', 'Sai. "それほど高くはなかった".'],
-            ['{水筒|すいとう}とは{別|べつ}にコップも{買|か}うことになったから', 'Vì phải mua thêm cốc riêng.', 'Sai. Mua bình có cốc, không phải cốc riêng.'],
-            ['{水筒|すいとう}を2{本|ほん}も{買|か}うことになったから', 'Vì phải mua tới 2 bình.', 'Đúng. Định mua 1 bình là đủ nhưng rốt cuộc mua thêm bình thứ hai (s7).']
+            ['ペットボトルを{買|か}うことが{増|ふ}えたから', 'Vì mua nước chai nhiều hơn.', 'Chưa đúng. Ngược lại, từ khi có bình tác giả không mua nước đóng chai nữa.'],
+            ['とても{高|たか}い{水筒|すいとう}を{買|か}うことになったから', 'Vì phải mua bình rất đắt.', 'Chưa đúng. Tác giả nói cả hai bình đều không đắt lắm (それほど高くはなかった).'],
+            ['{水筒|すいとう}とは{別|べつ}にコップも{買|か}うことになったから', 'Vì phải mua thêm cốc riêng.', 'Chưa đúng. Tác giả mua thêm một BÌNH có cốc, không phải mua cốc riêng.'],
+            ['{水筒|すいとう}を2{本|ほん}も{買|か}うことになったから', 'Vì phải mua tới 2 bình.', 'Đúng. Định mua một bình là đủ, nhưng rốt cuộc phải mua thêm bình có cốc, thành hai bình.']
           ],
+          guide: 'Câu hỏi hỏi vì sao tốn tiền hơn dự tính. Hãy theo dõi số lượng bình:\nLúc đầu: 「最初は1本あれば十分だと思っていた」 – nghĩ một bình là đủ.\nSau đó: 「結局、コップ付きの水筒も買った」 – rốt cuộc mua thêm cả bình có cốc. Chữ 「も」 (cũng) cho biết đây là bình thứ hai.\nDự tính một bình, thực tế hai bình, nên tốn hơn dự tính. Đáp án 4.\nChú ý: tác giả nói 「どちらの水筒もそれほど高くはなかった」 – cả hai bình đều không đắt lắm. Vậy tốn tiền là vì số lượng, không phải vì bình đắt.',
           answer: 4, evidence: ['s7', 's9']
         }
       ],
@@ -347,33 +354,36 @@ window.BAI = {
           label: '30',
           question: ['q1', '‹①この{問題|もんだい}›とあるが、{何|なに}か。', '"Vấn đề này" là gì?'],
           options: [
-            ['{日本|にほん}にカラスが{多|おお}すぎること。', 'Nhật Bản có quá nhiều quạ.', 'Sai. Quá chung chung; この問題 chỉ chuyện quạ tụ về công viên thị trấn tác giả (ngay câu trước).'],
-            ['{日本|にほん}にカラスを[嫌|いや]がる{人|ひと}が{多|おお}いこと。', 'Ở Nhật nhiều người ghét quạ.', 'Sai. Đây là ý của đoạn 1 nói chung về người Nhật; この問題 chỉ chuyện quạ tụ tập ở công viên thị trấn tác giả (đoạn 2).'],
-            ['カラスが{人|ひと}に{向|む}かって{飛|と}んできたり、{食|た}べ{物|もの}を{取|と}ったりして、[危険|きけん]で[困|こま]ること。', 'Quạ bay về phía người, cướp đồ ăn, nguy hiểm.', 'Sai. Đó là đoạn 1 (nói chung), không phải vấn đề ở thị trấn tác giả.'],
-            ['「{私|わたし}」の{町|まち}の{公園|こうえん}に、カラスが{夕方|ゆうがた}たくさん{集|あつ}まってきて、うるさくて{怖|こわ}いこと。', 'Quạ tụ về công viên thị trấn "tôi" mỗi chiều, ồn và đáng sợ.', 'Đúng. この問題 chỉ nội dung ngay trước (s3–s5).']
+            ['{日本|にほん}にカラスが{多|おお}すぎること。', 'Nhật Bản có quá nhiều quạ.', 'Chưa đúng. Quá chung chung. この問題 chỉ chuyện quạ tụ về công viên thị trấn tác giả (đoạn ngay trước).'],
+            ['{日本|にほん}にカラスを[嫌|いや]がる{人|ひと}が{多|おお}いこと。', 'Ở Nhật nhiều người ghét quạ.', 'Chưa đúng. Đây là ý của đoạn 1 nói chung về người Nhật. この問題 chỉ chuyện ở thị trấn tác giả (đoạn 2).'],
+            ['カラスが{人|ひと}に{向|む}かって{飛|と}んできたり、{食|た}べ{物|もの}を{取|と}ったりして、[危険|きけん]で[困|こま]ること。', 'Quạ bay về phía người, cướp đồ ăn, nguy hiểm.', 'Chưa đúng. Đây là nội dung đoạn 1, nói chung về quạ. "この" chỉ điều vừa nói ngay trước nó, tức đoạn 2.'],
+            ['「{私|わたし}」の{町|まち}の{公園|こうえん}に、カラスが{夕方|ゆうがた}たくさん{集|あつ}まってきて、うるさくて{怖|こわ}いこと。', 'Quạ tụ về công viên thị trấn "tôi" mỗi chiều, ồn và đáng sợ.', 'Đúng. Ngay trước "この問題" là chuyện quạ tụ về công viên thị trấn tác giả mỗi chiều, kêu ồn và đông đến đáng sợ.']
           ],
+          guide: 'Câu hỏi hỏi "vấn đề này" (この問題) là vấn đề gì. Chữ 「この」 chỉ điều vừa được nói ngay trước nó.\nBài có hai đoạn nói về quạ: đoạn 1 nói chung về quạ ở Nhật (bay về phía người, cướp đồ ăn); đoạn 2 nói về thị trấn của tác giả: chiều nào quạ cũng tụ về cây trong công viên để ngủ, kêu ồn ào, đông đến mức đáng sợ, người dân rất khổ sở. Ngay sau đó là câu có 「この問題」.\nVậy "vấn đề này" là chuyện quạ tụ tập ở công viên thị trấn tác giả. Đáp án 4.\nLựa chọn 3 là bẫy: nó nói đúng nội dung đoạn 1, nhưng "この" chỉ đoạn ngay trước (đoạn 2).',
           answer: 4, evidence: ['s3', 's4', 's5']
         },
         {
           label: '31',
           question: ['q2', 'どのような‹②[実験|じっけん]›か。', 'Đó là thí nghiệm gì?'],
           options: [
-            ['カラスを「{集|あつ}まっても{問題|もんだい}のない{場所|ばしょ}」でよく{眠|ねむ}らせて、{静|しず}かにさせる[実験|じっけん]。', 'Cho quạ ngủ ngon ở nơi không sao để chúng im lặng.', 'Sai. Thí nghiệm không làm quạ ngủ hay im lặng; nó di chuyển quạ sang nơi khác.'],
-            ['カラスが「いてほしくない{場所|ばしょ}」にいても、[鳴|な]き{声|ごえ}は{周|まわ}りに{聞|き}こえないようにする[実験|じっけん]。', 'Làm cho tiếng kêu không vọng ra xung quanh.', 'Sai. Thí nghiệm không làm tắt tiếng kêu; ngược lại, nó tận dụng tiếng kêu.'],
-            ['カラスの{苦手|にがて}な{食|た}べ{物|もの}を{利用|りよう}して、「いてほしくない{場所|ばしょ}」に{来|こ}ないようにする[実験|じっけん]。', 'Dùng thức ăn quạ ghét.', 'Sai. Dùng tiếng kêu, không phải thức ăn.'],
-            ['カラスの[鳴|な]き{方|かた}の{違|ちが}いを{利用|りよう}して、「{集|あつ}まっても{問題|もんだい}のない{場所|ばしょ}」に{行|い}かせる[実験|じっけん]。', 'Dùng sự khác biệt tiếng kêu để đưa quạ đến nơi không sao.', 'Đúng. 「鳴き方の違いを利用して、…『集まっても問題のない場所』にカラスを移動させる」.']
+            ['カラスを「{集|あつ}まっても{問題|もんだい}のない{場所|ばしょ}」でよく{眠|ねむ}らせて、{静|しず}かにさせる[実験|じっけん]。', 'Cho quạ ngủ ngon ở nơi không sao để chúng im lặng.', 'Chưa đúng. Thí nghiệm không làm quạ ngủ hay im lặng. Nó chuyển quạ sang nơi khác.'],
+            ['カラスが「いてほしくない{場所|ばしょ}」にいても、[鳴|な]き{声|ごえ}は{周|まわ}りに{聞|き}こえないようにする[実験|じっけん]。', 'Làm cho tiếng kêu không vọng ra xung quanh.', 'Chưa đúng. Thí nghiệm không làm tắt tiếng kêu. Ngược lại, nó tận dụng tiếng kêu.'],
+            ['カラスの{苦手|にがて}な{食|た}べ{物|もの}を{利用|りよう}して、「いてほしくない{場所|ばしょ}」に{来|こ}ないようにする[実験|じっけん]。', 'Dùng thức ăn quạ ghét.', 'Chưa đúng. Thí nghiệm dùng tiếng kêu của quạ, không dùng thức ăn.'],
+            ['カラスの[鳴|な]き{方|かた}の{違|ちが}いを{利用|りよう}して、「{集|あつ}まっても{問題|もんだい}のない{場所|ばしょ}」に{行|い}かせる[実験|じっけん]。', 'Dùng sự khác biệt tiếng kêu để đưa quạ đến nơi không sao.', 'Đúng. Dùng sự khác nhau giữa tiếng kêu khi an toàn và khi nguy hiểm để chuyển quạ đến "nơi tụ tập cũng không sao".']
           ],
+          guide: 'Câu hỏi hỏi thí nghiệm ở thị trấn khác là gì. Câu ngay sau câu gạch chân mô tả nó: 「安全な状態にいるときと危険を感じたときのカラスの鳴き方の違いを利用して、『いてほしくない場所』から『集まっても問題のない場所』にカラスを移動させる」.\nNghĩa là: quạ kêu khác nhau khi thấy an toàn và khi thấy nguy hiểm. Người ta tận dụng sự khác biệt đó để chuyển quạ từ "nơi không muốn chúng ở" sang "nơi tụ tập cũng không sao". Đáp án 4.\nThí nghiệm này không làm quạ ngủ, không làm tắt tiếng kêu, cũng không dùng thức ăn.',
           answer: 4, evidence: ['s8']
         },
         {
           label: '32',
           question: ['q3', '「{私|わたし}」の{町|まち}のカラスの{問題|もんだい}について、「{私|わたし}」はどう{考|かんが}えているか。', '"Tôi" nghĩ gì về vấn đề quạ ở thị trấn mình?'],
           options: [
-            ['「{私|わたし}」の{町|まち}で{成功|せいこう}した{方法|ほうほう}を、これからも{続|つづ}けていきたい。', 'Muốn tiếp tục cách đã thành công ở thị trấn mình.', 'Sai. Thành công ở thị trấn KHÁC.'],
-            ['「{私|わたし}」の{町|まち}でも、{別|べつ}の{町|まち}で{成功|せいこう}した{方法|ほうほう}を{使|つか}って[解決|かいけつ]してほしい。', 'Mong dùng cách của thị trấn khác.', 'Sai. "同じ方法は使えそうにありません".'],
-            ['{別|べつ}の{町|まち}で{成功|せいこう}した{方法|ほうほう}とは{違|ちが}う、「{私|わたし}」の{町|まち}に{合|あ}った{新|あたら}しい{方法|ほうほう}が{必要|ひつよう}だ。', 'Cần cách mới phù hợp với thị trấn mình, khác cách của thị trấn kia.', 'Đúng. 「同じ方法は使えそうにありません。私の町に合った解決方法が見つかればいい」.'],
-            ['{別|べつ}の{町|まち}で{成功|せいこう}した{方法|ほうほう}は「{私|わたし}」の{町|まち}では{使|つか}えないから、[解決|かいけつ]はあきらめよう。', 'Không dùng được nên bỏ cuộc.', 'Sai. Tác giả mong tìm được cách khác.']
+            ['「{私|わたし}」の{町|まち}で{成功|せいこう}した{方法|ほうほう}を、これからも{続|つづ}けていきたい。', 'Muốn tiếp tục cách đã thành công ở thị trấn mình.', 'Chưa đúng. Cách đó thành công ở thị trấn KHÁC, không phải ở thị trấn tác giả.'],
+            ['「{私|わたし}」の{町|まち}でも、{別|べつ}の{町|まち}で{成功|せいこう}した{方法|ほうほう}を{使|つか}って[解決|かいけつ]してほしい。', 'Mong dùng cách của thị trấn khác.', 'Chưa đúng. Tác giả nói không dùng được cách đó (使えそうにありません).'],
+            ['{別|べつ}の{町|まち}で{成功|せいこう}した{方法|ほうほう}とは{違|ちが}う、「{私|わたし}」の{町|まち}に{合|あ}った{新|あたら}しい{方法|ほうほう}が{必要|ひつよう}だ。', 'Cần cách mới phù hợp với thị trấn mình, khác cách của thị trấn kia.', 'Đúng. Tác giả nói không dùng được cách cũ, và mong tìm được cách phù hợp với thị trấn mình (私の町に合った解決方法).'],
+            ['{別|べつ}の{町|まち}で{成功|せいこう}した{方法|ほうほう}は「{私|わたし}」の{町|まち}では{使|つか}えないから、[解決|かいけつ]はあきらめよう。', 'Không dùng được nên bỏ cuộc.', 'Chưa đúng. Tác giả không bỏ cuộc mà vẫn mong tìm được cách khác.']
           ],
+          guide: 'Câu hỏi hỏi tác giả nghĩ gì về vấn đề quạ ở thị trấn mình. Ý kiến tác giả nằm ở đoạn cuối, sau chữ 「しかし」.\nĐoạn đó viết: thị trấn tác giả không có "nơi tụ tập cũng không sao" như rừng lớn, nên 「同じ方法は使えそうにありません」 – có vẻ không dùng được cách đó. Rồi: 「私の町に合った解決方法が見つかればいいと思います」 – mong tìm được cách phù hợp với thị trấn mình.\nVậy: cần một cách mới, phù hợp với thị trấn mình, khác cách của thị trấn kia. Đáp án 3.\nLựa chọn 4 là bẫy: tác giả nói không dùng được cách cũ, nhưng KHÔNG hề bỏ cuộc. Tác giả vẫn mong tìm ra cách khác.',
           answer: 3, evidence: ['s10', 's11']
         }
       ],

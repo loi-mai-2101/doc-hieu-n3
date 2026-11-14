@@ -202,6 +202,10 @@
       }).join('') + '</ol>';
       h += '<div class="result" hidden>';
       h += '<p class="verdict"></p>';
+      if (q.guide) { // lời giảng từng bước, viết cho người tự học
+        h += '<div class="guide-box"><div class="g-tag">Giải thích chi tiết</div>' + q.guide.split('\n').map(function (para) { return '<p>' + esc(para) + '</p>'; }).join('') + '</div>';
+        h += '<div class="g-sub">Vì sao từng lựa chọn đúng / sai:</div>';
+      }
       h += '<ol class="exps">' + q.options.map(function (o, idx) {
         var ok = idx + 1 === q.answer;
         return '<li class="' + (ok ? 'ok' : 'ng') + '"><div class="exp-head"><span class="mark">' + (ok ? '✓' : '✗') + '</span> ' + (idx + 1) + '. ' + esc(o[1]) + '</div><div class="exp-body">' + esc(citeRefs(o[2], p)) + '</div></li>';

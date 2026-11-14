@@ -103,11 +103,12 @@ window.BAI = {
         label: '23',
         question: ['q1', 'このメモを{読|よ}んで、たかしさんがしなければならないことは{何|なに}か。', 'Đọc mẩu ghi chú, Takashi BẮT BUỘC phải làm gì?'],
         options: [
-          ['おじいちゃんの{所|ところ}へ{行|い}く。', 'Đến chỗ ông.', 'Sai. Người đi là người viết ghi chú, không phải Takashi.'],
-          ['{昨日|きのう}のカレーの{残|のこ}りを{温|あたた}めて{食|た}べる。', 'Hâm cà ri còn lại để ăn.', 'Sai. Chỉ khi "đói không đợi được" (〜たら) – không bắt buộc.'],
-          ['[洗濯物|せんたくもの]を{取|と}り[込|こ]む。', 'Thu quần áo vào.', 'Đúng. 「取り込んでおいてね」 không kèm điều kiện (s3). Gấp quần áo thì chỉ "nếu có thời gian".'],
-          ['ケーキを{買|か}って{帰|かえ}る。', 'Mua bánh mang về.', 'Sai. Người viết ghi chú mới là người mua (おいしいケーキでも買って帰るね).']
+          ['おじいちゃんの{所|ところ}へ{行|い}く。', 'Đến chỗ ông.', 'Chưa đúng. Người đi sang nhà ông là người viết ghi chú, không phải Takashi.'],
+          ['{昨日|きのう}のカレーの{残|のこ}りを{温|あたた}めて{食|た}べる。', 'Hâm cà ri còn lại để ăn.', 'Chưa đúng. Chỉ khi "đói không đợi được" (待てなかったら) thì mới hâm cà ri ăn. Đây không phải việc bắt buộc.'],
+          ['[洗濯物|せんたくもの]を{取|と}り[込|こ]む。', 'Thu quần áo vào.', 'Đúng. Thu quần áo đang phơi (取り込んでおいてね) là lời nhờ không kèm điều kiện nào. Còn gấp quần áo thì chỉ "nếu có thời gian".'],
+          ['ケーキを{買|か}って{帰|かえ}る。', 'Mua bánh mang về.', 'Chưa đúng. Người viết ghi chú mới là người mua bánh (おいしいケーキでも買って帰るね).']
         ],
+        guide: 'Câu hỏi hỏi Takashi BẮT BUỘC phải làm gì (しなければならないこと). Ghi chú có nhiều việc, bạn hãy chia chúng thành ba loại:\n- Việc của người viết: đi sang nhà ông (行かなければならなくなりました), mua bánh mang về (買って帰るね).\n- Việc có điều kiện, chỉ làm khi cần: 「おなかがすいて待てなかったら」 – nếu đói không đợi được thì hâm cà ri ăn; 「時間があったら」 – nếu có thời gian thì gấp quần áo.\n- Việc bắt buộc, không kèm điều kiện: 「洗濯物が干したままになっているから、取り込んでおいてね」 – quần áo vẫn đang phơi, thu vào giúp nhé.\nChỉ có việc thu quần áo là được nhờ mà không kèm điều kiện. Đáp án 3.\nMẹo: câu có 「〜たら」 (nếu…) là việc tùy tình huống, không phải bắt buộc.',
         answer: 3, evidence: ['s3']
       }],
       summary: 'Người viết (bố/mẹ của Takashi) có việc gấp phải sang nhà ông, sẽ về trước 7 giờ. Nếu đói thì hâm cà ri ăn; phải thu quần áo đang phơi, có thời gian thì gấp luôn; người viết sẽ mua bánh về.',
@@ -151,11 +152,12 @@ window.BAI = {
         label: '24',
         question: ['q1', 'このメールから、{東京|とうきょう}ホテルのサービスについて、どんなことがわかるか。', 'Qua email, biết được gì về dịch vụ của khách sạn Tokyo?'],
         options: [
-          ['インターネットで{予約|よやく}すると、{料金|りょうきん}と{朝食|ちょうしょく}が10%[割引|わりびき]になる{場合|ばあい}がある。', 'Đặt qua mạng thì tiền phòng và bữa sáng được giảm 10%.', 'Sai. Bữa sáng MIỄN PHÍ, không phải giảm 10%.'],
-          ['インターネットで2{月|がつ}{中|ちゅう}に{予約|よやく}すると、{朝食|ちょうしょく}が10%[割引|わりびき]になる{場合|ばあい}がある。', 'Đặt qua mạng trong tháng 2 thì bữa sáng giảm 10%.', 'Sai. Điều kiện là NGHỈ trước 28/2; bữa sáng miễn phí.'],
-          ['インターネットで{予約|よやく}し、2{月|がつ}{中|ちゅう}に[泊|と]まると、1[泊|ぱく]{料金|りょうきん}が10%[割引|わりびき]され、{朝食|ちょうしょく}が{無料|むりょう}になる{場合|ばあい}がある。', 'Đặt qua mạng và nghỉ trong tháng 2 thì giảm 10% tiền phòng và miễn phí bữa sáng.', 'Đúng. Khớp s3; "場合がある" vì mỗi ngày chỉ có 10 phòng (s4).'],
-          ['インターネット、{電話|でんわ}、ファックスのどれで{予約|よやく}しても、2{月|がつ}{中|ちゅう}は{朝食|ちょうしょく}だけ{無料|むりょう}になる{場合|ばあい}がある。', 'Đặt bằng cách nào cũng được miễn phí bữa sáng.', 'Sai. Điện thoại, fax không áp dụng (s5).']
+          ['インターネットで{予約|よやく}すると、{料金|りょうきん}と{朝食|ちょうしょく}が10%[割引|わりびき]になる{場合|ばあい}がある。', 'Đặt qua mạng thì tiền phòng và bữa sáng được giảm 10%.', 'Chưa đúng. Bữa sáng được MIỄN PHÍ, chứ không phải giảm 10%. Giảm 10% chỉ áp dụng cho tiền phòng.'],
+          ['インターネットで2{月|がつ}{中|ちゅう}に{予約|よやく}すると、{朝食|ちょうしょく}が10%[割引|わりびき]になる{場合|ばあい}がある。', 'Đặt qua mạng trong tháng 2 thì bữa sáng giảm 10%.', 'Chưa đúng. Sai hai chỗ: điều kiện là NGHỈ trước 28/2 (không phải đặt trong tháng 2), và bữa sáng miễn phí chứ không phải giảm 10%.'],
+          ['インターネットで{予約|よやく}し、2{月|がつ}{中|ちゅう}に[泊|と]まると、1[泊|ぱく]{料金|りょうきん}が10%[割引|わりびき]され、{朝食|ちょうしょく}が{無料|むりょう}になる{場合|ばあい}がある。', 'Đặt qua mạng và nghỉ trong tháng 2 thì giảm 10% tiền phòng và miễn phí bữa sáng.', 'Đúng. Đặt qua mạng và nghỉ trong tháng 2 thì được giảm 10% tiền phòng một đêm và miễn phí bữa sáng, nhưng chỉ có 10 phòng mỗi ngày nên là "có trường hợp".'],
+          ['インターネット、{電話|でんわ}、ファックスのどれで{予約|よやく}しても、2{月|がつ}{中|ちゅう}は{朝食|ちょうしょく}だけ{無料|むりょう}になる{場合|ばあい}がある。', 'Đặt bằng cách nào cũng được miễn phí bữa sáng.', 'Chưa đúng. Đặt qua điện thoại hay fax thì không được áp dụng (電話、ファックスでご予約の場合はご利用できません).']
         ],
+        guide: 'Câu hỏi hỏi email cho biết gì về dịch vụ của khách sạn. Đây là dạng câu "mỗi lựa chọn sai một chi tiết", nên bạn cần ghi lại từng chi tiết của ưu đãi:\n- Điều kiện 1: đặt phòng qua MẠNG (インターネットで予約され).\n- Điều kiện 2: NGHỈ trước ngày 28/2 (2月28日までにお泊まりの方), tức là ngày nghỉ, không phải ngày đặt.\n- Ưu đãi: giảm 10% giá MỘT ĐÊM, và bữa sáng MIỄN PHÍ.\n- Giới hạn: mỗi ngày chỉ 10 phòng; đặt qua điện thoại, fax thì không áp dụng.\nLựa chọn 3 khớp mọi chi tiết. Chữ 「場合がある」 (có trường hợp) ở cuối cũng hợp lý, vì mỗi ngày chỉ có 10 phòng, không phải ai cũng được.',
         answer: 3, evidence: ['s3', 's4', 's5']
       }],
       summary: 'Khách sạn Tokyo giảm 10% tiền phòng/đêm và miễn phí bữa sáng cho khách đặt qua mạng và nghỉ trước 28/2. Mỗi ngày chỉ 10 phòng; đặt qua điện thoại, fax không được áp dụng.',
@@ -189,11 +191,12 @@ window.BAI = {
         label: '25',
         question: ['q1', '‹がっかりしてしまった›のはなぜか。', 'Vì sao lại thất vọng?'],
         options: [
-          ['{自分|じぶん}では{歩|ある}くのが{速|はや}くなったと{思|おも}っていたが、{実|じつ}はそうではなかったから。', 'Vì tưởng mình đi nhanh hơn nhưng thật ra không phải.', 'Đúng. Lý do thật là đèn xanh được kéo dài, không phải mình đi nhanh hơn (s3–s4).'],
-          ['@sekkaku(せっかく){走|はし}って{渡|わた}れるようになったのに、その{必要|ひつよう}がなくなったから。', 'Vì khó khăn lắm mới chạy qua được thì lại không cần nữa.', 'Sai. Tác giả không hề muốn chạy; trước đây phải chạy là do đèn đổi đỏ nhanh.'],
-          ['{自分|じぶん}は{時間|じかん}{内|ない}に{歩|ある}いて{渡|わた}れるのに、{歩行者|ほこうしゃ}{用|よう}{信号|しんごう}の{青|あお}の{時間|じかん}が{長|なが}くなったから。', 'Vì mình đi kịp mà đèn xanh lại bị kéo dài.', 'Sai. Trước đây tác giả cũng không kịp.'],
-          ['{警察|けいさつ}が、{歩行者|ほこうしゃ}{用|よう}{信号|しんごう}の{青|あお}の{時間|じかん}を{少|すこ}ししか{長|なが}くしてくれなかったから。', 'Vì cảnh sát chỉ kéo dài đèn xanh một chút.', 'Sai. Tác giả không phàn nàn về cảnh sát; thất vọng là vì mình không thật sự đi nhanh hơn.']
+          ['{自分|じぶん}では{歩|ある}くのが{速|はや}くなったと{思|おも}っていたが、{実|じつ}はそうではなかったから。', 'Vì tưởng mình đi nhanh hơn nhưng thật ra không phải.', 'Đúng. Tác giả mừng vì tưởng mình đi nhanh hơn, nhưng lý do thật là đèn xanh được kéo dài. Hóa ra mình không hề nhanh hơn.'],
+          ['@sekkaku(せっかく){走|はし}って{渡|わた}れるようになったのに、その{必要|ひつよう}がなくなったから。', 'Vì khó khăn lắm mới chạy qua được thì lại không cần nữa.', 'Chưa đúng. Tác giả không hề muốn chạy. Trước đây phải chạy là vì đèn đổi đỏ nhanh.'],
+          ['{自分|じぶん}は{時間|じかん}{内|ない}に{歩|ある}いて{渡|わた}れるのに、{歩行者|ほこうしゃ}{用|よう}{信号|しんごう}の{青|あお}の{時間|じかん}が{長|なが}くなったから。', 'Vì mình đi kịp mà đèn xanh lại bị kéo dài.', 'Chưa đúng. Trước khi đèn xanh được kéo dài, tác giả cũng không đi kịp, phải chạy.'],
+          ['{警察|けいさつ}が、{歩行者|ほこうしゃ}{用|よう}{信号|しんごう}の{青|あお}の{時間|じかん}を{少|すこ}ししか{長|なが}くしてくれなかったから。', 'Vì cảnh sát chỉ kéo dài đèn xanh một chút.', 'Chưa đúng. Tác giả không phàn nàn về cảnh sát. Thất vọng là vì mình không thật sự đi nhanh hơn.']
         ],
+        guide: 'Câu hỏi hỏi vì sao tác giả "hơi thất vọng". Bạn hãy so sánh suy nghĩ của tác giả với sự thật.\nSuy nghĩ của tác giả: trước đây phải chạy mới qua kịp đèn, nay đi bộ cũng kịp, nên 「歩くのが速くなったと思って喜んでいた」 – mừng vì nghĩ mình đi nhanh hơn.\nSự thật (đọc báo mới biết): 「警察が青の時間を少し長くしたのだそうだ」 – cảnh sát đã kéo dài thời gian đèn xanh.\nVậy qua kịp không phải vì mình đi nhanh hơn, mà vì đèn xanh dài hơn. Niềm vui hóa ra là hiểu lầm, nên thất vọng. Đáp án 1.',
         answer: 1, evidence: ['s3', 's4', 's5']
       }],
       summary: 'Đèn ngã tư trước ga đổi đỏ nhanh nên tác giả hay phải chạy. Một tháng nay đi bộ vẫn kịp, tác giả mừng vì nghĩ mình đi nhanh hơn, nhưng đọc báo mới biết cảnh sát đã kéo dài đèn xanh → thất vọng.',
@@ -231,11 +234,12 @@ window.BAI = {
         label: '26',
         question: ['q1', '{朝|あさ}の{歯|は}[磨|みが]きについて、この{文章|ぶんしょう}からわかることは{何|なに}か。', 'Về việc đánh răng buổi sáng, bài cho biết điều gì?'],
         options: [
-          ['{男性|だんせい}は「{食前|しょくぜん}」に[磨|みが]く{人|ひと}が「{食後|しょくご}」に[磨|みが]く{人|ひと}より{多|おお}い。', 'Nam đánh trước ăn nhiều hơn sau ăn.', 'Sai. Nam "sau ăn" nhiều nhất (64%).'],
-          ['{女性|じょせい}は「{食前|しょくぜん}と{食後|しょくご}」に[磨|みが]く{人|ひと}が「{食前|しょくぜん}」に[磨|みが]く{人|ひと}より{多|おお}い。', 'Nữ đánh cả trước và sau nhiều hơn chỉ trước ăn.', 'Đúng. Ở nữ, nhiều nhất là 食後, thứ hai là 食前と食後 → nhiều hơn 食前 (s2).'],
-          ['{性別|せいべつ}に{関係|かんけい}なく、「{食前|しょくぜん}」に{歯|は}を[磨|みが]いている{人|ひと}が60%{以上|いじょう}いる。', 'Bất kể giới tính, trên 60% đánh trước ăn.', 'Sai. Trên 60% là "sau ăn".'],
-          ['[年齢|ねんれい]が{高|たか}くなると、「{食後|しょくご}」に[磨|みが]く{人|ひと}より「{食前|しょくぜん}」に[磨|みが]く{人|ひと}が{多|おお}くなる。', 'Tuổi càng cao thì người đánh trước ăn nhiều hơn người đánh sau ăn.', 'Sai. Ở mọi lứa tuổi "食後" vẫn nhiều nhất (s3); chỉ là tỉ lệ 食前 tăng dần, chưa vượt 食後.']
+          ['{男性|だんせい}は「{食前|しょくぜん}」に[磨|みが]く{人|ひと}が「{食後|しょくご}」に[磨|みが]く{人|ひと}より{多|おお}い。', 'Nam đánh trước ăn nhiều hơn sau ăn.', 'Chưa đúng. Với nam, "sau ăn" đứng đầu (64%), "trước ăn" chỉ đứng thứ hai.'],
+          ['{女性|じょせい}は「{食前|しょくぜん}と{食後|しょくご}」に[磨|みが]く{人|ひと}が「{食前|しょくぜん}」に[磨|みが]く{人|ひと}より{多|おお}い。', 'Nữ đánh cả trước và sau nhiều hơn chỉ trước ăn.', 'Đúng. Với nữ, nhiều nhất là "sau ăn", thứ hai là "cả trước và sau", nên nhóm này nhiều hơn nhóm "trước ăn".'],
+          ['{性別|せいべつ}に{関係|かんけい}なく、「{食前|しょくぜん}」に{歯|は}を[磨|みが]いている{人|ひと}が60%{以上|いじょう}いる。', 'Bất kể giới tính, trên 60% đánh trước ăn.', 'Chưa đúng. Trên 60% là nhóm "sau ăn" (nam 64%, nữ 72%), không phải "trước ăn".'],
+          ['[年齢|ねんれい]が{高|たか}くなると、「{食後|しょくご}」に[磨|みが]く{人|ひと}より「{食前|しょくぜん}」に[磨|みが]く{人|ひと}が{多|おお}くなる。', 'Tuổi càng cao thì người đánh trước ăn nhiều hơn người đánh sau ăn.', 'Chưa đúng. Tỉ lệ "trước ăn" tăng theo tuổi, nhưng ở mọi lứa tuổi "sau ăn" vẫn nhiều nhất, nên "trước ăn" chưa nhiều hơn "sau ăn".']
         ],
+        guide: 'Câu hỏi hỏi bài cho biết điều gì về giờ đánh răng buổi sáng. Với bài số liệu, hãy ghi lại thứ hạng của từng nhóm:\n- Nam: nhiều nhất là "sau ăn" (64%), thứ hai là "trước ăn".\n- Nữ: nhiều nhất là "sau ăn" (72%), thứ hai là "cả trước và sau".\n- Theo tuổi: ở MỌI lứa tuổi, "sau ăn" vẫn nhiều nhất (各年齢で一番多いのはやはり「食後」). Chỉ có tỉ lệ là thay đổi: tuổi càng cao thì "sau ăn" giảm, "trước ăn" tăng.\nLựa chọn 2: với nữ, "cả trước và sau" đứng thứ hai, nên nhiều hơn "trước ăn". Đúng.\nLựa chọn 4 là bẫy lớn nhất: tỉ lệ "trước ăn" có TĂNG theo tuổi, nhưng bài nói ở mọi lứa tuổi "sau ăn" vẫn đứng đầu, nên "trước ăn" chưa bao giờ nhiều hơn "sau ăn".\nMẹo: phân biệt "tỉ lệ tăng dần" với "vượt lên đứng đầu". Tăng chưa chắc đã vượt.',
         answer: 2, evidence: ['s2']
       }],
       summary: 'Khảo sát 3.000 người về giờ đánh răng buổi sáng: cả nam và nữ nhiều nhất là sau ăn (nam 64%, nữ 72%); thứ hai, nam là trước ăn, nữ là cả trước và sau. Ở mọi lứa tuổi "sau ăn" vẫn nhiều nhất, nhưng tuổi càng cao thì tỉ lệ "trước ăn" càng tăng – giống gia đình tác giả (ông đánh trước ăn).',
@@ -281,33 +285,36 @@ window.BAI = {
           label: '27',
           question: ['q1', '‹①{店|みせ}の{思|おも}い{出|で}はそのまま{子|こ}どものころの{思|おも}い{出|で}と{重|かさ}なる›とあるが、それはどんな{思|おも}い{出|で}か。', '"Kỷ niệm về tiệm trùng với kỷ niệm tuổi thơ" – đó là kỷ niệm gì?'],
           options: [
-            ['わたしが{小学校|しょうがっこう}に{入学|にゅうがく}した{時|とき}に、この{花屋|はなや}が{開店|かいてん}したこと。', 'Tiệm khai trương khi tôi vào tiểu học.', 'Sai. Tiệm mở TRƯỚC khi tôi vào tiểu học.'],
-            ['{小学校|しょうがっこう}を[卒業|そつぎょう]する{時|とき}に、{先生|せんせい}といっしょにこの{花屋|はなや}で{花|はな}を{買|か}ったこと。', 'Khi tốt nghiệp, cùng cô giáo mua hoa ở tiệm.', 'Sai. Mua để TẶNG cô, không đi cùng cô.'],
-            ['{特別|とくべつ}なことがある{時|とき}には、よくこの{店|みせ}で{花|はな}を{買|か}っていたこと。', 'Khi có dịp đặc biệt hay mua hoa ở tiệm này.', 'Đúng. Sinh nhật, nhà có khách… thì cùng mẹ mua hoa ở đây (s5).'],
-            ['おじさんが{大好|だいす}きだったので、よくこの{店|みせ}で{花|はな}を{買|か}っていたこと。', 'Vì rất quý chú nên hay mua hoa ở đây.', 'Sai. Bài không nói mua hoa vì quý chú; kỷ niệm là mua hoa vào những dịp đặc biệt.']
+            ['わたしが{小学校|しょうがっこう}に{入学|にゅうがく}した{時|とき}に、この{花屋|はなや}が{開店|かいてん}したこと。', 'Tiệm khai trương khi tôi vào tiểu học.', 'Chưa đúng. Tiệm mở cửa khi tác giả còn CHƯA vào tiểu học (小学校に入る前), không phải đúng lúc vào tiểu học.'],
+            ['{小学校|しょうがっこう}を[卒業|そつぎょう]する{時|とき}に、{先生|せんせい}といっしょにこの{花屋|はなや}で{花|はな}を{買|か}ったこと。', 'Khi tốt nghiệp, cùng cô giáo mua hoa ở tiệm.', 'Chưa đúng. Khi tốt nghiệp, cả lớp mua hoa để tặng cô giáo, chứ không đi mua cùng cô.'],
+            ['{特別|とくべつ}なことがある{時|とき}には、よくこの{店|みせ}で{花|はな}を{買|か}っていたこと。', 'Khi có dịp đặc biệt hay mua hoa ở tiệm này.', 'Đúng. Sinh nhật người nhà, nhà có khách… là những dịp đặc biệt, và những lúc đó tác giả hay cùng mẹ mua hoa ở tiệm này.'],
+            ['おじさんが{大好|だいす}きだったので、よくこの{店|みせ}で{花|はな}を{買|か}っていたこと。', 'Vì rất quý chú nên hay mua hoa ở đây.', 'Chưa đúng. Bài không nói tác giả mua hoa vì quý chú chủ tiệm. Kỷ niệm là mua hoa vào những dịp đặc biệt.']
           ],
+          guide: 'Câu hỏi hỏi kỷ niệm về tiệm hoa trùng với kỷ niệm tuổi thơ là kỷ niệm gì. Câu ngay sau câu gạch chân trả lời: 「家族の誕生日や家にお客さんが来る時などには、母といっしょにこの店で花を買っていた」 – mỗi dịp sinh nhật người nhà hay nhà có khách, tôi cùng mẹ mua hoa ở tiệm này.\nSinh nhật, nhà có khách… đều là những dịp đặc biệt. Đáp án 3 tóm gọn lại: khi có dịp đặc biệt thì hay mua hoa ở tiệm này.\nHai bẫy: tiệm mở TRƯỚC khi tác giả vào tiểu học (không phải đúng lúc vào tiểu học), và khi tốt nghiệp thì mua hoa để TẶNG cô giáo chứ không đi cùng cô.',
           answer: 3, evidence: ['s4', 's5']
         },
         {
           label: '28',
           question: ['q2', '‹②わたしたちはどきどきしながら›とあるが、どうしてどきどきしたのか。', '"Hồi hộp" – vì sao?'],
           options: [
-            ['もうすぐ[閉店|へいてん]する{花屋|はなや}のおじさんに、@muri({無理|むり}な)お{願|ねが}いをするから。', 'Vì nhờ việc khó với chú sắp đóng cửa tiệm.', 'Sai. Lúc đó tiệm chưa đóng cửa.'],
-            ['いやそうな{顔|かお}をしているおじさんに、{無理|むり}なお{願|ねが}いをするから。', 'Vì chú đang tỏ vẻ khó chịu.', 'Sai. Chú "いやな顔もしないで".'],
-            ['お{店|みせ}に{花|はな}があまりないのに、おじさんに{無理|むり}なお{願|ねが}いをするから。', 'Vì tiệm không có nhiều hoa.', 'Sai. Bài không nói tiệm thiếu hoa; vấn đề là tiền gom được ít.'],
-            ['お{金|かね}が{少|すこ}ししかないのに、おじさんに{無理|むり}なお{願|ねが}いをするから。', 'Vì ít tiền mà lại nhờ việc khó.', 'Đúng. Tiền gom được ít mà lại nhờ làm bó hoa thật to (s9–s10).']
+            ['もうすぐ[閉店|へいてん]する{花屋|はなや}のおじさんに、@muri({無理|むり}な)お{願|ねが}いをするから。', 'Vì nhờ việc khó với chú sắp đóng cửa tiệm.', 'Chưa đúng. Lúc đó tiệm chưa đóng cửa. Tiệm mới đóng cửa gần đây, hơn 30 năm sau.'],
+            ['いやそうな{顔|かお}をしているおじさんに、{無理|むり}なお{願|ねが}いをするから。', 'Vì chú đang tỏ vẻ khó chịu.', 'Chưa đúng. Ngược lại, chú chủ tiệm "いやな顔もしないで" – không hề tỏ vẻ khó chịu.'],
+            ['お{店|みせ}に{花|はな}があまりないのに、おじさんに{無理|むり}なお{願|ねが}いをするから。', 'Vì tiệm không có nhiều hoa.', 'Chưa đúng. Bài không nói tiệm thiếu hoa. Vấn đề là tiền gom được ít.'],
+            ['お{金|かね}が{少|すこ}ししかないのに、おじさんに{無理|むり}なお{願|ねが}いをするから。', 'Vì ít tiền mà lại nhờ việc khó.', 'Đúng. Tiền gom được ít (少しだけ) mà lại muốn nhờ làm bó hoa thật to, nên bọn trẻ hồi hộp.']
           ],
+          guide: 'Câu hỏi hỏi vì sao bọn trẻ hồi hộp. Hãy nhìn câu ngay trước câu gạch chân.\nBọn trẻ muốn tặng cô bó hoa 「見たこともないほど大きいの」 – to đến mức chưa ai thấy bao giờ. Nhưng 「小学生のおこづかいの中から集まったお金は少しだけだった」 – tiền gom được từ tiền tiêu vặt của học sinh tiểu học thì chỉ có chút ít. Chữ 「それで」 (vì thế) nối tiếp sang câu gạch chân.\nÍt tiền mà lại muốn nhờ làm bó hoa thật to, tức là một lời nhờ khó đáp ứng, nên hồi hộp không biết chú có đồng ý không. Đáp án 4.',
           answer: 4, evidence: ['s9', 's10']
         },
         {
           label: '29',
           question: ['q3', 'この{文章|ぶんしょう}を{書|か}いた{人|ひと}が{一番|いちばん}{伝|つた}えたいことは{何|なに}か。', 'Điều tác giả muốn truyền đạt nhất là gì?'],
           options: [
-            ['{小学校|しょうがっこう}{時代|じだい}にとてもお{世話|せわ}になった{先生|せんせい}へのお[礼|れい]の{気持|き}ち。', 'Lòng biết ơn cô giáo thời tiểu học.', 'Sai. Đó chỉ là một kỷ niệm.'],
-            ['よい{思|おも}い{出|で}を{作|つく}ってくれた{花屋|はなや}のおじさんへの@kansha([感謝|かんしゃ])の{気持|き}ち。', 'Lòng biết ơn chú chủ tiệm hoa đã tạo nên kỷ niệm đẹp.', 'Đúng. Câu kết 「あたたかい思い出を作ってくれたおじさんに、ありがとう…と言いたい」 (s12).'],
-            ['{大好|だいす}きだった{花屋|はなや}さんが[閉店|へいてん]するので、さびしいという{気持|き}ち。', 'Buồn vì tiệm đóng cửa.', 'Sai. Bài không nhấn mạnh nỗi buồn.'],
-            ['{近所|きんじょ}の{花屋|はなや}さんが[閉店|へいてん]したので、とても{不便|ふべん}だという{気持|き}ち。', 'Bất tiện vì tiệm đóng cửa.', 'Sai. Bài không nhắc đến sự bất tiện; đoạn cuối là lời cảm ơn.']
+            ['{小学校|しょうがっこう}{時代|じだい}にとてもお{世話|せわ}になった{先生|せんせい}へのお[礼|れい]の{気持|き}ち。', 'Lòng biết ơn cô giáo thời tiểu học.', 'Chưa đúng. Chuyện tặng hoa cô giáo chỉ là một kỷ niệm minh họa. Người tác giả muốn cảm ơn là chú chủ tiệm.'],
+            ['よい{思|おも}い{出|で}を{作|つく}ってくれた{花屋|はなや}のおじさんへの@kansha([感謝|かんしゃ])の{気持|き}ち。', 'Lòng biết ơn chú chủ tiệm hoa đã tạo nên kỷ niệm đẹp.', 'Đúng. Câu cuối là lời cảm ơn chú chủ tiệm hoa đã tạo ra những kỷ niệm ấm áp (あたたかい思い出を作ってくれた).'],
+            ['{大好|だいす}きだった{花屋|はなや}さんが[閉店|へいてん]するので、さびしいという{気持|き}ち。', 'Buồn vì tiệm đóng cửa.', 'Chưa đúng. Bài không nhấn mạnh nỗi buồn. Đoạn cuối là lời cảm ơn.'],
+            ['{近所|きんじょ}の{花屋|はなや}さんが[閉店|へいてん]したので、とても{不便|ふべん}だという{気持|き}ち。', 'Bất tiện vì tiệm đóng cửa.', 'Chưa đúng. Bài không nhắc đến sự bất tiện khi tiệm đóng cửa.']
           ],
+          guide: 'Câu hỏi hỏi điều tác giả muốn truyền đạt nhất. Với tùy bút, điều tác giả muốn nói nhất thường nằm ở câu cuối.\nCâu cuối: 「30年以上もきれいな花束を作り続け、あたたかい思い出を作ってくれたおじさんに、『ありがとう、お疲れ様でした』と言いたい」 – tôi muốn nói "cảm ơn chú, chú đã vất vả rồi" với chú chủ tiệm, người hơn 30 năm làm những bó hoa đẹp và tạo cho tôi những kỷ niệm ấm áp.\nĐó là lòng biết ơn với chú chủ tiệm hoa. Đáp án 2.\nKỷ niệm tặng hoa cô giáo chỉ là một câu chuyện minh họa, không phải thông điệp chính.',
           answer: 2, evidence: ['s12']
         }
       ],
@@ -354,33 +361,36 @@ window.BAI = {
           label: '30',
           question: ['q1', '‹①{面白|おもしろ}いのは›とあるが、{筆者|ひっしゃ}はどこにその{原因|げんいん}があると{考|かんが}えているか。', '"Điều thú vị là" – tác giả cho rằng cái thú vị nằm ở đâu?'],
           options: [
-            ['{暑|あつ}い{夏|なつ}に{冷|つめ}たいものを{食|た}べると、{体|からだ}が{涼|すず}しく{感|かん}じるから。', 'Ăn lạnh mùa hè thấy mát.', 'Sai. Đây là câu dẫn, không phải điều thú vị.'],
-            ['{寒|さむ}い{冬|ふゆ}に{冷|つめ}たいものを{食|た}べると、おいしく{感|かん}じられるから。', 'Ăn lạnh mùa đông thấy ngon.', 'Sai. Cũng là câu dẫn.'],
-            ['@kisetsu([季節|きせつ])に{関係|かんけい}なく{一年|いちねん}{中|じゅう}アイスクリームが{売|う}られているから。', 'Kem bán quanh năm.', 'Sai. Đây là phần trước "が" – điều được thừa nhận, không phải điều thú vị.'],
-            ['よく{売|う}れるアイスクリームの{種類|しゅるい}は[季節|きせつ]によって{違|ちが}うから。', 'Loại kem bán chạy khác nhau theo mùa.', 'Đúng. 「面白いのは、夏と冬ではよく売れるアイスの種類が違うことです」 (s3).']
+            ['{暑|あつ}い{夏|なつ}に{冷|つめ}たいものを{食|た}べると、{体|からだ}が{涼|すず}しく{感|かん}じるから。', 'Ăn lạnh mùa hè thấy mát.', 'Chưa đúng. Đây là câu dẫn dắt ở đầu bài, không phải điều tác giả thấy thú vị.'],
+            ['{寒|さむ}い{冬|ふゆ}に{冷|つめ}たいものを{食|た}べると、おいしく{感|かん}じられるから。', 'Ăn lạnh mùa đông thấy ngon.', 'Chưa đúng. Đây cũng là câu dẫn dắt, nói về cái ngon của kem mùa đông.'],
+            ['@kisetsu([季節|きせつ])に{関係|かんけい}なく{一年|いちねん}{中|じゅう}アイスクリームが{売|う}られているから。', 'Kem bán quanh năm.', 'Chưa đúng. "Kem bán quanh năm" nằm ở vế trước chữ "が" – là điều ai cũng biết. Điều thú vị nằm ở vế sau.'],
+            ['よく{売|う}れるアイスクリームの{種類|しゅるい}は[季節|きせつ]によって{違|ちが}うから。', 'Loại kem bán chạy khác nhau theo mùa.', 'Đúng. Sau 「面白いのは」 tác giả nói loại kem bán chạy mùa hè và mùa đông khác nhau.']
           ],
+          guide: 'Câu hỏi hỏi điều "thú vị" (面白いのは) mà tác giả nói đến là gì. Câu có phần gạch chân viết: 「今ではアイスクリームは一年中いつでも食べられますが、面白いのは、夏と冬ではよく売れるアイスの種類が違うことです」.\nMẫu 「AがBますが、面白いのは〜ことです」 nghĩa là: A thì ai cũng biết, nhưng điều thú vị là… Phần sau 「面白いのは」 mới là điều tác giả thấy thú vị: loại kem bán chạy mùa hè và mùa đông khác nhau (hè: kem chanh; đông: vị đậm như sô-cô-la). Đáp án 4.\nCác lựa chọn 1, 2, 3 đều là những câu dẫn dắt ở đầu bài, không phải điều thú vị.',
           answer: 4, evidence: ['s3', 's4']
         },
         {
           label: '31',
           question: ['q2', '‹②[氷|こおり]はとても{大事|だいじ}なものでした›とあるが、それはどうしてか。', '"Đá là thứ rất quý" – vì sao?'],
           options: [
-            ['{冬|ふゆ}に{特別|とくべつ}な{部屋|へや}で{作|つく}った[氷|こおり]だったし、とけないように{運|はこ}ぶのも{大変|たいへん}だったから。', 'Vì làm trong phòng đặc biệt, chở không tan cũng vất vả.', 'Sai. Đá làm vào mùa đông rồi CẤT trong phòng đặc biệt, không phải làm trong đó.'],
-            ['{冬|ふゆ}に{作|つく}った[氷|こおり]は{特別|とくべつ}な{味|あじ}がしたし、{時間|じかん}がたつととけてなくなってしまうから。', 'Vì có vị đặc biệt, để lâu sẽ tan hết.', 'Sai. Không nói về vị.'],
-            ['{夏|なつ}に{作|つく}った[氷|こおり]はとてもめずらしかったし、{暑|あつ}さですぐとけてしまうものだったから。', 'Vì đá làm vào mùa hè rất hiếm.', 'Sai. Đá làm vào mùa ĐÔNG.'],
-            ['{夏|なつ}の[氷|こおり]はめずらしかったし、{町|まち}まで{運|はこ}ぶ{途中|とちゅう}でとけて{小|ちい}さくなってしまうから。', 'Vì đá mùa hè hiếm, lại tan nhỏ dần trên đường chở về phố.', 'Đúng. 「運ぶ間に少しずつとけて小さくなりますから」 (s8).']
+            ['{冬|ふゆ}に{特別|とくべつ}な{部屋|へや}で{作|つく}った[氷|こおり]だったし、とけないように{運|はこ}ぶのも{大変|たいへん}だったから。', 'Vì làm trong phòng đặc biệt, chở không tan cũng vất vả.', 'Chưa đúng. Đá được làm vào mùa đông rồi CẤT trong phòng đặc biệt. Phòng đó không phải nơi làm ra đá.'],
+            ['{冬|ふゆ}に{作|つく}った[氷|こおり]は{特別|とくべつ}な{味|あじ}がしたし、{時間|じかん}がたつととけてなくなってしまうから。', 'Vì có vị đặc biệt, để lâu sẽ tan hết.', 'Chưa đúng. Bài không nói đá có vị đặc biệt.'],
+            ['{夏|なつ}に{作|つく}った[氷|こおり]はとてもめずらしかったし、{暑|あつ}さですぐとけてしまうものだったから。', 'Vì đá làm vào mùa hè rất hiếm.', 'Chưa đúng. Đá được làm vào mùa ĐÔNG, không phải mùa hè.'],
+            ['{夏|なつ}の[氷|こおり]はめずらしかったし、{町|まち}まで{運|はこ}ぶ{途中|とちゅう}でとけて{小|ちい}さくなってしまうから。', 'Vì đá mùa hè hiếm, lại tan nhỏ dần trên đường chở về phố.', 'Đúng. Đá mùa hè hiếm, lại tan nhỏ dần trên đường chở về phố (運ぶ間に少しずつとけて小さくなります), nên rất quý.']
           ],
+          guide: 'Câu hỏi hỏi vì sao ngày xưa đá rất quý. Đoạn 3 kể cách người xưa có đá vào mùa hè: làm đá vào mùa ĐÔNG, cất trong căn phòng đặc biệt gọi là 「氷室」 để không tan. Đến hè mới lấy ra chở về phố.\nRồi đến lý do, có đuôi 「〜から」: 「町までは遠く、運ぶ間に少しずつとけて小さくなりますから」 – đường về phố xa, trong lúc chở đá tan dần và nhỏ lại. Vì vậy đá mùa hè rất hiếm, rất quý. Đáp án 4.\nHai bẫy: đá được làm vào mùa ĐÔNG (không phải mùa hè), và phòng đặc biệt dùng để CẤT đá (không phải để làm đá).',
           answer: 4, evidence: ['s6', 's7', 's8']
         },
         {
           label: '32',
           question: ['q3', '‹③{夏|なつ}の[氷|こおり]は{特別|とくべつ}なごちそうだったのでしょう›とあるが、ここで{言|い}いたいことはどのようなことか。', '"Đá mùa hè là món ngon đặc biệt" – muốn nói điều gì?'],
           options: [
-            ['[氷|こおり]は{昔|むかし}は{冬|ふゆ}の{食|た}べ{物|もの}だったので、{夏|なつ}に{食|た}べることはとてもめずらしいことだった。', 'Đá xưa là đồ ăn mùa đông nên ăn vào hè rất hiếm.', 'Sai. Không nói đá là đồ ăn mùa đông.'],
-            ['まだアイスクリームを{買|か}うことは{難|むずか}しかったので、みんな[氷|こおり]でがまんしていた。', 'Chưa mua được kem nên đành chịu ăn đá.', 'Sai. Bài không so sánh với kem; ý chính là đá mùa hè hiếm, không phải thứ ăn thường ngày.'],
-            ['{暑|あつ}い{夏|なつ}に[氷|こおり]を{食|た}べて{涼|すず}しさを{感|かん}じることは、@nichijouteki([日常的|にちじょうてき])にできることではなかった。', 'Ăn đá giải nhiệt mùa hè không phải việc làm được thường ngày.', 'Đúng. "今とは違い" + "特別な" = không phải ai cũng ăn được hằng ngày như bây giờ.'],
-            ['{涼|すず}しくなるように[氷|こおり]を{食|た}べることは、そのころ{人々|ひとびと}がよくやっていたことだった。', 'Ăn đá giải nhiệt là việc người ta hay làm.', 'Sai. Ngược nghĩa với "特別".']
+            ['[氷|こおり]は{昔|むかし}は{冬|ふゆ}の{食|た}べ{物|もの}だったので、{夏|なつ}に{食|た}べることはとてもめずらしいことだった。', 'Đá xưa là đồ ăn mùa đông nên ăn vào hè rất hiếm.', 'Chưa đúng. Bài không nói đá là món ăn mùa đông. Đá được làm vào mùa đông nhưng để dành ăn vào mùa hè.'],
+            ['まだアイスクリームを{買|か}うことは{難|むずか}しかったので、みんな[氷|こおり]でがまんしていた。', 'Chưa mua được kem nên đành chịu ăn đá.', 'Chưa đúng. Bài không so sánh với kem. Ý chính là đá mùa hè hiếm, không phải thứ ăn thường ngày.'],
+            ['{暑|あつ}い{夏|なつ}に[氷|こおり]を{食|た}べて{涼|すず}しさを{感|かん}じることは、@nichijouteki([日常的|にちじょうてき])にできることではなかった。', 'Ăn đá giải nhiệt mùa hè không phải việc làm được thường ngày.', 'Đúng. "Khác với bây giờ" (今とは違い), ngày xưa ăn đá cho mát vào mùa hè là chuyện đặc biệt, không phải ngày nào cũng làm được.'],
+            ['{涼|すず}しくなるように[氷|こおり]を{食|た}べることは、そのころ{人々|ひとびと}がよくやっていたことだった。', 'Ăn đá giải nhiệt là việc người ta hay làm.', 'Chưa đúng. Ngược nghĩa với chữ "特別" (đặc biệt): nếu ai cũng hay ăn thì đâu còn đặc biệt.']
           ],
+          guide: 'Câu hỏi hỏi câu "đá mùa hè là món ngon đặc biệt" muốn nói gì. Chữ quan trọng là 「今とは違い」 – khác với bây giờ.\nBây giờ, mùa hè muốn ăn đá lạnh thì dễ dàng, ngày nào cũng ăn được. Ngày xưa thì khác: đá phải cất từ mùa đông, chở đường xa, tan dần, nên rất hiếm. Vì vậy được ăn đá mùa hè là chuyện "đặc biệt", không phải chuyện thường ngày.\nĐáp án 3: ăn đá cho mát vào mùa hè không phải việc làm được hằng ngày.\nMẹo: khi thấy 「今とは違い」, hãy nghĩ xem bây giờ như thế nào, rồi đảo ngược lại cho ngày xưa.',
           answer: 3, evidence: ['s8', 's10']
         }
       ],
